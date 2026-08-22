@@ -75,18 +75,22 @@ Item {
         }
 
         Repeater {
-            model: 720
+            model: 24 // 0° to 345° in 15° steps
             QGCLabel {
-                function _normalize(degrees) {
-                    var a = degrees % 360
-                    if (a < 0) a += 360
-                    return a
+                readonly property int _angle: modelData * 15
+                readonly property real _degWidth: compassBar.width / 180 // 180° visible across the ribbon
+                readonly property real _diff: {
+                    var d = (_angle - _heading) % 360
+                    if (d > 180) d -= 360
+                    else if (d < -180) d += 360
+                    return d
                 }
-                property int _startAngle: modelData + 180 + _heading
-                property int _angle: _normalize(_startAngle)
+                readonly property real _centerOffset: _diff * _degWidth
+
                 anchors.verticalCenter: parent.verticalCenter
-                x: visible ? ((modelData * (compassBar.width / 360)) - (width * 0.5)) : 0
-                visible: _angle % 15 == 0
+                x: (compassBar.width * 0.5) + _centerOffset - (width * 0.5)
+                visible: Math.abs(_centerOffset) <= (compassBar.width * 0.5 + width)
+
                 color: (_angle % 90 == 0) ? "#00f0ff" : (_angle % 45 == 0 ? "#38bdf8" : "#64748b")
                 font.bold: _angle % 45 == 0
                 font.pointSize: (_angle % 90 == 0) ? ScreenTools.defaultFontPointSize : ScreenTools.smallFontPointSize

@@ -93,7 +93,9 @@ QGeoCoordinate PerimeterScanComplexItem::coordinate() const
 QGeoCoordinate PerimeterScanComplexItem::exitCoordinate() const
 {
     const int count = _perimeterPolygon.count();
-    if (count > 0) {
+    if (count >= 3) {
+        return _perimeterPolygon.vertexCoordinate(0);
+    } else if (count > 0) {
         return _perimeterPolygon.vertexCoordinate(count - 1);
     }
     return {};

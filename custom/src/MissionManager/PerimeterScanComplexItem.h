@@ -64,7 +64,7 @@ public:
     QGeoCoordinate      coordinate                () const final;
     QGeoCoordinate      entryCoordinate           () const final { return coordinate(); }
     QGeoCoordinate      exitCoordinate            () const final;
-    bool                exitCoordinateSameAsEntry () const final { return false; }
+    bool                exitCoordinateSameAsEntry () const final { return _perimeterPolygon.count() >= 3 || _perimeterPolygon.count() == 1; }
     double              editableAlt               () const final { return _altitudeFact.rawValue().toDouble(); }
     double              amslEntryAlt              () const final;
     double              amslExitAlt               () const final { return amslEntryAlt(); }
