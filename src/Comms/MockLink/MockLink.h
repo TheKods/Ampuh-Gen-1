@@ -508,11 +508,10 @@ private:
 
     static std::atomic<int> _nextVehicleSystemId;
 
-    // Vehicle position is set close to default Gazebo vehicle location. This allows for multi-vehicle
-    // testing of a gazebo vehicle and a mocklink vehicle
-    static constexpr double _defaultVehicleLatitude = 47.397;
-    static constexpr double _defaultVehicleLongitude = 8.5455;
-    static constexpr double _defaultVehicleHomeAltitude = 488.056;
+    // Default vehicle location for MockLink simulation (Halim Perdanakusuma, Jakarta)
+    static constexpr double _defaultVehicleLatitude = -6.26770697;
+    static constexpr double _defaultVehicleLongitude = 106.88683892;
+    static constexpr double _defaultVehicleHomeAltitude = 24.0;
 
     static constexpr const char *_failParam = "COM_FLTMODE6";
 

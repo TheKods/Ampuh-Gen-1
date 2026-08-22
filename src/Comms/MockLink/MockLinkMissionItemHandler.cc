@@ -34,8 +34,8 @@ void MockLinkMissionItemHandler::loadSimpleMultirotorMission()
 {
     _missionItems.clear();
 
-    constexpr double homeLatitude = 47.397;
-    constexpr double homeLongitude = 8.5455;
+    constexpr double homeLatitude = -6.26770697;
+    constexpr double homeLongitude = 106.88683892;
     constexpr float relativeAltitude = 50.0f;
 
     const auto makeItem = [](uint16_t seq, uint16_t command, bool current, double latitude, double longitude, float altitude) {
