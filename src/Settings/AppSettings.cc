@@ -100,10 +100,10 @@ DECLARE_SETTINGGROUP(App, "")
     // Mobile builds always use the runtime generated location for savePath.
     bool userHasModifiedSavePath = false;
 #else
-    bool userHasModifiedSavePath = !savePathFact->rawValue().toString().isEmpty() || !_nameToMetaDataMap[savePathName]->rawDefaultValue().toString().isEmpty();
+    bool userHasModifiedSavePath = !savePathFact->rawValue().toString().isEmpty() && savePathFact->rawValue().toString() != _nameToMetaDataMap[savePathName]->rawDefaultValue().toString();
 #endif
 
-    if (!userHasModifiedSavePath) {
+    if (!userHasModifiedSavePath || savePathFact->rawValue().toString().isEmpty()) {
 #if defined(Q_OS_ANDROID) || defined(Q_OS_IOS)
     #ifdef Q_OS_IOS
         // This will expose the directories directly to the File iOs app
@@ -281,7 +281,19 @@ void AppSettings::_qLocaleLanguageChanged()
 
 void AppSettings::_checkSavePathDirectories(void)
 {
-    const QString savePath = this->savePath()->rawValue().toString();
+    QString savePath = this->savePath()->rawValue().toString();
+    if (savePath.isEmpty()) {
+        const QString appName = QCoreApplication::applicationName();
+        QDir rootDir;
+        if (QGC::runningUnitTests() || qgcApp()->simpleBootTest()) {
+            rootDir = QDir(QStandardPaths::writableLocation(QStandardPaths::TempLocation));
+        } else {
+            rootDir = QDir(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation));
+        }
+        savePath = rootDir.filePath(appName);
+        this->savePath()->setRawValue(savePath);
+    }
+
     if (QGCFileHelper::ensureDirectoryExists(savePath)) {
         // Create all subdirectories
         QGCFileHelper::ensureDirectoryExists(QGCFileHelper::joinPath(savePath, parameterDirectory));
@@ -298,17 +310,29 @@ void AppSettings::_checkSavePathDirectories(void)
 
 QString AppSettings::_childSavePath(const char* directory)
 {
-    const QString rootPath = savePath()->rawValue().toString();
+    QString rootPath = savePath()->rawValue().toString();
     if (rootPath.isEmpty()) {
-        return QString();
+        const QString appName = QCoreApplication::applicationName();
+        QDir rootDir;
+        if (QGC::runningUnitTests() || qgcApp()->simpleBootTest()) {
+            rootDir = QDir(QStandardPaths::writableLocation(QStandardPaths::TempLocation));
+        } else {
+            rootDir = QDir(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation));
+        }
+        rootPath = rootDir.filePath(appName);
+        savePath()->setRawValue(rootPath);
     }
 
-    const QDir rootDir(rootPath);
-    if (!rootDir.exists()) {
-        return QString();
+    if (!QDir(rootPath).exists()) {
+        QGCFileHelper::ensureDirectoryExists(rootPath);
     }
 
-    return rootDir.filePath(directory);
+    const QString childPath = QDir(rootPath).filePath(directory);
+    if (!QDir(childPath).exists()) {
+        QGCFileHelper::ensureDirectoryExists(childPath);
+    }
+
+    return childPath;
 }
 
 void AppSettings::_indoorPaletteChanged(void)
