@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+    <defs>
+        <linearGradient id="cyberAeroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00f0ff" />
+            <stop offset="100%" stop-color="#3b82f6" />
+        </linearGradient>
+        <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1e293b" />
+            <stop offset="100%" stop-color="#0f172a" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background Shield -->
+    <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#shieldGrad)" stroke="#00f0ff" stroke-width="4" />
+    
+    <!-- Radar Ring -->
+    <circle cx="64" cy="64" r="38" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6,6" opacity="0.8" />
+    <circle cx="64" cy="64" r="22" fill="none" stroke="#00f0ff" stroke-width="1.5" opacity="0.5" />
+    
+    <!-- Aircraft Emblem -->
+    <path d="M64 26 L88 74 L64 62 L40 74 Z" fill="url(#cyberAeroGrad)" />
+    <path d="M64 62 L64 96" stroke="#00f0ff" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Rotor Nodes -->
+    <circle cx="34" cy="42" r="5.5" fill="#00f0ff" />
+    <circle cx="94" cy="42" r="5.5" fill="#00f0ff" />
+    <circle cx="34" cy="88" r="5.5" fill="#3b82f6" />
+    <circle cx="94" cy="88" r="5.5" fill="#3b82f6" />
+</svg>

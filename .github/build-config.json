@@ -1,0 +1,59 @@
+{
+  "qt": {
+    "version": "6.8.2",
+    "minimum_version": "6.8.0",
+    "maximum_version": "6.8.99",
+    "modules": "qtpositioning qtserialport qtscxml qtquick3d qtgraphs"
+  },
+  "gstreamer": {
+    "version": {
+      "default": "1.24.11",
+      "minimum": "1.24.0",
+      "android": "1.24.11",
+      "macos": "1.24.11",
+      "ios": "1.24.11",
+      "windows": "1.28.0"
+    },
+    "plugins": {
+      "common": [
+        "coreelements",
+        "playback",
+        "rtsp",
+        "rtp",
+        "rtpmanager",
+        "udp",
+        "tcp",
+        "videoconvertscale",
+        "videoconvert",
+        "videoscale",
+        "isomp4",
+        "matroska",
+        "multifile",
+        "opengl",
+        "app"
+      ],
+      "linux": ["va"],
+      "apple": ["vtenc", "vtdec"],
+      "windows": ["d3d11", "d3d12"],
+      "android": ["androidmedia"]
+    }
+  },
+  "android": {
+    "platform": "35",
+    "min_sdk": "26",
+    "ndk_version": "26.1.10909125",
+    "ndk_full_version": "26.1.10909125",
+    "java_version": "17",
+    "build_tools": "35.0.0",
+    "cmdline_tools": "14742923"
+  },
+  "apple": {
+    "xcode_version": "16.2",
+    "xcode_ios_version": "16.2",
+    "macos_deployment_target": "12.0",
+    "ios_deployment_target": "16.0"
+  },
+  "build": {
+    "cmake_minimum_version": "3.25"
+  }
+}
