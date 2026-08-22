@@ -123,10 +123,10 @@ Rectangle {
 
             TerrainProfile {
                 id:                 terrainProfile
-                x:                  chart.plotArea.x
-                y:                  chart.plotArea.y
-                height:             chart.plotArea.height
-                visibleWidth:       chart.plotArea.width
+                x:                  chart.plotArea ? chart.plotArea.x : 0
+                y:                  chart.plotArea ? chart.plotArea.y : 0
+                height:             chart.plotArea ? chart.plotArea.height : 0
+                visibleWidth:       chart.plotArea ? chart.plotArea.width : 0
                 missionController:  root.missionController
                 horizontalScale:    _unitsConversion.metersToAppSettingsHorizontalDistanceUnits(1)
                 verticalScale:      _unitsConversion.metersToAppSettingsVerticalDistanceUnits(1)
