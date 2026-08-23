@@ -1,0 +1,41 @@
+name: AMPUH Gen 1 Release & Packaging
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  create-release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Release Notes
+        id: release_notes
+        run: |
+          if [ -f RELEASE_NOTES_v1.0.0.md ]; then
+            echo "notes_file=RELEASE_NOTES_v1.0.0.md" >> $GITHUB_OUTPUT
+          else
+            echo "notes_file=AI_HUD_MASTER_DOCUMENTATION.md" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "AMPUH Gen 1 v${{ github.ref_name }} — Apex Tactical AI Edition"
+          body_path: RELEASE_NOTES_v1.0.0.md
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
