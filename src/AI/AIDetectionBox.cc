@@ -1,5 +1,7 @@
 #include "AIDetectionBox.h"
 
+#include <QtCore/QtMath>
+
 AIDetectionBox::AIDetectionBox(QObject *parent)
     : QObject(parent)
 {
@@ -17,6 +19,8 @@ AIDetectionBox::AIDetectionBox(int targetId, const QString &className, double co
     , _width(width)
     , _height(height)
     , _trackingStatus(trackingStatus)
+    , _prevCenterX(x + width / 2.0)
+    , _prevCenterY(y + height / 2.0)
 {
 }
 
@@ -55,6 +59,19 @@ void AIDetectionBox::updateData(const QString &className, double confidence,
     }
     if (!qFuzzyCompare(_x, x) || !qFuzzyCompare(_y, y) ||
         !qFuzzyCompare(_width, width) || !qFuzzyCompare(_height, height)) {
+
+        const double curCenterX = x + (width / 2.0);
+        const double curCenterY = y + (height / 2.0);
+        const double dX = curCenterX - _prevCenterX;
+        const double dY = curCenterY - _prevCenterY;
+
+        if (std::hypot(dX, dY) > 0.005) {
+            const double angle = qRadiansToDegrees(std::atan2(dY, dX));
+            setHeadingDeg(angle >= 0 ? angle : angle + 360.0);
+            _prevCenterX = curCenterX;
+            _prevCenterY = curCenterY;
+        }
+
         _x = x;
         _y = y;
         _width = width;
@@ -97,5 +114,13 @@ void AIDetectionBox::setEstimatedSpeedKmh(double speed)
     if (!qFuzzyCompare(_estimatedSpeedKmh, speed)) {
         _estimatedSpeedKmh = speed;
         emit estimatedSpeedKmhChanged();
+    }
+}
+
+void AIDetectionBox::setHeadingDeg(double heading)
+{
+    if (!qFuzzyCompare(_headingDeg, heading)) {
+        _headingDeg = heading;
+        emit headingDegChanged();
     }
 }
