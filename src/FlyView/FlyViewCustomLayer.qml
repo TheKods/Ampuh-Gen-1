@@ -13,8 +13,8 @@ import QGroundControl.Controls
 import QGroundControl.FlyView
 import QGroundControl.FlightMap
 
-// To implement a custom overlay copy this code to your own control in your custom code source. Then override the
-// FlyViewCustomLayer.qml resource with your own qml. See the custom example and documentation for details.
+import "./AI_HUD"
+
 Item {
     id: _root
 
@@ -22,20 +22,26 @@ Item {
     property var totalToolInsets:   _toolInsets // These are the insets for your custom overlay additions
     property var mapControl
 
-    // since this file is a placeholder for the custom layer in a standard build, we will just pass through the parent insets
+    HUDMasterContainer {
+        id:                 hudMaster
+        anchors.fill:       parent
+        parentToolInsets:   _root.parentToolInsets
+        mapControl:         _root.mapControl
+    }
+
     QGCToolInsets {
         id:                     _toolInsets
-        leftEdgeTopInset:       parentToolInsets.leftEdgeTopInset
-        leftEdgeCenterInset:    parentToolInsets.leftEdgeCenterInset
-        leftEdgeBottomInset:    parentToolInsets.leftEdgeBottomInset
-        rightEdgeTopInset:      parentToolInsets.rightEdgeTopInset
-        rightEdgeCenterInset:   parentToolInsets.rightEdgeCenterInset
-        rightEdgeBottomInset:   parentToolInsets.rightEdgeBottomInset
-        topEdgeLeftInset:       parentToolInsets.topEdgeLeftInset
-        topEdgeCenterInset:     parentToolInsets.topEdgeCenterInset
-        topEdgeRightInset:      parentToolInsets.topEdgeRightInset
-        bottomEdgeLeftInset:    parentToolInsets.bottomEdgeLeftInset
-        bottomEdgeCenterInset:  parentToolInsets.bottomEdgeCenterInset
-        bottomEdgeRightInset:   parentToolInsets.bottomEdgeRightInset
+        leftEdgeTopInset:       hudMaster.totalToolInsets.leftEdgeTopInset
+        leftEdgeCenterInset:    hudMaster.totalToolInsets.leftEdgeCenterInset
+        leftEdgeBottomInset:    hudMaster.totalToolInsets.leftEdgeBottomInset
+        rightEdgeTopInset:      hudMaster.totalToolInsets.rightEdgeTopInset
+        rightEdgeCenterInset:   hudMaster.totalToolInsets.rightEdgeCenterInset
+        rightEdgeBottomInset:   hudMaster.totalToolInsets.rightEdgeBottomInset
+        topEdgeLeftInset:       hudMaster.totalToolInsets.topEdgeLeftInset
+        topEdgeCenterInset:     hudMaster.totalToolInsets.topEdgeCenterInset
+        topEdgeRightInset:      hudMaster.totalToolInsets.topEdgeRightInset
+        bottomEdgeLeftInset:    hudMaster.totalToolInsets.bottomEdgeLeftInset
+        bottomEdgeCenterInset:  hudMaster.totalToolInsets.bottomEdgeCenterInset
+        bottomEdgeRightInset:   hudMaster.totalToolInsets.bottomEdgeRightInset
     }
 }

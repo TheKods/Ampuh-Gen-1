@@ -10,6 +10,16 @@ qt_add_qml_module(FlyViewModule
     VERSION 1.0
     RESOURCE_PREFIX /qml
     QML_FILES
+        AI_HUD/AIViews/AIBoundingBoxOverlay.qml
+        AI_HUD/AIViews/AIMapTargetVisuals.qml
+        AI_HUD/AIViews/AIPerformanceHUD.qml
+        AI_HUD/HUDMasterContainer.qml
+        AI_HUD/HUDModeToggleButton.qml
+        AI_HUD/Panels/AIFeatureToolButton.qml
+        AI_HUD/Panels/AIFeaturesControlDrawer.qml
+        AI_HUD/UAVViews/UAVBatteryLinkPanel.qml
+        AI_HUD/UAVViews/UAVFlightHorizonHUD.qml
+        AI_HUD/UAVViews/UAVSpeedAltitudeTapes.qml
         CustomGuidedActionsController.qml
         DefaultChecklist.qml
         FixedWingChecklist.qml
@@ -72,6 +82,8 @@ qt_add_qml_module(FlyViewModule
         VehicleWarnings.qml
         VirtualJoystick.qml
         VTOLChecklist.qml
+    IMPORTS
+        QGroundControl.AI
     NO_PLUGIN
 )
 
@@ -90,4 +102,9 @@ qt_add_resources(FlyViewModule flyview_qmlimages
     BASE "${CMAKE_SOURCE_DIR}/resources"
     FILES
         "${CMAKE_SOURCE_DIR}/resources/check.svg"
+)
+
+target_link_libraries(FlyViewModule
+    PRIVATE
+        AIModule
 )

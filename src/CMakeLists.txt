@@ -34,6 +34,7 @@ endif()
 
 # Core subsystems
 add_subdirectory(ADSB)
+add_subdirectory(AI)
 add_subdirectory(AnalyzeView)
 add_subdirectory(API)
 add_subdirectory(AutoPilotPlugins)
@@ -132,6 +133,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
         Qt6::MultimediaQuickPrivate
 
         # QGC Modules
+        AIModule
         AnalyzeViewModule
         AppSettingsModule
         AutoPilotPluginsCommonModule
