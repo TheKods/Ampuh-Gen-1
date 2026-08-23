@@ -197,20 +197,32 @@ Rectangle {
                     onClicked: QGCAIController.setAutoZoomEnabled(checked)
                 }
 
+                QGCCheckBox {
+                    text: qsTr("Show Predictive Motion Vectors")
+                    checked: QGCAIController.showMotionTrails
+                    onClicked: QGCAIController.setShowMotionTrails(checked)
+                }
+
                 RowLayout {
                     Layout.fillWidth: true
                     enabled: QGCAIController.lockedTargetId >= 0
 
                     QGCButton {
                         Layout.fillWidth: true
-                        text: qsTr("🚁 FLY TO TARGET")
+                        text: qsTr("🚁 FLY TO")
                         onClicked: QGCAIController.flyToTarget(QGCAIController.lockedTargetId)
                     }
 
                     QGCButton {
                         Layout.fillWidth: true
-                        text: qsTr("🔄 ORBIT TARGET")
+                        text: qsTr("🔄 ORBIT")
                         onClicked: QGCAIController.orbitTarget(QGCAIController.lockedTargetId, 30.0)
+                    }
+
+                    QGCButton {
+                        Layout.fillWidth: true
+                        text: qsTr("📍 ROI")
+                        onClicked: QGCAIController.setTargetAsROI(QGCAIController.lockedTargetId)
                     }
                 }
 
@@ -235,7 +247,7 @@ Rectangle {
                 color: Qt.rgba(1, 1, 1, 0.1)
             }
 
-            // 5. Sensitivity Threshold Slider
+            // 5. Virtual Perimeter Defense Setting
             ColumnLayout {
                 Layout.fillWidth: true
                 spacing: 4
@@ -243,7 +255,45 @@ Rectangle {
                 RowLayout {
                     Layout.fillWidth: true
                     QGCLabel {
-                        text: qsTr("5. CONFIDENCE THRESHOLD")
+                        text: qsTr("5. PERIMETER ALARM RADIUS")
+                        font.bold: true
+                        font.pointSize: ScreenTools.smallFontPointSize
+                        color: "#E0E0E0"
+                        Layout.fillWidth: true
+                    }
+                    QGCLabel {
+                        text: qsTr("%1m").arg(Math.round(QGCAIController.intrusionRadiusMeters))
+                        font.bold: true
+                        font.pointSize: ScreenTools.smallFontPointSize
+                        color: "#FF3B30"
+                    }
+                }
+
+                Slider {
+                    Layout.fillWidth: true
+                    from: 50
+                    to: 500
+                    stepSize: 25
+                    value: QGCAIController.intrusionRadiusMeters
+                    onMoved: QGCAIController.setIntrusionRadiusMeters(value)
+                }
+            }
+
+            Rectangle {
+                Layout.fillWidth: true
+                height: 1
+                color: Qt.rgba(1, 1, 1, 0.1)
+            }
+
+            // 6. Sensitivity Threshold Slider
+            ColumnLayout {
+                Layout.fillWidth: true
+                spacing: 4
+
+                RowLayout {
+                    Layout.fillWidth: true
+                    QGCLabel {
+                        text: qsTr("6. CONFIDENCE THRESHOLD")
                         font.bold: true
                         font.pointSize: ScreenTools.smallFontPointSize
                         color: "#E0E0E0"
@@ -273,13 +323,13 @@ Rectangle {
                 color: Qt.rgba(1, 1, 1, 0.1)
             }
 
-            // 6. Action Triggers & Tactical Voice
+            // 7. Action Triggers & Tactical Voice
             ColumnLayout {
                 Layout.fillWidth: true
                 spacing: 6
 
                 QGCLabel {
-                    text: qsTr("6. TRIGGER ACTIONS & VOICE")
+                    text: qsTr("7. TRIGGER ACTIONS & VOICE")
                     font.bold: true
                     font.pointSize: ScreenTools.smallFontPointSize
                     color: "#E0E0E0"
@@ -310,13 +360,13 @@ Rectangle {
                 color: Qt.rgba(1, 1, 1, 0.1)
             }
 
-            // 7. Mobile & Display Field Settings
+            // 8. Mobile & Display Field Settings
             ColumnLayout {
                 Layout.fillWidth: true
                 spacing: 6
 
                 QGCLabel {
-                    text: qsTr("7. MOBILE FIELD DISPLAY")
+                    text: qsTr("8. MOBILE FIELD DISPLAY")
                     font.bold: true
                     font.pointSize: ScreenTools.smallFontPointSize
                     color: "#E0E0E0"
@@ -332,6 +382,42 @@ Rectangle {
                     text: qsTr("🔒 Keep Screen ON (Anti-Sleep)")
                     checked: QGCAIController.keepScreenOn
                     onClicked: QGCAIController.setKeepScreenOn(checked)
+                }
+            }
+
+            Rectangle {
+                Layout.fillWidth: true
+                height: 1
+                color: Qt.rgba(1, 1, 1, 0.1)
+            }
+
+            // 9. Mission Audit Report Export
+            ColumnLayout {
+                Layout.fillWidth: true
+                spacing: 6
+
+                QGCLabel {
+                    text: qsTr("9. MISSION AUDIT & EXPORT")
+                    font.bold: true
+                    font.pointSize: ScreenTools.smallFontPointSize
+                    color: "#E0E0E0"
+                }
+
+                QGCButton {
+                    Layout.fillWidth: true
+                    text: qsTr("📑 EXPORT AI MISSION AUDIT REPORT (CSV)")
+                    onClicked: {
+                        var reportPath = QGCAIController.exportMissionReport()
+                        exportResultLabel.text = qsTr("Saved to:\n%1").arg(reportPath)
+                    }
+                }
+
+                QGCLabel {
+                    id: exportResultLabel
+                    Layout.fillWidth: true
+                    font.pointSize: ScreenTools.smallFontPointSize * 0.75
+                    color: "#00FF66"
+                    wrapMode: Text.WrapAnywhere
                 }
             }
         }

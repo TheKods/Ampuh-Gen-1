@@ -48,6 +48,9 @@ public:
     Q_PROPERTY(bool autoGimbalTracking READ autoGimbalTracking WRITE setAutoGimbalTracking NOTIFY autoGimbalTrackingChanged)
     Q_PROPERTY(bool autoZoomEnabled READ autoZoomEnabled WRITE setAutoZoomEnabled NOTIFY autoZoomEnabledChanged)
     Q_PROPERTY(bool showMotionTrails READ showMotionTrails WRITE setShowMotionTrails NOTIFY showMotionTrailsChanged)
+    Q_PROPERTY(double intrusionRadiusMeters READ intrusionRadiusMeters WRITE setIntrusionRadiusMeters NOTIFY intrusionRadiusMetersChanged)
+    Q_PROPERTY(bool intrusionAlertActive READ intrusionAlertActive NOTIFY intrusionAlertActiveChanged)
+    Q_PROPERTY(QString intrusionAlertMessage READ intrusionAlertMessage NOTIFY intrusionAlertActiveChanged)
     Q_PROPERTY(bool autoSnapshotOnDetect READ autoSnapshotOnDetect WRITE setAutoSnapshotOnDetect NOTIFY autoSnapshotOnDetectChanged)
     Q_PROPERTY(bool autoGeoTagOnDetect READ autoGeoTagOnDetect WRITE setAutoGeoTagOnDetect NOTIFY autoGeoTagOnDetectChanged)
     Q_PROPERTY(bool soundAlarmOnDetect READ soundAlarmOnDetect WRITE setSoundAlarmOnDetect NOTIFY soundAlarmOnDetectChanged)
@@ -87,6 +90,9 @@ public:
     [[nodiscard]] bool autoGimbalTracking() const { return _autoGimbalTracking; }
     [[nodiscard]] bool autoZoomEnabled() const { return _autoZoomEnabled; }
     [[nodiscard]] bool showMotionTrails() const { return _showMotionTrails; }
+    [[nodiscard]] double intrusionRadiusMeters() const { return _intrusionRadiusMeters; }
+    [[nodiscard]] bool intrusionAlertActive() const { return _intrusionAlertActive; }
+    [[nodiscard]] QString intrusionAlertMessage() const { return _intrusionAlertMessage; }
     [[nodiscard]] bool autoSnapshotOnDetect() const { return _autoSnapshotOnDetect; }
     [[nodiscard]] bool autoGeoTagOnDetect() const { return _autoGeoTagOnDetect; }
     [[nodiscard]] bool soundAlarmOnDetect() const { return _soundAlarmOnDetect; }
@@ -118,9 +124,12 @@ public:
     Q_INVOKABLE void setConfidenceThreshold(double threshold);
     Q_INVOKABLE void lockTargetById(int targetId);
     Q_INVOKABLE void unlockTarget();
+    Q_INVOKABLE void cycleNextTarget();
     Q_INVOKABLE void setAutoGimbalTracking(bool enabled);
     Q_INVOKABLE void setAutoZoomEnabled(bool enabled);
     Q_INVOKABLE void setShowMotionTrails(bool enabled);
+    Q_INVOKABLE void setIntrusionRadiusMeters(double radius);
+    Q_INVOKABLE void dismissIntrusionAlert();
     Q_INVOKABLE void setAutoSnapshotOnDetect(bool enabled);
     Q_INVOKABLE void setAutoGeoTagOnDetect(bool enabled);
     Q_INVOKABLE void setSoundAlarmOnDetect(bool enabled);
@@ -134,6 +143,7 @@ public:
     Q_INVOKABLE void orbitTarget(int targetId, double radiusMeters = 30.0);
     Q_INVOKABLE void setTargetAsROI(int targetId);
     Q_INVOKABLE void captureTargetEvidence(int targetId);
+    Q_INVOKABLE QString exportMissionReport();
 
 signals:
     void hudModeChanged();
@@ -146,6 +156,8 @@ signals:
     void autoGimbalTrackingChanged();
     void autoZoomEnabledChanged();
     void showMotionTrailsChanged();
+    void intrusionRadiusMetersChanged();
+    void intrusionAlertActiveChanged();
     void autoSnapshotOnDetectChanged();
     void autoGeoTagOnDetectChanged();
     void soundAlarmOnDetectChanged();
@@ -161,6 +173,7 @@ private slots:
 
 private:
     void _projectTargetGeolocation(class AIDetectionBox *box);
+    void _checkPerimeterIntrusions();
     void _playVoiceAlert(const QString &phrase);
 
     static AIController *_instance;
@@ -176,6 +189,9 @@ private:
     bool _autoGimbalTracking = false;
     bool _autoZoomEnabled = false;
     bool _showMotionTrails = true;
+    double _intrusionRadiusMeters = 150.0;
+    bool _intrusionAlertActive = false;
+    QString _intrusionAlertMessage;
     bool _autoSnapshotOnDetect = false;
     bool _autoGeoTagOnDetect = false;
     bool _soundAlarmOnDetect = true;
@@ -190,4 +206,5 @@ private:
     AndroidSystemMonitor *_systemMonitor = nullptr;
     QTimer _trackingTimer;
     qint64 _lastVoiceAlertTime = 0;
+    qint64 _lastIntrusionTime = 0;
 };

@@ -22,6 +22,9 @@ class AIDetectionBox : public QObject
     Q_PROPERTY(double centerX READ centerX NOTIFY geometryChanged)
     Q_PROPERTY(double centerY READ centerY NOTIFY geometryChanged)
     Q_PROPERTY(bool isLocked READ isLocked WRITE setIsLocked NOTIFY isLockedChanged)
+    Q_PROPERTY(bool isGhost READ isGhost NOTIFY isGhostChanged)
+    Q_PROPERTY(int threatScore READ threatScore NOTIFY threatScoreChanged)
+    Q_PROPERTY(QString threatLevel READ threatLevel NOTIFY threatScoreChanged)
     Q_PROPERTY(QString trackingStatus READ trackingStatus NOTIFY trackingStatusChanged)
     Q_PROPERTY(QGeoCoordinate coordinate READ coordinate NOTIFY coordinateChanged)
     Q_PROPERTY(double rangeMeters READ rangeMeters NOTIFY rangeMetersChanged)
@@ -47,6 +50,9 @@ public:
     [[nodiscard]] double centerX() const { return _x + (_width / 2.0); }
     [[nodiscard]] double centerY() const { return _y + (_height / 2.0); }
     [[nodiscard]] bool isLocked() const { return _isLocked; }
+    [[nodiscard]] bool isGhost() const { return _isGhost; }
+    [[nodiscard]] int threatScore() const { return _threatScore; }
+    [[nodiscard]] QString threatLevel() const;
     [[nodiscard]] QString trackingStatus() const { return _trackingStatus; }
     [[nodiscard]] QGeoCoordinate coordinate() const { return _coordinate; }
     [[nodiscard]] double rangeMeters() const { return _rangeMeters; }
@@ -58,16 +64,21 @@ public:
                     double x, double y, double width, double height,
                     const QString &trackingStatus);
     void setIsLocked(bool locked);
+    void setIsGhost(bool ghost);
+    void extrapolateGhostPosition();
     void setCoordinate(const QGeoCoordinate &coord);
     void setRangeMeters(double range);
     void setEstimatedSpeedKmh(double speed);
     void setHeadingDeg(double heading);
+    void calculateThreatScore();
 
 signals:
     void classNameChanged();
     void confidenceChanged();
     void geometryChanged();
     void isLockedChanged();
+    void isGhostChanged();
+    void threatScoreChanged();
     void trackingStatusChanged();
     void coordinateChanged();
     void rangeMetersChanged();
@@ -84,11 +95,16 @@ private:
     double _width = 0.0;
     double _height = 0.0;
     bool _isLocked = false;
+    bool _isGhost = false;
+    int _threatScore = 30;
     QString _trackingStatus = QStringLiteral("TRACKING");
     QGeoCoordinate _coordinate;
     double _rangeMeters = 0.0;
     double _estimatedSpeedKmh = 0.0;
     double _headingDeg = 0.0;
+    double _velX = 0.0;
+    double _velY = 0.0;
     double _prevCenterX = 0.0;
     double _prevCenterY = 0.0;
+    int _ghostFrames = 0;
 };

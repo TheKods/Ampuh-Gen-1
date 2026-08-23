@@ -10,6 +10,10 @@
 #include "AudioOutput.h"
 
 #include <QtCore/QDateTime>
+#include <QtCore/QDir>
+#include <QtCore/QFile>
+#include <QtCore/QStandardPaths>
+#include <QtCore/QTextStream>
 #include <QtCore/QtMath>
 
 AIController* AIController::_instance = nullptr;
@@ -117,6 +121,42 @@ void AIController::setShowMotionTrails(bool enabled)
         _showMotionTrails = enabled;
         triggerHapticFeedback(30);
         emit showMotionTrailsChanged();
+    }
+}
+
+void AIController::setIntrusionRadiusMeters(double radius)
+{
+    if (!qFuzzyCompare(_intrusionRadiusMeters, radius)) {
+        _intrusionRadiusMeters = std::max(radius, 10.0);
+        emit intrusionRadiusMetersChanged();
+    }
+}
+
+void AIController::dismissIntrusionAlert()
+{
+    if (_intrusionAlertActive) {
+        _intrusionAlertActive = false;
+        emit intrusionAlertActiveChanged();
+    }
+}
+
+void AIController::cycleNextTarget()
+{
+    if (_detectionBoxes->count() == 0) return;
+
+    triggerHapticFeedback(50);
+    int nextIndex = 0;
+    for (int i = 0; i < _detectionBoxes->count(); ++i) {
+        auto *box = _detectionBoxes->value<AIDetectionBox*>(i);
+        if (box && box->targetId() == _lockedTargetId) {
+            nextIndex = (i + 1) % _detectionBoxes->count();
+            break;
+        }
+    }
+
+    auto *nextBox = _detectionBoxes->value<AIDetectionBox*>(nextIndex);
+    if (nextBox) {
+        lockTargetById(nextBox->targetId());
     }
 }
 
@@ -357,6 +397,41 @@ void AIController::captureTargetEvidence(int targetId)
     }
 }
 
+QString AIController::exportMissionReport()
+{
+    const QString docPath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+    const QString fileName = QStringLiteral("QGC_AI_Mission_Log_%1.csv").arg(QDateTime::currentDateTime().toString(QStringLiteral("yyyyMMdd_hhmmss")));
+    const QString fullPath = docPath + QDir::separator() + fileName;
+
+    QFile file(fullPath);
+    if (file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        QTextStream out(&file);
+        out << "Timestamp,TargetID,Class,Confidence,ThreatScore,RangeMeters,SpeedKmh,Latitude,Longitude\n";
+
+        const QString timestamp = QDateTime::currentDateTime().toString(Qt::ISODate);
+        for (int i = 0; i < _detectionBoxes->count(); ++i) {
+            auto *box = _detectionBoxes->value<AIDetectionBox*>(i);
+            if (box) {
+                out << QStringLiteral("%1,%2,%3,%4,%5,%6,%7,%8,%9\n")
+                           .arg(timestamp)
+                           .arg(box->targetId())
+                           .arg(box->className())
+                           .arg(box->confidence())
+                           .arg(box->threatScore())
+                           .arg(box->rangeMeters())
+                           .arg(box->estimatedSpeedKmh())
+                           .arg(box->coordinate().latitude(), 0, 'f', 6)
+                           .arg(box->coordinate().longitude(), 0, 'f', 6);
+            }
+        }
+        file.close();
+        _playVoiceAlert(QStringLiteral("Mission audit report exported"));
+        triggerHapticFeedback(80);
+    }
+
+    return fullPath;
+}
+
 void AIController::_playVoiceAlert(const QString &phrase)
 {
     if (!_soundAlarmOnDetect) return;
@@ -391,6 +466,17 @@ void AIController::_handleDetections(const QList<AIDetectionRawData> &detections
     int existingCount = _detectionBoxes->count();
     int newCount = filtered.size();
 
+    // If YOLO missed targets, extrapolate ghost positions
+    if (newCount == 0 && existingCount > 0) {
+        for (int i = 0; i < existingCount; ++i) {
+            auto *existing = _detectionBoxes->value<AIDetectionBox*>(i);
+            if (existing) {
+                existing->extrapolateGhostPosition();
+            }
+        }
+        return;
+    }
+
     for (int i = 0; i < newCount; ++i) {
         const auto &raw = filtered[i];
         if (i < existingCount) {
@@ -418,7 +504,42 @@ void AIController::_handleDetections(const QList<AIDetectionRawData> &detections
     }
 
     _perfMetrics.detectedObjectsCount = newCount;
+    _checkPerimeterIntrusions();
     emit performanceMetricsChanged();
+}
+
+void AIController::_checkPerimeterIntrusions()
+{
+    bool breached = false;
+    QString breachMsg;
+
+    for (int i = 0; i < _detectionBoxes->count(); ++i) {
+        auto *box = _detectionBoxes->value<AIDetectionBox*>(i);
+        if (box && box->rangeMeters() > 0 && box->rangeMeters() < _intrusionRadiusMeters) {
+            breached = true;
+            breachMsg = QStringLiteral("PERIMETER BREACH: %1 #%2 AT %3m")
+                            .arg(box->className().toUpper())
+                            .arg(box->targetId())
+                            .arg(Math.round(box->rangeMeters()));
+            break;
+        }
+    }
+
+    if (breached != _intrusionAlertActive) {
+        _intrusionAlertActive = breached;
+        _intrusionAlertMessage = breachMsg;
+
+        if (_intrusionAlertActive) {
+            const qint64 now = QDateTime::currentMSecsSinceEpoch();
+            if (now - _lastIntrusionTime > 5000) {
+                _lastIntrusionTime = now;
+                _playVoiceAlert(QStringLiteral("Warning: Perimeter intrusion detected"));
+                triggerHapticFeedback(100);
+            }
+        }
+
+        emit intrusionAlertActiveChanged();
+    }
 }
 
 void AIController::_handlePerformanceMetrics(const AIPerformanceMetrics &metrics)

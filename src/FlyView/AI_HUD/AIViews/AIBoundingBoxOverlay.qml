@@ -42,6 +42,7 @@ Item {
             width: Math.max(modelData.width * root.videoWidth, 36)
             height: Math.max(modelData.height * root.videoHeight, 36)
             visible: QGCAIController.engineEnabled
+            opacity: modelData.isGhost ? 0.60 : 1.0
 
             readonly property bool isLocked: modelData.isLocked
             readonly property color boxColor: modelData.boxColorHex
@@ -52,10 +53,9 @@ Item {
                 anchors.centerIn: parent
                 width: 40
                 height: 40
-                visible: QGCAIController.showMotionTrails && modelData.estimatedSpeedKmh > 5.0
+                visible: QGCAIController.showMotionTrails && modelData.estimatedSpeedKmh > 5.0 && !modelData.isGhost
                 rotation: modelData.headingDeg
 
-                // Predictive Direction Arrow
                 Rectangle {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.bottom: parent.top
@@ -74,7 +74,7 @@ Item {
                 }
             }
 
-            // Tactical Corner Brackets
+            // Tactical Corner Brackets (or Dotted Ghost Outline)
             Canvas {
                 id: cornerCanvas
                 anchors.fill: parent
@@ -84,36 +84,42 @@ Item {
                     ctx.clearRect(0, 0, width, height)
 
                     ctx.strokeStyle = boxItem.boxColor
-                    ctx.lineWidth = boxItem.isLocked ? (QGCAIController.sunlightHighContrast ? 4.0 : 3.0) : (QGCAIController.sunlightHighContrast ? 3.0 : 2.0)
+                    ctx.lineWidth = boxItem.isLocked ? 3.5 : 2.0
                     var cl = boxItem.cornerLen
 
-                    // Top-Left
-                    ctx.beginPath()
-                    ctx.moveTo(0, cl)
-                    ctx.lineTo(0, 0)
-                    ctx.lineTo(cl, 0)
-                    ctx.stroke()
+                    if (modelData.isGhost) {
+                        ctx.setLineDash([4, 4])
+                        ctx.strokeRect(0, 0, width, height)
+                    } else {
+                        ctx.setLineDash([])
+                        // Top-Left
+                        ctx.beginPath()
+                        ctx.moveTo(0, cl)
+                        ctx.lineTo(0, 0)
+                        ctx.lineTo(cl, 0)
+                        ctx.stroke()
 
-                    // Top-Right
-                    ctx.beginPath()
-                    ctx.moveTo(width - cl, 0)
-                    ctx.lineTo(width, 0)
-                    ctx.lineTo(width, cl)
-                    ctx.stroke()
+                        // Top-Right
+                        ctx.beginPath()
+                        ctx.moveTo(width - cl, 0)
+                        ctx.lineTo(width, 0)
+                        ctx.lineTo(width, cl)
+                        ctx.stroke()
 
-                    // Bottom-Right
-                    ctx.beginPath()
-                    ctx.moveTo(width, height - cl)
-                    ctx.lineTo(width, height)
-                    ctx.lineTo(width - cl, height)
-                    ctx.stroke()
+                        // Bottom-Right
+                        ctx.beginPath()
+                        ctx.moveTo(width, height - cl)
+                        ctx.lineTo(width, height)
+                        ctx.lineTo(width - cl, height)
+                        ctx.stroke()
 
-                    // Bottom-Left
-                    ctx.beginPath()
-                    ctx.moveTo(cl, height)
-                    ctx.lineTo(0, height)
-                    ctx.lineTo(0, height - cl)
-                    ctx.stroke()
+                        // Bottom-Left
+                        ctx.beginPath()
+                        ctx.moveTo(cl, height)
+                        ctx.lineTo(0, height)
+                        ctx.lineTo(0, height - cl)
+                        ctx.stroke()
+                    }
                 }
 
                 Connections {
@@ -181,8 +187,10 @@ Item {
                     }
 
                     QGCLabel {
-                        text: qsTr("%1 #%2 [%3%]").arg(modelData.className).arg(modelData.targetId).arg(Math.round(modelData.confidence * 100))
-                        font.pointSize: ScreenTools.smallFontPointSize * 0.85
+                        text: modelData.isGhost ?
+                              qsTr("👻 GHOST PREDICTED #%1").arg(modelData.targetId) :
+                              qsTr("%1 #%2 [%3%]").arg(modelData.className).arg(modelData.targetId).arg(Math.round(modelData.confidence * 100))
+                        font.pointSize: ScreenTools.smallFontPointSize * 0.82
                         font.bold: true
                         color: boxItem.boxColor
                         anchors.verticalCenter: parent.verticalCenter
@@ -190,7 +198,7 @@ Item {
                 }
             }
 
-            // Bottom-Right Range & Speed Badge
+            // Bottom-Right Range & Speed Badge + Threat Score
             Rectangle {
                 anchors.top: parent.bottom
                 anchors.right: parent.right
@@ -209,8 +217,8 @@ Item {
                     spacing: 4
 
                     QGCLabel {
-                        text: qsTr("RNG: %1m | %2 km/h").arg(Math.round(modelData.rangeMeters)).arg(Math.round(modelData.estimatedSpeedKmh))
-                        font.pointSize: ScreenTools.smallFontPointSize * 0.72
+                        text: qsTr("RNG: %1m | %2 km/h | THR: %3%").arg(Math.round(modelData.rangeMeters)).arg(Math.round(modelData.estimatedSpeedKmh)).arg(modelData.threatScore)
+                        font.pointSize: ScreenTools.smallFontPointSize * 0.70
                         font.bold: true
                         color: boxItem.boxColor
                     }

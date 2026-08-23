@@ -78,7 +78,48 @@ Item {
         mapControl: root.mapControl
     }
 
-    // 2. Quick Target Class Filter Chips Bar (Top Center)
+    // 2. Virtual Perimeter Intrusion Siren Alert Banner
+    Rectangle {
+        id: intrusionBanner
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.topMargin: ScreenTools.defaultFontPixelHeight * 4.0
+        width: Math.min(parent.width * 0.75, ScreenTools.defaultFontPixelWidth * 42)
+        height: ScreenTools.defaultFontPixelHeight * 2.2
+        radius: 4
+        color: "#CCFF0033"
+        border.color: "#FF3B30"
+        border.width: 2
+        visible: QGCAIController.intrusionAlertActive
+        z: 25
+
+        SequentialAnimation on opacity {
+            loops: Animation.Infinite
+            running: intrusionBanner.visible
+            NumberAnimation { from: 1.0; to: 0.4; duration: 400 }
+            NumberAnimation { from: 0.4; to: 1.0; duration: 400 }
+        }
+
+        RowLayout {
+            anchors.fill: parent
+            anchors.margins: 6
+
+            QGCLabel {
+                text: qsTr("⚠️ %1").arg(QGCAIController.intrusionAlertMessage)
+                font.bold: true
+                font.pointSize: ScreenTools.defaultFontPointSize * 0.95
+                color: "#FFFFFF"
+                Layout.fillWidth: true
+            }
+
+            QGCButton {
+                text: qsTr("MUTE")
+                onClicked: QGCAIController.dismissIntrusionAlert()
+            }
+        }
+    }
+
+    // 3. Quick Target Class Filter Chips Bar (Top Center)
     Row {
         id: filterChipsRow
         anchors.top: parent.top
@@ -123,7 +164,7 @@ Item {
         }
     }
 
-    // 3. AI Performance Telemetry Panel (Active in AI_MODE)
+    // 4. AI Performance Telemetry Panel (Active in AI_MODE)
     AIPerformanceHUD {
         id: aiPerfPanel
         anchors.left: parent.left
@@ -134,21 +175,21 @@ Item {
         z: 10
     }
 
-    // 4. UAV Artificial Horizon & Pitch Ladder (Active in UAV_MODE)
+    // 5. UAV Artificial Horizon & Pitch Ladder (Active in UAV_MODE)
     UAVFlightHorizonHUD {
         id: uavHorizon
         anchors.fill: parent
         visible: QGCAIController.hudMode === QGCAIController.UAV_MODE
     }
 
-    // 5. UAV Speed & Altitude Tapes (Active in UAV_MODE)
+    // 6. UAV Speed & Altitude Tapes (Active in UAV_MODE)
     UAVSpeedAltitudeTapes {
         id: uavTapes
         anchors.fill: parent
         visible: QGCAIController.hudMode === QGCAIController.UAV_MODE
     }
 
-    // 6. UAV Flight Status Bar (Active in UAV_MODE and HYBRID_MODE)
+    // 7. UAV Flight Status Bar (Active in UAV_MODE and HYBRID_MODE)
     UAVBatteryLinkPanel {
         id: uavStatusPanel
         anchors.bottom: parent.bottom
@@ -158,7 +199,7 @@ Item {
         z: 10
     }
 
-    // 7. Top-Right Quick Action Bar (Mode Switcher & AI Controls Button)
+    // 8. Top-Right Quick Action Bar (Mode Switcher, Target Cycler & AI Controls Button)
     Row {
         id: topControlRow
         anchors.top: parent.top
@@ -167,6 +208,29 @@ Item {
         anchors.rightMargin: ScreenTools.defaultFontPixelWidth * 1.5
         spacing: ScreenTools.defaultFontPixelWidth * 0.8
         z: 20
+
+        Rectangle {
+            width: ScreenTools.defaultFontPixelWidth * 5.5
+            height: ScreenTools.defaultFontPixelHeight * 2.0
+            radius: 4
+            color: Qt.rgba(0.04, 0.07, 0.12, 0.85)
+            border.color: "#00E5FF"
+            border.width: 1
+            visible: QGCAIController.detectionBoxes.count > 0
+
+            QGCLabel {
+                anchors.centerIn: parent
+                text: qsTr("⏭️ NEXT")
+                font.bold: true
+                font.pointSize: ScreenTools.smallFontPointSize * 0.75
+                color: "#00E5FF"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: QGCAIController.cycleNextTarget()
+            }
+        }
 
         HUDModeToggleButton {
             id: modeToggleBtn
@@ -180,7 +244,7 @@ Item {
         }
     }
 
-    // 8. Slide-Out AI Features Control Drawer
+    // 9. Slide-Out AI Features Control Drawer
     AIFeaturesControlDrawer {
         id: aiDrawer
         visible: false
