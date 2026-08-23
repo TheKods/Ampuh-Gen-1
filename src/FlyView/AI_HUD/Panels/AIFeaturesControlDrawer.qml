@@ -303,6 +303,37 @@ Rectangle {
                     onClicked: QGCAIController.setAutoGeoTagOnDetect(checked)
                 }
             }
+
+            Rectangle {
+                Layout.fillWidth: true
+                height: 1
+                color: Qt.rgba(1, 1, 1, 0.1)
+            }
+
+            // 7. Mobile & Display Field Settings
+            ColumnLayout {
+                Layout.fillWidth: true
+                spacing: 6
+
+                QGCLabel {
+                    text: qsTr("7. MOBILE FIELD DISPLAY")
+                    font.bold: true
+                    font.pointSize: ScreenTools.smallFontPointSize
+                    color: "#E0E0E0"
+                }
+
+                QGCCheckBox {
+                    text: qsTr("☀️ Sunlight High-Contrast Mode")
+                    checked: QGCAIController.sunlightHighContrast
+                    onClicked: QGCAIController.setSunlightHighContrast(checked)
+                }
+
+                QGCCheckBox {
+                    text: qsTr("🔒 Keep Screen ON (Anti-Sleep)")
+                    checked: QGCAIController.keepScreenOn
+                    onClicked: QGCAIController.setKeepScreenOn(checked)
+                }
+            }
         }
     }
 }
