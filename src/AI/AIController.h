@@ -42,10 +42,12 @@ public:
     Q_PROPERTY(bool engineEnabled READ isEngineEnabled WRITE setEngineEnabled NOTIFY engineEnabledChanged)
     Q_PROPERTY(QString activeModel READ activeModel WRITE switchModel NOTIFY activeModelChanged)
     Q_PROPERTY(QStringList availableModels READ availableModels CONSTANT)
+    Q_PROPERTY(QString activeClassFilter READ activeClassFilter WRITE setClassFilter NOTIFY activeClassFilterChanged)
     Q_PROPERTY(double confidenceThreshold READ confidenceThreshold WRITE setConfidenceThreshold NOTIFY confidenceThresholdChanged)
     Q_PROPERTY(int lockedTargetId READ lockedTargetId WRITE lockTargetById NOTIFY lockedTargetIdChanged)
     Q_PROPERTY(bool autoGimbalTracking READ autoGimbalTracking WRITE setAutoGimbalTracking NOTIFY autoGimbalTrackingChanged)
     Q_PROPERTY(bool autoZoomEnabled READ autoZoomEnabled WRITE setAutoZoomEnabled NOTIFY autoZoomEnabledChanged)
+    Q_PROPERTY(bool showMotionTrails READ showMotionTrails WRITE setShowMotionTrails NOTIFY showMotionTrailsChanged)
     Q_PROPERTY(bool autoSnapshotOnDetect READ autoSnapshotOnDetect WRITE setAutoSnapshotOnDetect NOTIFY autoSnapshotOnDetectChanged)
     Q_PROPERTY(bool autoGeoTagOnDetect READ autoGeoTagOnDetect WRITE setAutoGeoTagOnDetect NOTIFY autoGeoTagOnDetectChanged)
     Q_PROPERTY(bool soundAlarmOnDetect READ soundAlarmOnDetect WRITE setSoundAlarmOnDetect NOTIFY soundAlarmOnDetectChanged)
@@ -79,10 +81,12 @@ public:
     [[nodiscard]] bool isEngineEnabled() const { return _engineEnabled; }
     [[nodiscard]] QString activeModel() const { return _activeModel; }
     [[nodiscard]] QStringList availableModels() const { return _availableModels; }
+    [[nodiscard]] QString activeClassFilter() const { return _activeClassFilter; }
     [[nodiscard]] double confidenceThreshold() const { return _confidenceThreshold; }
     [[nodiscard]] int lockedTargetId() const { return _lockedTargetId; }
     [[nodiscard]] bool autoGimbalTracking() const { return _autoGimbalTracking; }
     [[nodiscard]] bool autoZoomEnabled() const { return _autoZoomEnabled; }
+    [[nodiscard]] bool showMotionTrails() const { return _showMotionTrails; }
     [[nodiscard]] bool autoSnapshotOnDetect() const { return _autoSnapshotOnDetect; }
     [[nodiscard]] bool autoGeoTagOnDetect() const { return _autoGeoTagOnDetect; }
     [[nodiscard]] bool soundAlarmOnDetect() const { return _soundAlarmOnDetect; }
@@ -108,6 +112,7 @@ public:
     Q_INVOKABLE void toggleHudMode();
     Q_INVOKABLE void setVideoPalette(VideoPalette palette);
     Q_INVOKABLE void cycleVideoPalette();
+    Q_INVOKABLE void setClassFilter(const QString &filter);
     Q_INVOKABLE void setEngineEnabled(bool enabled);
     Q_INVOKABLE void switchModel(const QString &modelName);
     Q_INVOKABLE void setConfidenceThreshold(double threshold);
@@ -115,6 +120,7 @@ public:
     Q_INVOKABLE void unlockTarget();
     Q_INVOKABLE void setAutoGimbalTracking(bool enabled);
     Q_INVOKABLE void setAutoZoomEnabled(bool enabled);
+    Q_INVOKABLE void setShowMotionTrails(bool enabled);
     Q_INVOKABLE void setAutoSnapshotOnDetect(bool enabled);
     Q_INVOKABLE void setAutoGeoTagOnDetect(bool enabled);
     Q_INVOKABLE void setSoundAlarmOnDetect(bool enabled);
@@ -126,6 +132,7 @@ public:
     // Autonomous Flight Guided Actions to Target
     Q_INVOKABLE void flyToTarget(int targetId);
     Q_INVOKABLE void orbitTarget(int targetId, double radiusMeters = 30.0);
+    Q_INVOKABLE void setTargetAsROI(int targetId);
     Q_INVOKABLE void captureTargetEvidence(int targetId);
 
 signals:
@@ -133,10 +140,12 @@ signals:
     void videoPaletteChanged();
     void engineEnabledChanged();
     void activeModelChanged();
+    void activeClassFilterChanged();
     void confidenceThresholdChanged();
     void lockedTargetIdChanged();
     void autoGimbalTrackingChanged();
     void autoZoomEnabledChanged();
+    void showMotionTrailsChanged();
     void autoSnapshotOnDetectChanged();
     void autoGeoTagOnDetectChanged();
     void soundAlarmOnDetectChanged();
@@ -161,10 +170,12 @@ private:
     bool _engineEnabled = true;
     QString _activeModel = QStringLiteral("YOLOv8s-FP16 (General)");
     QStringList _availableModels;
+    QString _activeClassFilter = QStringLiteral("ALL");
     double _confidenceThreshold = 0.60;
     int _lockedTargetId = -1;
     bool _autoGimbalTracking = false;
     bool _autoZoomEnabled = false;
+    bool _showMotionTrails = true;
     bool _autoSnapshotOnDetect = false;
     bool _autoGeoTagOnDetect = false;
     bool _soundAlarmOnDetect = true;

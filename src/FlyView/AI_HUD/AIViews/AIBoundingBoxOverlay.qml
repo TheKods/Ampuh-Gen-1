@@ -47,6 +47,33 @@ Item {
             readonly property color boxColor: modelData.boxColorHex
             readonly property real cornerLen: Math.min(width, height) * 0.28
 
+            // Motion Velocity Vector & Heading Pointer
+            Item {
+                anchors.centerIn: parent
+                width: 40
+                height: 40
+                visible: QGCAIController.showMotionTrails && modelData.estimatedSpeedKmh > 5.0
+                rotation: modelData.headingDeg
+
+                // Predictive Direction Arrow
+                Rectangle {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottom: parent.top
+                    width: 2
+                    height: 18
+                    color: boxItem.boxColor
+
+                    Rectangle {
+                        anchors.top: parent.top
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        width: 6
+                        height: 6
+                        rotation: 45
+                        color: boxItem.boxColor
+                    }
+                }
+            }
+
             // Tactical Corner Brackets
             Canvas {
                 id: cornerCanvas
@@ -57,7 +84,7 @@ Item {
                     ctx.clearRect(0, 0, width, height)
 
                     ctx.strokeStyle = boxItem.boxColor
-                    ctx.lineWidth = boxItem.isLocked ? 3.0 : 2.0
+                    ctx.lineWidth = boxItem.isLocked ? (QGCAIController.sunlightHighContrast ? 4.0 : 3.0) : (QGCAIController.sunlightHighContrast ? 3.0 : 2.0)
                     var cl = boxItem.cornerLen
 
                     // Top-Left
@@ -136,9 +163,9 @@ Item {
                 height: ScreenTools.defaultFontPixelHeight * 1.35
                 width: tagRow.width + ScreenTools.defaultFontPixelWidth * 0.8
                 radius: 3
-                color: Qt.rgba(0.04, 0.07, 0.10, 0.90)
+                color: QGCAIController.sunlightHighContrast ? "#000000" : Qt.rgba(0.04, 0.07, 0.10, 0.90)
                 border.color: boxItem.boxColor
-                border.width: 1
+                border.width: QGCAIController.sunlightHighContrast ? 2 : 1
 
                 Row {
                     id: tagRow
@@ -171,9 +198,9 @@ Item {
                 height: ScreenTools.defaultFontPixelHeight * 1.15
                 width: rangeRow.width + ScreenTools.defaultFontPixelWidth * 0.6
                 radius: 2
-                color: Qt.rgba(0.04, 0.07, 0.10, 0.90)
+                color: QGCAIController.sunlightHighContrast ? "#000000" : Qt.rgba(0.04, 0.07, 0.10, 0.90)
                 border.color: boxItem.boxColor
-                border.width: 1
+                border.width: QGCAIController.sunlightHighContrast ? 2 : 1
                 visible: modelData.rangeMeters > 0
 
                 Row {
@@ -190,7 +217,7 @@ Item {
                 }
             }
 
-            // Floating Action Buttons on Locked Target (Fly To / Orbit)
+            // Floating Action Buttons on Locked Target (Fly To / Orbit / ROI)
             Row {
                 anchors.bottom: parent.top
                 anchors.right: parent.right
@@ -199,7 +226,7 @@ Item {
                 visible: boxItem.isLocked
 
                 Rectangle {
-                    width: ScreenTools.defaultFontPixelWidth * 6
+                    width: ScreenTools.defaultFontPixelWidth * 5.5
                     height: ScreenTools.defaultFontPixelHeight * 1.3
                     radius: 3
                     color: "#FF3B30"
@@ -219,7 +246,7 @@ Item {
                 }
 
                 Rectangle {
-                    width: ScreenTools.defaultFontPixelWidth * 6
+                    width: ScreenTools.defaultFontPixelWidth * 5.5
                     height: ScreenTools.defaultFontPixelHeight * 1.3
                     radius: 3
                     color: "#00E5FF"
@@ -235,6 +262,26 @@ Item {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: QGCAIController.orbitTarget(modelData.targetId, 30.0)
+                    }
+                }
+
+                Rectangle {
+                    width: ScreenTools.defaultFontPixelWidth * 5.5
+                    height: ScreenTools.defaultFontPixelHeight * 1.3
+                    radius: 3
+                    color: "#FFD600"
+
+                    QGCLabel {
+                        anchors.centerIn: parent
+                        text: qsTr("LOCK ROI")
+                        font.bold: true
+                        font.pointSize: ScreenTools.smallFontPointSize * 0.7
+                        color: "#000000"
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: QGCAIController.setTargetAsROI(modelData.targetId)
                     }
                 }
             }

@@ -78,7 +78,52 @@ Item {
         mapControl: root.mapControl
     }
 
-    // 2. AI Performance Telemetry Panel (Active in AI_MODE)
+    // 2. Quick Target Class Filter Chips Bar (Top Center)
+    Row {
+        id: filterChipsRow
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.topMargin: ScreenTools.defaultFontPixelHeight * 1.2
+        spacing: ScreenTools.defaultFontPixelWidth * 0.6
+        visible: (QGCAIController.hudMode === QGCAIController.AI_MODE || QGCAIController.hudMode === QGCAIController.HYBRID_MODE) && QGCAIController.engineEnabled
+        z: 20
+
+        Repeater {
+            model: [
+                { name: "ALL", label: "ALL", color: "#00E5FF" },
+                { name: "PERSON", label: "🟢 PERSON", color: "#00FF66" },
+                { name: "VEHICLE", label: "🔵 VEHICLE", color: "#00E5FF" },
+                { name: "BOAT", label: "🟡 BOAT", color: "#FFD600" }
+            ]
+
+            Rectangle {
+                width: chipText.contentWidth + ScreenTools.defaultFontPixelWidth * 1.2
+                height: ScreenTools.defaultFontPixelHeight * 1.3
+                radius: height / 2
+                color: QGCAIController.activeClassFilter === modelData.name ?
+                       Qt.rgba(0, 0.9, 1, 0.85) : Qt.rgba(0.04, 0.07, 0.12, 0.85)
+                border.color: modelData.color
+                border.width: 1
+
+                QGCLabel {
+                    id: chipText
+                    anchors.centerIn: parent
+                    text: modelData.label
+                    font.bold: true
+                    font.pointSize: ScreenTools.smallFontPointSize * 0.8
+                    color: QGCAIController.activeClassFilter === modelData.name ?
+                           "#000000" : modelData.color
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: QGCAIController.setClassFilter(modelData.name)
+                }
+            }
+        }
+    }
+
+    // 3. AI Performance Telemetry Panel (Active in AI_MODE)
     AIPerformanceHUD {
         id: aiPerfPanel
         anchors.left: parent.left
@@ -89,21 +134,21 @@ Item {
         z: 10
     }
 
-    // 3. UAV Artificial Horizon & Pitch Ladder (Active in UAV_MODE)
+    // 4. UAV Artificial Horizon & Pitch Ladder (Active in UAV_MODE)
     UAVFlightHorizonHUD {
         id: uavHorizon
         anchors.fill: parent
         visible: QGCAIController.hudMode === QGCAIController.UAV_MODE
     }
 
-    // 4. UAV Speed & Altitude Tapes (Active in UAV_MODE)
+    // 5. UAV Speed & Altitude Tapes (Active in UAV_MODE)
     UAVSpeedAltitudeTapes {
         id: uavTapes
         anchors.fill: parent
         visible: QGCAIController.hudMode === QGCAIController.UAV_MODE
     }
 
-    // 5. UAV Flight Status Bar (Active in UAV_MODE and HYBRID_MODE)
+    // 6. UAV Flight Status Bar (Active in UAV_MODE and HYBRID_MODE)
     UAVBatteryLinkPanel {
         id: uavStatusPanel
         anchors.bottom: parent.bottom
@@ -113,7 +158,7 @@ Item {
         z: 10
     }
 
-    // 6. Top-Right Quick Action Bar (Mode Switcher & AI Controls Button)
+    // 7. Top-Right Quick Action Bar (Mode Switcher & AI Controls Button)
     Row {
         id: topControlRow
         anchors.top: parent.top
@@ -135,7 +180,7 @@ Item {
         }
     }
 
-    // 7. Slide-Out AI Features Control Drawer
+    // 8. Slide-Out AI Features Control Drawer
     AIFeaturesControlDrawer {
         id: aiDrawer
         visible: false

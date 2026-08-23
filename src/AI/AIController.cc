@@ -102,6 +102,24 @@ void AIController::cycleVideoPalette()
     setVideoPalette(static_cast<VideoPalette>(nextPal));
 }
 
+void AIController::setClassFilter(const QString &filter)
+{
+    if (_activeClassFilter != filter) {
+        _activeClassFilter = filter.toUpper();
+        triggerHapticFeedback(30);
+        emit activeClassFilterChanged();
+    }
+}
+
+void AIController::setShowMotionTrails(bool enabled)
+{
+    if (_showMotionTrails != enabled) {
+        _showMotionTrails = enabled;
+        triggerHapticFeedback(30);
+        emit showMotionTrailsChanged();
+    }
+}
+
 void AIController::setSunlightHighContrast(bool enabled)
 {
     if (_sunlightHighContrast != enabled) {
@@ -176,7 +194,7 @@ void AIController::lockTargetById(int targetId)
 {
     if (_lockedTargetId != targetId) {
         _lockedTargetId = targetId;
-        triggerHapticFeedback(60); // Tactical haptic vibration on target lock/unlock
+        triggerHapticFeedback(60);
 
         QString lockedClass = QStringLiteral("Target");
         for (int i = 0; i < _detectionBoxes->count(); ++i) {
@@ -305,6 +323,28 @@ void AIController::orbitTarget(int targetId, double radiusMeters)
     }
 }
 
+void AIController::setTargetAsROI(int targetId)
+{
+    Vehicle *vehicle = MultiVehicleManager::instance()->activeVehicle();
+    if (!vehicle) return;
+
+    for (int i = 0; i < _detectionBoxes->count(); ++i) {
+        auto *box = _detectionBoxes->value<AIDetectionBox*>(i);
+        if (box && box->targetId() == targetId && box->coordinate().isValid()) {
+            triggerHapticFeedback(60);
+            _playVoiceAlert(QStringLiteral("Region of interest set to target %1").arg(targetId));
+            vehicle->sendMavCommand(vehicle->defaultComponentId(),
+                                   MAV_CMD_DO_SET_ROI_LOCATION,
+                                   true,
+                                   0.0f, 0.0f, 0.0f, 0.0f,
+                                   static_cast<float>(box->coordinate().latitude()),
+                                   static_cast<float>(box->coordinate().longitude()),
+                                   static_cast<float>(vehicle->altitudeRelative()->rawValue().toDouble()));
+            break;
+        }
+    }
+}
+
 void AIController::captureTargetEvidence(int targetId)
 {
     for (int i = 0; i < _detectionBoxes->count(); ++i) {
@@ -336,9 +376,16 @@ void AIController::_handleDetections(const QList<AIDetectionRawData> &detections
 
     QList<AIDetectionRawData> filtered;
     for (const auto &det : detections) {
-        if (det.confidence >= _confidenceThreshold) {
-            filtered.append(det);
+        if (det.confidence < _confidenceThreshold) continue;
+
+        if (_activeClassFilter != QStringLiteral("ALL")) {
+            const QString cls = det.className.toUpper();
+            if (_activeClassFilter == QStringLiteral("PERSON") && !cls.contains(QStringLiteral("PERSON")) && !cls.contains(QStringLiteral("HUMAN"))) continue;
+            if (_activeClassFilter == QStringLiteral("VEHICLE") && !cls.contains(QStringLiteral("VEHICLE")) && !cls.contains(QStringLiteral("CAR")) && !cls.contains(QStringLiteral("TRUCK"))) continue;
+            if (_activeClassFilter == QStringLiteral("BOAT") && !cls.contains(QStringLiteral("BOAT")) && !cls.contains(QStringLiteral("SHIP"))) continue;
         }
+
+        filtered.append(det);
     }
 
     int existingCount = _detectionBoxes->count();
