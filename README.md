@@ -16,13 +16,14 @@
 
 ## ⚡ Fitur Utama (Core Features)
 
-- 🎯 **Tactical Cyber HUD (FlyView)** — Dilengkapi pita kompas 360° (*Heading Ribbon*), indikator sikap pesawat (*Attitude Indicator*), serta bar telemetri instan (Altitude, Speed, Distance, Battery, Flight Mode).
+- 🤖 **Apex Tactical AI HUD Overlay** — Integrasi model YOLO (YOLOv8/v11/SAR) via UDP Socket 9090 dengan pelacakan kamera gimbal otonom, ray-casting GPS ke peta satelit, deteksi ghost prediction, skor ancaman otomatis, dan sirine batas perimeter virtual (Dokumentasi lengkap: [AI_HUD_MASTER_DOCUMENTATION.md](AI_HUD_MASTER_DOCUMENTATION.md)).
+- 📱 **Mobile & Android Field-Ready** — Dilengkapi Haptic Vibration Feedback, Gestur Usap 2-Jari, Sunlight High-Contrast Mode, dan Smart WakeLock untuk tablet/smartphone di lapangan.
 - 🛰️ **Autonomous Mission Planning** — Perencanaan misi cerdas: waypoint navigasi, pemetaan survey grid, struktur 3D scan, serta fail-safe return-to-launch (RTL).
 - 🎨 **Stealth Cyber-Dark Theme** — Palet warna antarmuka taktis dengan kontras tinggi (*Stealth Slate*, *Cyber Cyan*, dan *Sky Blue*) untuk kenyamanan operasional siang & malam.
 - ⚙️ **Vehicle Setup & Calibration** — Wizard terpandu untuk kalibrasi sensor IMU, kompas, radio transmitter, flight modes, dan power module.
 - 📡 **MAVLink High-Speed Protocol** — Kompatibel penuh dengan telemetri radio, serial link, UDP WiFi/LAN, serta Bluetooth.
 - 📹 **Low-Latency Video Pipeline** — Streaming video RTP/RTSP terintegrasi berbasis GStreamer dengan perekaman langsung pada layar terbang.
-- 🛡️ **Defensive Architecture** — Modul kustom independen (`custom/`) yang terisolasi dan mudah di-upgrade.
+- 🛡️ **Defensive Architecture** — Modul kustom independen (`custom/` & `src/AI/`) yang terisolasi dan mudah di-upgrade.
 
 ---
 
