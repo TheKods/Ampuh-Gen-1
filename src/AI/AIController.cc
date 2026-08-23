@@ -185,6 +185,19 @@ void AIController::setKeepScreenOn(bool enabled)
     }
 }
 
+bool AIController::isSimulationMode() const
+{
+    return _receiverSocket ? _receiverSocket->isSimulationMode() : false;
+}
+
+void AIController::setSimulationMode(bool enabled)
+{
+    if (_receiverSocket && _receiverSocket->isSimulationMode() != enabled) {
+        _receiverSocket->setSimulationMode(enabled);
+        emit simulationModeChanged();
+    }
+}
+
 void AIController::triggerHapticFeedback(int durationMs)
 {
     if (_systemMonitor) {
@@ -321,7 +334,7 @@ void AIController::flyToTarget(int targetId)
         if (box && box->targetId() == targetId && box->coordinate().isValid()) {
             triggerHapticFeedback(70);
             _playVoiceAlert(QStringLiteral("Navigating to target %1").arg(targetId));
-            vehicle->guidedModeChange();
+            vehicle->setGuidedMode(true);
             vehicle->sendMavCommand(vehicle->defaultComponentId(),
                                    MAV_CMD_DO_REPOSITION,
                                    true,
@@ -347,7 +360,7 @@ void AIController::orbitTarget(int targetId, double radiusMeters)
         if (box && box->targetId() == targetId && box->coordinate().isValid()) {
             triggerHapticFeedback(70);
             _playVoiceAlert(QStringLiteral("Orbiting target %1").arg(targetId));
-            vehicle->guidedModeChange();
+            vehicle->setGuidedMode(true);
             vehicle->sendMavCommand(vehicle->defaultComponentId(),
                                    MAV_CMD_DO_ORBIT,
                                    true,
@@ -520,7 +533,7 @@ void AIController::_checkPerimeterIntrusions()
             breachMsg = QStringLiteral("PERIMETER BREACH: %1 #%2 AT %3m")
                             .arg(box->className().toUpper())
                             .arg(box->targetId())
-                            .arg(Math.round(box->rangeMeters()));
+                            .arg(qRound(box->rangeMeters()));
             break;
         }
     }

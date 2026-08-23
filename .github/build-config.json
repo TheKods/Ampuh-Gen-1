@@ -1,8 +1,8 @@
 {
   "qt": {
-    "version": "6.8.2",
+    "version": "6.11.2",
     "minimum_version": "6.8.0",
-    "maximum_version": "6.8.99",
+    "maximum_version": "6.11.99",
     "modules": "qtpositioning qtserialport qtscxml qtquick3d qtgraphs"
   },
   "gstreamer": {
@@ -41,8 +41,8 @@
   "android": {
     "platform": "35",
     "min_sdk": "26",
-    "ndk_version": "26.1.10909125",
-    "ndk_full_version": "26.1.10909125",
+    "ndk_version": "30.0.15729638",
+    "ndk_full_version": "30.0.15729638",
     "java_version": "17",
     "build_tools": "35.0.0",
     "cmdline_tools": "14742923"

@@ -232,19 +232,16 @@ if(NOT Qt6_FOUND)
 endif()
 
 find_package(Qt6
-    ${QGC_QT_MINIMUM_VERSION}...${QGC_QT_MAXIMUM_VERSION}
+    ${QGC_QT_MINIMUM_VERSION}
     REQUIRED
     COMPONENTS
-        Graphs
         Concurrent
         Core
         Gui
         HttpServer
         LinguistTools
-        Location
         Multimedia
         Network
-        Positioning
         Qml
         QmlIntegration
         Quick
@@ -259,6 +256,9 @@ find_package(Qt6
         Quick3D
         StateMachine
     OPTIONAL_COMPONENTS
+        Graphs
+        Location
+        Positioning
         Bluetooth
         LocationPrivate
         MultimediaQuickPrivate

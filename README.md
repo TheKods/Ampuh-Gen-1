@@ -3,11 +3,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PROJECT-AMPUH%20GEN%201-00E5FF?style=for-the-badge&logo=target&logoColor=00E5FF&labelColor=0a0f18" alt="AMPUH Gen 1">
+  <a href="https://github.com/TheKods/Ampuh-Gen-1/releases/latest"><img src="https://img.shields.io/badge/RELEASE-v1.0.0%20APEX%20AI-00E5FF?style=for-the-badge&logo=github&logoColor=00E5FF&labelColor=0a0f18" alt="Latest Release"></a>
   <img src="https://img.shields.io/badge/AI%20VISION-YOLOv8%20%7C%20YOLOv11-00FF66?style=for-the-badge&logo=themodelsresource&logoColor=00FF66&labelColor=0a0f18" alt="YOLO Vision">
   <img src="https://img.shields.io/badge/PLATFORM-WINDOWS%20%7C%20ANDROID-FFD600?style=for-the-badge&logo=android&logoColor=FFD600&labelColor=0a0f18" alt="Platforms">
   <img src="https://img.shields.io/badge/PROTOCOL-MAVLINK%202.0-E040FB?style=for-the-badge&logo=drone&logoColor=E040FB&labelColor=0a0f18" alt="MAVLink">
   <img src="https://img.shields.io/badge/FRAMEWORK-QT%206.8%20%2B%20C%2B%2B20-FF3B30?style=for-the-badge&logo=qt&logoColor=FF3B30&labelColor=0a0f18" alt="Qt Framework">
+</p>
+
+<p align="center">
+  <a href="https://github.com/TheKods/Ampuh-Gen-1/releases/latest"><b>📥 Download Release v1.0.0 (Windows & Android APK)</b></a> •
+  <a href="AI_HUD_MASTER_DOCUMENTATION.md"><b>📖 Master Documentation</b></a> •
+  <a href="RELEASE_NOTES_v1.0.0.md"><b>📑 Release Notes</b></a>
 </p>
 
 ---

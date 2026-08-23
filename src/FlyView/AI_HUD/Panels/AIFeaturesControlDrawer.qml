@@ -81,6 +81,12 @@ Rectangle {
                         onClicked: QGCAIController.setEngineEnabled(false)
                     }
                 }
+
+                QGCCheckBox {
+                    text: qsTr("Enable AI Test Simulation")
+                    checked: QGCAIController.simulationMode
+                    onClicked: QGCAIController.setSimulationMode(checked)
+                }
             }
 
             Rectangle {

@@ -198,6 +198,18 @@ void AIReceiverSocket::_generateSimulatedData()
     t2.trackingStatus = QStringLiteral("TRACKING");
     detections.append(t2);
 
+    // Simulated Target 3: Boat (Maritime AI)
+    AIDetectionRawData t3;
+    t3.targetId = 201;
+    t3.className = QStringLiteral("Boat");
+    t3.confidence = 0.92;
+    t3.x = std::clamp(0.20 + 0.05 * std::cos(_simAngle * 0.5), 0.05, 0.9);
+    t3.y = std::clamp(0.70 + 0.05 * std::sin(_simAngle * 0.5), 0.05, 0.9);
+    t3.width = 0.15;
+    t3.height = 0.08;
+    t3.trackingStatus = QStringLiteral("TRACKING");
+    detections.append(t3);
+
     emit detectionsReceived(detections);
 
     // Simulated Performance Telemetry

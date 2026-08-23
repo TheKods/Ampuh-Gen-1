@@ -56,6 +56,7 @@ public:
     Q_PROPERTY(bool soundAlarmOnDetect READ soundAlarmOnDetect WRITE setSoundAlarmOnDetect NOTIFY soundAlarmOnDetectChanged)
     Q_PROPERTY(bool sunlightHighContrast READ sunlightHighContrast WRITE setSunlightHighContrast NOTIFY sunlightHighContrastChanged)
     Q_PROPERTY(bool keepScreenOn READ keepScreenOn WRITE setKeepScreenOn NOTIFY keepScreenOnChanged)
+    Q_PROPERTY(bool simulationMode READ isSimulationMode WRITE setSimulationMode NOTIFY simulationModeChanged)
     Q_PROPERTY(QmlObjectListModel* detectionBoxes READ detectionBoxes CONSTANT)
 
     // Performance Telemetry Properties
@@ -98,6 +99,7 @@ public:
     [[nodiscard]] bool soundAlarmOnDetect() const { return _soundAlarmOnDetect; }
     [[nodiscard]] bool sunlightHighContrast() const { return _sunlightHighContrast; }
     [[nodiscard]] bool keepScreenOn() const { return _keepScreenOn; }
+    [[nodiscard]] bool isSimulationMode() const;
     [[nodiscard]] QmlObjectListModel* detectionBoxes() const { return _detectionBoxes; }
 
     [[nodiscard]] double inferenceFps() const { return _perfMetrics.inferenceFps; }
@@ -136,6 +138,7 @@ public:
     Q_INVOKABLE void setSunlightHighContrast(bool enabled);
     Q_INVOKABLE void toggleSunlightHighContrast();
     Q_INVOKABLE void setKeepScreenOn(bool enabled);
+    Q_INVOKABLE void setSimulationMode(bool enabled);
     Q_INVOKABLE void triggerHapticFeedback(int durationMs = 50);
 
     // Autonomous Flight Guided Actions to Target
@@ -163,6 +166,7 @@ signals:
     void soundAlarmOnDetectChanged();
     void sunlightHighContrastChanged();
     void keepScreenOnChanged();
+    void simulationModeChanged();
     void performanceMetricsChanged();
 
 private slots:

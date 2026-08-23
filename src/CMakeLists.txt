@@ -33,6 +33,7 @@ endif()
 # ============================================================================
 
 # Core subsystems
+add_subdirectory(MAVLink)
 add_subdirectory(ADSB)
 add_subdirectory(AI)
 add_subdirectory(AnalyzeView)
@@ -52,7 +53,6 @@ add_subdirectory(Utilities)
 # Must be added after Utilities — links QGCLogging/QGCFileSystem/QGCNetwork/QGCCompression.
 add_subdirectory(LogManager)
 add_subdirectory(Joystick)
-add_subdirectory(MAVLink)
 add_subdirectory(MissionManager)
 add_subdirectory(PlanView)
 add_subdirectory(PositionManager)

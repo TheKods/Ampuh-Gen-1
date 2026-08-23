@@ -239,7 +239,7 @@ def configure(config: CMakeConfig) -> int:
             os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\WinGet\Links"),
             r"C:\Program Files\Git\cmd",
         ]
-        if qt_cmake:
+        if config.use_qt_cmake and qt_cmake:
             extra_paths.append(str(qt_cmake.parent.resolve()))
         current_path = env.get("PATH", "")
         for p in extra_paths:
