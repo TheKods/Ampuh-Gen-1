@@ -41,8 +41,8 @@
   "android": {
     "platform": "34",
     "min_sdk": "26",
-    "ndk_version": "30.0.15729638",
-    "ndk_full_version": "30.0.15729638",
+    "ndk_version": "27.2.12479018",
+    "ndk_full_version": "27.2.12479018",
     "java_version": "17",
     "build_tools": "34.0.0",
     "cmdline_tools": "14742923"

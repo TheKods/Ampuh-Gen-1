@@ -18,7 +18,7 @@ if(NOT GIT_FOUND OR NOT EXISTS "${CMAKE_SOURCE_DIR}/.git")
     set(QGC_APP_VERSION_MINOR "0")
     set(QGC_APP_VERSION_PATCH "0")
     set(QGC_APP_VERSION_DEV "0")
-    string(TIMESTAMP QGC_APP_DATE "%Y-%m-%dT%H:%M:%S%z" UTC)
+    string(TIMESTAMP QGC_APP_DATE "%Y-%m-%dT%H:%M:%SZ" UTC)
     configure_file(
         "${CMAKE_SOURCE_DIR}/src/qgc_version.h.in"
         "${CMAKE_BINARY_DIR}/qgc_version.h"
@@ -181,7 +181,7 @@ execute_process(
     ERROR_QUIET
 )
 if(NOT QGC_APP_DATE)
-    string(TIMESTAMP QGC_APP_DATE "%Y-%m-%dT%H:%M:%S%z" UTC)
+    string(TIMESTAMP QGC_APP_DATE "%Y-%m-%dT%H:%M:%SZ" UTC)
 endif()
 # cmake_print_variables(QGC_APP_DATE)
 
@@ -192,6 +192,7 @@ endif()
 string(REGEX REPLACE "^(v|Version-|Version_)" "" QGC_APP_VERSION_CLEAN "${QGC_APP_VERSION}")
 
 # Extract version components using regex (Major.Minor.Patch)
+# Allows optional .Minor and .Patch components
 if(QGC_APP_VERSION_CLEAN MATCHES "^([0-9]+)(\\.([0-9]+))?(\\.([0-9]+))?")
     set(QGC_APP_VERSION_MAJOR "${CMAKE_MATCH_1}")
     set(QGC_APP_VERSION_MINOR "${CMAKE_MATCH_3}")

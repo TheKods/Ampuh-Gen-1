@@ -1,13 +1,6 @@
-// Root build.gradle - Single Module Configuration
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.13.2'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21"
-    }
+plugins {
+    id 'com.android.application' version '8.7.3'
+    id 'org.jetbrains.kotlin.android' version '1.9.24'
 }
 
 allprojects {
@@ -18,9 +11,6 @@ allprojects {
     }
 }
 
-apply plugin: 'com.android.application'
-apply plugin: 'org.jetbrains.kotlin.android'
-
 Properties properties = new Properties()
 if (project.rootProject.file('local.properties').exists()) {
     properties.load(project.rootProject.file('local.properties').newDataInputStream())
@@ -29,7 +19,7 @@ if (project.rootProject.file('local.properties').exists()) {
 def qtAndroidDir = properties.getProperty('qt.target.root.dir') ?: System.getenv("QT_TARGET_ROOT_DIR") ?: "${project.rootDir}/.qt/6.7.3/android_arm64_v8a"
 def qtHostDir = properties.getProperty('qt.host.path') ?: System.getenv("QT_HOST_PATH") ?: "${project.rootDir}/.qt/6.7.3/mingw_64"
 def sdkDir = properties.getProperty('sdk.dir') ?: System.getenv("ANDROID_SDK_ROOT")
-def ndkDir = "${sdkDir}/ndk/30.0.15729638"
+def ndkDir = "${sdkDir}/ndk/27.2.12479018"
 
 // Normalize paths
 qtAndroidDir = file(qtAndroidDir).absolutePath.replace('\\', '/')
@@ -44,7 +34,7 @@ if (!file(qtAndroidDir).exists() || !file(qtHostDir).exists()) {
 android {
     namespace 'org.mavlink.qgroundcontrol'
     compileSdkVersion 34
-    ndkVersion '30.0.15729638'
+    ndkVersion '27.2.12479018'
 
     sourceSets {
         main {
@@ -104,7 +94,10 @@ android {
                           "-DQT_TARGET_ROOT_DIR=${qtAndroidDir}",
                           "-DANDROID_SDK_ROOT=${sdkDir}",
                           "-DANDROID_NDK_ROOT=${ndkDir}",
-                          "-DQT_CHAINLOAD_TOOLCHAIN_FILE=${ndkDir}/build/cmake/android.toolchain.cmake"
+                          "-DQT_CHAINLOAD_TOOLCHAIN_FILE=${ndkDir}/build/cmake/android.toolchain.cmake",
+                          "-DQGC_BUILD_TESTING=OFF",
+                          "-DQGC_VERBOSE_CONFIGURE=ON",
+                          "-DQGC_USE_CACHE=ON"
             }
         }
     }
