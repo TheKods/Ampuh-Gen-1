@@ -15,7 +15,7 @@
 
 #include <algorithm>
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QDir>
 #include <QtCore/QTimeZone>
 #include <QtCore/QTimer>

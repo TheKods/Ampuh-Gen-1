@@ -1,6 +1,6 @@
 #pragma once
 
-#include <QtCore/QChronoTimer>
+#include <QtCore/QTimer>
 #include <QtCore/QRegularExpression>
 #include <QtCore/QSet>
 #include <QtCore/QStringList>
@@ -97,7 +97,7 @@ private:
     std::deque<LogEntry> _entries;
     std::vector<LogEntry> _pendingEntries;
     std::vector<int> _filteredIndices;
-    QChronoTimer _batchTimer{std::chrono::milliseconds{kBatchFlushMs}};
+    QTimer _batchTimer;
     QTimer _filterTextDebounce;
     QString _pendingFilterText;
 

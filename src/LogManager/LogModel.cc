@@ -8,8 +8,9 @@ QGC_LOGGING_CATEGORY(LogModelLog, "Utilities.LogModel")
 
 LogModel::LogModel(QObject* parent) : LogEntryTableModel(parent)
 {
+    _batchTimer.setInterval(kBatchFlushMs);
     _batchTimer.setSingleShot(true);
-    (void)connect(&_batchTimer, &QChronoTimer::timeout, this, &LogModel::_flushPending);
+    (void)connect(&_batchTimer, &QTimer::timeout, this, &LogModel::_flushPending);
 
     _filterTextDebounce.setInterval(kFilterDebounceMs);
     _filterTextDebounce.setSingleShot(true);

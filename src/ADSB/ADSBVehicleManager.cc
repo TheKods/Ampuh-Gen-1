@@ -8,7 +8,7 @@
 #include "QmlObjectListModel.h"
 #include "QGCLoggingCategory.h"
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QThread>
 #include <QtCore/QTimer>
 

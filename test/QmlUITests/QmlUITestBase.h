@@ -86,6 +86,10 @@ protected:
     /// cannot be found.
     bool clickItemFraction(const QString& objectName, qreal fractionX, qreal fractionY);
 
+    /// Synthesize a mouse wheel event at \a pos (in window coordinates).
+    /// \a angleDelta is in eighths of a degree (standard Qt mouse wheel delta).
+    void mouseWheel(const QPoint& pos, const QPoint& angleDelta);
+
     /// Find an item that may live in a virtualized view (ListView/TableView/
     /// TreeView) inside the flickable with \a flickableObjectName. Virtualized
     /// delegates only exist near the viewport, so this steps the flickable

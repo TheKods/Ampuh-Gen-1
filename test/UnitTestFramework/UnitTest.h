@@ -1,10 +1,13 @@
 #pragma once
 
+#include <QtCore/QCoreApplication>
 #include <QtCore/QFlags>
 #include <QtCore/QLoggingCategory>
 #include <QtCore/QObject>
 #include <QtCore/QPointer>
 #include <QtCore/QStringView>
+#include <QtGui/QWheelEvent>
+#include <QtGui/QWindow>
 #include <QtTest/QTest>
 
 class QRegularExpression;
@@ -520,6 +523,27 @@ private:
     bool _standalone = false;
     bool _lightweight = false;
 };
+
+// ============================================================================
+// QTest Namespace Extensions
+// ============================================================================
+
+namespace QTest {
+
+/// Synthesizes a mouse wheel event for a QWindow.
+/// @param window Target window
+/// @param pos Local position within the window
+/// @param angleDelta Wheel rotation distance in eighths of a degree (QPoint(x, y))
+/// @param modifiers Keyboard modifiers
+inline void wheelEvent(QWindow* window, const QPoint& pos, const QPoint& angleDelta,
+                       Qt::KeyboardModifiers modifiers = Qt::NoModifier)
+{
+    QWheelEvent event(pos, window->mapToGlobal(pos), QPoint(), angleDelta, Qt::NoButton, modifiers,
+                      Qt::NoScrollPhase, /*inverted=*/false);
+    QCoreApplication::sendEvent(window, &event);
+}
+
+} // namespace QTest
 
 // ============================================================================
 // UnitTestWrapper - Handles static registration

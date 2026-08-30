@@ -263,10 +263,10 @@ void FlyViewGeoUITest::_testCameraGestures()
 
     // Wheel up: zoom in; wheel down: zoom out
     resetPose();
-    QTest::wheelEvent(_window, center, QPoint(0, 120));
+    mouseWheel(center, QPoint(0, 120));
     QTRY_VERIFY_WITH_TIMEOUT(cam->distance() < 1500.0, 5000);
     resetPose();
-    QTest::wheelEvent(_window, center, QPoint(0, -120));
+    mouseWheel(center, QPoint(0, -120));
     QTRY_VERIFY_WITH_TIMEOUT(cam->distance() > 1500.0, 5000);
 
     QPointingDevice* const touchDevice = QTest::createTouchDevice();

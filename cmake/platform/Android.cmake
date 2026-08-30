@@ -13,10 +13,18 @@ endif()
 # Extract major.minor from ndk_full_version for reliable comparison
 if(DEFINED QGC_CONFIG_NDK_FULL_VERSION)
     string(REGEX MATCH "^([0-9]+\\.[0-9]+)" _ndk_major_minor "${QGC_CONFIG_NDK_FULL_VERSION}")
-    if(_ndk_major_minor AND NOT CMAKE_ANDROID_NDK_VERSION VERSION_GREATER_EQUAL "${_ndk_major_minor}")
-        message(FATAL_ERROR "QGC: NDK ${CMAKE_ANDROID_NDK_VERSION} is too old. Qt ${Qt6_VERSION} requires NDK ${_ndk_major_minor}+ (${QGC_CONFIG_NDK_VERSION})")
+
+    # AGP may set ANDROID_NDK_REVISION instead of CMAKE_ANDROID_NDK_VERSION
+    set(_actual_ndk_version "${CMAKE_ANDROID_NDK_VERSION}")
+    if(NOT _actual_ndk_version AND ANDROID_NDK_REVISION)
+        set(_actual_ndk_version "${ANDROID_NDK_REVISION}")
+    endif()
+
+    if(_ndk_major_minor AND _actual_ndk_version AND NOT _actual_ndk_version VERSION_GREATER_EQUAL "${_ndk_major_minor}")
+        message(FATAL_ERROR "QGC: NDK ${_actual_ndk_version} is too old. Qt ${Qt6_VERSION} requires NDK ${_ndk_major_minor}+ (${QGC_CONFIG_NDK_VERSION})")
     endif()
     unset(_ndk_major_minor)
+    unset(_actual_ndk_version)
 endif()
 
 # ----------------------------------------------------------------------------
@@ -121,65 +129,30 @@ list(APPEND QT_ANDROID_MULTI_ABI_FORWARD_VARS QGC_STABLE_BUILD QT_HOST_PATH Pyth
 include(AndroidOpenSSL)
 
 # ----------------------------------------------------------------------------
+# Android System Libraries
+# ----------------------------------------------------------------------------
+# Ensure ZLIB::ZLIB is available for dependencies and Qt QML scanning.
+# The NDK provides zlib, but FindZLIB might not always create the target.
+find_package(ZLIB REQUIRED)
+if(NOT TARGET ZLIB::ZLIB)
+    add_library(ZLIB::ZLIB UNKNOWN IMPORTED)
+    set_target_properties(ZLIB::ZLIB PROPERTIES
+        IMPORTED_LOCATION "${ZLIB_LIBRARIES}"
+        INTERFACE_INCLUDE_DIRECTORIES "${ZLIB_INCLUDE_DIRS}"
+    )
+endif()
+
+# Support 16 KB page size (required for Android 15)
+add_link_options("-Wl,-z,max-page-size=16384")
+
+
+# ----------------------------------------------------------------------------
 # Android Permissions
 # ----------------------------------------------------------------------------
 
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.BLUETOOTH_SCAN
-    ATTRIBUTES
-        minSdkVersion 31
-        usesPermissionFlags neverForLocation
-)
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.BLUETOOTH_CONNECT
-    ATTRIBUTES
-        minSdkVersion 31
-        usesPermissionFlags neverForLocation
-)
+# Manual management in AndroidManifest.xml for Qt 6.7 compatibility.
+# Permissions are already added to android/AndroidManifest.xml.
 
-# Need MulticastLock to receive broadcast UDP packets
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.CHANGE_WIFI_MULTICAST_STATE
-)
-
-# Needed for read/write to SD Card Path in AppSettings
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.WRITE_EXTERNAL_STORAGE
-    ATTRIBUTES
-        maxSdkVersion 32
-)
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.READ_EXTERNAL_STORAGE
-    ATTRIBUTES
-        maxSdkVersion 33
-)
-
-# All files access on Android 11+ so the save path can live at the SD card root.
-# Requires Play Store approval via a permissions declaration if distributed there.
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.MANAGE_EXTERNAL_STORAGE
-)
-
-# Joystick
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.VIBRATE
-)
-
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.INTERNET
-)
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.WAKE_LOCK
-)
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.ACCESS_NETWORK_STATE
-)
-
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.ACCESS_FINE_LOCATION
-)
-qt_add_android_permission(${CMAKE_PROJECT_NAME}
-    NAME android.permission.ACCESS_COARSE_LOCATION
-)
+message(STATUS "QGC: Android platform configuration applied")
 
 message(STATUS "QGC: Android platform configuration applied")

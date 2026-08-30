@@ -2,7 +2,7 @@
 
 #include <limits>
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QFileInfo>
 #include <QtCore/QJsonArray>
 #include <QtCore/QJsonParseError>

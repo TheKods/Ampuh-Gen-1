@@ -301,6 +301,7 @@ LoggingCategoryTreeNode* LoggingCategoryTreeModel::findOrCreateIntermediateNode(
 void LoggingCategoryTreeModel::insertCategory(const QStringList& pathSegments, const QString& fullCategory,
                                                QGCLoggingCategoryItem* item)
 {
+    Q_UNUSED(fullCategory);
     LoggingCategoryTreeNode* currentParent = &_root;
 
     // Create/find intermediate nodes for all segments except the last

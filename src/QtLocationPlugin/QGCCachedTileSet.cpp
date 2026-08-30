@@ -51,7 +51,7 @@ void QGCCachedTileSet::createDownloadTask()
         _noMoreTiles = false;
     }
 
-    QGCGetTileDownloadListTask *task = new QGCGetTileDownloadListTask(_id, kTileBatchSize);
+    QGCGetTileDownloadListTask *task = new QGCGetTileDownloadListTask(_tileSetId, kTileBatchSize);
     (void) connect(task, &QGCGetTileDownloadListTask::tileListFetched, this, &QGCCachedTileSet::_tileListFetched);
     if (_manager) {
         (void) connect(task, &QGCMapTask::error, _manager, &QGCMapEngineManager::taskError);
@@ -70,7 +70,7 @@ void QGCCachedTileSet::resumeDownloadTask()
 {
     _cancelPending = false;
 
-    QGCUpdateTileDownloadStateTask *task = new QGCUpdateTileDownloadStateTask(_id, QGCTile::StatePending, "*");
+    QGCUpdateTileDownloadStateTask *task = new QGCUpdateTileDownloadStateTask(_tileSetId, QGCTile::StatePending, "*");
     if (!getQGCMapEngine()->addTask(task)) {
         task->deleteLater();
     }
@@ -231,9 +231,9 @@ void QGCCachedTileSet::_networkReplyFinished()
         return;
     }
 
-    QGeoFileTileCacheQGC::cacheTile(type, hash, image, format, _id);
+    QGeoFileTileCacheQGC::cacheTile(type, hash, image, format, _tileSetId);
 
-    QGCUpdateTileDownloadStateTask *task = new QGCUpdateTileDownloadStateTask(_id, QGCTile::StateComplete, hash);
+    QGCUpdateTileDownloadStateTask *task = new QGCUpdateTileDownloadStateTask(_tileSetId, QGCTile::StateComplete, hash);
     if (!getQGCMapEngine()->addTask(task)) {
         task->deleteLater();
     }
@@ -279,7 +279,7 @@ void QGCCachedTileSet::_networkReplyError(QNetworkReply::NetworkError error)
         qCWarning(QGCCachedTileSetLog) << "Error:" << reply->errorString();
     }
 
-    QGCUpdateTileDownloadStateTask *task = new QGCUpdateTileDownloadStateTask(_id, QGCTile::StateError, hash);
+    QGCUpdateTileDownloadStateTask *task = new QGCUpdateTileDownloadStateTask(_tileSetId, QGCTile::StateError, hash);
     if (!getQGCMapEngine()->addTask(task)) {
         task->deleteLater();
     }

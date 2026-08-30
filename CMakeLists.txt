@@ -2,7 +2,7 @@
 # QGroundControl CMake Build Configuration
 # ============================================================================
 
-cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 3.22)
 
 # ----------------------------------------------------------------------------
 # CMake Module Paths
@@ -31,6 +31,12 @@ endif()
 # ----------------------------------------------------------------------------
 set(CMAKE_REQUIRED_QUIET ON)
 set(CMAKE_POLICY_VERSION_MINIMUM ${CMAKE_MINIMUM_REQUIRED_VERSION})
+
+# Workaround for Qt 6.7.3 QML scanning failure on Windows/Android.
+# Force regeneration of the tool wrapper batch file in the current binary directory.
+if(WIN32)
+    set_property(GLOBAL PROPERTY _qt_internal_generate_tool_command_wrapper_called FALSE)
+endif()
 
 # ============================================================================
 # Custom Build Configuration
@@ -101,6 +107,12 @@ if(APPLE)
             set(CMAKE_OSX_ARCHITECTURES "x86_64h;arm64")
         endif()
     endif()
+endif()
+
+# ----------------------------------------------------------------------------
+# Suppress warnings about unused variables passed by IDEs
+# ----------------------------------------------------------------------------
+if(QT_CHAINLOAD_TOOLCHAIN_FILE)
 endif()
 
 # ----------------------------------------------------------------------------
@@ -183,8 +195,10 @@ if(POLICY CMP0168)
 endif()
 
 # CMP0141: MSVC debug information format
-cmake_policy(SET CMP0141 NEW)
-set(CMAKE_POLICY_DEFAULT_CMP0141 NEW)
+if(POLICY CMP0141)
+    cmake_policy(SET CMP0141 NEW)
+    set(CMAKE_POLICY_DEFAULT_CMP0141 NEW)
+endif()
 
 # CMP0075: Include files in CheckIncludeFile
 cmake_policy(SET CMP0075 NEW)
@@ -246,7 +260,7 @@ find_package(Qt6
         QmlIntegration
         Quick
         QuickControls2
-        QuickVectorImage
+        # QuickVectorImage
         QuickWidgets
         Sensors
         Sql
@@ -260,13 +274,15 @@ find_package(Qt6
         Location
         Positioning
         Bluetooth
-        LocationPrivate
         MultimediaQuickPrivate
         OpenGL
         QuickTest
         SerialPort
         Test
 )
+
+# Search for private components quietly to avoid warnings on some platforms
+find_package(Qt6 QUIET COMPONENTS LocationPrivate PositioningPrivate)
 
 if(NOT TARGET Qt6::LocationPrivate)
     add_library(Qt6::LocationPrivate INTERFACE IMPORTED)
@@ -493,10 +509,16 @@ qt_add_resources(${CMAKE_PROJECT_NAME} "qgcresources_cmake"
 # Qt Plugin Configuration
 # ----------------------------------------------------------------------------
 qt_import_plugins(${CMAKE_PROJECT_NAME}
-    INCLUDE Qt6::QSvgPlugin Qt6::QOffscreenIntegrationPlugin
+    INCLUDE Qt6::QSvgPlugin
     EXCLUDE_BY_TYPE geoservices  # Use built-in location plugins
     INCLUDE_BY_TYPE sqldrivers Qt6::QSQLiteDriverPlugin
 )
+
+if(TARGET Qt6::QOffscreenIntegrationPlugin)
+    qt_import_plugins(${CMAKE_PROJECT_NAME}
+        INCLUDE Qt6::QOffscreenIntegrationPlugin
+    )
+endif()
 
 # Linux-specific Qt platform plugins
 if(LINUX)

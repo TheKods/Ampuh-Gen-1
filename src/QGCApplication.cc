@@ -163,8 +163,10 @@ QGCApplication::QGCApplication(int& argc, char* argv[], const QGCCommandLinePars
     // We need to set language as early as possible prior to loading on JSON files.
     setLanguage();
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
     // Force old SVG Tiny 1.2 behavior for compatibility
     QSvgRenderer::setDefaultOptions(QtSvg::Tiny12FeaturesOnly);
+#endif
 
 #ifndef QGC_DAILY_BUILD
     _checkForNewVersion();

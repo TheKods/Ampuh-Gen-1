@@ -67,7 +67,7 @@ endforeach()
 list(REMOVE_DUPLICATES _ossl_build_archs)
 
 if(CMAKE_HOST_WIN32)
-    message(WARNING "QGC: Windows build host — using KDAB's bundled OpenSSL (EOL 3.1). "
+    message(STATUS "QGC: Windows build host — using KDAB's bundled OpenSSL (EOL 3.1). "
                     "The published APK is built on the Linux host, which uses OpenSSL "
                     "${QGC_ANDROID_OPENSSL_VERSION}; rebuild there for the updated library.")
 elseif(_ossl_build_archs)

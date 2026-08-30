@@ -45,9 +45,11 @@ AIController::AIController(QObject *parent)
     _systemMonitor->startMonitoring(1000);
     _systemMonitor->setKeepScreenOn(_keepScreenOn);
 
-    // Gimbal Auto-Tracking Loop (20 Hz)
+    _voiceAlertTimer.start();
+
+    // Gimbal Auto-Tracking Loop (50 Hz)
     connect(&_trackingTimer, &QTimer::timeout, this, &AIController::_updateGimbalTracking);
-    _trackingTimer.start(50);
+    _trackingTimer.start(20);
 
     _receiverThread.start();
 }
@@ -449,9 +451,8 @@ void AIController::_playVoiceAlert(const QString &phrase)
 {
     if (!_soundAlarmOnDetect) return;
 
-    const qint64 now = QDateTime::currentMSecsSinceEpoch();
-    if (now - _lastVoiceAlertTime > 1500) {
-        _lastVoiceAlertTime = now;
+    if (!_voiceAlertTimer.isValid() || _voiceAlertTimer.hasExpired(1500)) {
+        _voiceAlertTimer.restart();
         if (AudioOutput::instance()) {
             AudioOutput::instance()->say(phrase);
         }
@@ -490,6 +491,22 @@ void AIController::_handleDetections(const QList<AIDetectionRawData> &detections
         return;
     }
 
+    // Cache drone state once per frame for all projections
+    DroneState state;
+    Vehicle *vehicle = MultiVehicleManager::instance()->activeVehicle();
+    if (vehicle) {
+        state.coord = vehicle->coordinate();
+        state.altitudeAGL = vehicle->altitudeRelative() ? std::max(vehicle->altitudeRelative()->rawValue().toDouble(), 5.0) : 50.0;
+        state.heading = vehicle->heading() ? vehicle->heading()->rawValue().toDouble() : 0.0;
+        state.pitch = vehicle->pitch() ? vehicle->pitch()->rawValue().toDouble() : -45.0;
+    } else {
+        // Fallback for UI testing
+        state.coord = QGeoCoordinate(-6.2088, 106.8456);
+        state.altitudeAGL = 50.0;
+        state.heading = 0.0;
+        state.pitch = -45.0;
+    }
+
     for (int i = 0; i < newCount; ++i) {
         const auto &raw = filtered[i];
         if (i < existingCount) {
@@ -497,14 +514,14 @@ void AIController::_handleDetections(const QList<AIDetectionRawData> &detections
             if (existing) {
                 existing->updateData(raw.className, raw.confidence, raw.x, raw.y, raw.width, raw.height, raw.trackingStatus);
                 existing->setIsLocked(raw.targetId == _lockedTargetId);
-                _projectTargetGeolocation(existing);
+                _projectTargetGeolocation(existing, state);
             }
         } else {
             auto *newBox = new AIDetectionBox(raw.targetId, raw.className, raw.confidence,
                                               raw.x, raw.y, raw.width, raw.height,
                                               raw.trackingStatus, this);
             newBox->setIsLocked(raw.targetId == _lockedTargetId);
-            _projectTargetGeolocation(newBox);
+            _projectTargetGeolocation(newBox, state);
             _detectionBoxes->append(newBox);
         }
     }
@@ -581,23 +598,14 @@ void AIController::_handleSystemMetrics(double cpu, double ram, double temp, con
     emit performanceMetricsChanged();
 }
 
-void AIController::_projectTargetGeolocation(AIDetectionBox *box)
+void AIController::_projectTargetGeolocation(AIDetectionBox *box, const DroneState &state)
 {
     if (!box) return;
 
-    Vehicle *vehicle = MultiVehicleManager::instance()->activeVehicle();
-    if (!vehicle) {
-        box->setCoordinate(QGeoCoordinate(-6.2088 + (box->y() - 0.5) * 0.002,
-                                          106.8456 + (box->x() - 0.5) * 0.002, 0.0));
-        box->setRangeMeters(120.0 + box->y() * 50.0);
-        box->setEstimatedSpeedKmh(35.0 + box->targetId() % 20);
-        return;
-    }
-
-    const QGeoCoordinate droneCoord = vehicle->coordinate();
-    const double altitudeAGL = vehicle->altitudeRelative() ? std::max(vehicle->altitudeRelative()->rawValue().toDouble(), 5.0) : 50.0;
-    const double headingDeg = vehicle->heading() ? vehicle->heading()->rawValue().toDouble() : 0.0;
-    const double pitchDeg = vehicle->pitch() ? vehicle->pitch()->rawValue().toDouble() : -45.0;
+    const double altitudeAGL = state.altitudeAGL;
+    const double headingDeg = state.heading;
+    const double pitchDeg = state.pitch;
+    const QGeoCoordinate droneCoord = state.coord;
 
     const double dx = (box->x() + box->width() / 2.0) - 0.5;
     const double dy = (box->y() + box->height() / 2.0) - 0.5;

@@ -3,6 +3,7 @@
 #include <QtCore/QObject>
 #include <QtCore/QThread>
 #include <QtCore/QTimer>
+#include <QtCore/QElapsedTimer>
 #include <QtCore/QStringList>
 #include <QtPositioning/QGeoCoordinate>
 #include <QtQmlIntegration/QtQmlIntegration>
@@ -176,7 +177,14 @@ private slots:
     void _updateGimbalTracking();
 
 private:
-    void _projectTargetGeolocation(class AIDetectionBox *box);
+    struct DroneState {
+        QGeoCoordinate coord;
+        double altitudeAGL;
+        double heading;
+        double pitch;
+    };
+
+    void _projectTargetGeolocation(class AIDetectionBox *box, const DroneState &state);
     void _checkPerimeterIntrusions();
     void _playVoiceAlert(const QString &phrase);
 
@@ -209,6 +217,6 @@ private:
     AIReceiverSocket *_receiverSocket = nullptr;
     AndroidSystemMonitor *_systemMonitor = nullptr;
     QTimer _trackingTimer;
-    qint64 _lastVoiceAlertTime = 0;
+    QElapsedTimer _voiceAlertTimer;
     qint64 _lastIntrusionTime = 0;
 };

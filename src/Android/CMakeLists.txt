@@ -68,7 +68,10 @@ add_library(qtandroidextensions_lockers STATIC
     ${_qtah_dir}/QLocks/QLockHandler.cpp
     ${_qlocks_moc}
 )
-set_target_properties(qtandroidextensions_lockers PROPERTIES AUTOMOC OFF)
+set_target_properties(qtandroidextensions_lockers PROPERTIES
+    AUTOMOC OFF
+    UNITY_BUILD OFF
+)
 qgc_disable_dependency_warnings(qtandroidextensions_lockers)
 
 target_include_directories(qtandroidextensions_lockers

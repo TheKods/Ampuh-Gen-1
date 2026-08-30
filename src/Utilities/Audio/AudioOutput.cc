@@ -4,7 +4,7 @@
 #include "QGCLoggingCategory.h"
 
 #include <QtCore/QRegularExpression>
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QTimer>
 #include <QtTextToSpeech/QTextToSpeech>
 #include <QtTextToSpeech/QVoice>

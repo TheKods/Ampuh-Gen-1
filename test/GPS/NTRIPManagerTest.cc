@@ -1,6 +1,6 @@
 #include "NTRIPManagerTest.h"
 
-#include <QtCore/QChronoTimer>
+#include <QtCore/QTimer>
 #include <QtCore/QRegularExpression>
 #include <QtTest/QSignalSpy>
 #include <QtTest/QTest>
@@ -153,7 +153,7 @@ void NTRIPManagerTest::testReconnectSignalFires()
     using namespace std::chrono_literals;
     mgr._reconnectTimer.setInterval(50ms);
     mgr._reconnectTimer.start();
-    QSignalSpy spy(&mgr._reconnectTimer, &QChronoTimer::timeout);
+    QSignalSpy spy(&mgr._reconnectTimer, &QTimer::timeout);
     QVERIFY(spy.wait(2000));
     QCOMPARE(spy.count(), 1);
     QVERIFY(!mgr._reconnectTimer.isActive());

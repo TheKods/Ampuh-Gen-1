@@ -1,6 +1,6 @@
 #pragma once
 
-#include <QtCore/QChronoTimer>
+#include <QtCore/QTimer>
 #include <QtCore/QElapsedTimer>
 #include <QtCore/QHash>
 #include <QtCore/QObject>
@@ -66,7 +66,7 @@ private:
     bool _dataStale = false;
     bool _messageCountsDirty = false;
     QElapsedTimer _lastMessageTime;
-    QChronoTimer _rateTimer;
+    QTimer _rateTimer;
     // Per-ID counts. Using int for compatibility with QVariant in QML.
     QHash<int, quint32> _messageCountsById;
 };

@@ -5,8 +5,11 @@
 #include <QtCore/QFile>
 #include <QtCore/QIODevice>
 #include <QtCore/QJsonDocument>
+#include <QtCore/QtGlobal>
 #include <QtCore/QUrlQuery>
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
 #include <QtNetwork/QHttpHeaders>
+#endif
 #include <QtNetwork/QHttpPart>
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkInformation>
@@ -373,6 +376,7 @@ void configureRequest(QNetworkRequest& request, const RequestConfig& config)
     // Background request
     request.setAttribute(QNetworkRequest::BackgroundRequestAttribute, config.backgroundRequest);
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
     using WK = QHttpHeaders::WellKnownHeader;
     QHttpHeaders headers = request.headers();
     headers.replaceOrAppend(WK::UserAgent, config.userAgent.isEmpty() ? defaultUserAgent() : config.userAgent);
@@ -387,6 +391,19 @@ void configureRequest(QNetworkRequest& request, const RequestConfig& config)
     }
     headers.replaceOrAppend(WK::Connection, "keep-alive");
     request.setHeaders(headers);
+#else
+    request.setRawHeader("User-Agent", (config.userAgent.isEmpty() ? defaultUserAgent() : config.userAgent).toUtf8());
+    if (!config.accept.isEmpty()) {
+        request.setRawHeader("Accept", config.accept.toUtf8());
+    }
+    if (!config.acceptEncoding.isEmpty()) {
+        request.setRawHeader("Accept-Encoding", config.acceptEncoding.toUtf8());
+    }
+    if (!config.contentType.isEmpty()) {
+        request.setRawHeader("Content-Type", config.contentType.toUtf8());
+    }
+    request.setRawHeader("Connection", "keep-alive");
+#endif
 
     for (const auto& [attribute, value] : config.requestAttributes) {
         request.setAttribute(attribute, value);
@@ -418,6 +435,7 @@ QNetworkRequest createRequest(const QUrl& url, const RequestConfig& config)
 
 void setStandardHeaders(QNetworkRequest& request, const QString& userAgent)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
     using WK = QHttpHeaders::WellKnownHeader;
     QHttpHeaders headers = request.headers();
     headers.replaceOrAppend(WK::UserAgent, userAgent.isEmpty() ? defaultUserAgent() : userAgent);
@@ -425,15 +443,26 @@ void setStandardHeaders(QNetworkRequest& request, const QString& userAgent)
     headers.replaceOrAppend(WK::AcceptEncoding, "gzip, deflate");
     headers.replaceOrAppend(WK::Connection, "keep-alive");
     request.setHeaders(headers);
+#else
+    request.setRawHeader("User-Agent", (userAgent.isEmpty() ? defaultUserAgent() : userAgent).toUtf8());
+    request.setRawHeader("Accept", "*/*");
+    request.setRawHeader("Accept-Encoding", "gzip, deflate");
+    request.setRawHeader("Connection", "keep-alive");
+#endif
 }
 
 void setJsonHeaders(QNetworkRequest& request)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
     using WK = QHttpHeaders::WellKnownHeader;
     QHttpHeaders headers = request.headers();
     headers.replaceOrAppend(WK::Accept, "application/json");
     headers.replaceOrAppend(WK::ContentType, "application/json");
     request.setHeaders(headers);
+#else
+    request.setRawHeader("Accept", "application/json");
+    request.setRawHeader("Content-Type", "application/json");
+#endif
 }
 
 void setFormHeaders(QNetworkRequest& request)
@@ -459,9 +488,13 @@ QString defaultUserAgent()
 
 void setBasicAuth(QNetworkRequest& request, const QString& credentials)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
     QHttpHeaders headers = request.headers();
     headers.replaceOrAppend(QHttpHeaders::WellKnownHeader::Authorization, "Basic " + credentials);
     request.setHeaders(headers);
+#else
+    request.setRawHeader("Authorization", ("Basic " + credentials).toUtf8());
+#endif
 }
 
 void setBasicAuth(QNetworkRequest& request, const QString& username, const QString& password)
@@ -471,9 +504,13 @@ void setBasicAuth(QNetworkRequest& request, const QString& username, const QStri
 
 void setBearerToken(QNetworkRequest& request, const QString& token)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
     QHttpHeaders headers = request.headers();
     headers.replaceOrAppend(QHttpHeaders::WellKnownHeader::Authorization, "Bearer " + token);
     request.setHeaders(headers);
+#else
+    request.setRawHeader("Authorization", ("Bearer " + token).toUtf8());
+#endif
 }
 
 QString createBasicAuthCredentials(const QString& username, const QString& password)

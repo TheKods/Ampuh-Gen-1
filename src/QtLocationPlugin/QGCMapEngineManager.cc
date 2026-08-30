@@ -1,6 +1,6 @@
 #include "QGCMapEngineManager.h"
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QDir>
 #include <QtCore/QDirIterator>
 #include <QtCore/QRegularExpression>

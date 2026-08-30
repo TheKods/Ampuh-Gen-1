@@ -36,7 +36,7 @@
 #include CUSTOMHEADER
 #endif
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QFile>
 #include <QtQml/QQmlApplicationEngine>
 #include <QtQml/QQmlContext>

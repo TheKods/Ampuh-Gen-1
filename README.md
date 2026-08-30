@@ -59,7 +59,9 @@
 ## ⚡ FITUR UTAMA & APEX CAPABILITIES
 
 ### 1. 🤖 Apex Tactical AI Surveillance Engine
-* **YOLO Native Integration:** Terhubung langsung ke engine YOLO (YOLOv8 / YOLOv11 / YOLO-NAS) via UDP IPC Socket Port `9090`.
+> [!IMPORTANT]
+> Terhubung langsung ke engine YOLO (YOLOv8 / YOLOv11 / YOLO-NAS) via UDP IPC Socket Port `9090`.
+
 * **Autonomous MAVLink Gimbal Tracking:** Kamera gimbal drone secara otomatis berputar (*pitch/yaw rate loop 20 Hz*) mengunci sasaran bergerak.
 * **Ray-Casting GPS & Satellite Map Sync:** Memproyeksikan bounding box video ke koordinat GPS bumi nyata dan menampilkannya sebagai target bercahaya di [FlyViewMap](src/FlyView/FlyViewMap.qml).
 * **Ghost Tracking (Occlusion Recovery):** Menampilkan kotak bayangan `👻 GHOST PREDICTED` jika target tertutup pohon/gedung selama 1–3 detik.
@@ -183,6 +185,9 @@ Kirim paket JSON via **UDP ke `127.0.0.1:9090`**:
 ## 🚀 PANDUAN MEMULAI CEPAT (QUICK START)
 
 ### 1. Prasyarat Sistem
+> [!NOTE]
+> Pastikan perangkat Anda memenuhi spesifikasi minimum untuk menjalankan model AI secara optimal.
+
 * **OS:** Windows 10 / 11 (64-bit), Linux (Ubuntu 22.04+), atau Android SDK/NDK
 * **Compiler:** Visual Studio 2022 (MSVC C++ Desktop) atau Clang (Android NDK r26+)
 * **Framework:** Qt 6.8+ (Quick, Location, Positioning, Network)

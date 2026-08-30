@@ -5,6 +5,7 @@
 
 #include <QtCore/QMetaObject>
 #include <QtCore/QThread>
+#include <QtCore/QCoreApplication>
 
 #include <array>
 
@@ -177,7 +178,11 @@ void JoystickSDL::shutdown(bool deleteDiscoveryCache)
 
 QMap<QString, Joystick*> JoystickSDL::discover()
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
     Q_ASSERT(QThread::isMainThread());
+#else
+    Q_ASSERT(QThread::currentThread() == QCoreApplication::instance()->thread());
+#endif
 
     QMap<QString, Joystick*> current;
 

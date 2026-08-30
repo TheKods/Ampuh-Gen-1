@@ -187,10 +187,10 @@ void Viewer3DUITest::_test3DViewCameraGestures()
 
             // Wheel up: zoom in; wheel down: zoom out
             resetPose();
-            QTest::wheelEvent(_window, center, QPoint(0, 120));
+            mouseWheel(center, QPoint(0, 120));
             QTRY_VERIFY_WITH_TIMEOUT(cam->distance() < 1000.0, 5000);
             resetPose();
-            QTest::wheelEvent(_window, center, QPoint(0, -120));
+            mouseWheel(center, QPoint(0, -120));
             QTRY_VERIFY_WITH_TIMEOUT(cam->distance() > 1000.0, 5000);
 
             // Pinch spread: zoom in

@@ -14,7 +14,7 @@
 
 using JoystickBackend = JoystickSDL;
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QSettings>
 #include <QtGui/QVector3D>
 

@@ -10,8 +10,9 @@
 #endif
 
 #if defined(Q_OS_ANDROID)
-#include <QtCore/QJniObject>
-#include <QtCore/QNativeInterface>
+#include <QJniObject>
+#include <QJniEnvironment>
+#include <QtCore/qcoreapplication_platform.h>
 #endif
 
 AndroidSystemMonitor::AndroidSystemMonitor(QObject *parent)

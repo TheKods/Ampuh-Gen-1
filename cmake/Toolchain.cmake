@@ -54,9 +54,11 @@ if(CMAKE_EXPORT_COMPILE_COMMANDS
     )
 endif()
 
-if(QGC_UNITY_BUILD)
+if(QGC_UNITY_BUILD AND NOT ANDROID)
     set(CMAKE_UNITY_BUILD ON)
     set(CMAKE_UNITY_BUILD_BATCH_SIZE 16)
+else()
+    set(CMAKE_UNITY_BUILD OFF)
 endif()
 
 # ----------------------------------------------------------------------------
@@ -152,6 +154,13 @@ if(CMAKE_CROSSCOMPILING)
 
     if(NOT IS_DIRECTORY "${QT_HOST_PATH}")
         message(FATAL_ERROR "QGC: Cross-compilation QT_HOST_PATH is not a valid directory: ${QT_HOST_PATH}")
+    endif()
+
+    if(DEFINED QT_TARGET_ROOT_DIR AND NOT QT_TARGET_ROOT_DIR STREQUAL "")
+        if(NOT IS_DIRECTORY "${QT_TARGET_ROOT_DIR}")
+            message(FATAL_ERROR "QGC: Cross-compilation QT_TARGET_ROOT_DIR is not a valid directory: ${QT_TARGET_ROOT_DIR}")
+        endif()
+        list(PREPEND CMAKE_PREFIX_PATH "${QT_TARGET_ROOT_DIR}")
     endif()
 
     if(ANDROID)

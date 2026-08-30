@@ -8,7 +8,6 @@
 #include <QtPositioning/QGeoCoordinate>
 #include <QtQuick/QQuickItem>
 #include <QtQuick/QQuickWindow>
-#include <QtTest/QTest>
 #include <optional>
 
 #include "Fact.h"
@@ -73,7 +72,7 @@ void GeoMapPerfUITest::_benchmark()
     };
     const auto wheelSteps = [this, &pace, center](int stepDelta, int count) {
         for (int i = 0; i < count; i++) {
-            QTest::wheelEvent(_window, center, QPoint(0, stepDelta));
+            mouseWheel(center, QPoint(0, stepDelta));
             pace(200);
         }
     };

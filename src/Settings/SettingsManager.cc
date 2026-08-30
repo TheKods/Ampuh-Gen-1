@@ -29,7 +29,7 @@
 #include "JsonParsing.h"
 #include "QGCCorePlugin.h"
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 
 QGC_LOGGING_CATEGORY(SettingsManagerLog, "Utilities.SettingsManager")
 

@@ -21,7 +21,7 @@
 #include <climits>
 
 #include <QtConcurrent/QtConcurrent>
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QCoreApplication>
 #include <QtCore/QDir>
 #include <QtCore/QEventLoop>

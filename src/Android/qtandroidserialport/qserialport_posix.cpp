@@ -88,16 +88,16 @@ speed_t baudRateToSpeed(qint32 baudRate)
 
 }  // namespace
 
-bool QSerialPortPrivate::_posixOpen(QIODevice::OpenMode mode)
+bool QSerialPortPrivate::_posixOpen(QIODevice::OpenMode openMode)
 {
     Q_Q(QSerialPort);
 
     qCDebug(AndroidSerialPortLog) << "Opening (POSIX)" << systemLocation;
 
     int flags = O_NOCTTY | O_NONBLOCK;
-    if ((mode & QIODevice::ReadWrite) == QIODevice::ReadWrite) {
+    if ((openMode & QIODevice::ReadWrite) == QIODevice::ReadWrite) {
         flags |= O_RDWR;
-    } else if (mode & QIODevice::WriteOnly) {
+    } else if (openMode & QIODevice::WriteOnly) {
         flags |= O_WRONLY;
     } else {
         flags |= O_RDONLY;
@@ -106,10 +106,10 @@ bool QSerialPortPrivate::_posixOpen(QIODevice::OpenMode mode)
     descriptor = ::open(systemLocation.toLocal8Bit().constData(), flags);
     if (descriptor == -1) {
         qCWarning(AndroidSerialPortLog) << "Error opening" << systemLocation << ":" << strerror(errno);
-        const QSerialPort::SerialPortError error = (errno == ENOENT)   ? QSerialPort::DeviceNotFoundError
+        const QSerialPort::SerialPortError serialError = (errno == ENOENT)   ? QSerialPort::DeviceNotFoundError
                                                    : (errno == EACCES) ? QSerialPort::PermissionError
                                                                        : QSerialPort::OpenError;
-        setError(QSerialPortErrorInfo(error, QString::fromLocal8Bit(strerror(errno))));
+        setError(QSerialPortErrorInfo(serialError, QString::fromLocal8Bit(strerror(errno))));
         return false;
     }
 
@@ -134,7 +134,7 @@ bool QSerialPortPrivate::_posixOpen(QIODevice::OpenMode mode)
 
     (void) _posixClear(QSerialPort::AllDirections);
 
-    if (mode & QIODevice::ReadOnly) {
+    if (openMode & QIODevice::ReadOnly) {
         _posixReadNotifier = new QSocketNotifier(descriptor, QSocketNotifier::Read, q);
         QObject::connect(_posixReadNotifier, &QSocketNotifier::activated, q, [this]() { _posixReadActivated(); });
     }
@@ -235,7 +235,7 @@ qint64 QSerialPortPrivate::_posixWrite(const char* data, qint64 maxSize, int tim
     return totalWritten;
 }
 
-bool QSerialPortPrivate::_posixApplyPortSettings(qint32 baudRate, QSerialPort::DataBits dataBits_,
+bool QSerialPortPrivate::_posixApplyPortSettings(qint32 baudRate_, QSerialPort::DataBits dataBits_,
                                                  QSerialPort::StopBits stopBits_, QSerialPort::Parity parity_,
                                                  QSerialPort::FlowControl flowControl_)
 {
@@ -250,9 +250,9 @@ bool QSerialPortPrivate::_posixApplyPortSettings(qint32 baudRate, QSerialPort::D
     tio.c_cc[VMIN] = 0;
     tio.c_cc[VTIME] = 0;
 
-    const speed_t speed = baudRateToSpeed(baudRate);
+    const speed_t speed = baudRateToSpeed(baudRate_);
     if (speed == B0) {
-        qCWarning(AndroidSerialPortLog) << "Unsupported baud rate:" << baudRate;
+        qCWarning(AndroidSerialPortLog) << "Unsupported baud rate:" << baudRate_;
         setError(
             QSerialPortErrorInfo(QSerialPort::UnsupportedOperationError, QSerialPort::tr("Unsupported baud rate")));
         return false;

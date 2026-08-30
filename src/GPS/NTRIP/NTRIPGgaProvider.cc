@@ -121,7 +121,7 @@ PositionResult getGCSPosition()
 NTRIPGgaProvider::NTRIPGgaProvider(QObject* parent) : QObject(parent)
 {
     _timer.setInterval(_normalInterval);
-    connect(&_timer, &QChronoTimer::timeout, this, &NTRIPGgaProvider::_sendGGA);
+    connect(&_timer, &QTimer::timeout, this, &NTRIPGgaProvider::_sendGGA);
 }
 
 void NTRIPGgaProvider::init(NTRIPSettings* settings)

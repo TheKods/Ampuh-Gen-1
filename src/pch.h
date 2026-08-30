@@ -33,7 +33,7 @@
 #include <QtCore/QJsonObject>
 
 // Qt Core - utilities
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QElapsedTimer>
 #include <QtCore/QMutex>
 #include <QtCore/QPointer>

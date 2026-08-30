@@ -175,8 +175,17 @@ void _computeSignatureHash(QByteArrayView key, const mavlink_message_t& message,
         QByteArrayView(reinterpret_cast<const char*>(crc), sizeof(crc)),
         QByteArrayView(reinterpret_cast<const char*>(sig), kSignaturePrefixBytes),
     };
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
     (void) QCryptographicHash::hashInto(QSpan<uchar>(hashBuf), QSpan<const QByteArrayView>(parts),
                                        QCryptographicHash::Sha256);
+#else
+    QCryptographicHash hash(QCryptographicHash::Sha256);
+    for (const auto& part : parts) {
+        hash.addData(part);
+    }
+    const QByteArray result = hash.result();
+    memcpy(hashBuf, result.constData(), kSigningKeySize);
+#endif
 }
 
 }  // namespace

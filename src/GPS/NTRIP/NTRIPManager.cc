@@ -1,6 +1,6 @@
 #include "NTRIPManager.h"
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QCoreApplication>
 #include <QtCore/QtMath>
 #include <chrono>
@@ -102,7 +102,7 @@ NTRIPManager::NTRIPManager(QObject* parent) : QObject(parent)
 
     _settingsDebounceTimer.setSingleShot(true);
     _settingsDebounceTimer.setInterval(kSettingsDebounceMs);
-    connect(&_settingsDebounceTimer, &QChronoTimer::timeout, this, &NTRIPManager::_onSettingChanged);
+    connect(&_settingsDebounceTimer, &QTimer::timeout, this, &NTRIPManager::_onSettingChanged);
 
     connect(&_ggaProvider, &NTRIPGgaProvider::sourceChanged, this, &NTRIPManager::ggaSourceChanged);
 

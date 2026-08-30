@@ -7,7 +7,7 @@
 #include "QGCMAVLink.h"
 #include "AppSettings.h"
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtQml/QQmlApplicationEngine>
 #include <QtQml/QQmlFile>
 

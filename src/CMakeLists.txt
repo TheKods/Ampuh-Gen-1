@@ -119,7 +119,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
         Qt6::Quick
         Qt6::Quick3D
         Qt6::QuickControls2
-        Qt6::QuickVectorImage
+        # Qt6::QuickVectorImage
 
         # Qt6 Location
         Qt6::Location
@@ -185,6 +185,7 @@ target_compile_definitions(${CMAKE_PROJECT_NAME}
 
 set_target_properties(${CMAKE_PROJECT_NAME}
     PROPERTIES
+        AUTORCC OFF
         QT_RESOURCE_PREFIX "/qml"
         OUTPUT_NAME ${CMAKE_PROJECT_NAME}
 )

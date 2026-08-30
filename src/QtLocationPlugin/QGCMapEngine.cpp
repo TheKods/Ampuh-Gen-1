@@ -1,6 +1,6 @@
 #include "QGCMapEngine.h"
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 
 #include "QGCCachedTileSet.h"
 #include "QGCCacheTile.h"

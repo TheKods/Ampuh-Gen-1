@@ -80,6 +80,7 @@ LogManager* LogManager::instance()
 
 LogManager* LogManager::create(QQmlEngine* qmlEngine, QJSEngine* jsEngine)
 {
+    Q_UNUSED(qmlEngine);
     Q_UNUSED(jsEngine);
     auto* inst = instance();
     Q_ASSERT(inst);

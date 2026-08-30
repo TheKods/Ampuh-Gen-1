@@ -1,6 +1,6 @@
 #pragma once
 
-#include <QtCore/QChronoTimer>
+#include <QtCore/QTimer>
 #include <QtCore/QHash>
 #include <QtCore/QObject>
 #include <QtCore/QPointer>
@@ -81,7 +81,7 @@ private:
     PositionResult _getBestPosition() const;
 
     QPointer<NTRIPTransport> _transport;
-    QChronoTimer _timer;
+    QTimer _timer;
     QString _source;
     QHash<PositionSource, PositionProvider> _providers;
     RetryPhase _retryPhase = RetryPhase::Normal;

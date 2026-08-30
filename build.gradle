@@ -1,0 +1,135 @@
+// Root build.gradle - Single Module Configuration
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.13.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = 'https://jitpack.io' }
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+Properties properties = new Properties()
+if (project.rootProject.file('local.properties').exists()) {
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+}
+
+def qtAndroidDir = properties.getProperty('qt.target.root.dir') ?: System.getenv("QT_TARGET_ROOT_DIR") ?: "${project.rootDir}/.qt/6.7.3/android_arm64_v8a"
+def qtHostDir = properties.getProperty('qt.host.path') ?: System.getenv("QT_HOST_PATH") ?: "${project.rootDir}/.qt/6.7.3/mingw_64"
+def sdkDir = properties.getProperty('sdk.dir') ?: System.getenv("ANDROID_SDK_ROOT")
+def ndkDir = "${sdkDir}/ndk/30.0.15729638"
+
+// Normalize paths
+qtAndroidDir = file(qtAndroidDir).absolutePath.replace('\\', '/')
+qtHostDir = file(qtHostDir).absolutePath.replace('\\', '/')
+sdkDir = file(sdkDir).absolutePath.replace('\\', '/')
+ndkDir = file(ndkDir).absolutePath.replace('\\', '/')
+
+if (!file(qtAndroidDir).exists() || !file(qtHostDir).exists()) {
+    logger.warn("QGC: Qt directories not found. Please install Qt or set paths in local.properties.")
+}
+
+android {
+    namespace 'org.mavlink.qgroundcontrol'
+    compileSdkVersion 34
+    ndkVersion '30.0.15729638'
+
+    sourceSets {
+        main {
+            manifest.srcFile 'android/AndroidManifest.xml'
+            java.srcDirs = [
+                "${qtAndroidDir}/src/android/java/src",
+                'android/src'
+            ]
+            java.exclude '**/test/**'
+            kotlin.srcDirs = [
+                "${qtAndroidDir}/src/android/java/src",
+                'android/src'
+            ]
+            kotlin.exclude '**/test/**'
+            aidl.srcDirs = [
+                "${qtAndroidDir}/src/android/java/src",
+                'android/src'
+            ]
+            res.srcDirs = [
+                "${qtAndroidDir}/src/android/java/res",
+                'android/res'
+            ]
+            assets.srcDirs = ['android/assets']
+            jniLibs.srcDirs = ['android/libs']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    defaultConfig {
+        applicationId 'org.mavlink.qgroundcontrol'
+        minSdkVersion 26
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0.0"
+        ndk.abiFilters = ["arm64-v8a"]
+
+        manifestPlaceholders = [
+            INSERT_APP_NAME: "QGroundControl",
+            INSERT_APP_ICON: "@mipmap/ic_launcher",
+            INSERT_APP_LIB_NAME: "AmpuhGen1",
+            INSERT_APP_ARGUMENTS: "",
+            INSERT_VERSION_CODE: 1,
+            INSERT_VERSION_NAME: "1.0.0"
+        ]
+
+        externalNativeBuild {
+            cmake {
+                arguments "-DQT_HOST_PATH=${qtHostDir}",
+                          "-DQT_TARGET_ROOT_DIR=${qtAndroidDir}",
+                          "-DANDROID_SDK_ROOT=${sdkDir}",
+                          "-DANDROID_NDK_ROOT=${ndkDir}",
+                          "-DQT_CHAINLOAD_TOOLCHAIN_FILE=${ndkDir}/build/cmake/android.toolchain.cmake"
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path file('CMakeLists.txt')
+            version "3.22.1"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'android/proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'android/libs', include: ['*.jar', '*.aar'])
+    implementation fileTree(dir: "${qtAndroidDir}/jar", include: ['*.jar'])
+    implementation 'androidx.core:core:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.github.mik3y:usb-serial-for-android:3.10.0'
+    testImplementation 'junit:junit:4.13.2'
+}

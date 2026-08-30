@@ -15,6 +15,7 @@
 #include <QtQuickControls2/QQuickStyle>
 #include <QtTest/QSignalSpy>
 #include <QtTest/QTest>
+#include <QtGui/QWheelEvent>
 
 #include "AppSettings.h"
 #include "ColoredSvgImageProvider.h"
@@ -312,6 +313,21 @@ bool QmlUITestBase::clickItemFraction(const QString& objectName, qreal fractionX
         return false;
     }
     return _clickItemAt(item, fractionX, fractionY, objectName);
+}
+
+void QmlUITestBase::mouseWheel(const QPoint& pos, const QPoint& angleDelta)
+{
+    if (!_window) {
+        return;
+    }
+
+    const QPointF posF(pos);
+    const QPointF globalPos = _window->mapToGlobal(posF);
+
+    QWheelEvent event(posF, globalPos, QPoint(), angleDelta,
+                      Qt::NoButton, Qt::NoModifier, Qt::NoScrollPhase,
+                      /*inverted*/ false, Qt::MouseEventNotSynthesized);
+    QCoreApplication::sendEvent(_window, &event);
 }
 
 QQuickItem* QmlUITestBase::findVisibleItemScrolled(const QString& objectName, const QString& flickableObjectName)

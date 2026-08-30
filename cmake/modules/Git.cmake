@@ -188,15 +188,23 @@ endif()
 # ----------------------------------------------------------------------------
 # Parse Version Components (Major.Minor.Patch)
 # ----------------------------------------------------------------------------
-# Strip 'v' prefix if present (e.g., v1.2.3 -> 1.2.3)
-string(REGEX REPLACE "^v" "" QGC_APP_VERSION_CLEAN "${QGC_APP_VERSION}")
+# Strip common prefixes (v1.2.3, Version-1.2.3, etc.)
+string(REGEX REPLACE "^(v|Version-|Version_)" "" QGC_APP_VERSION_CLEAN "${QGC_APP_VERSION}")
 
-# Extract version components using regex
-if(QGC_APP_VERSION_CLEAN MATCHES "^([0-9]+)\\.([0-9]+)\\.([0-9]+)")
-    set(QGC_APP_VERSION "${QGC_APP_VERSION_CLEAN}")
+# Extract version components using regex (Major.Minor.Patch)
+if(QGC_APP_VERSION_CLEAN MATCHES "^([0-9]+)(\\.([0-9]+))?(\\.([0-9]+))?")
     set(QGC_APP_VERSION_MAJOR "${CMAKE_MATCH_1}")
-    set(QGC_APP_VERSION_MINOR "${CMAKE_MATCH_2}")
-    set(QGC_APP_VERSION_PATCH "${CMAKE_MATCH_3}")
+    set(QGC_APP_VERSION_MINOR "${CMAKE_MATCH_3}")
+    set(QGC_APP_VERSION_PATCH "${CMAKE_MATCH_5}")
+
+    if(NOT QGC_APP_VERSION_MINOR)
+        set(QGC_APP_VERSION_MINOR "0")
+    endif()
+    if(NOT QGC_APP_VERSION_PATCH)
+        set(QGC_APP_VERSION_PATCH "0")
+    endif()
+
+    set(QGC_APP_VERSION "${QGC_APP_VERSION_MAJOR}.${QGC_APP_VERSION_MINOR}.${QGC_APP_VERSION_PATCH}")
 else()
     # Fallback if version doesn't match expected format
     message(WARNING "QGC: Could not parse semantic version from Git tag: '${QGC_APP_VERSION_CLEAN}'. Using fallback 0.0.0")

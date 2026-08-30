@@ -38,6 +38,9 @@ CPMAddPackage(
 
 qgc_require_cpm_added(Shapelib)
 
+# shapelib uses generic names like 'table' and 'items' that conflict in Unity builds
+set_target_properties(shp PROPERTIES UNITY_BUILD OFF)
+
 qgc_disable_dependency_warnings(shp)
 
 target_link_libraries(QGCGeoFormats

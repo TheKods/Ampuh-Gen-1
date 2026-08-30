@@ -2,7 +2,7 @@
 #include "GPSRtk.h"
 #include "QGCLoggingCategory.h"
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 
 QGC_LOGGING_CATEGORY(GPSManagerLog, "GPS.GPSManager")
 

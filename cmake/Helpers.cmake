@@ -105,7 +105,7 @@ function(qgc_config_caching)
             add_compile_options(-Xclang -fno-pch-timestamp)
         endif()
     else()
-        message(WARNING "QGC: No ccache/sccache found - building without a compiler cache")
+        message(STATUS "QGC: No ccache/sccache found - building without a compiler cache")
     endif()
 endfunction()
 
@@ -270,7 +270,7 @@ endfunction()
 # Note: MSVC/Windows uses ASLR instead of PIE (enabled by default)
 # ----------------------------------------------------------------------------
 function(qgc_enable_pie)
-    if(MSVC)
+    if(MSVC OR CMAKE_CROSSCOMPILING)
         return()
     endif()
 
@@ -337,7 +337,7 @@ endfunction()
 # Enables Interprocedural Optimization (IPO/LTO) for Release builds
 # ----------------------------------------------------------------------------
 function(qgc_enable_ipo)
-    if(LINUX)
+    if(LINUX OR CMAKE_CROSSCOMPILING)
         return()
     endif()
 

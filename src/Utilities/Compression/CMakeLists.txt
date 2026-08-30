@@ -34,30 +34,40 @@ qt_add_qml_module(QGCCompression
 # so QGC_USE_SYSTEM_LIBS resolves them via find_package (CPM checks ${NAME}_FOUND).
 # <name>_ADDED = CPM built the static lib; otherwise a system copy provides the imported target.
 
+# We disable Unity builds for external dependencies as they often have naming conflicts
+# between files (especially in legacy support or different backend implementations).
+set(_old_unity_build ${CMAKE_UNITY_BUILD})
+set(CMAKE_UNITY_BUILD OFF)
+
 # ============================================================================
 # zlib Integration
 # ============================================================================
 
-set(ZLIB_EXTRA_OPTIONS)
-if(WIN32)
-    set(ZLIB_EXTRA_OPTIONS
-        "ZLIB_INSTALL_COMPAT_DLL OFF"
+if(ANDROID)
+    # Android NDK provides zlib, use it instead of CPM to avoid header conflicts
+    find_package(ZLIB REQUIRED)
+else()
+    set(ZLIB_EXTRA_OPTIONS)
+    if(WIN32)
+        set(ZLIB_EXTRA_OPTIONS
+            "ZLIB_INSTALL_COMPAT_DLL OFF"
+        )
+    endif()
+
+    CPMAddPackage(
+        NAME ZLIB
+        GITHUB_REPOSITORY madler/zlib
+        VERSION 1.3.2
+        GIT_TAG v1.3.2
+        OPTIONS
+            "ZLIB_BUILD_TESTING OFF"
+            "ZLIB_BUILD_SHARED OFF"
+            "ZLIB_BUILD_STATIC ON"
+            "ZLIB_INSTALL OFF"
+            "ZLIB_PREFIX OFF"
+            "${ZLIB_EXTRA_OPTIONS}"
     )
 endif()
-
-CPMAddPackage(
-    NAME ZLIB
-    GITHUB_REPOSITORY madler/zlib
-    VERSION 1.3.2
-    GIT_TAG v1.3.2
-    OPTIONS
-        "ZLIB_BUILD_TESTING OFF"
-        "ZLIB_BUILD_SHARED OFF"
-        "ZLIB_BUILD_STATIC ON"
-        "ZLIB_INSTALL OFF"
-        "ZLIB_PREFIX OFF"
-        "${ZLIB_EXTRA_OPTIONS}"
-)
 
 if(ZLIB_ADDED)
     qgc_disable_dependency_warnings(zlibstatic)
@@ -68,7 +78,16 @@ if(ZLIB_ADDED)
     if(NOT TARGET ZLIB::ZLIB)
         add_library(ZLIB::ZLIB ALIAS zlibstatic)
     endif()
-elseif(NOT ZLIB_FOUND)
+elseif(ZLIB_FOUND)
+    # Target already exists or found via find_package
+    # Modern find_package(ZLIB) creates ZLIB::ZLIB target.
+    # We clear the cached zlibstatic values if we were using them before to avoid Ninja errors.
+    if(ZLIB_LIBRARIES STREQUAL "zlibstatic")
+        unset(ZLIB_LIBRARY CACHE)
+        unset(ZLIB_LIBRARIES CACHE)
+        unset(ZLIB_INCLUDE_DIR CACHE)
+    endif()
+else()
     message(FATAL_ERROR "QGC: ZLIB (required dependency) was not resolved")
 endif()
 
@@ -167,6 +186,8 @@ if(zstd_ADDED)
     if(NOT TARGET zstd::libzstd_static)
         add_library(zstd::libzstd_static ALIAS libzstd_static)
     endif()
+    # zstd legacy support files have naming conflicts that break Unity builds
+    set_target_properties(libzstd_static PROPERTIES UNITY_BUILD OFF)
 elseif(zstd_FOUND OR Zstd_FOUND)
     if(NOT TARGET Zstd::Zstd)
         if(TARGET zstd::libzstd_static)
@@ -366,3 +387,6 @@ target_precompile_headers(QGCCompression PRIVATE
 )
 
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE QGCCompression)
+
+# Restore Unity build setting
+set(CMAKE_UNITY_BUILD ${_old_unity_build})

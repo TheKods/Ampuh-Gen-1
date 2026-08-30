@@ -1,6 +1,6 @@
 #include "AndroidEvents.h"
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 
 #include "QGCLoggingCategory.h"
 

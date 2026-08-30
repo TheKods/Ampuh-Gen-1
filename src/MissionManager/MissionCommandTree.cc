@@ -6,7 +6,7 @@
 #include "QGCLoggingCategory.h"
 #include "Vehicle.h"
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 
 QGC_LOGGING_CATEGORY(MissionCommandTreeLog, "Plan.MissionCommandTree");
 

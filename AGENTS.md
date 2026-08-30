@@ -15,17 +15,19 @@ Instructions for AI coding agents (Codex, Claude Code, etc.) working on QGroundC
 
 Before modifying any repository file:
 
-1. Read [CODING_STYLE.md](CODING_STYLE.md) completely.
-2. Read the task-specific references listed in this file.
-3. Do not begin editing until those reads are complete.
-4. Before the first edit, state in a progress update which instruction files were read.
+> [!IMPORTANT]
+> 1. Read [CODING_STYLE.md](CODING_STYLE.md) completely.
+> 2. Read the task-specific references listed in this file.
+> 3. Do not begin editing until those reads are complete.
+> 4. Before the first edit, state in a progress update which instruction files were read.
 
 ## Golden Rules (enforced — violations fail CI)
 
-These are the non-negotiables. The first four are QGC's core architecture patterns; the rest are
-enforced by pre-commit hooks, so ignoring them wastes a build cycle. Full list with code examples:
-[.github/CONTRIBUTING.md#architecture-patterns](.github/CONTRIBUTING.md#architecture-patterns) and
-[CODING_STYLE.md#common-pitfalls](CODING_STYLE.md#common-pitfalls).
+> [!WARNING]
+> These are the non-negotiables. The first four are QGC's core architecture patterns; the rest are
+> enforced by pre-commit hooks, so ignoring them wastes a build cycle. Full list with code examples:
+> [.github/CONTRIBUTING.md#architecture-patterns](.github/CONTRIBUTING.md#architecture-patterns) and
+> [CODING_STYLE.md#common-pitfalls](CODING_STYLE.md#common-pitfalls).
 
 - **Fact System** — ALL vehicle parameters flow through Facts; never create custom parameter storage.
 - **Multi-Vehicle** — ALWAYS null-check `activeVehicle()` / `Vehicle*` before dereferencing (`vehicle-null-check`).
@@ -80,6 +82,14 @@ just info               # print resolved versions (Qt, CMake, GStreamer)
 - **Build incrementally** — rebuild every few file edits during multi-file C++/Qt work, not just at the end; fix build errors before continuing.
 - **Tight test loops** — iterate one test with `ctest -R <name>` (or `--gtest_filter`); only run the full label on the final pass. CI runs `ctest --output-on-failure -L Unit`.
 - **Match CI** — before running tests/lint locally, use the same command CI runs ([.github/ci-overview.md](.github/ci-overview.md)), not a local guess.
+
+## Common CMake Warnings & Resolutions
+
+- **Semantic Version Parsing** — Fixed in `Git.cmake`. Handles tags like `Version-1` by stripping prefixes (`Version-`, `Version_`) and allowing optional minor/patch versions.
+- **ccache/sccache Missing** — Downgraded to `STATUS` in `Helpers.cmake`. It is acceptable to build without a compiler cache.
+- **Android OpenSSL EOL** — Downgraded to `STATUS` in `AndroidOpenSSL.cmake`. Informational for Windows hosts; production builds on Linux use updated libraries.
+- **Unused Variable `QT_CHAINLOAD_TOOLCHAIN_FILE`** — Silenced in the top-level `CMakeLists.txt` via a dummy reference.
+- **CPM Dirty Cache** — Downgraded to `STATUS` in `CPM.cmake`.
 
 ## Definition of Done
 

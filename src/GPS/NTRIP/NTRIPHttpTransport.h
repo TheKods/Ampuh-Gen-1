@@ -1,6 +1,6 @@
 #pragma once
 
-#include <QtCore/QChronoTimer>
+#include <QtCore/QTimer>
 #include <QtCore/QLoggingCategory>
 #include <QtNetwork/QSslSocket>
 #include <QtNetwork/QTcpSocket>
@@ -69,8 +69,8 @@ private:
     NTRIPTransportConfig _config;
 
     QTcpSocket* _socket = nullptr;
-    QChronoTimer _connectTimeoutTimer;
-    QChronoTimer _dataWatchdogTimer;
+    QTimer _connectTimeoutTimer;
+    QTimer _dataWatchdogTimer;
 
     RTCMParser _rtcmParser;
     bool _httpHandshakeDone = false;

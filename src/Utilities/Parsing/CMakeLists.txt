@@ -3,6 +3,11 @@
 # EXIF, APMDataFlash (ArduPilot DataFlash binary log), PX4ULog (PX4 ULog), JSON
 # ============================================================================
 
+# Disable Unity builds for this directory as libexif and other dependencies
+# have internal symbol conflicts.
+set(_old_unity_build ${CMAKE_UNITY_BUILD})
+set(CMAKE_UNITY_BUILD OFF)
+
 qt_add_library(QGCParsing STATIC
     APMDataFlash/APMDataFlashUtility.cc
     APMDataFlash/APMDataFlashUtility.h
@@ -96,6 +101,7 @@ set_target_properties(exif
     PROPERTIES
         C_STANDARD 99
         POSITION_INDEPENDENT_CODE ON
+        UNITY_BUILD OFF
 )
 
 qgc_disable_dependency_warnings(exif)
@@ -175,3 +181,6 @@ target_precompile_headers(QGCParsing PRIVATE
 )
 
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE QGCParsing)
+
+# Restore Unity build setting
+set(CMAKE_UNITY_BUILD ${_old_unity_build})

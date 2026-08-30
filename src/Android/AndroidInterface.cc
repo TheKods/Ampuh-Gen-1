@@ -3,14 +3,14 @@
 #include <QAndroidScreen.h>
 #include <QtAndroidHelpers/QAndroidPartialWakeLocker.h>
 #include <QtAndroidHelpers/QAndroidWiFiLocker.h>
-#include <QtCore/QCoreApplication>
-#include <QtCore/QDir>
-#include <QtCore/QFileInfo>
-#include <QtCore/QJniEnvironment>
-#include <QtCore/QJniObject>
-#include <QtCore/QMetaObject>
-#include <QtCore/QSharedPointer>
-#include <QtCore/QStandardPaths>
+#include <QCoreApplication>
+#include <QDir>
+#include <QFileInfo>
+#include <QJniEnvironment>
+#include <QJniObject>
+#include <QMetaObject>
+#include <QSharedPointer>
+#include <QStandardPaths>
 
 #include "AppSettings.h"
 #include "QGCApplication.h"
@@ -21,6 +21,18 @@
 QGC_LOGGING_CATEGORY(AndroidInterfaceLog, "Android.AndroidInterface")
 
 namespace AndroidInterface {
+
+struct JniMethodCache
+{
+    jmethodID checkStoragePermissions = nullptr;
+    jmethodID getSDCardPath = nullptr;
+    jmethodID openFileImportDialog = nullptr;
+};
+
+static JniMethodCache s_methods;
+static bool s_methodsCached = false;
+static QMutex s_cacheLock;
+static jclass s_activityClass = nullptr;
 
 static std::function<void(const QString&)> s_importCallback;
 
@@ -118,6 +130,53 @@ static void jniOnImportResult(JNIEnv* env, jobject, jstring filePathA)
     callback(filePath);
 }
 
+static bool cacheMethodIds(JNIEnv* env, jclass javaClass)
+{
+    s_methods.checkStoragePermissions = env->GetStaticMethodID(javaClass, "checkStoragePermissions", "()Z");
+    s_methods.getSDCardPath = env->GetStaticMethodID(javaClass, "getSDCardPath", "()Ljava/lang/String;");
+    s_methods.openFileImportDialog = env->GetStaticMethodID(javaClass, "openFileImportDialog", "(Ljava/lang/String;)V");
+
+    if (!s_methods.checkStoragePermissions || !s_methods.getSDCardPath || !s_methods.openFileImportDialog) {
+        qCWarning(AndroidInterfaceLog) << "Failed to cache JNI method IDs for QGCActivity";
+        (void)QJniEnvironment::checkAndClearExceptions(env);
+        return false;
+    }
+
+    s_methodsCached = true;
+    return true;
+}
+
+static jclass getActivityClass()
+{
+    QMutexLocker locker(&s_cacheLock);
+
+    if (s_activityClass && s_methodsCached) {
+        return s_activityClass;
+    }
+
+    QJniEnvironment env;
+    if (!env.isValid()) {
+        return nullptr;
+    }
+
+    if (!s_activityClass) {
+        const jclass resolvedClass = env.findClass(kJniQGCActivityClassName);
+        if (!resolvedClass) {
+            qCWarning(AndroidInterfaceLog) << "Class Not Found:" << kJniQGCActivityClassName;
+            return nullptr;
+        }
+
+        s_activityClass = static_cast<jclass>(env->NewGlobalRef(resolvedClass));
+        env->DeleteLocalRef(resolvedClass);
+    }
+
+    if (!s_methodsCached && !cacheMethodIds(env.jniEnv(), s_activityClass)) {
+        return nullptr;
+    }
+
+    return s_activityClass;
+}
+
 void setNativeMethods()
 {
     qCDebug(AndroidInterfaceLog) << "Registering Native Functions";
@@ -134,15 +193,21 @@ void setNativeMethods()
     } else {
         qCDebug(AndroidInterfaceLog) << "Native Functions Registered";
     }
+
+    (void)getActivityClass();
 }
 
 bool checkStoragePermissions()
 {
-    const bool hasPermission =
-        QJniObject::callStaticMethod<jboolean>(kJniQGCActivityClassName, "checkStoragePermissions", "()Z");
+    const jclass cls = getActivityClass();
+    if (!cls) {
+        return false;
+    }
+
     QJniEnvironment env;
-    if (env.checkAndClearExceptions()) {
-        qCWarning(AndroidInterfaceLog) << "Exception in checkStoragePermissions";
+    jboolean hasPermission = JNI_FALSE;
+    if (!callStaticBooleanMethod(env, cls, s_methods.checkStoragePermissions, "checkStoragePermissions",
+                                 AndroidInterfaceLog(), hasPermission)) {
         return false;
     }
 
@@ -152,7 +217,7 @@ bool checkStoragePermissions()
         qCWarning(AndroidInterfaceLog) << "Storage permissions not granted";
     }
 
-    return hasPermission;
+    return (hasPermission == JNI_TRUE);
 }
 
 QString getSDCardPath()
@@ -162,13 +227,18 @@ QString getSDCardPath()
         return QString();
     }
 
-    const QJniObject result =
-        QJniObject::callStaticObjectMethod(kJniQGCActivityClassName, "getSDCardPath", "()Ljava/lang/String;");
+    const jclass cls = getActivityClass();
+    if (!cls) {
+        return QString();
+    }
+
     QJniEnvironment env;
+    const QJniObject result = env->CallStaticObjectMethod(cls, s_methods.getSDCardPath);
     if (env.checkAndClearExceptions()) {
         qCWarning(AndroidInterfaceLog) << "Exception in getSDCardPath";
         return QString();
     }
+
     if (!result.isValid()) {
         qCWarning(AndroidInterfaceLog) << "Call to java getSDCardPath failed: Invalid Result";
         return QString();
@@ -181,14 +251,19 @@ void openFileImportDialog(const QString& destPath, std::function<void(const QStr
 {
     s_importCallback = std::move(callback);
 
-    const QJniObject jDestPath = QJniObject::fromString(destPath);
-    QJniObject::callStaticMethod<void>(
-        kJniQGCActivityClassName,
-        "openFileImportDialog",
-        "(Ljava/lang/String;)V",
-        jDestPath.object<jstring>());
+    const jclass cls = getActivityClass();
+    if (!cls) {
+        if (s_importCallback) {
+            auto cb = std::move(s_importCallback);
+            cb(QString());
+        }
+        return;
+    }
 
+    const QJniObject jDestPath = QJniObject::fromString(destPath);
     QJniEnvironment env;
+    env->CallStaticVoidMethod(cls, s_methods.openFileImportDialog, jDestPath.object<jstring>());
+
     if (env.checkAndClearExceptions()) {
         qCWarning(AndroidInterfaceLog) << "Exception in openFileImportDialog";
         if (s_importCallback) {

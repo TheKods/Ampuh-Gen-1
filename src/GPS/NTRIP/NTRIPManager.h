@@ -1,6 +1,6 @@
 #pragma once
 
-#include <QtCore/QChronoTimer>
+#include <QtCore/QTimer>
 #include <QtCore/QLoggingCategory>
 #include <QtCore/QObject>
 #include <QtCore/QPointer>
@@ -206,8 +206,8 @@ private:
     NTRIPSourceTableController _sourceTableController{this};
 
     static constexpr std::chrono::milliseconds kSettingsDebounceMs{250};
-    QChronoTimer _settingsDebounceTimer{this};
-    QChronoTimer _reconnectTimer{this};
+    QTimer _settingsDebounceTimer{this};
+    QTimer _reconnectTimer{this};
     int _reconnectAttempts = 0;
     bool _initialized = false;
 };

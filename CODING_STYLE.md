@@ -33,10 +33,12 @@ For complete worked examples, see the reference files:
 
 ## General
 
-- **Indentation**: 4 spaces (no tabs)
-- **Line endings**: LF (Unix-style)
-- **File encoding**: UTF-8
-- **Max line length**: 120 columns (enforced by `.clang-format`, `ColumnLimit: 120`)
+> [!TIP]
+> - **Indentation**: 4 spaces (no tabs)
+> - **Line endings**: LF (Unix-style)
+> - **File encoding**: UTF-8
+> - **Max line length**: 120 columns (enforced by `.clang-format`, `ColumnLimit: 120`)
+
 - **Avoid overengineering**: Prefer the smallest focused solution that satisfies current requirements.
   Do not add abstractions, extensibility, or speculative handling without a concrete need.
 
@@ -118,7 +120,8 @@ private:
 
 ### Modern C++ (C++20)
 
-QGroundControl uses C++20. Prefer modern features:
+> [!NOTE]
+> QGroundControl uses C++20. Prefer modern features for better performance and readability:
 
 ```cpp
 // Use [[nodiscard]] for functions with important return values

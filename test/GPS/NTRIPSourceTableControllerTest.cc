@@ -194,7 +194,7 @@ void NTRIPSourceTableControllerTest::testFetchAllowsSelfSignedSourceTableWhenCon
     httpServer.route("/", []() {
         return QHttpServerResponse("text/plain", kValidTable.toUtf8());
     });
-    QVERIFY(httpServer.bind(&server));
+    httpServer.bind(&server);
 
     NTRIPTransportConfig config;
     config.host = QStringLiteral("127.0.0.1");

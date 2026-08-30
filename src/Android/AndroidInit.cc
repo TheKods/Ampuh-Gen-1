@@ -2,9 +2,9 @@
 #ifndef QGC_NO_SERIAL_LINK
 #include "AndroidSerial.h"
 #endif
-#include <QtCore/QJniEnvironment>
-#include <QtCore/QJniObject>
-#include <QtCore/QLoggingCategory>
+#include <QJniEnvironment>
+#include <QJniObject>
+#include <QLoggingCategory>
 
 #include <atomic>
 

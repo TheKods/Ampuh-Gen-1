@@ -27,7 +27,7 @@ protected:
             imageFormat,
             QGC_AVERAGE_TILE_SIZE,
             MapProvider::StreetMap)
-        , _mapTypeId(mapName) {}
+        , _mapTypeId(mapTypeId) {}
 
 private:
     QString _getURL(int x, int y, int zoom) const final;
@@ -147,7 +147,7 @@ protected:
             QStringLiteral("png"),
             QGC_AVERAGE_TILE_SIZE,
             MapProvider::StreetMap)
-        , _mapTypeId(mapName) {}
+        , _mapTypeId(mapTypeId) {}
 
 private:
     QString _getURL(int x, int y, int zoom) const final;
@@ -219,7 +219,7 @@ protected:
             QStringLiteral("jpg"),
             QGC_AVERAGE_TILE_SIZE,
             mapType)
-        , _mapTypeId(mapName) {}
+        , _mapTypeId(mapTypeId) {}
 
 private:
     QString _getURL(int x, int y, int zoom) const final;
@@ -258,7 +258,7 @@ protected:
             imageFormat,
             averageSize,
             mapStyle)
-        , _mapTypeId(mapName) {}
+        , _mapTypeId(mapTypeId) {}
 
 private:
     QString _getURL(int x, int y, int zoom) const final;

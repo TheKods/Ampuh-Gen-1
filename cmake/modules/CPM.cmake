@@ -902,7 +902,7 @@ function(CPMAddPackage)
         cpm_check_git_working_dir_is_clean(${download_directory} ${CPM_ARGS_GIT_TAG} IS_CLEAN)
         if(NOT ${IS_CLEAN})
           message(
-            WARNING "${CPM_INDENT} Cache for ${CPM_ARGS_NAME} (${download_directory}) is dirty"
+            STATUS "${CPM_INDENT} Cache for ${CPM_ARGS_NAME} (${download_directory}) is dirty"
           )
         endif()
       endif()

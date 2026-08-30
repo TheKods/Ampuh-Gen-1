@@ -31,7 +31,7 @@
 #include "MockLink.h"
 #endif
 
-#include <QtCore/QApplicationStatic>
+#include <QtCore/qapplicationstatic.h>
 #include <QtCore/QTimer>
 
 QGC_LOGGING_CATEGORY(LinkManagerLog, "Comms.LinkManager")
