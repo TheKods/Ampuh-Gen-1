@@ -1,0 +1,890 @@
+[
+    {
+        "classes": [
+            {
+                "className": "QGCArchiveDeviceBase",
+                "object": true,
+                "qualifiedClassName": "QGCArchiveDeviceBase",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QIODevice"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "QGCArchiveDeviceBase.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QGCArchiveFile",
+                "object": true,
+                "qualifiedClassName": "QGCArchiveFile",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QGCArchiveDeviceBase"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "QGCArchiveFile.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "QGCArchiveModel",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Role",
+                        "values": [
+                            "NameRole",
+                            "SizeRole",
+                            "ModifiedRole",
+                            "IsDirectoryRole",
+                            "PermissionsRole",
+                            "FileNameRole",
+                            "DirectoryRole",
+                            "FormattedSizeRole"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "FilterMode",
+                        "values": [
+                            "AllEntries",
+                            "FilesOnly",
+                            "DirectoriesOnly"
+                        ]
+                    }
+                ],
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "refresh",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "clear",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "get",
+                        "returnType": "QVariantMap"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "fileName",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "contains",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "bytes",
+                                "type": "qint64"
+                            }
+                        ],
+                        "name": "formatSize",
+                        "returnType": "QString"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "archivePath",
+                        "notify": "archivePathChanged",
+                        "read": "archivePath",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setArchivePath"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "archiveUrl",
+                        "notify": "archivePathChanged",
+                        "read": "archiveUrl",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QUrl",
+                        "user": false,
+                        "write": "setArchiveUrl"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "count",
+                        "notify": "countChanged",
+                        "read": "count",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "fileCount",
+                        "notify": "fileCountChanged",
+                        "read": "fileCount",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "directoryCount",
+                        "notify": "directoryCountChanged",
+                        "read": "directoryCount",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "totalSize",
+                        "notify": "totalSizeChanged",
+                        "read": "totalSize",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qint64",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "loading",
+                        "notify": "loadingChanged",
+                        "read": "loading",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "errorString",
+                        "notify": "errorStringChanged",
+                        "read": "errorString",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "filterMode",
+                        "notify": "filterModeChanged",
+                        "read": "filterMode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FilterMode",
+                        "user": false,
+                        "write": "setFilterMode"
+                    }
+                ],
+                "qualifiedClassName": "QGCArchiveModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "archivePathChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "countChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "fileCountChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "directoryCountChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "totalSizeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "loadingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "errorStringChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "filterModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "loadingComplete",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "QGCArchiveModel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QGCArchiveWatcher",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "FilterMode",
+                        "values": [
+                            "Archives",
+                            "Compressed",
+                            "Both"
+                        ]
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "autoDecompress",
+                        "notify": "autoDecompressChanged",
+                        "read": "autoDecompress",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAutoDecompress"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "extracting",
+                        "notify": "extractingChanged",
+                        "read": "isExtracting",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "progress",
+                        "notify": "progressChanged",
+                        "read": "progress",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "outputDirectory",
+                        "notify": "outputDirectoryChanged",
+                        "read": "outputDirectory",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setOutputDirectory"
+                    }
+                ],
+                "qualifiedClassName": "QGCArchiveWatcher",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "archivePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "format",
+                                "type": "QGCCompression::Format"
+                            }
+                        ],
+                        "name": "archiveDetected",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "archivePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "outputPath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "errorString",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "extractionComplete",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "autoDecompress",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "autoDecompressChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "extracting",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "extractingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "progress",
+                                "type": "qreal"
+                            }
+                        ],
+                        "name": "progressChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "directory",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "outputDirectoryChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "path",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "_onDirectoryChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "progress",
+                                "type": "qreal"
+                            }
+                        ],
+                        "name": "_onExtractionProgress",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "_onExtractionFinished",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "QGCArchiveWatcher.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QGCCompressionJob",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "Operation",
+                        "values": [
+                            "None",
+                            "ExtractArchive",
+                            "ExtractArchiveAtomic",
+                            "DecompressFile",
+                            "ExtractFile",
+                            "ExtractFiles"
+                        ]
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "progress",
+                        "notify": "progressChanged",
+                        "read": "progress",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "running",
+                        "notify": "runningChanged",
+                        "read": "isRunning",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "errorString",
+                        "notify": "errorStringChanged",
+                        "read": "errorString",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "sourcePath",
+                        "notify": "sourcePathChanged",
+                        "read": "sourcePath",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 4,
+                        "name": "outputPath",
+                        "notify": "outputPathChanged",
+                        "read": "outputPath",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "QGCCompressionJob",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "progress",
+                                "type": "qreal"
+                            }
+                        ],
+                        "name": "progressChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "running",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "runningChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "finished",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "errorString",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "errorStringChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "sourcePath",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "sourcePathChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "outputPath",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "outputPathChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "archivePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "outputDirectoryPath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "maxBytes",
+                                "type": "qint64"
+                            }
+                        ],
+                        "name": "extractArchive",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "archivePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "outputDirectoryPath",
+                                "type": "QString"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "extractArchive",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "archivePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "outputDirectoryPath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "maxBytes",
+                                "type": "qint64"
+                            }
+                        ],
+                        "name": "extractArchiveAtomic",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "archivePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "outputDirectoryPath",
+                                "type": "QString"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "extractArchiveAtomic",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inputPath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "outputPath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "maxBytes",
+                                "type": "qint64"
+                            }
+                        ],
+                        "name": "decompressFile",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inputPath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "outputPath",
+                                "type": "QString"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "decompressFile",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inputPath",
+                                "type": "QString"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "decompressFile",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "archivePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "fileName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "outputPath",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "extractFile",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "archivePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "fileNames",
+                                "type": "QStringList"
+                            },
+                            {
+                                "name": "outputDirectoryPath",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "extractFiles",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "cancel",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "progressValue",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "_onProgressValueChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "_onFutureFinished",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "QGCCompressionJob.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QGCDecompressDevice",
+                "object": true,
+                "qualifiedClassName": "QGCDecompressDevice",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QGCArchiveDeviceBase"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "QGCDecompressDevice.h",
+        "outputRevision": 68
+    }
+]

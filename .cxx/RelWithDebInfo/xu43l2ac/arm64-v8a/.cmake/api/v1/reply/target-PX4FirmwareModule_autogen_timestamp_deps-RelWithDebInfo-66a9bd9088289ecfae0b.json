@@ -1,0 +1,62 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/FirmwarePlugin/PX4/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "PX4FirmwareModule_autogen_timestamp_deps::@c7b3eb9193b2dc326a1d",
+	"isGeneratorProvided" : true,
+	"name" : "PX4FirmwareModule_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "src/FirmwarePlugin/PX4",
+		"source" : "src/FirmwarePlugin/PX4"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/PX4/CMakeFiles/PX4FirmwareModule_autogen_timestamp_deps",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/PX4/CMakeFiles/PX4FirmwareModule_autogen_timestamp_deps.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

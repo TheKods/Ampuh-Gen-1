@@ -1,0 +1,15 @@
+--bare
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/qml
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/APM/.qt/rcc/qmake_QGroundControl_FirmwarePlugin_APM.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/APM/.qt/rcc/APMFirmwareModule_raw_qml_0.qrc
+C:/Project/qgroundcontrol-master/src/FirmwarePlugin/APM/APMBatteryIndicator.qml
+C:/Project/qgroundcontrol-master/src/FirmwarePlugin/APM/APMFlightModeIndicator.qml
+C:/Project/qgroundcontrol-master/src/FirmwarePlugin/APM/APMMainStatusIndicator.qml
+C:/Project/qgroundcontrol-master/src/FirmwarePlugin/APM/APMSupportForwardingIndicator.qml

@@ -1,0 +1,80 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/Utilities/Compression/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "QGCLogging::@39d1e26217382c022c7f"
+		},
+		{
+			"id" : "liblzma::@a3a5518a5f7332a5417e"
+		},
+		{
+			"id" : "libzstd_static::@ce257b546cf505c1d048"
+		},
+		{
+			"id" : "archive_static::@91b5b558f42a4eb287e5"
+		},
+		{
+			"id" : "QGCFileSystem::@f57fdef940b139cc1e52"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "QGCCompression_autogen_timestamp_deps::@82f67fdaf3bad773fadf",
+	"isGeneratorProvided" : true,
+	"name" : "QGCCompression_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "src/Utilities/Compression",
+		"source" : "src/Utilities/Compression"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Compression/CMakeFiles/QGCCompression_autogen_timestamp_deps",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Compression/CMakeFiles/QGCCompression_autogen_timestamp_deps.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

@@ -157,6 +157,12 @@ target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE AutoPilotPluginsPX4Module)
 
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE Viewer3DModule)
 
+target_link_options(${CMAKE_PROJECT_NAME}
+    PRIVATE
+        "-Wl,-z,max-page-size=16384"
+        "-Wl,-z,common-page-size=16384"
+)
+
 # ============================================================================
 # Compile Definitions
 # ============================================================================
@@ -183,11 +189,20 @@ target_compile_definitions(${CMAKE_PROJECT_NAME}
 # Target Properties
 # ============================================================================
 
+set(_output_name ${CMAKE_PROJECT_NAME})
+if(ANDROID)
+    if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+        set(_output_name "${_output_name}_debug")
+    else()
+        set(_output_name "${_output_name}_release")
+    endif()
+endif()
+
 set_target_properties(${CMAKE_PROJECT_NAME}
     PROPERTIES
         AUTORCC OFF
         QT_RESOURCE_PREFIX "/qml"
-        OUTPUT_NAME ${CMAKE_PROJECT_NAME}
+        OUTPUT_NAME ${_output_name}
 )
 
 # Helper STATIC libs declare their own tailored PCH; REUSE_FROM is impractical

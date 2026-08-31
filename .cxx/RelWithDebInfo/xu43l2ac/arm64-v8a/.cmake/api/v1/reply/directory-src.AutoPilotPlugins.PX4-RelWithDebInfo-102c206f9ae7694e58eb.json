@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "src/AutoPilotPlugins/PX4",
+		"source" : "src/AutoPilotPlugins/PX4"
+	}
+}

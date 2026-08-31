@@ -1,0 +1,2080 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "RelWithDebInfo/lib/libQGCGeoFormats_arm64-v8a.a"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"target_compile_options",
+			"qgc_set_warning_flags",
+			"qgc_configure_target",
+			"_qgc_configure_directory_targets",
+			"qgc_configure_directory_targets",
+			"qgc_add_optional_no_warning",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_precompile_headers",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"qt_add_resources",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"src/Utilities/Geo/Formats/CMakeLists.txt",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake",
+			"cmake/CompilerWarnings.cmake",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:749:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2692,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2570,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2667,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 162,
+				"parent" : 6
+			},
+			{
+				"file" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 95,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 317,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 370,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 122,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 122,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 122,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 122,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 122,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 122,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 122,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 122,
+				"parent" : 11
+			},
+			{
+				"command" : 13,
+				"file" : 4,
+				"line" : 459,
+				"parent" : 6
+			},
+			{
+				"command" : 12,
+				"file" : 6,
+				"line" : 232,
+				"parent" : 20
+			},
+			{
+				"command" : 12,
+				"file" : 6,
+				"line" : 215,
+				"parent" : 21
+			},
+			{
+				"command" : 12,
+				"file" : 6,
+				"line" : 215,
+				"parent" : 22
+			},
+			{
+				"command" : 12,
+				"file" : 6,
+				"line" : 215,
+				"parent" : 23
+			},
+			{
+				"command" : 11,
+				"file" : 6,
+				"line" : 206,
+				"parent" : 24
+			},
+			{
+				"command" : 10,
+				"file" : 6,
+				"line" : 177,
+				"parent" : 25
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 36,
+				"parent" : 26
+			},
+			{
+				"command" : 14,
+				"file" : 6,
+				"line" : 61,
+				"parent" : 26
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 21,
+				"parent" : 28
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 184,
+				"parent" : 25
+			},
+			{
+				"command" : 16,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 780,
+				"parent" : 31
+			},
+			{
+				"command" : 4,
+				"file" : 7,
+				"line" : 392,
+				"parent" : 32
+			},
+			{
+				"command" : 18,
+				"file" : 7,
+				"line" : 541,
+				"parent" : 32
+			},
+			{
+				"command" : 17,
+				"file" : 7,
+				"line" : 3099,
+				"parent" : 34
+			},
+			{
+				"command" : 17,
+				"file" : 7,
+				"line" : 3124,
+				"parent" : 34
+			},
+			{
+				"command" : 19,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 21,
+				"file" : 7,
+				"line" : 2924,
+				"parent" : 34
+			},
+			{
+				"command" : 20,
+				"file" : 0,
+				"line" : 1421,
+				"parent" : 38
+			},
+			{
+				"command" : 20,
+				"file" : 7,
+				"line" : 3090,
+				"parent" : 34
+			},
+			{
+				"command" : 24,
+				"file" : 7,
+				"line" : 590,
+				"parent" : 32
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 41
+			},
+			{
+				"command" : 22,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 42
+			},
+			{
+				"command" : 20,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 43
+			},
+			{
+				"command" : 25,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 389,
+				"parent" : 45
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 46
+			},
+			{
+				"command" : 22,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 47
+			},
+			{
+				"command" : 20,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 48
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 27,
+				"file" : 8,
+				"line" : 1,
+				"parent" : 50
+			},
+			{
+				"command" : 26,
+				"file" : 0,
+				"line" : 774,
+				"parent" : 51
+			},
+			{
+				"command" : 20,
+				"file" : 0,
+				"line" : 2123,
+				"parent" : 52
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 12,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wno-switch"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wno-deprecated-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-error=shadow"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++20"
+				},
+				{
+					"fragment" : "-Winvalid-pch -Xclang -include-pch -Xclang C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/CMakeFiles/QGCGeoFormats.dir/cmake_pch.hxx.pch -Xclang -include -Xclang C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/CMakeFiles/QGCGeoFormats.dir/cmake_pch.hxx"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 33,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_LOCATION_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_POSITIONINGQUICK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_POSITIONING_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICKSHAPES_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_XML_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/QGCGeoFormats_autogen/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Geo/Formats"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Geo"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Logging"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/APMDataFlash"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Exif"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Json"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/PX4ULog"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/libexif/4d0f"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Parsing/Exif"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/mkspecs/android-clang"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtNetwork"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioning"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtXml"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtLocation"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioningQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuickShapes"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuickShapes/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuickShapes/6.7.3/QtQuickShapes"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui/6.7.3/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick/6.7.3/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels/6.7.3/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtLocation/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtLocation/6.7.3/QtLocation"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioning/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioning/6.7.3/QtPositioning"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioningQuick/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioningQuick/6.7.3/QtPositioningQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					33,
+					33
+				],
+				"standard" : "20"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 37,
+					"header" : "<QtCore/QObject>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtCore/QString>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtCore/QJsonObject>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtPositioning/QGeoCoordinate>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtQmlIntegration/QtQmlIntegration>"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				10,
+				12,
+				15
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 12,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wno-switch"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wno-deprecated-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-error=shadow"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++20"
+				},
+				{
+					"fragment" : "-Winvalid-pch -fpch-instantiate-templates -Xclang -emit-pch -Xclang -include -Xclang C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/CMakeFiles/QGCGeoFormats.dir/cmake_pch.hxx -x c++-header"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 33,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_LOCATION_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_POSITIONINGQUICK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_POSITIONING_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICKSHAPES_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_XML_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/QGCGeoFormats_autogen/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Geo/Formats"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Geo"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Logging"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/APMDataFlash"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Exif"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Json"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/PX4ULog"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/libexif/4d0f"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Parsing/Exif"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/mkspecs/android-clang"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtNetwork"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioning"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtXml"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtLocation"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioningQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuickShapes"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuickShapes/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuickShapes/6.7.3/QtQuickShapes"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui/6.7.3/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick/6.7.3/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels/6.7.3/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtLocation/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtLocation/6.7.3/QtLocation"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioning/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioning/6.7.3/QtPositioning"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioningQuick/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioningQuick/6.7.3/QtPositioningQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					33,
+					33
+				],
+				"standard" : "20"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 37,
+					"header" : "<QtCore/QObject>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtCore/QString>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtCore/QJsonObject>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtPositioning/QGeoCoordinate>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtQmlIntegration/QtQmlIntegration>"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				1
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 12,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wno-switch"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wno-deprecated-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-error=shadow"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 33,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_LOCATION_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_POSITIONINGQUICK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_POSITIONING_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICKSHAPES_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_XML_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/QGCGeoFormats_autogen/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Geo/Formats"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Geo"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Logging"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/APMDataFlash"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Exif"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Json"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Parsing/PX4ULog"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/libexif/4d0f"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Parsing/Exif"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/mkspecs/android-clang"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtNetwork"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioning"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtXml"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtLocation"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioningQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuickShapes"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuickShapes/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuickShapes/6.7.3/QtQuickShapes"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui/6.7.3/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick/6.7.3/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels/6.7.3/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtLocation/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtLocation/6.7.3/QtLocation"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioning/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioning/6.7.3/QtPositioning"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioningQuick/6.7.3"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioningQuick/6.7.3/QtPositioningQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					33,
+					33
+				],
+				"standard" : "20"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 37,
+					"header" : "<QtCore/QObject>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtCore/QString>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtCore/QJsonObject>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtPositioning/QGeoCoordinate>"
+				},
+				{
+					"backtrace" : 37,
+					"header" : "<QtQmlIntegration/QtQmlIntegration>"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				16,
+				17
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "QGCLogging_resources_1::@39d1e26217382c022c7f"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCLogging::@39d1e26217382c022c7f"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCCompression_resources_1::@82f67fdaf3bad773fadf"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCCompression::@82f67fdaf3bad773fadf"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "liblzma::@a3a5518a5f7332a5417e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "libzstd_static::@ce257b546cf505c1d048"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "archive_static::@91b5b558f42a4eb287e5"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCFileSystem::@f57fdef940b139cc1e52"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCGeoMath::@a3f7d73392d72fbba232"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "GeographicLib_STATIC::@dce13dc75a99617acf06"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "shp::@3179a7a8a942f4ec13cf"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "exif::@439b4e2e928b3402007a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCParsing::@439b4e2e928b3402007a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "ulog_cpp::@83f35c707b92fa6c70db"
+		},
+		{
+			"id" : "QGCGeoFormats_autogen_timestamp_deps::@29d9481ed4a492e16d72"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QGCGeoFormats_autogen::@29d9481ed4a492e16d72"
+		}
+	],
+	"id" : "QGCGeoFormats::@29d9481ed4a492e16d72",
+	"name" : "QGCGeoFormats",
+	"nameOnDisk" : "libQGCGeoFormats_arm64-v8a.a",
+	"paths" : 
+	{
+		"build" : "src/Utilities/Geo/Formats",
+		"source" : "src/Utilities/Geo/Formats"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				23
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				4,
+				6,
+				8,
+				10,
+				12,
+				15,
+				16,
+				17
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				3,
+				5,
+				7,
+				9,
+				11,
+				13
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				14,
+				18,
+				19,
+				20,
+				21,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43
+			]
+		},
+		{
+			"name" : "Precompile Header File",
+			"sourceIndexes" : 
+			[
+				22
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/QGCGeoFormats_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 1,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/CMakeFiles/QGCGeoFormats.dir/cmake_pch.hxx.cxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Utilities/Geo/Formats/GeoJsonHelper.cc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Utilities/Geo/Formats/GeoJsonHelper.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Utilities/Geo/Formats/KMLDomDocument.cc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Utilities/Geo/Formats/KMLDomDocument.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Utilities/Geo/Formats/KMLHelper.cc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Utilities/Geo/Formats/KMLHelper.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Utilities/Geo/Formats/KMLSchemaValidator.cc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Utilities/Geo/Formats/KMLSchemaValidator.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Utilities/Geo/Formats/ShapeFileHelper.cc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Utilities/Geo/Formats/ShapeFileHelper.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/Utilities/Geo/Formats/SHPFileHelper.cc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "src/Utilities/Geo/Formats/SHPFileHelper.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 39,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/meta_types/qt6qgcgeoformats_relwithdebinfo_metatypes.json.gen",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 40,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/qgcgeoformats_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 44,
+			"compileGroupIndex" : 2,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/.qt/rcc/qrc_qmake_QGroundControl_Geo.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 49,
+			"compileGroupIndex" : 2,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/.qt/rcc/qrc_kml_schema.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 53,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/.qt/rcc/qmake_QGroundControl_Geo.qrc",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 53,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/Geo/qmldir",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 53,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/.qt/rcc/kml_schema.qrc",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 53,
+			"path" : "src/Utilities/Geo/Formats/ogckml22.xsd",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/CMakeFiles/QGCGeoFormats.dir/cmake_pch.hxx",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/QGCGeoFormats_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/meta_types/qt6qgcgeoformats_relwithdebinfo_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/qgcgeoformats_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/.qt/rcc/qrc_qmake_QGroundControl_Geo.cpp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/.qt/rcc/qrc_kml_schema.cpp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/QGCGeoFormats_autogen/timestamp.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/meta_types/QGCGeoFormats_json_file_list.txt.rule",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qmlbuiltins_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6gui_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6positioning_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6xml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6location_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6positioningquick_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6quick_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qmlmodels_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6opengl_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6quickshapesprivate_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Logging/meta_types/qt6qgclogging_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

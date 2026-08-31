@@ -1,0 +1,14 @@
+--bare
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/qml
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AnalyzeView/GeoTag/.qt/rcc/qmake_QGroundControl_AnalyzeView_GeoTag.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AnalyzeView/GeoTag/.qt/rcc/GeoTagModule_raw_qml_0.qrc
+C:/Project/qgroundcontrol-master/src/AnalyzeView/GeoTag/GeoTagPage.qml
+--json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/GeoTagModule_qmllint.json

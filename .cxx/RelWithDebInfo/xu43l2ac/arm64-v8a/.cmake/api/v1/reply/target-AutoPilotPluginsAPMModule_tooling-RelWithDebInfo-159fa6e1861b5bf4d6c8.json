@@ -1,0 +1,778 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"target_sources"
+		],
+		"files" : 
+		[
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"src/AutoPilotPlugins/APM/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 109,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 780,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 647,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2767,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 2771,
+				"parent" : 3
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "AutoPilotPluginsAPMModule_tooling::@761191fa32745de764d9",
+	"name" : "AutoPilotPluginsAPMModule_tooling",
+	"paths" : 
+	{
+		"build" : "src/AutoPilotPlugins/APM",
+		"source" : "src/AutoPilotPlugins/APM"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFailsafesComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMLoggingComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMPowerComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightSafetyComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMTuningCopterComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAirframeComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAirframeComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAirspeedComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAirspeedComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMBatteryParams.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMCalcAmpsPerVoltDialog.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMCalcVoltageDividerDialog.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMESCComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMESCComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFailsafesComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFailsafesComponentSummarySub.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightModesComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightModesComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFollowComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFollowComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMGimbalComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMGimbalInstance.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMGimbalParams.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMHeliComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMLightsComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMLightsComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMMotorComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMServoComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMNotSupported.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMPowerComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMRadioComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMRemoteSupportComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightSafetyComponentSub.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightSafetyComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightSafetyComponentSummarySub.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSensorsComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSensorsComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSensorIdDecoder.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSensorParams.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSubFrameComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSubFrameComponentSummary.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSubMotorComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAutoTuneChannelSelector.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAdvancedTuningCopterComponent.qml",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/VehicleConfig/APMFailsafes.VehicleConfig.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/VehicleConfig/APMLogging.VehicleConfig.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/VehicleConfig/APMPower.VehicleConfig.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/VehicleConfig/APMFlightSafety.VehicleConfig.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/VehicleConfig/APMTuningCopter.VehicleConfig.json",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFailsafesComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMLoggingComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMPowerComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightSafetyComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMTuningCopterComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAirframeComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAirframeComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAirspeedComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAirspeedComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMBatteryParams.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMCalcAmpsPerVoltDialog.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMCalcVoltageDividerDialog.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMESCComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMESCComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFailsafesComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFailsafesComponentSummarySub.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightModesComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightModesComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFollowComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFollowComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMGimbalComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMGimbalInstance.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMGimbalParams.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMHeliComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMLightsComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMLightsComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMMotorComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMServoComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMNotSupported.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMPowerComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMRadioComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMRemoteSupportComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightSafetyComponentSub.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightSafetyComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMFlightSafetyComponentSummarySub.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSensorsComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSensorsComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSensorIdDecoder.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSensorParams.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSubFrameComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSubFrameComponentSummary.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMSubMotorComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAutoTuneChannelSelector.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/APMAdvancedTuningCopterComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/VehicleConfig/APMFailsafes.VehicleConfig.json.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/VehicleConfig/APMLogging.VehicleConfig.json.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/VehicleConfig/APMPower.VehicleConfig.json.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/VehicleConfig/APMFlightSafety.VehicleConfig.json.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/APM/VehicleConfig/APMTuningCopter.VehicleConfig.json.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/APM/generated/APMFailsafesComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "INTERFACE_LIBRARY"
+}

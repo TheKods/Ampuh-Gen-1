@@ -1,3 +1,4 @@
+#include <jni.h>
 #include "AndroidInterface.h"
 #ifndef QGC_NO_SERIAL_LINK
 #include "AndroidSerial.h"
@@ -43,7 +44,7 @@ extern "C"
 
 #endif
 
-static jboolean jniInit(JNIEnv *env, jobject thiz)
+extern "C" jboolean Java_org_mavlink_qgroundcontrol_QGCActivity_nativeInit(JNIEnv *env, jobject thiz)
 {
     qCDebug(AndroidInitLog) << Q_FUNC_INFO;
 
@@ -111,32 +112,6 @@ static jboolean jniInit(JNIEnv *env, jobject thiz)
 static jint jniSetNativeMethods()
 {
     qCDebug(AndroidInitLog) << Q_FUNC_INFO;
-
-    const JNINativeMethod javaMethods[] {
-        {"nativeInit", "()Z", reinterpret_cast<void *>(jniInit)},
-    };
-
-    QJniEnvironment jniEnv;
-    (void) jniEnv.checkAndClearExceptions();
-
-    jclass objectClass = jniEnv->FindClass(AndroidInterface::kJniQGCActivityClassName);
-    if (!objectClass) {
-        qCWarning(AndroidInitLog) << "Couldn't find class:" << AndroidInterface::kJniQGCActivityClassName;
-        (void) jniEnv.checkAndClearExceptions();
-        return JNI_ERR;
-    }
-
-    const jint val = jniEnv->RegisterNatives(objectClass, javaMethods, std::size(javaMethods));
-    jniEnv->DeleteLocalRef(objectClass);
-    if (val < 0) {
-        qCWarning(AndroidInitLog) << "Error registering methods:" << val;
-        (void) jniEnv.checkAndClearExceptions();
-        return JNI_ERR;
-    }
-
-    qCDebug(AndroidInitLog) << "Main Native Functions Registered";
-
-    (void) jniEnv.checkAndClearExceptions();
 
     return JNI_OK;
 }

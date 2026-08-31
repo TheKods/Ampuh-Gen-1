@@ -1,0 +1,16 @@
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/qml
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/PlanView/.qt/rcc/qmake_QGroundControl_PlanView.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/PlanView/.qt/rcc/PlanViewModule_raw_qml_0.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/PlanView/.qt/rcc/planview_resources.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/PlanView/.qt/rcc/planview_qmlimages.qrc
+--module
+QGroundControl.PlanView

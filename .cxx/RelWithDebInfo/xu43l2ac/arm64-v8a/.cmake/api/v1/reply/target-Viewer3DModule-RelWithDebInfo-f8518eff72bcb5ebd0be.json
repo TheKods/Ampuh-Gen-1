@@ -1,0 +1,1415 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "RelWithDebInfo/lib/libViewer3DModule_arm64-v8a.a"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"target_link_libraries",
+			"add_dependencies",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"target_compile_options",
+			"qgc_set_warning_flags",
+			"qgc_configure_target",
+			"_qgc_configure_directory_targets",
+			"qgc_configure_directory_targets",
+			"qgc_add_optional_no_warning",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"_qt_internal_target_enable_qmlcachegen",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"src/Viewer3D/CMakeLists.txt",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake",
+			"cmake/CompilerWarnings.cmake",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:749:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2692,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2570,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2667,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 86,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 780,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 647,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 2768,
+				"parent" : 8
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 11,
+				"file" : 5,
+				"line" : 162,
+				"parent" : 10
+			},
+			{
+				"file" : 4,
+				"parent" : 11
+			},
+			{
+				"command" : 10,
+				"file" : 4,
+				"line" : 95,
+				"parent" : 12
+			},
+			{
+				"command" : 9,
+				"file" : 3,
+				"line" : 317,
+				"parent" : 13
+			},
+			{
+				"command" : 12,
+				"file" : 5,
+				"line" : 370,
+				"parent" : 10
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 17,
+				"file" : 5,
+				"line" : 459,
+				"parent" : 10
+			},
+			{
+				"command" : 16,
+				"file" : 7,
+				"line" : 232,
+				"parent" : 24
+			},
+			{
+				"command" : 16,
+				"file" : 7,
+				"line" : 215,
+				"parent" : 25
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 206,
+				"parent" : 26
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 177,
+				"parent" : 27
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 36,
+				"parent" : 28
+			},
+			{
+				"command" : 18,
+				"file" : 7,
+				"line" : 61,
+				"parent" : 28
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 21,
+				"parent" : 30
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 184,
+				"parent" : 27
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 392,
+				"parent" : 7
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 541,
+				"parent" : 7
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3099,
+				"parent" : 34
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3124,
+				"parent" : 34
+			},
+			{
+				"command" : 22,
+				"file" : 2,
+				"line" : 2924,
+				"parent" : 34
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 1421,
+				"parent" : 37
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 3090,
+				"parent" : 34
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 590,
+				"parent" : 7
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 40
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 41
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 42
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 637,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 26,
+				"file" : 2,
+				"line" : 2656,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 1248,
+				"parent" : 46
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 2788,
+				"parent" : 8
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 65
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 66
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 67
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 28,
+				"file" : 8,
+				"line" : 1,
+				"parent" : 69
+			},
+			{
+				"command" : 27,
+				"file" : 0,
+				"line" : 774,
+				"parent" : 70
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2123,
+				"parent" : 71
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 23,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wno-switch"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 31,
+					"fragment" : "-Wno-deprecated-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-Wno-error=shadow"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 33,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_POSITIONING_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK3DRUNTIMERENDER_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK3DUTILS_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK3D_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_SHADERTOOLS_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/Viewer3DModule_autogen/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Project/qgroundcontrol-master/src/Viewer3D"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Logging"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Geo"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/mkspecs/android-clang"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtNetwork"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtPositioning"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick3D"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick3DRuntimeRender"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick3DUtils"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtShaderTools"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					33,
+					33
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				6,
+				8,
+				11,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				29
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "QGCLogging_resources_1::@39d1e26217382c022c7f"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCLogging::@39d1e26217382c022c7f"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCGeoMath::@a3f7d73392d72fbba232"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "GeographicLib_STATIC::@dce13dc75a99617acf06"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "Viewer3DModule_tooling::@86f251bf20a08a1d2365"
+		},
+		{
+			"id" : "Viewer3DModule_autogen_timestamp_deps::@86f251bf20a08a1d2365"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Viewer3DModule_autogen::@86f251bf20a08a1d2365"
+		}
+	],
+	"id" : "Viewer3DModule::@86f251bf20a08a1d2365",
+	"name" : "Viewer3DModule",
+	"nameOnDisk" : "libViewer3DModule_arm64-v8a.a",
+	"paths" : 
+	{
+		"build" : "src/Viewer3D",
+		"source" : "src/Viewer3D"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				50
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				10,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				4,
+				6,
+				8,
+				11,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				29
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				5,
+				7,
+				9
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/Viewer3DModule_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 38,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/meta_types/qt6viewer3dmodule_relwithdebinfo_metatypes.json.gen",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 39,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/viewer3dmodule_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 43,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.qt/rcc/qrc_qmake_QGroundControl_Viewer3D.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 44,
+			"compileGroupIndex" : 0,
+			"path" : "src/Viewer3D/Viewer3DCameraController.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 44,
+			"path" : "src/Viewer3D/Viewer3DCameraController.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 44,
+			"compileGroupIndex" : 0,
+			"path" : "src/Viewer3D/Viewer3DGeoCoordinateType.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 44,
+			"path" : "src/Viewer3D/Viewer3DGeoCoordinateType.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 44,
+			"compileGroupIndex" : 0,
+			"path" : "src/Viewer3D/Viewer3DInstancing.cc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 44,
+			"path" : "src/Viewer3D/Viewer3DInstancing.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 45,
+			"path" : "src/Viewer3D/Viewer3DQml/Models3D/CameraLightModel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 47,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 48,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Models3D/CameraLightModel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 49,
+			"path" : "src/Viewer3D/Viewer3DQml/Models3D/Viewer3DCameraControls.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 50,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Models3D/Viewer3DCameraControls_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 51,
+			"path" : "src/Viewer3D/Viewer3DQml/Models3D/Viewer3DModel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 52,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Models3D/Viewer3DModel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 53,
+			"path" : "src/Viewer3D/Viewer3DQml/Models3D/Viewer3DScaleBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 54,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Models3D/Viewer3DScaleBar_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 55,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/DronePart.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 56,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Drones/DronePart_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 57,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/AnimatedPropeller.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 58,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Drones/AnimatedPropeller_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 59,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/DroneModelDjiF450.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 60,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Drones/DroneModelDjiF450_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 61,
+			"path" : "src/Viewer3D/Viewer3DQml/Models3D/Viewer3DVehicleItems.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 62,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Models3D/Viewer3DVehicleItems_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 63,
+			"path" : "src/Viewer3D/Viewer3DQml/Viewer3DShowAction.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 64,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Viewer3DShowAction_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 68,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.qt/rcc/qrc_Viewer3DModule_raw_qml_0.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 72,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.qt/rcc/qmake_QGroundControl_Viewer3D.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/Viewer3D/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.qt/rcc/Viewer3DModule_raw_qml_0.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Images/city_3d_map_icon.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Models3D/Shaders/earthMaterial.frag",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Models3D/Shaders/earthMaterial.vert",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_arm_1/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_arm_2/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_arm_3/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_arm_4/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_BLDC_1/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_BLDC_2/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_BLDC_3/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_BLDC_4/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_propeller2_2/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_propeller2_7/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_propeller22_1/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_propeller22_2/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_Base_bottom_1/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/Viewer3D/Viewer3DQml/Drones/Djif450/DroneModel_Base_Top_1/node.mesh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/Viewer3DModule_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/meta_types/qt6viewer3dmodule_relwithdebinfo_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/viewer3dmodule_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.qt/rcc/qrc_qmake_QGroundControl_Viewer3D.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Models3D/CameraLightModel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Models3D/Viewer3DCameraControls_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Models3D/Viewer3DModel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Models3D/Viewer3DScaleBar_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Drones/DronePart_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Drones/AnimatedPropeller_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Drones/DroneModelDjiF450_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Models3D/Viewer3DVehicleItems_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.rcc/qmlcache/Viewer3DModule_Viewer3DQml/Viewer3DShowAction_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.qt/rcc/qrc_Viewer3DModule_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/Viewer3DModule_autogen/timestamp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/meta_types/Viewer3DModule_json_file_list.txt.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qmlbuiltins_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Logging/meta_types/qt6qgclogging_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6gui_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6positioning_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6quick3d_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6quick_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qmlmodels_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6opengl_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6quick3druntimerender_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6quick3dutils_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6shadertools_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

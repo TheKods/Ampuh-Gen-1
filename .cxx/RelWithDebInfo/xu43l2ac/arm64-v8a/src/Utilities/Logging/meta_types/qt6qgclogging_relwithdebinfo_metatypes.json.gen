@@ -1,0 +1,250 @@
+[
+    {
+        "classes": [
+            {
+                "className": "QGCLoggingCategoryItem",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "enabled",
+                        "notify": "enabledChanged",
+                        "read": "enabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setEnabled"
+                    }
+                ],
+                "qualifiedClassName": "QGCLoggingCategoryItem",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "enabledChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "LoggingCategoryFlatModel",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "Roles",
+                        "values": [
+                            "ShortNameRole",
+                            "FullNameRole",
+                            "EnabledRole"
+                        ]
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "LoggingCategoryFlatModel",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "LoggingCategoryTreeModel",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "Roles",
+                        "values": [
+                            "ShortNameRole",
+                            "FullNameRole",
+                            "EnabledRole"
+                        ]
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "LoggingCategoryTreeModel",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractItemModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "LoggingCategoryModel.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "QGCLoggingCategoryManager",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setFilterText",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "fullCategoryName",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "isCategoryEnabled",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "fullCategoryName",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "enable",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setCategoryEnabled",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "disableAllCategories",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "treeModel",
+                        "read": "treeCategoryModel",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "LoggingCategoryTreeModel*",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "flatModel",
+                        "read": "flatCategoryModel",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "LoggingCategoryFlatModel*",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "filteredFlatModel",
+                        "read": "filteredFlatModel",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QSortFilterProxyModel*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "enabledCategories",
+                        "notify": "enabledCategoriesChanged",
+                        "read": "enabledCategories",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "QGCLoggingCategoryManager",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "enabledCategoriesChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "QGCLoggingCategoryManager.h",
+        "outputRevision": 68
+    }
+]

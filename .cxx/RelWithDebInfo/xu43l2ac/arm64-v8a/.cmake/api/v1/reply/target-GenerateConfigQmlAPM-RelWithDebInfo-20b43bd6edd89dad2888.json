@@ -1,0 +1,81 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"qgc_add_qml_codegen"
+		],
+		"files" : 
+		[
+			"cmake/modules/QGCQmlCodegen.cmake",
+			"src/AutoPilotPlugins/APM/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "GenerateConfigQmlAPM::@761191fa32745de764d9",
+	"name" : "GenerateConfigQmlAPM",
+	"paths" : 
+	{
+		"build" : "src/AutoPilotPlugins/APM",
+		"source" : "src/AutoPilotPlugins/APM"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/APM/CMakeFiles/GenerateConfigQmlAPM",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/APM/CMakeFiles/GenerateConfigQmlAPM.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/APM/generated/APMFailsafesComponent.qml.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

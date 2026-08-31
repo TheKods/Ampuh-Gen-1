@@ -1,0 +1,11 @@
+--bare
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/qml
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Compression/.qt/rcc/qmake_QGroundControl_Compression.qrc
+--json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/QGCCompression_qmllint.json

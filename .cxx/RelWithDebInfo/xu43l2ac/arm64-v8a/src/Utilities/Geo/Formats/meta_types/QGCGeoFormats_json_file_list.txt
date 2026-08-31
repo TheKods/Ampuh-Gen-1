@@ -1,0 +1,1 @@
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Geo/Formats/QGCGeoFormats_autogen/include/../EWIEGA46WW/moc_ShapeFileHelper.cpp.json

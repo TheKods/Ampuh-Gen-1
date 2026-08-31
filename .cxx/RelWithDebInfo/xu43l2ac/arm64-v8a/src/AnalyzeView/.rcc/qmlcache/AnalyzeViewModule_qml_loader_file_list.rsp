@@ -1,0 +1,13 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AnalyzeView/.qt/rcc/qmake_QGroundControl_AnalyzeView.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AnalyzeView/.qt/rcc/AnalyzeViewModule_raw_qml_0.qrc
+/qml/QGroundControl/AnalyzeView/AnalyzePage.qml
+/qml/QGroundControl/AnalyzeView/AnalyzeView.qml
+/qml/QGroundControl/AnalyzeView/MAVLinkConsole/MAVLinkConsolePage.qml
+/qml/QGroundControl/AnalyzeView/MAVLinkInspector/MAVLinkChart.qml
+/qml/QGroundControl/AnalyzeView/MAVLinkInspector/MAVLinkMessageButton.qml
+/qml/QGroundControl/AnalyzeView/MAVLinkInspector/MAVLinkInspectorPage.qml
+/qml/QGroundControl/AnalyzeView/LogViewer/LogViewerPage.qml
+/qml/QGroundControl/AnalyzeView/OnboardLogs/OnboardLogPage.qml
+/qml/QGroundControl/AnalyzeView/Vibration/VibrationPage.qml

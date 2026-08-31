@@ -1,0 +1,16 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Vehicle/VehicleSetup/.qt/rcc/qmake_QGroundControl_VehicleSetup.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Vehicle/VehicleSetup/.qt/rcc/VehicleSetupModule_raw_qml_0.qrc
+/qml/QGroundControl/VehicleSetup/FirmwareUpgrade.qml
+/qml/QGroundControl/VehicleSetup/JoystickComponent.qml
+/qml/QGroundControl/VehicleSetup/JoystickComponentButtons.qml
+/qml/QGroundControl/VehicleSetup/JoystickComponentButtonMonitor.qml
+/qml/QGroundControl/VehicleSetup/JoystickComponentSettings.qml
+/qml/QGroundControl/VehicleSetup/OpticalFlowSensor.qml
+/qml/QGroundControl/VehicleSetup/RemoteControlCalibration.qml
+/qml/QGroundControl/VehicleSetup/RemoteControlChannelMonitor.qml
+/qml/QGroundControl/VehicleSetup/RemoteControlChannelValueDisplay.qml
+/qml/QGroundControl/VehicleSetup/SetupParameterEditor.qml
+/qml/QGroundControl/VehicleSetup/VehicleConfigView.qml
+/qml/QGroundControl/VehicleSetup/VehicleSummary.qml

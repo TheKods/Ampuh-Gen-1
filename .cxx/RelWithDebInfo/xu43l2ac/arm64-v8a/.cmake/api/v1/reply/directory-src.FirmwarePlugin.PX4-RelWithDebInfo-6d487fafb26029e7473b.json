@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "src/FirmwarePlugin/PX4",
+		"source" : "src/FirmwarePlugin/PX4"
+	}
+}

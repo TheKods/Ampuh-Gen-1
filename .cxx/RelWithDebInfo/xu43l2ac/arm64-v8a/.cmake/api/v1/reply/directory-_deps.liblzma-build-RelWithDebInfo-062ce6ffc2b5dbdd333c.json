@@ -1,0 +1,121 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			".cache/CPM/liblzma/37ee/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1695,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1707,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1717,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1723,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1728,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "liblzma_Development",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"RelWithDebInfo/lib/liblzma.a"
+			],
+			"targetId" : "liblzma::@a3a5518a5f7332a5417e",
+			"targetIndex" : 466,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "liblzma_Development",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : ".cache/CPM/liblzma/37ee/src/liblzma/api",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "liblzma_Development",
+			"destination" : "lib/cmake/liblzma",
+			"exportName" : "liblzmaTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "liblzma::@a3a5518a5f7332a5417e",
+					"index" : 466
+				}
+			],
+			"paths" : 
+			[
+				"_deps/liblzma-build/CMakeFiles/Export/lib/cmake/liblzma/liblzma-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "liblzma_Development",
+			"destination" : "lib/cmake/liblzma",
+			"paths" : 
+			[
+				".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/liblzma-build/liblzma-config.cmake",
+				".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/liblzma-build/liblzma-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "liblzma_Development",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/liblzma-build/liblzma.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/liblzma-build",
+		"source" : ".cache/CPM/liblzma/37ee"
+	}
+}

@@ -1,0 +1,3 @@
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/Viewer3DModule_autogen/include/../EWIEGA46WW/moc_Viewer3DCameraController.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/Viewer3DModule_autogen/include/../EWIEGA46WW/moc_Viewer3DGeoCoordinateType.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/Viewer3DModule_autogen/include/../EWIEGA46WW/moc_Viewer3DInstancing.cpp.json

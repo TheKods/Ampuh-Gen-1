@@ -1,0 +1,16 @@
+--bare
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/qml
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GPS/NTRIP/.qt/rcc/qmake_QGroundControl_GPS_NTRIP.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GPS/NTRIP/.qt/rcc/GPSNTRIPModule_raw_qml_0.qrc
+C:/Project/qgroundcontrol-master/src/GPS/NTRIP/NTRIPConnectionStatus.qml
+C:/Project/qgroundcontrol-master/src/GPS/NTRIP/NTRIPConnectionStatusRow.qml
+C:/Project/qgroundcontrol-master/src/GPS/NTRIP/NTRIPMountpointList.qml
+--json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/GPSNTRIPModule_qmllint.json

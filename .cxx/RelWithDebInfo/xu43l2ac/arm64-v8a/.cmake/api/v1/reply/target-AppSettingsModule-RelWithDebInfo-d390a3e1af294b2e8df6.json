@@ -1,0 +1,2369 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "RelWithDebInfo/lib/libAppSettingsModule_arm64-v8a.a"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"add_dependencies",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"target_compile_options",
+			"qgc_set_warning_flags",
+			"qgc_configure_target",
+			"_qgc_configure_directory_targets",
+			"qgc_configure_directory_targets",
+			"qgc_add_optional_no_warning",
+			"target_link_libraries",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"_qt_internal_target_enable_qmlcachegen",
+			"qt_add_resources",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"src/AppSettings/CMakeLists.txt",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake",
+			"cmake/CompilerWarnings.cmake",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:749:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2692,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2570,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2667,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 53,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 780,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 647,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 2768,
+				"parent" : 8
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 10,
+				"file" : 5,
+				"line" : 162,
+				"parent" : 10
+			},
+			{
+				"file" : 4,
+				"parent" : 11
+			},
+			{
+				"command" : 9,
+				"file" : 4,
+				"line" : 95,
+				"parent" : 12
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 317,
+				"parent" : 13
+			},
+			{
+				"command" : 11,
+				"file" : 5,
+				"line" : 370,
+				"parent" : 10
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 16,
+				"file" : 5,
+				"line" : 459,
+				"parent" : 10
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 232,
+				"parent" : 24
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 215,
+				"parent" : 25
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 206,
+				"parent" : 26
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 177,
+				"parent" : 27
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 36,
+				"parent" : 28
+			},
+			{
+				"command" : 17,
+				"file" : 7,
+				"line" : 61,
+				"parent" : 28
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 21,
+				"parent" : 30
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 184,
+				"parent" : 27
+			},
+			{
+				"command" : 18,
+				"file" : 2,
+				"line" : 392,
+				"parent" : 7
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 541,
+				"parent" : 7
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3099,
+				"parent" : 34
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3124,
+				"parent" : 34
+			},
+			{
+				"command" : 22,
+				"file" : 2,
+				"line" : 2924,
+				"parent" : 34
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 1421,
+				"parent" : 37
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 3090,
+				"parent" : 34
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 590,
+				"parent" : 7
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 40
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 41
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 42
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 26,
+				"file" : 2,
+				"line" : 2656,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 1248,
+				"parent" : 45
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 2788,
+				"parent" : 8
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 134
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 135
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 136
+			},
+			{
+				"command" : 27,
+				"file" : 1,
+				"line" : 99,
+				"parent" : 0
+			},
+			{
+				"command" : 25,
+				"file" : 0,
+				"line" : 389,
+				"parent" : 138
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 139
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 140
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 141
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 29,
+				"file" : 8,
+				"line" : 1,
+				"parent" : 143
+			},
+			{
+				"command" : 28,
+				"file" : 0,
+				"line" : 774,
+				"parent" : 144
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2123,
+				"parent" : 145
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 23,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wno-switch"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 31,
+					"fragment" : "-Wno-deprecated-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-Wno-error=shadow"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 33,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QML_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/AppSettingsModule_autogen/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Project/qgroundcontrol-master/src/AppSettings"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/mkspecs/android-clang"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					33,
+					33
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				70,
+				72,
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				86,
+				88,
+				90,
+				92,
+				93,
+				94
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "GenerateSettingsQml::@8708763a594d191df190"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "AppSettingsModule_tooling::@8708763a594d191df190"
+		},
+		{
+			"id" : "AppSettingsModule_autogen_timestamp_deps::@8708763a594d191df190"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AppSettingsModule_autogen::@8708763a594d191df190"
+		}
+	],
+	"id" : "AppSettingsModule::@8708763a594d191df190",
+	"name" : "AppSettingsModule",
+	"nameOnDisk" : "libAppSettingsModule_arm64-v8a.a",
+	"paths" : 
+	{
+		"build" : "src/AppSettings",
+		"source" : "src/AppSettings"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				100
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				4,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				57,
+				59,
+				61,
+				63,
+				65,
+				67,
+				69,
+				71,
+				73,
+				75,
+				77,
+				79,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				95,
+				96,
+				97,
+				98,
+				99,
+				154,
+				155,
+				156,
+				157
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				70,
+				72,
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				86,
+				88,
+				90,
+				92,
+				93,
+				94
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/AppSettingsModule_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 38,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/meta_types/qt6appsettingsmodule_relwithdebinfo_metatypes.json.gen",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 39,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/appsettingsmodule_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 43,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.qt/rcc/qrc_qmake_QGroundControl_AppSettings.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 44,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/ADSBServerSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 47,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/ADSBServerSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 48,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/CommLinksSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 49,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/CommLinksSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 50,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/FlyViewSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 51,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/FlyViewSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 52,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/GeneralSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 53,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/GeneralSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 54,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/GeoViewSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 55,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/GeoViewSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 56,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/LoggingSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 57,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/LoggingSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 58,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/MapsSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 59,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/MapsSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 60,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/NTRIPSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 61,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/NTRIPSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 62,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/PlanViewSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 63,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/PlanViewSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 64,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/PX4LogTransferSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 65,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/PX4LogTransferSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 66,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/RemoteIDSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 67,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/RemoteIDSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 68,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/SettingsPagesModel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 69,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/SettingsPagesModel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 70,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/TelemetrySettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 71,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/TelemetrySettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 72,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/VideoSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 73,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/VideoSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 74,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/Viewer3DSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 75,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/Viewer3DSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 76,
+			"path" : "src/AppSettings/AppLogging.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 77,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_AppLogging_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 78,
+			"path" : "src/AppSettings/BluetoothSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 79,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_BluetoothSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 80,
+			"path" : "src/AppSettings/DebugWindow.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 81,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_DebugWindow_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 82,
+			"path" : "src/AppSettings/GcsPositionStatus.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 83,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_GcsPositionStatus_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 84,
+			"path" : "src/AppSettings/HelpSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 85,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_HelpSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 86,
+			"path" : "src/AppSettings/LinkConfigurationManager.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 87,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_LinkConfigurationManager_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"path" : "src/AppSettings/LogReplaySettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 89,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_LogReplaySettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 90,
+			"path" : "src/AppSettings/MapProviderSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 91,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_MapProviderSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 92,
+			"path" : "src/AppSettings/MavlinkActionSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 93,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_MavlinkActionSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 94,
+			"path" : "src/AppSettings/MavlinkLinkStatus.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 95,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_MavlinkLinkStatus_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 96,
+			"path" : "src/AppSettings/SigningKeyManager.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 97,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_SigningKeyManager_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 98,
+			"path" : "src/AppSettings/MockLink.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 99,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_MockLink_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 100,
+			"path" : "src/AppSettings/MockLinkSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 101,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_MockLinkSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 102,
+			"path" : "src/AppSettings/NmeaGpsSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 103,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_NmeaGpsSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 104,
+			"path" : "src/AppSettings/NtripConnectionSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 105,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_NtripConnectionSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 106,
+			"path" : "src/AppSettings/NtripMountpointBrowser.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 107,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_NtripMountpointBrowser_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 108,
+			"path" : "src/AppSettings/NtripServerSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 109,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_NtripServerSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 110,
+			"path" : "src/AppSettings/OfflineMapEditor.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 111,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_OfflineMapEditor_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 112,
+			"path" : "src/AppSettings/OfflineMapInfo.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 113,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_OfflineMapInfo_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 114,
+			"path" : "src/AppSettings/OfflineMapSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 115,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_OfflineMapSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 116,
+			"path" : "src/AppSettings/PX4LogControl.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 117,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_PX4LogControl_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 118,
+			"path" : "src/AppSettings/PX4LogFileManager.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 119,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_PX4LogFileManager_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 120,
+			"path" : "src/AppSettings/PX4LogUploadSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 121,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_PX4LogUploadSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 122,
+			"path" : "src/AppSettings/QmlTest.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 123,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_QmlTest_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 124,
+			"path" : "src/AppSettings/RemoteIDGpsLocation.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 125,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_RemoteIDGpsLocation_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 126,
+			"path" : "src/AppSettings/SerialSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 127,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_SerialSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 128,
+			"path" : "src/AppSettings/SettingsPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 129,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_SettingsPage_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 130,
+			"path" : "src/AppSettings/TcpSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 131,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_TcpSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 132,
+			"path" : "src/AppSettings/UdpSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 133,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_UdpSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 137,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.qt/rcc/qrc_AppSettingsModule_raw_qml_0.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 142,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.qt/rcc/qrc_appsettings_resources.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.qt/rcc/qmake_QGroundControl_AppSettings.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 146,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AppSettings/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 146,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.qt/rcc/AppSettingsModule_raw_qml_0.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 146,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.qt/rcc/appsettings_resources.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 146,
+			"path" : "resources/pencil.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/AppSettingsModule_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/meta_types/qt6appsettingsmodule_relwithdebinfo_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/appsettingsmodule_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.qt/rcc/qrc_qmake_QGroundControl_AppSettings.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/ADSBServerSettings.qml.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/ADSBServerSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/CommLinksSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/FlyViewSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/GeneralSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/GeoViewSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/LoggingSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/MapsSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/NTRIPSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/PlanViewSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/PX4LogTransferSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/RemoteIDSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/SettingsPagesModel_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/TelemetrySettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/VideoSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/generated/Viewer3DSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_AppLogging_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_BluetoothSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_DebugWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_GcsPositionStatus_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_HelpSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_LinkConfigurationManager_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_LogReplaySettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_MapProviderSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_MavlinkActionSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_MavlinkLinkStatus_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_SigningKeyManager_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_MockLink_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_MockLinkSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_NmeaGpsSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_NtripConnectionSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_NtripMountpointBrowser_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_NtripServerSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_OfflineMapEditor_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_OfflineMapInfo_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_OfflineMapSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_PX4LogControl_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_PX4LogFileManager_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_PX4LogUploadSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_QmlTest_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_RemoteIDGpsLocation_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_SerialSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_SettingsPage_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_TcpSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.rcc/qmlcache/AppSettingsModule_UdpSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.qt/rcc/qrc_AppSettingsModule_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/.qt/rcc/qrc_appsettings_resources.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/AppSettingsModule_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AppSettings/meta_types/AppSettingsModule_json_file_list.txt.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qmlbuiltins_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

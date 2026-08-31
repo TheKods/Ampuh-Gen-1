@@ -1,0 +1,10 @@
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GeoMap/GeoMapModule_autogen/include/../EWIEGA46WW/moc_CheckerboardTextureData.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GeoMap/GeoMapModule_autogen/include/../EWIEGA46WW/moc_FlightPathGeometry.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GeoMap/GeoMapModule_autogen/include/../EWIEGA46WW/moc_GeoMapCamera.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GeoMap/GeoMapModule_autogen/include/../EWIEGA46WW/moc_GeoMapItem.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GeoMap/GeoMapModule_autogen/include/../EWIEGA46WW/moc_GeoMapProjectedPath.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GeoMap/GeoMapModule_autogen/include/../EWIEGA46WW/moc_GeoScene.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GeoMap/GeoMapModule_autogen/include/../EWIEGA46WW/moc_PaperPlaneGeometry.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GeoMap/GeoMapModule_autogen/include/../EWIEGA46WW/moc_PatchGeometry.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GeoMap/GeoMapModule_autogen/include/../EWIEGA46WW/moc_PatchTextureData.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GeoMap/GeoMapModule_autogen/include/../EWIEGA46WW/moc_SurfacePatchModel.cpp.json

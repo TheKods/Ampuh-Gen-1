@@ -1,0 +1,67 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			".cache/CPM/earcut_hpp/8d68/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 150,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 164,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				".cache/CPM/earcut_hpp/8d68/include/mapbox"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/cmake/earcut_hpp",
+			"exportName" : "earcut_hpp-config",
+			"exportTargets" : 
+			[
+				{
+					"id" : "earcut_hpp::@fd0af858652144726c2e",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"_deps/earcut_hpp-build/CMakeFiles/Export/share/cmake/earcut_hpp/earcut_hpp-config.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/earcut_hpp-build",
+		"source" : ".cache/CPM/earcut_hpp/8d68"
+	}
+}

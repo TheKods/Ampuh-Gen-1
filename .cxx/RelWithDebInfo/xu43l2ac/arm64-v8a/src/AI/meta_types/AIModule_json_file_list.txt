@@ -1,0 +1,5 @@
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AI/AIModule_autogen/include/../EWIEGA46WW/moc_AIController.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AI/AIModule_autogen/include/../EWIEGA46WW/moc_AIDetectionBox.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AI/AIModule_autogen/include/../EWIEGA46WW/moc_AIDetectionManager.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AI/AIModule_autogen/include/../EWIEGA46WW/moc_AIReceiverSocket.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AI/AIModule_autogen/include/../EWIEGA46WW/moc_AndroidSystemMonitor.cpp.json

@@ -1,0 +1,52 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library"
+		],
+		"files" : 
+		[
+			".cache/CPM/libevents/ff77/libs/cpp/protocol/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			}
+		]
+	},
+	"id" : "libevents_receive::@f24d5a8fec42f5ed7690",
+	"name" : "libevents_receive",
+	"paths" : 
+	{
+		"build" : "_deps/libevents-build/protocol",
+		"source" : ".cache/CPM/libevents/ff77/libs/cpp/protocol"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libevents/ff77/libs/cpp/protocol/receive.h",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "INTERFACE_LIBRARY"
+}

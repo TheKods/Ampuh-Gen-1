@@ -1,0 +1,62 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/AutoPilotPlugins/PX4/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "AutoPilotPluginsPX4Module_autogen_timestamp_deps::@6dc3054ee6ed80334ffd",
+	"isGeneratorProvided" : true,
+	"name" : "AutoPilotPluginsPX4Module_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "src/AutoPilotPlugins/PX4",
+		"source" : "src/AutoPilotPlugins/PX4"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/CMakeFiles/AutoPilotPluginsPX4Module_autogen_timestamp_deps",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/CMakeFiles/AutoPilotPluginsPX4Module_autogen_timestamp_deps.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

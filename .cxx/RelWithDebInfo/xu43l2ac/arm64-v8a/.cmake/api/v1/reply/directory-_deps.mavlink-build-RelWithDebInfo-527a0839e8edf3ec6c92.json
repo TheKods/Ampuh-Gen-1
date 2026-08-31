@@ -1,0 +1,83 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			".cache/CPM/mavlink/3f8b/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/mavlink-build/include/mavlink"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/MAVLink",
+			"exportName" : "MAVLinkTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "mavlink::@c469e873ced00668c70a",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"_deps/mavlink-build/CMakeFiles/Export/lib/cmake/MAVLink/MAVLinkTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/MAVLink",
+			"paths" : 
+			[
+				".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/mavlink-build//CMakeFiles/MAVLinkConfig.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/mavlink-build",
+		"source" : ".cache/CPM/mavlink/3f8b"
+	}
+}

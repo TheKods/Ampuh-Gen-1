@@ -1,0 +1,16 @@
+--bare
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml
+-I
+C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/qml
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/PX4/.qt/rcc/qmake_QGroundControl_FirmwarePlugin_PX4.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/PX4/.qt/rcc/PX4FirmwareModule_raw_qml_0.qrc
+C:/Project/qgroundcontrol-master/src/FirmwarePlugin/PX4/PX4BatteryIndicator.qml
+C:/Project/qgroundcontrol-master/src/FirmwarePlugin/PX4/PX4FlightModeIndicator.qml
+C:/Project/qgroundcontrol-master/src/FirmwarePlugin/PX4/PX4MainStatusIndicator.qml
+--json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/PX4FirmwareModule_qmllint.json

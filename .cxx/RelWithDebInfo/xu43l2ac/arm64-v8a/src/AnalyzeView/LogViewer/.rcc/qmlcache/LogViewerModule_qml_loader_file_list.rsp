@@ -1,0 +1,11 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AnalyzeView/LogViewer/.qt/rcc/qmake_QGroundControl_LogViewer.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AnalyzeView/LogViewer/.qt/rcc/LogViewerModule_raw_qml_0.qrc
+/qml/QGroundControl/LogViewer/LogViewerAltChart.qml
+/qml/QGroundControl/LogViewer/LogViewerBaseChart.qml
+/qml/QGroundControl/LogViewer/LogViewerChart.qml
+/qml/QGroundControl/LogViewer/LogViewerCursorPopup.qml
+/qml/QGroundControl/LogViewer/LogViewerFieldsPanel.qml
+/qml/QGroundControl/LogViewer/LogViewerMessagesTab.qml
+/qml/QGroundControl/LogViewer/LogViewerParametersTab.qml

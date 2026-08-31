@@ -1,0 +1,62 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			".cache/CPM/ulog_cpp/ca6d/ulog_cpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "ulog_cpp_autogen_timestamp_deps::@83f35c707b92fa6c70db",
+	"isGeneratorProvided" : true,
+	"name" : "ulog_cpp_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "_deps/ulog_cpp-build/ulog_cpp",
+		"source" : ".cache/CPM/ulog_cpp/ca6d/ulog_cpp"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/ulog_cpp-build/ulog_cpp/CMakeFiles/ulog_cpp_autogen_timestamp_deps",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/ulog_cpp-build/ulog_cpp/CMakeFiles/ulog_cpp_autogen_timestamp_deps.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

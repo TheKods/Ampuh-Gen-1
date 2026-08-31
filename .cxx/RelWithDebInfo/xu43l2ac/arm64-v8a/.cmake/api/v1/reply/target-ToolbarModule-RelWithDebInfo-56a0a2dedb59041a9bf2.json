@@ -1,0 +1,1767 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "RelWithDebInfo/lib/libToolbarModule_arm64-v8a.a"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"add_dependencies",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"target_compile_options",
+			"qgc_set_warning_flags",
+			"qgc_configure_target",
+			"_qgc_configure_directory_targets",
+			"qgc_configure_directory_targets",
+			"qgc_add_optional_no_warning",
+			"target_link_libraries",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"_qt_internal_target_enable_qmlcachegen",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"src/Toolbar/CMakeLists.txt",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake",
+			"cmake/CompilerWarnings.cmake",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:749:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2692,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2570,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2667,
+				"parent" : 3
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 780,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 647,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 2768,
+				"parent" : 7
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 10,
+				"file" : 5,
+				"line" : 162,
+				"parent" : 9
+			},
+			{
+				"file" : 4,
+				"parent" : 10
+			},
+			{
+				"command" : 9,
+				"file" : 4,
+				"line" : 95,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 317,
+				"parent" : 12
+			},
+			{
+				"command" : 11,
+				"file" : 5,
+				"line" : 370,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 16,
+				"file" : 5,
+				"line" : 459,
+				"parent" : 9
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 232,
+				"parent" : 23
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 215,
+				"parent" : 24
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 206,
+				"parent" : 25
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 177,
+				"parent" : 26
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 36,
+				"parent" : 27
+			},
+			{
+				"command" : 17,
+				"file" : 7,
+				"line" : 61,
+				"parent" : 27
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 21,
+				"parent" : 29
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 184,
+				"parent" : 26
+			},
+			{
+				"command" : 18,
+				"file" : 2,
+				"line" : 392,
+				"parent" : 6
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 541,
+				"parent" : 6
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3099,
+				"parent" : 33
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3124,
+				"parent" : 33
+			},
+			{
+				"command" : 22,
+				"file" : 2,
+				"line" : 2924,
+				"parent" : 33
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 1421,
+				"parent" : 36
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 3090,
+				"parent" : 33
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 590,
+				"parent" : 6
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 39
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 40
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 41
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 26,
+				"file" : 2,
+				"line" : 2656,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 1248,
+				"parent" : 44
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 2788,
+				"parent" : 7
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 103
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 104
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 105
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 28,
+				"file" : 8,
+				"line" : 1,
+				"parent" : 107
+			},
+			{
+				"command" : 27,
+				"file" : 0,
+				"line" : 774,
+				"parent" : 108
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2123,
+				"parent" : 109
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wno-switch"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-deprecated-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 31,
+					"fragment" : "-Wno-error=shadow"
+				},
+				{
+					"backtrace" : 31,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 32,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "QT_QML_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/ToolbarModule_autogen/include"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Project/qgroundcontrol-master/src/Toolbar"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3/QtQml"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3/QtCore"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/mkspecs/android-clang"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					32,
+					32
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				63
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 8,
+			"id" : "ToolbarModule_tooling::@440b2f4e8ac9be43e0fe"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "ToolbarModule_autogen::@440b2f4e8ac9be43e0fe"
+		},
+		{
+			"id" : "ToolbarModule_autogen_timestamp_deps::@440b2f4e8ac9be43e0fe"
+		}
+	],
+	"id" : "ToolbarModule::@440b2f4e8ac9be43e0fe",
+	"name" : "ToolbarModule",
+	"nameOnDisk" : "libToolbarModule_arm64-v8a.a",
+	"paths" : 
+	{
+		"build" : "src/Toolbar",
+		"source" : "src/Toolbar"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				67
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				4,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				57,
+				59,
+				61,
+				64,
+				65,
+				66,
+				104,
+				105,
+				106,
+				107
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				63
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/ToolbarModule_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 37,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/meta_types/qt6toolbarmodule_relwithdebinfo_metatypes.json.gen",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 38,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/toolbarmodule_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.qt/rcc/qrc_qmake_QGroundControl_Toolbar.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 43,
+			"path" : "src/Toolbar/ArmedIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_ArmedIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 47,
+			"path" : "src/Toolbar/BatteryIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 48,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_BatteryIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 49,
+			"path" : "src/Toolbar/EscIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 50,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_EscIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 51,
+			"path" : "src/Toolbar/EscIndicatorPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 52,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_EscIndicatorPage_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 53,
+			"path" : "src/Toolbar/FlightModeIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 54,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_FlightModeIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 55,
+			"path" : "src/Toolbar/FlightModeMenuIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 56,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_FlightModeMenuIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 57,
+			"path" : "src/Toolbar/FlyViewToolBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 58,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_FlyViewToolBar_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 59,
+			"path" : "src/Toolbar/FlyViewToolBarIndicators.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 60,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_FlyViewToolBarIndicators_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 61,
+			"path" : "src/Toolbar/GCSControlIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 62,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_GCSControlIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 63,
+			"path" : "src/Toolbar/GimbalIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 64,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_GimbalIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 65,
+			"path" : "src/Toolbar/GPSIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 66,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_GPSIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 67,
+			"path" : "src/Toolbar/GPSIndicatorPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 68,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_GPSIndicatorPage_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 69,
+			"path" : "src/Toolbar/GPSResilienceIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 70,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_GPSResilienceIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 71,
+			"path" : "src/Toolbar/JoystickIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_JoystickIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 73,
+			"path" : "src/Toolbar/MainStatusIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 74,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_MainStatusIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 75,
+			"path" : "src/Toolbar/MainStatusIndicatorOfflinePage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 76,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_MainStatusIndicatorOfflinePage_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 77,
+			"path" : "src/Toolbar/ModeIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 78,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_ModeIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 79,
+			"path" : "src/Toolbar/MultiVehicleSelector.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 80,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_MultiVehicleSelector_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 81,
+			"path" : "src/Toolbar/ParameterDownloadProgress.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 82,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_ParameterDownloadProgress_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 83,
+			"path" : "src/Toolbar/PlanViewToolBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 84,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_PlanViewToolBar_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 85,
+			"path" : "src/Toolbar/RCRSSIIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 86,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_RCRSSIIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 87,
+			"path" : "src/Toolbar/RemoteIDIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_RemoteIDIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 89,
+			"path" : "src/Toolbar/RemoteIDIndicatorPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 90,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_RemoteIDIndicatorPage_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 91,
+			"path" : "src/Toolbar/RTKGPSIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 92,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_RTKGPSIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 93,
+			"path" : "src/Toolbar/SelectViewDropdown.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 94,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_SelectViewDropdown_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 95,
+			"path" : "src/Toolbar/SignalStrength.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 96,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_SignalStrength_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 97,
+			"path" : "src/Toolbar/TelemetryRSSIIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 98,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_TelemetryRSSIIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 99,
+			"path" : "src/Toolbar/VehicleGPSIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 100,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_VehicleGPSIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 101,
+			"path" : "src/Toolbar/VehicleMessageList.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 102,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_VehicleMessageList_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 106,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.qt/rcc/qrc_ToolbarModule_raw_qml_0.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 110,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.qt/rcc/qmake_QGroundControl_Toolbar.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 110,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/Toolbar/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 110,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.qt/rcc/ToolbarModule_raw_qml_0.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/ToolbarModule_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/meta_types/qt6toolbarmodule_relwithdebinfo_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/toolbarmodule_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.qt/rcc/qrc_qmake_QGroundControl_Toolbar.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_ArmedIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_BatteryIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_EscIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_EscIndicatorPage_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_FlightModeIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_FlightModeMenuIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_FlyViewToolBar_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_FlyViewToolBarIndicators_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_GCSControlIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_GimbalIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_GPSIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_GPSIndicatorPage_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_GPSResilienceIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_JoystickIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_MainStatusIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_MainStatusIndicatorOfflinePage_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_ModeIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_MultiVehicleSelector_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_ParameterDownloadProgress_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_PlanViewToolBar_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_RCRSSIIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_RemoteIDIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_RemoteIDIndicatorPage_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_RTKGPSIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_SelectViewDropdown_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_SignalStrength_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_TelemetryRSSIIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_VehicleGPSIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.rcc/qmlcache/ToolbarModule_VehicleMessageList_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/.qt/rcc/qrc_ToolbarModule_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/ToolbarModule_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Toolbar/meta_types/ToolbarModule_json_file_list.txt.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 32,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 32,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 32,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qmlbuiltins_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 32,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

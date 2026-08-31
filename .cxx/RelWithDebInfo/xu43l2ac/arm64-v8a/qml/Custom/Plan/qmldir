@@ -1,0 +1,6 @@
+module Custom.Plan
+typeinfo CustomPlanModule.qmltypes
+prefer :/qml/Custom/Plan/
+PerimeterScanMapVisual 1.0 PerimeterScanMapVisual.qml
+PerimeterScanEditor 1.0 PerimeterScanEditor.qml
+

@@ -1,0 +1,29 @@
+px4-gpsdrivers_autogen/timestamp: \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/ashtech.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/ashtech.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/base_station.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/crc.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/crc.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/emlid_reach.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/emlid_reach.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/femtomes.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/femtomes.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/gps_helper.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/gps_helper.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/mtk.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/mtk.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/nmea.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/nmea.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/rtcm.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/rtcm.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/sbf.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/sbf.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/ubx.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/ubx.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/unicore.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/px4-gpsdrivers/0d45/src/unicore.h \
+	C:/Project/qgroundcontrol-master/src/GPS/Driver/CMakeLists.txt \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindGit.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageMessage.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/bin/cmake.exe

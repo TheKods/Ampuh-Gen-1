@@ -1,0 +1,17 @@
+AutoPilotPluginsPX4Module_autogen/timestamp: \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in \
+	C:/Project/qgroundcontrol-master/src/AutoPilotPlugins/PX4/CMakeLists.txt \
+	C:/Project/qgroundcontrol-master/src/AutoPilotPlugins/PX4/VehicleConfig/Power.VehicleConfig.json \
+	C:/Project/qgroundcontrol-master/src/AutoPilotPlugins/PX4/VehicleConfig/Safety.VehicleConfig.json \
+	C:/Project/qgroundcontrol-master/tools/generators/common/__init__.py \
+	C:/Project/qgroundcontrol-master/tools/generators/common/controls.py \
+	C:/Project/qgroundcontrol-master/tools/generators/common/validation.py \
+	C:/Project/qgroundcontrol-master/tools/generators/config_qml/__init__.py \
+	C:/Project/qgroundcontrol-master/tools/generators/config_qml/emit.py \
+	C:/Project/qgroundcontrol-master/tools/generators/config_qml/generate_pages.py \
+	C:/Project/qgroundcontrol-master/tools/generators/config_qml/model.py \
+	C:/Project/qgroundcontrol-master/tools/generators/config_qml/page_generator.py \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/bin/cmake.exe

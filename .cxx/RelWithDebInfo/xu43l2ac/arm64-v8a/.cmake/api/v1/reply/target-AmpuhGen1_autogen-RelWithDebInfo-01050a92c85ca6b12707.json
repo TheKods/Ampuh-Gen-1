@@ -1,0 +1,268 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			".cache/CPM/mavlink/3f8b/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "mavlink_instance_fields::@fc7a02dc9174c9f98c30"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "mavlink_enums::@fc7a02dc9174c9f98c30"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_mavlink_component_metadata_schemas::@fc7a02dc9174c9f98c30"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "generate_c_headers::@c469e873ced00668c70a"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_analyzeview_qmlimages::@1f9110b7e94afc09a3ad"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_custom_vehicle_icon::@c11385ffed57b860da63"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_custom_images::@c11385ffed57b860da63"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_custom_qml_overrides::@c11385ffed57b860da63"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_custom_brand::@c11385ffed57b860da63"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_custom_json::@c11385ffed57b860da63"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_custom_shared_resources::@c11385ffed57b860da63"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_autopilot_plugin_common_images::@9f72fd3d9228751d409a"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_autopilot_plugin_common_airframes::@9f72fd3d9228751d409a"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_autopilot_plugin_common_resource::@9f72fd3d9228751d409a"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_autopilot_plugin_common_qmlimages::@9f72fd3d9228751d409a"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_autopilot_plugin_apm_frames::@761191fa32745de764d9"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_autopilot_plugin_apm_resource::@761191fa32745de764d9"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_autopilot_plugin_apm_images::@761191fa32745de764d9"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_autopilot_plugin_apm_qmlimages::@761191fa32745de764d9"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_autopilot_plugin_px4_resource::@6dc3054ee6ed80334ffd"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_autopilot_plugin_px4_qmlimages::@6dc3054ee6ed80334ffd"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_mavlink_camera::@74b335c20fd4345076d7"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_camera_qmlimages::@74b335c20fd4345076d7"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_comm::@f6b6760c21dbb2824e7f"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_firmaware_plugin_apm::@9e65894a22dd98062e64"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_firmaware_plugin_apm_resource::@9e65894a22dd98062e64"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_qgcresources_apm_params::@9e65894a22dd98062e64"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_firmaware_plugin_px4::@c7b3eb9193b2dc326a1d"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_firmaware_plugin_px4_resource::@c7b3eb9193b2dc326a1d"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_flightmap_resources::@0444486f063b4153bb58"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_flightmap_qmlimages::@0444486f063b4153bb58"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_gimbal::@b9b069b1e477bb2d4b8e"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_gps_drivers::@74f4afaa1e098026b442"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_app_settings::@733e6871ef4a824e534d"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_missionmanager_plancreator_images::@e12eb56e7750c53eb58f"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_missionmanager_qmlimages::@e12eb56e7750c53eb58f"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_mission_manager::@e12eb56e7750c53eb58f"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_controls::@d5dd82b0e56b2219c454"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_qtlocationplugin_resources::@cb27e8890ce76dc7ee3a"
+		},
+		{
+			"id" : "AmpuhGen1_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_toolbar_qmlimages::@440b2f4e8ac9be43e0fe"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_toolbar_gcscontrol_resources::@440b2f4e8ac9be43e0fe"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_toolbar_resources::@440b2f4e8ac9be43e0fe"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_vehicle_fact_group::@f78cc8ddf853ac437de9"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_json_vehicle_fact_group_alias::@f78cc8ddf853ac437de9"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AmpuhGen1_vehiclesetup_qmlimages::@e7f906846a300641c56d"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "AmpuhGen1_autogen::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "AmpuhGen1_autogen",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/CMakeFiles/AmpuhGen1_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/CMakeFiles/AmpuhGen1_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/AmpuhGen1_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

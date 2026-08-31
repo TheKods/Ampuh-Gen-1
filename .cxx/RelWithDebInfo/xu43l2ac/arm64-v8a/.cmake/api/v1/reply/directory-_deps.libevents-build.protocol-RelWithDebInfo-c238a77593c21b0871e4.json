@@ -1,0 +1,43 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			".cache/CPM/libevents/ff77/libs/cpp/protocol/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/libevents/protocol",
+			"paths" : 
+			[
+				".cache/CPM/libevents/ff77/libs/cpp/protocol/receive.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/libevents-build/protocol",
+		"source" : ".cache/CPM/libevents/ff77/libs/cpp/protocol"
+	}
+}

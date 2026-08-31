@@ -1,0 +1,2178 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "RelWithDebInfo/lib/libAutoPilotPluginsPX4Module_arm64-v8a.a"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"add_dependencies",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"target_compile_options",
+			"qgc_set_warning_flags",
+			"qgc_configure_target",
+			"_qgc_configure_directory_targets",
+			"qgc_configure_directory_targets",
+			"qgc_add_optional_no_warning",
+			"target_link_libraries",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"_qt_internal_target_enable_qmlcachegen",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"src/AutoPilotPlugins/PX4/CMakeLists.txt",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake",
+			"cmake/CompilerWarnings.cmake",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:749:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 89,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2692,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2570,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2667,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 94,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 780,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 647,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 2768,
+				"parent" : 8
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 10,
+				"file" : 5,
+				"line" : 162,
+				"parent" : 10
+			},
+			{
+				"file" : 4,
+				"parent" : 11
+			},
+			{
+				"command" : 9,
+				"file" : 4,
+				"line" : 95,
+				"parent" : 12
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 317,
+				"parent" : 13
+			},
+			{
+				"command" : 11,
+				"file" : 5,
+				"line" : 370,
+				"parent" : 10
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 16,
+				"file" : 5,
+				"line" : 459,
+				"parent" : 10
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 232,
+				"parent" : 24
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 215,
+				"parent" : 25
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 215,
+				"parent" : 26
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 206,
+				"parent" : 27
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 177,
+				"parent" : 28
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 36,
+				"parent" : 29
+			},
+			{
+				"command" : 17,
+				"file" : 7,
+				"line" : 61,
+				"parent" : 29
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 21,
+				"parent" : 31
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 184,
+				"parent" : 28
+			},
+			{
+				"command" : 18,
+				"file" : 2,
+				"line" : 392,
+				"parent" : 7
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 541,
+				"parent" : 7
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3099,
+				"parent" : 35
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3124,
+				"parent" : 35
+			},
+			{
+				"command" : 22,
+				"file" : 2,
+				"line" : 2924,
+				"parent" : 35
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 1421,
+				"parent" : 38
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 3090,
+				"parent" : 35
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 590,
+				"parent" : 7
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 41
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 42
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 43
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 26,
+				"file" : 2,
+				"line" : 2656,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 1248,
+				"parent" : 46
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 2788,
+				"parent" : 8
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 127
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 128
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 129
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 28,
+				"file" : 8,
+				"line" : 1,
+				"parent" : 131
+			},
+			{
+				"command" : 27,
+				"file" : 0,
+				"line" : 774,
+				"parent" : 132
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2123,
+				"parent" : 133
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 23,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-switch"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-Wno-deprecated-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-Wno-error=shadow"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 34,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 34,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_QML_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/AutoPilotPluginsPX4Module_autogen/include"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "C:/Project/qgroundcontrol-master/src/AutoPilotPlugins/PX4"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3/QtQml"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3/QtCore"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/mkspecs/android-clang"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					34,
+					34
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				70,
+				72,
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				85
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "GenerateConfigQmlPX4::@6dc3054ee6ed80334ffd"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "AutoPilotPluginsPX4Module_tooling::@6dc3054ee6ed80334ffd"
+		},
+		{
+			"id" : "AutoPilotPluginsPX4Module_autogen_timestamp_deps::@6dc3054ee6ed80334ffd"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "AutoPilotPluginsPX4Module_autogen::@6dc3054ee6ed80334ffd"
+		}
+	],
+	"id" : "AutoPilotPluginsPX4Module::@6dc3054ee6ed80334ffd",
+	"name" : "AutoPilotPluginsPX4Module",
+	"nameOnDisk" : "libAutoPilotPluginsPX4Module_arm64-v8a.a",
+	"paths" : 
+	{
+		"build" : "src/AutoPilotPlugins/PX4",
+		"source" : "src/AutoPilotPlugins/PX4"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				91
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				4,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				57,
+				59,
+				61,
+				63,
+				65,
+				67,
+				69,
+				71,
+				73,
+				75,
+				77,
+				79,
+				81,
+				83,
+				86,
+				87,
+				88,
+				89,
+				90,
+				140,
+				141,
+				142,
+				143
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				70,
+				72,
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				85
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/AutoPilotPluginsPX4Module_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 39,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/meta_types/qt6autopilotpluginspx4module_relwithdebinfo_metatypes.json.gen",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 40,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/autopilotpluginspx4module_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 44,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.qt/rcc/qrc_qmake_QGroundControl_AutoPilotPlugins_PX4.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 45,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/generated/PowerComponent.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 47,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 48,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/generated/PowerComponent_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 49,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/generated/SafetyComponent.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 50,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/generated/SafetyComponent_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 51,
+			"path" : "src/AutoPilotPlugins/PX4/ActuatorComponent.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 52,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_ActuatorComponent_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 53,
+			"path" : "src/AutoPilotPlugins/PX4/ActuatorFact.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 54,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_ActuatorFact_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 55,
+			"path" : "src/AutoPilotPlugins/PX4/ActuatorSlider.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 56,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_ActuatorSlider_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 57,
+			"path" : "src/AutoPilotPlugins/PX4/AirframeComponent.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 58,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_AirframeComponent_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 59,
+			"path" : "src/AutoPilotPlugins/PX4/AirframeComponentSummary.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 60,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_AirframeComponentSummary_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 61,
+			"path" : "src/AutoPilotPlugins/PX4/BatteryParams.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 62,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_BatteryParams_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 63,
+			"path" : "src/AutoPilotPlugins/PX4/CalcAmpsPerVoltDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 64,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_CalcAmpsPerVoltDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 65,
+			"path" : "src/AutoPilotPlugins/PX4/CalcVoltageDividerDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 66,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_CalcVoltageDividerDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 67,
+			"path" : "src/AutoPilotPlugins/PX4/ESCCalibrationDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 68,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_ESCCalibrationDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 69,
+			"path" : "src/AutoPilotPlugins/PX4/FlightModesComponentSummary.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 70,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_FlightModesComponentSummary_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 71,
+			"path" : "src/AutoPilotPlugins/PX4/PowerComponentSummary.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PowerComponentSummary_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 73,
+			"path" : "src/AutoPilotPlugins/PX4/PX4FlightBehaviorCopter.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 74,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4FlightBehaviorCopter_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 75,
+			"path" : "src/AutoPilotPlugins/PX4/PX4FlightModes.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 76,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4FlightModes_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 77,
+			"path" : "src/AutoPilotPlugins/PX4/PX4RadioComponentSummary.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 78,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4RadioComponentSummary_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 79,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponent.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 80,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponent_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 81,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentCopter.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 82,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopter_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 83,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentCopterAll.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 84,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopterAll_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 85,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentCopterAttitude.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 86,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopterAttitude_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 87,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentCopterPosition.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopterPosition_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 89,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentCopterRate.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 90,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopterRate_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 91,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentCopterVelocity.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 92,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopterVelocity_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 93,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentPlane.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 94,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentPlane_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 95,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentPlaneAll.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 96,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentPlaneAll_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 97,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentPlaneAttitude.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 98,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentPlaneAttitude_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 99,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentPlaneRate.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 100,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentPlaneRate_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 101,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentPlaneTECS.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 102,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentPlaneTECS_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 103,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentSpacecraft.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 104,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraft_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 105,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentSpacecraftAll.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 106,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraftAll_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 107,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentSpacecraftAttitude.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 108,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraftAttitude_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 109,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentSpacecraftPosition.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 110,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraftPosition_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 111,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentSpacecraftRate.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 112,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraftRate_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 113,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentSpacecraftVelocity.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 114,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraftVelocity_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 115,
+			"path" : "src/AutoPilotPlugins/PX4/PX4TuningComponentVTOL.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 116,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentVTOL_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 117,
+			"path" : "src/AutoPilotPlugins/PX4/SafetyComponentSummary.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 118,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_SafetyComponentSummary_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 119,
+			"path" : "src/AutoPilotPlugins/PX4/SensorsComponent.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 120,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_SensorsComponent_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 121,
+			"path" : "src/AutoPilotPlugins/PX4/SensorsComponentSummary.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 122,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_SensorsComponentSummary_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 123,
+			"path" : "src/AutoPilotPlugins/PX4/SensorsComponentSummaryFixedWing.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 124,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_SensorsComponentSummaryFixedWing_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 125,
+			"path" : "src/AutoPilotPlugins/PX4/SensorsSetup.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 126,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_SensorsSetup_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 130,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.qt/rcc/qrc_AutoPilotPluginsPX4Module_raw_qml_0.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 134,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.qt/rcc/qmake_QGroundControl_AutoPilotPlugins_PX4.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 134,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/AutoPilotPlugins/PX4/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 134,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.qt/rcc/AutoPilotPluginsPX4Module_raw_qml_0.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 134,
+			"path" : "src/AutoPilotPlugins/PX4/VehicleConfig/Power.VehicleConfig.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 134,
+			"path" : "src/AutoPilotPlugins/PX4/VehicleConfig/Safety.VehicleConfig.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/AutoPilotPluginsPX4Module_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/meta_types/qt6autopilotpluginspx4module_relwithdebinfo_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/autopilotpluginspx4module_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.qt/rcc/qrc_qmake_QGroundControl_AutoPilotPlugins_PX4.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/generated/PowerComponent.qml.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/generated/PowerComponent_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/generated/SafetyComponent_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_ActuatorComponent_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_ActuatorFact_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_ActuatorSlider_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_AirframeComponent_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_AirframeComponentSummary_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_BatteryParams_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_CalcAmpsPerVoltDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_CalcVoltageDividerDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_ESCCalibrationDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_FlightModesComponentSummary_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PowerComponentSummary_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4FlightBehaviorCopter_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4FlightModes_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4RadioComponentSummary_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponent_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopter_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopterAll_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopterAttitude_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopterPosition_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopterRate_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentCopterVelocity_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentPlane_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentPlaneAll_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentPlaneAttitude_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentPlaneRate_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentPlaneTECS_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraft_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraftAll_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraftAttitude_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraftPosition_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraftRate_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentSpacecraftVelocity_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_PX4TuningComponentVTOL_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_SafetyComponentSummary_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_SensorsComponent_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_SensorsComponentSummary_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_SensorsComponentSummaryFixedWing_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.rcc/qmlcache/AutoPilotPluginsPX4Module_SensorsSetup_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/.qt/rcc/qrc_AutoPilotPluginsPX4Module_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/AutoPilotPluginsPX4Module_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AutoPilotPlugins/PX4/meta_types/AutoPilotPluginsPX4Module_json_file_list.txt.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 34,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 34,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 34,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qmlbuiltins_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 34,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

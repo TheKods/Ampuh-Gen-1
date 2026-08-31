@@ -31,9 +31,23 @@ public class QGCActivity extends QtActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "onCreate: Initializing QGCActivity");
+        try {
+            android.content.pm.ActivityInfo activityInfo = getPackageManager().getActivityInfo(getComponentName(), android.content.pm.PackageManager.GET_META_DATA);
+            if (activityInfo.metaData != null) {
+                String libName = activityInfo.metaData.getString("android.app.lib_name");
+                Log.d(TAG, "onCreate: android.app.lib_name = " + libName);
+                String deploymentType = activityInfo.metaData.getString("qt.android.deployment_type");
+                Log.d(TAG, "onCreate: qt.android.deployment_type = " + deploymentType);
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "onCreate: Error reading meta-data", e);
+        }
+
         super.onCreate(savedInstanceState);
         m_instance = this;
 
+        Log.d(TAG, "onCreate: super.onCreate finished, initializing logger and native code");
         QGCLogger.initialize(getApplicationContext());
         nativeInit();
         setupMulticastLock();
@@ -41,6 +55,7 @@ public class QGCActivity extends QtActivity {
         QGCUsbSerialManager.initialize(this);
         QGCSDLManager.initialize(this);
         m_storagePermissionController = new QGCStoragePermissionController(this);
+        Log.d(TAG, "onCreate: Initialization complete");
     }
 
     @Override
@@ -146,7 +161,7 @@ public class QGCActivity extends QtActivity {
             if (cursor != null && cursor.moveToFirst()) {
                 final int nameIndex = cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
                 if (nameIndex >= 0) {
-                    displayName = cursor.getString(nameIndex);                    
+                    displayName = cursor.getString(nameIndex);
                     displayName = sanitizeFilename(displayName);
                 }
             }
@@ -181,15 +196,20 @@ public class QGCActivity extends QtActivity {
             QGCLogger.e(TAG, "failed to get filename for: " + displayName, e);
             return null;
         }
-        try (InputStream is = getContentResolver().openInputStream(uri);
-            FileOutputStream fos = new FileOutputStream(destFile)) {
-            final byte[] buffer = new byte[8192];
-            int bytesRead;
-            while ((bytesRead = is.read(buffer)) != -1) {
-                fos.write(buffer, 0, bytesRead);
+        try (InputStream is = getContentResolver().openInputStream(uri)) {
+            if (is == null) {
+                QGCLogger.e(TAG, "copyFileToDestination: openInputStream returned null");
+                return null;
             }
-            QGCLogger.i(TAG, "File imported successfully to: " + destFile.getAbsolutePath());
-            return destFile.getAbsolutePath();
+            try (FileOutputStream fos = new FileOutputStream(destFile)) {
+                final byte[] buffer = new byte[8192];
+                int bytesRead;
+                while ((bytesRead = is.read(buffer)) != -1) {
+                    fos.write(buffer, 0, bytesRead);
+                }
+                QGCLogger.i(TAG, "File imported successfully to: " + destFile.getAbsolutePath());
+                return destFile.getAbsolutePath();
+            }
         } catch (Exception e) {
             QGCLogger.e(TAG, "Failed to copy file to destination", e);
             return null;
@@ -222,10 +242,13 @@ public class QGCActivity extends QtActivity {
         final String base = (dotIndex >= 0) ? displayName.substring(0, dotIndex) : displayName;
         final String ext  = (dotIndex >= 0) ? displayName.substring(dotIndex)    : "";
 
-        for (int i = 1; i <= Integer.MAX_VALUE; i++) {
+        for (int i = 1; ; i++) {
             candidate = new File(destDir, base + "_" + i + ext);
             if (!candidate.exists()) {
                 return candidate;
+            }
+            if (i == Integer.MAX_VALUE) {
+                break;
             }
         }
         throw new IllegalStateException("resolveDestFile: no free filename found under " + destDir);

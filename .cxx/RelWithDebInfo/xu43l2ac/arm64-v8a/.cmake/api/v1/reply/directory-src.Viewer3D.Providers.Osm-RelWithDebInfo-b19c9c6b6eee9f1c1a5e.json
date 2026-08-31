@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "src/Viewer3D/Providers/Osm",
+		"source" : "src/Viewer3D/Providers/Osm"
+	}
+}

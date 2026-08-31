@@ -1,0 +1,79 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/FirmwarePlugin/PX4/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "PX4FirmwareModule_tooling::@c7b3eb9193b2dc326a1d"
+		},
+		{
+			"id" : "PX4FirmwareModule_autogen_timestamp_deps::@c7b3eb9193b2dc326a1d"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "PX4FirmwareModule_autogen::@c7b3eb9193b2dc326a1d",
+	"isGeneratorProvided" : true,
+	"name" : "PX4FirmwareModule_autogen",
+	"paths" : 
+	{
+		"build" : "src/FirmwarePlugin/PX4",
+		"source" : "src/FirmwarePlugin/PX4"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/PX4/CMakeFiles/PX4FirmwareModule_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/PX4/CMakeFiles/PX4FirmwareModule_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/PX4/PX4FirmwareModule_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

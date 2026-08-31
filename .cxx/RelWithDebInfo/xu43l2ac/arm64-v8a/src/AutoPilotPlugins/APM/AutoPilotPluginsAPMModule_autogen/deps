@@ -1,0 +1,20 @@
+AutoPilotPluginsAPMModule_autogen/timestamp: \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in \
+	C:/Project/qgroundcontrol-master/src/AutoPilotPlugins/APM/CMakeLists.txt \
+	C:/Project/qgroundcontrol-master/src/AutoPilotPlugins/APM/VehicleConfig/APMFailsafes.VehicleConfig.json \
+	C:/Project/qgroundcontrol-master/src/AutoPilotPlugins/APM/VehicleConfig/APMFlightSafety.VehicleConfig.json \
+	C:/Project/qgroundcontrol-master/src/AutoPilotPlugins/APM/VehicleConfig/APMLogging.VehicleConfig.json \
+	C:/Project/qgroundcontrol-master/src/AutoPilotPlugins/APM/VehicleConfig/APMPower.VehicleConfig.json \
+	C:/Project/qgroundcontrol-master/src/AutoPilotPlugins/APM/VehicleConfig/APMTuningCopter.VehicleConfig.json \
+	C:/Project/qgroundcontrol-master/tools/generators/common/__init__.py \
+	C:/Project/qgroundcontrol-master/tools/generators/common/controls.py \
+	C:/Project/qgroundcontrol-master/tools/generators/common/validation.py \
+	C:/Project/qgroundcontrol-master/tools/generators/config_qml/__init__.py \
+	C:/Project/qgroundcontrol-master/tools/generators/config_qml/emit.py \
+	C:/Project/qgroundcontrol-master/tools/generators/config_qml/generate_pages.py \
+	C:/Project/qgroundcontrol-master/tools/generators/config_qml/model.py \
+	C:/Project/qgroundcontrol-master/tools/generators/config_qml/page_generator.py \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/bin/cmake.exe

@@ -1,0 +1,1751 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "RelWithDebInfo/lib/libarchive.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_LIBRARY",
+			"TARGET_LINK_LIBRARIES",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"target_compile_options",
+			"qgc_disable_dependency_warnings",
+			"ADD_DEFINITIONS",
+			"SET_TARGET_PROPERTIES",
+			"INCLUDE_DIRECTORIES",
+			"include_directories",
+			"TARGET_INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			".cache/CPM/libarchive/8a50/libarchive/CMakeLists.txt",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake",
+			"cmake/CompilerWarnings.cmake",
+			"src/Utilities/Compression/CMakeLists.txt",
+			".cache/CPM/libarchive/8a50/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 264,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 266,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 162,
+				"parent" : 3
+			},
+			{
+				"file" : 2,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 95,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 317,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 370,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 8
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 340,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 140,
+				"parent" : 18
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 2197,
+				"parent" : 20
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 267,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 588,
+				"parent" : 20
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 2189,
+				"parent" : 20
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 2221,
+				"parent" : 20
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 2196,
+				"parent" : 20
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 576,
+				"parent" : 20
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 716,
+				"parent" : 20
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 265,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 12,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-w"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-Wno-error"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 21,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "LIBARCHIVE_STATIC"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LZMA_API_STATIC"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "__LIBARCHIVE_ENABLE_VISIBILITY"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/libarchive-build/libarchive/archive_static_autogen/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/libarchive/8a50/libarchive"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/libarchive-build"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/liblzma/37ee/src/liblzma/api"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/zstd/dfd2/lib"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/libarchive/8a50/contrib/android/include"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/libarchive/8a50/libarchive/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/zstd/dfd2/build/cmake/../../lib"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -Wall -Wformat -Wformat-security -ffunction-sections -fdata-sections -fvisibility=hidden -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 12,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-w"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-Wno-error"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-Wno-unknown-warning-option"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 21,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "LIBARCHIVE_STATIC"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LZMA_API_STATIC"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "__LIBARCHIVE_ENABLE_VISIBILITY"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/libarchive-build/libarchive/archive_static_autogen/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/libarchive/8a50/libarchive"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/libarchive-build"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/liblzma/37ee/src/liblzma/api"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/zstd/dfd2/lib"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/libarchive/8a50/contrib/android/include"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/libarchive/8a50/libarchive/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/zstd/dfd2/build/cmake/../../lib"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				4,
+				7,
+				9,
+				12,
+				14,
+				15,
+				18,
+				19,
+				20,
+				21,
+				22,
+				25,
+				28,
+				31,
+				32,
+				33,
+				40,
+				42,
+				45,
+				47,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				101,
+				102,
+				104,
+				105,
+				106,
+				107,
+				108,
+				110,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				155,
+				157,
+				158,
+				159
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "liblzma::@a3a5518a5f7332a5417e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "libzstd_static::@ce257b546cf505c1d048"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "archive_static_autogen::@91b5b558f42a4eb287e5"
+		},
+		{
+			"id" : "archive_static_autogen_timestamp_deps::@91b5b558f42a4eb287e5"
+		}
+	],
+	"id" : "archive_static::@91b5b558f42a4eb287e5",
+	"name" : "archive_static",
+	"nameOnDisk" : "libarchive.a",
+	"paths" : 
+	{
+		"build" : "_deps/libarchive-build/libarchive",
+		"source" : ".cache/CPM/libarchive/8a50/libarchive"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				161
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				4,
+				7,
+				9,
+				12,
+				14,
+				15,
+				18,
+				19,
+				20,
+				21,
+				22,
+				25,
+				28,
+				31,
+				32,
+				33,
+				40,
+				42,
+				45,
+				47,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				101,
+				102,
+				104,
+				105,
+				106,
+				107,
+				108,
+				110,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				155,
+				157,
+				158,
+				159
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2,
+				5,
+				6,
+				8,
+				10,
+				11,
+				13,
+				16,
+				17,
+				23,
+				24,
+				26,
+				27,
+				29,
+				30,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				41,
+				43,
+				44,
+				46,
+				48,
+				55,
+				63,
+				99,
+				100,
+				103,
+				109,
+				111,
+				144,
+				154,
+				156,
+				160
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				162
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/libarchive-build/libarchive/archive_static_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_acl.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_acl_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_check_magic.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_cmdline.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_cmdline_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_crc32.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_cryptor.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_cryptor_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_digest.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_digest_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_endian.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_entry.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_entry.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_entry_copy_stat.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_entry_link_resolver.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_entry_locale.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_entry_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_entry_sparse.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_entry_stat.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_entry_strmode.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_entry_xattr.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_hmac.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_hmac_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_integer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_match.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_openssl_evp_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_openssl_hmac_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_options.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_options_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_pack_dev.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_pack_dev.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_parse_date.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_pathmatch.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_pathmatch.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_platform.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_platform_acl.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_platform_stat.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_platform_xattr.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_ppmd_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_ppmd8.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_ppmd8_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_ppmd7.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_ppmd7_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_random.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_random_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_rb.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_rb.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_add_passphrase.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_append_filter.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_data_into_fd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_disk_entry_from_file.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_disk_posix.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_disk_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_disk_set_standard_lookup.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_extract.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_extract2.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_open_fd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_open_file.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_open_filename.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_open_memory.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_set_format.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_set_options.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_all.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_by_code.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_bzip2.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_compress.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_gzip.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_grzip.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_lrzip.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_lz4.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_lzop.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_none.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_program.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_rpm.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_uu.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_xz.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_filter_zstd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_7zip.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_all.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_ar.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_by_code.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_cab.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_cpio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_empty.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_iso9660.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_lha.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_mtree.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_rar.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_rar5.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_raw.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_tar.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_warc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_xar.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_read_support_format_zip.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_string.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_string.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_string_composition.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_string_sprintf.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_time.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_time_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_util.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_version_details.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_virtual.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_disk_posix.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_disk_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_disk_set_standard_lookup.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_open_fd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_open_file.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_open_filename.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_open_memory.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_b64encode.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_by_name.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_bzip2.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_compress.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_grzip.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_gzip.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_lrzip.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_lz4.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_lzop.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_none.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_program.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_uuencode.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_xz.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_add_filter_zstd.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_7zip.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_ar.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_by_name.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_cpio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_cpio_binary.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_cpio_newc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_cpio_odc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_filter_by_ext.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_gnutar.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_iso9660.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_mtree.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_pax.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_private.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_raw.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_shar.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_ustar.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_v7tar.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_warc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_xar.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_format_zip.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_options.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_write_set_passphrase.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_xxhash.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/filter_fork_posix.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/filter_fork.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/xxhash.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_blake2sp_ref.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive_blake2s_ref.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/libarchive/8a50/libarchive/archive.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/libarchive-build/libarchive/archive_static_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/libarchive-build/libarchive/archive_static_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

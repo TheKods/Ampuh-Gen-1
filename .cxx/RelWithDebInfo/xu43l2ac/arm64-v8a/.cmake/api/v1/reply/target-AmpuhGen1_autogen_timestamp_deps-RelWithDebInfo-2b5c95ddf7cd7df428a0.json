@@ -1,0 +1,209 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "mavlink_enums::@fc7a02dc9174c9f98c30"
+		},
+		{
+			"id" : "AIModule::@06dbe7a5aab03224eb8b"
+		},
+		{
+			"id" : "LogViewerModule::@8695fab7e22fd23f9a74"
+		},
+		{
+			"id" : "AIModuleplugin::@06dbe7a5aab03224eb8b"
+		},
+		{
+			"id" : "AnalyzeViewModule::@1f9110b7e94afc09a3ad"
+		},
+		{
+			"id" : "GeoTagModule::@2feae0470afbd02e02bf"
+		},
+		{
+			"id" : "CustomModule::@c11385ffed57b860da63"
+		},
+		{
+			"id" : "CustomPlanModule::@c11385ffed57b860da63"
+		},
+		{
+			"id" : "QGroundControlModule::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "AutoPilotPluginsCommonModule::@9f72fd3d9228751d409a"
+		},
+		{
+			"id" : "AutoPilotPluginsAPMModule::@761191fa32745de764d9"
+		},
+		{
+			"id" : "AutoPilotPluginsPX4Module::@6dc3054ee6ed80334ffd"
+		},
+		{
+			"id" : "FactControlsModule::@bd51febec3e3005f0d32"
+		},
+		{
+			"id" : "APMFirmwareModule::@9e65894a22dd98062e64"
+		},
+		{
+			"id" : "PX4FirmwareModule::@c7b3eb9193b2dc326a1d"
+		},
+		{
+			"id" : "FlyViewModule::@d8b5eb3edadced0caadb"
+		},
+		{
+			"id" : "FlightMapModule::@0444486f063b4153bb58"
+		},
+		{
+			"id" : "GeoMapModule::@49b51d2af305907a6415"
+		},
+		{
+			"id" : "GPSNTRIPModule::@43ff8c441901fe2a7f26"
+		},
+		{
+			"id" : "QGCLogging::@39d1e26217382c022c7f"
+		},
+		{
+			"id" : "QGCLoggingplugin::@39d1e26217382c022c7f"
+		},
+		{
+			"id" : "QGCAudio::@7c12503c1422c4008153"
+		},
+		{
+			"id" : "QGCCompression::@82f67fdaf3bad773fadf"
+		},
+		{
+			"id" : "GeoMapModuleplugin::@49b51d2af305907a6415"
+		},
+		{
+			"id" : "QGCDatabase::@76cbd3328ea060004f73"
+		},
+		{
+			"id" : "QGCFileSystem::@f57fdef940b139cc1e52"
+		},
+		{
+			"id" : "QGCFormat::@a2a262c269467f10cc19"
+		},
+		{
+			"id" : "QGCGeoMath::@a3f7d73392d72fbba232"
+		},
+		{
+			"id" : "QGCGeoFormatsplugin::@29d9481ed4a492e16d72"
+		},
+		{
+			"id" : "QGCGeoFormats::@29d9481ed4a492e16d72"
+		},
+		{
+			"id" : "QGCMath::@74e8dfae084a062e13b9"
+		},
+		{
+			"id" : "QGCNetwork::@13760fd223b8682f1be1"
+		},
+		{
+			"id" : "QGCParsing::@439b4e2e928b3402007a"
+		},
+		{
+			"id" : "AppSettingsModule::@8708763a594d191df190"
+		},
+		{
+			"id" : "FirstRunPromptDialogsModule::@cf0bc558e567a73984c3"
+		},
+		{
+			"id" : "ToolbarModule::@440b2f4e8ac9be43e0fe"
+		},
+		{
+			"id" : "QGCSDL::@8124ac36616bc9b89dc2"
+		},
+		{
+			"id" : "QGCSensors::@dfcc8e5de1b6f87215ff"
+		},
+		{
+			"id" : "QGCLogManager::@218a09104bd01bb552d3"
+		},
+		{
+			"id" : "PlanViewModule::@f51c161e0877e944d045"
+		},
+		{
+			"id" : "QGroundControlControlsModule::@d5dd82b0e56b2219c454"
+		},
+		{
+			"id" : "Viewer3DModule::@86f251bf20a08a1d2365"
+		},
+		{
+			"id" : "Viewer3DModuleplugin::@86f251bf20a08a1d2365"
+		},
+		{
+			"id" : "Osm3D::@1f96de1a0ef4692f8eda"
+		},
+		{
+			"id" : "qtandroidextensions_lockers::@5e4df70f4703459d0598"
+		},
+		{
+			"id" : "QGCAndroidSerialPort::@98d788f887ec103965ba"
+		},
+		{
+			"id" : "QGCLocation::@cb27e8890ce76dc7ee3a"
+		},
+		{
+			"id" : "VehicleSetupModule::@e7f906846a300641c56d"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "AmpuhGen1_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "AmpuhGen1_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/CMakeFiles/AmpuhGen1_autogen_timestamp_deps",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/CMakeFiles/AmpuhGen1_autogen_timestamp_deps.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

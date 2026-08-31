@@ -1,0 +1,99 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			".cache/CPM/libevents/ff77/libs/cpp/parse/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"RelWithDebInfo/lib/liblibevents_parser.a"
+			],
+			"targetId" : "libevents_parser::@9b6e918be805ebb5d1f7",
+			"targetIndex" : 459,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/libevents/parse",
+			"paths" : 
+			[
+				".cache/CPM/libevents/ff77/libs/cpp/parse/parser.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/libevents/parse/nlohmann",
+			"paths" : 
+			[
+				".cache/CPM/libevents/ff77/libs/cpp/parse/nlohmann/json_fwd.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"RelWithDebInfo/lib/liblibevents_health_and_arming_checks.a"
+			],
+			"targetId" : "libevents_health_and_arming_checks::@9b6e918be805ebb5d1f7",
+			"targetIndex" : 456,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/libevents/parse",
+			"paths" : 
+			[
+				".cache/CPM/libevents/ff77/libs/cpp/parse/health_and_arming_checks.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/libevents-build/parse",
+		"source" : ".cache/CPM/libevents/ff77/libs/cpp/parse"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "src/VideoManager/VideoReceiver/GStreamer",
+		"source" : "src/VideoManager/VideoReceiver/GStreamer"
+	}
+}

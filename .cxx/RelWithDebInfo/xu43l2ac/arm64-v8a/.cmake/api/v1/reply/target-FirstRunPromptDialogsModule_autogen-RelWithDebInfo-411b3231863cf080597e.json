@@ -1,0 +1,79 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/FirstRunPromptDialogs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "FirstRunPromptDialogsModule_tooling::@cf0bc558e567a73984c3"
+		},
+		{
+			"id" : "FirstRunPromptDialogsModule_autogen_timestamp_deps::@cf0bc558e567a73984c3"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "FirstRunPromptDialogsModule_autogen::@cf0bc558e567a73984c3",
+	"isGeneratorProvided" : true,
+	"name" : "FirstRunPromptDialogsModule_autogen",
+	"paths" : 
+	{
+		"build" : "src/FirstRunPromptDialogs",
+		"source" : "src/FirstRunPromptDialogs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirstRunPromptDialogs/CMakeFiles/FirstRunPromptDialogsModule_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirstRunPromptDialogs/CMakeFiles/FirstRunPromptDialogsModule_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirstRunPromptDialogs/FirstRunPromptDialogsModule_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

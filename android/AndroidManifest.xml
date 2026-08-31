@@ -53,7 +53,12 @@
         android:localeConfig="@xml/locales_config"
         android:icon="${INSERT_APP_ICON}"
         android:networkSecurityConfig="@xml/network_security_config"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:extractNativeLibs="true">
+
+        <property
+            android:name="android.pageSizeCompat"
+            android:value="true" />
 
         <activity
             android:name="org.mavlink.qgroundcontrol.QGCActivity"
@@ -61,6 +66,7 @@
             android:label="${INSERT_APP_NAME}"
             android:launchMode="singleTop"
             android:screenOrientation="sensorLandscape"
+            android:windowLayoutInDisplayCutoutMode="always"
             android:exported="true">
 
             <intent-filter>
@@ -84,6 +90,9 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="${INSERT_APP_LIB_NAME}" />
+            <meta-data
+                android:name="qt.android.deployment_type"
+                android:value="${QT_ANDROID_DEPLOYMENT_TYPE}" />
             <meta-data
                 android:name="android.app.use_local_qt_libs"
                 android:value="1" />

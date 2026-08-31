@@ -144,6 +144,7 @@ endif()
 
 # Support 16 KB page size (required for Android 15)
 add_link_options("-Wl,-z,max-page-size=16384")
+add_link_options("-Wl,-z,common-page-size=16384")
 
 
 # ----------------------------------------------------------------------------

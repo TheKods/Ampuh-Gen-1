@@ -1,0 +1,109 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			".cache/CPM/shapelib/ef32/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 112,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 186,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 244,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 247,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "share/shapelib",
+			"exportName" : "targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "GeographicLib_STATIC::@dce13dc75a99617acf06",
+					"index" : 231
+				},
+				{
+					"id" : "GeographicLib::@dce13dc75a99617acf06",
+					"index" : 0
+				},
+				{
+					"id" : "shp::@3179a7a8a942f4ec13cf",
+					"index" : 486
+				}
+			],
+			"paths" : 
+			[
+				"_deps/shapelib-build/CMakeFiles/Export/share/shapelib/shapelib-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"RelWithDebInfo/lib/libshp.a"
+			],
+			"targetId" : "shp::@3179a7a8a942f4ec13cf",
+			"targetIndex" : 486,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				".cache/CPM/shapelib/ef32/shapefil.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/shapelib-build/shapelib.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/shapelib-build",
+		"source" : ".cache/CPM/shapelib/ef32"
+	}
+}

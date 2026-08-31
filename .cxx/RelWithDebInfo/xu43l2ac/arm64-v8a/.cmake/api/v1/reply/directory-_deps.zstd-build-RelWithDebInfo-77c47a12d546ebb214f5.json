@@ -1,0 +1,72 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			".cache/CPM/zstd/dfd2/build/cmake/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 224,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/zstd",
+			"exportName" : "zstdExports",
+			"exportTargets" : 
+			[
+				{
+					"id" : "libzstd_static::@ce257b546cf505c1d048",
+					"index" : 473
+				},
+				{
+					"id" : "libzstd::@ce257b546cf505c1d048",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"_deps/zstd-build/CMakeFiles/Export/lib/cmake/zstd/zstdTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/zstd",
+			"paths" : 
+			[
+				".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/zstd-build/zstdConfig.cmake",
+				".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/zstd-build/zstdConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/zstd-build",
+		"source" : ".cache/CPM/zstd/dfd2/build/cmake"
+	}
+}

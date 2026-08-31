@@ -1,0 +1,565 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "qml/QGroundControl/LogManager/libQGCLogManagerplugin_arm64-v8a.a"
+		}
+	],
+	"backtrace" : 6,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_plugin",
+			"qt6_add_qml_plugin",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"target_link_libraries",
+			"_qt_internal_add_static_qml_plugin_dependencies",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"target_compile_options",
+			"qgc_set_warning_flags",
+			"qgc_configure_target",
+			"_qgc_configure_directory_targets",
+			"qgc_configure_directory_targets",
+			"qgc_add_optional_no_warning",
+			"target_compile_definitions",
+			"target_sources"
+		],
+		"files" : 
+		[
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"src/LogManager/CMakeLists.txt",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake:2256:EVAL",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake",
+			"cmake/CompilerWarnings.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 780,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 625,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 2043,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2457,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2667,
+				"parent" : 5
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 2248,
+				"parent" : 3
+			},
+			{
+				"file" : 2,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 1,
+				"parent" : 8
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 4212,
+				"parent" : 9
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 6,
+				"line" : 162,
+				"parent" : 11
+			},
+			{
+				"file" : 5,
+				"parent" : 12
+			},
+			{
+				"command" : 9,
+				"file" : 5,
+				"line" : 95,
+				"parent" : 13
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 317,
+				"parent" : 14
+			},
+			{
+				"command" : 11,
+				"file" : 6,
+				"line" : 370,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 122,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 122,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 122,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 122,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 122,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 122,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 122,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 122,
+				"parent" : 16
+			},
+			{
+				"command" : 16,
+				"file" : 6,
+				"line" : 459,
+				"parent" : 11
+			},
+			{
+				"command" : 15,
+				"file" : 8,
+				"line" : 232,
+				"parent" : 25
+			},
+			{
+				"command" : 15,
+				"file" : 8,
+				"line" : 215,
+				"parent" : 26
+			},
+			{
+				"command" : 14,
+				"file" : 8,
+				"line" : 206,
+				"parent" : 27
+			},
+			{
+				"command" : 13,
+				"file" : 8,
+				"line" : 177,
+				"parent" : 28
+			},
+			{
+				"command" : 12,
+				"file" : 8,
+				"line" : 36,
+				"parent" : 29
+			},
+			{
+				"command" : 17,
+				"file" : 8,
+				"line" : 61,
+				"parent" : 29
+			},
+			{
+				"command" : 12,
+				"file" : 8,
+				"line" : 21,
+				"parent" : 31
+			},
+			{
+				"command" : 12,
+				"file" : 8,
+				"line" : 184,
+				"parent" : 28
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 2244,
+				"parent" : 3
+			},
+			{
+				"command" : 18,
+				"file" : 0,
+				"line" : 2524,
+				"parent" : 4
+			},
+			{
+				"command" : 18,
+				"file" : 0,
+				"line" : 2462,
+				"parent" : 4
+			},
+			{
+				"command" : 19,
+				"file" : 1,
+				"line" : 2237,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 23,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 24,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-switch"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-Wno-deprecated-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-Wno-error=shadow"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 34,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 34,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 35,
+					"define" : "QT_DEPRECATED_WARNINGS"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 35,
+					"define" : "QT_PLUGIN"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 34,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 36,
+					"define" : "QT_STATICPLUGIN"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/QGCLogManagerplugin_autogen/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Project/qgroundcontrol-master/src/LogManager"
+				},
+				{
+					"backtrace" : 34,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml"
+				},
+				{
+					"backtrace" : 34,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include"
+				},
+				{
+					"backtrace" : 34,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore"
+				},
+				{
+					"backtrace" : 34,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/mkspecs/android-clang"
+				},
+				{
+					"backtrace" : 34,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 34,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 34,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					34,
+					34
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "QGCLogging_resources_1::@39d1e26217382c022c7f"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "QGCLogging::@39d1e26217382c022c7f"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "QGCLoggingplugin::@39d1e26217382c022c7f"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "QGCLoggingplugin_init::@39d1e26217382c022c7f"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "QGCFileSystem::@f57fdef940b139cc1e52"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "QGCLogManager::@218a09104bd01bb552d3"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "QGCLogManager_resources_1::@218a09104bd01bb552d3"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "QGCLogManager_resources_2::@218a09104bd01bb552d3"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QGCLogManagerplugin_autogen::@218a09104bd01bb552d3"
+		},
+		{
+			"id" : "QGCLogManagerplugin_autogen_timestamp_deps::@218a09104bd01bb552d3"
+		}
+	],
+	"id" : "QGCLogManagerplugin::@218a09104bd01bb552d3",
+	"name" : "QGCLogManagerplugin",
+	"nameOnDisk" : "libQGCLogManagerplugin_arm64-v8a.a",
+	"paths" : 
+	{
+		"build" : "src/LogManager",
+		"source" : "src/LogManager"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				2
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/QGCLogManagerplugin_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 37,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/QGCLogManagerplugin_QGroundControl_LogManagerPlugin.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/QGCLogManagerplugin_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/QGCLogManagerplugin_autogen/timestamp.rule",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

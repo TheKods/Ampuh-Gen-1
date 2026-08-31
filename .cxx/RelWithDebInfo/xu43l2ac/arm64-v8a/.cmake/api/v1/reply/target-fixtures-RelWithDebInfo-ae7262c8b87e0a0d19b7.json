@@ -1,0 +1,802 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./fixtures_autogen/mocs_compilation.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/bad_diagonals.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/bad_hole.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/boxy.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/building.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/collinear_diagonal.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/degenerate.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/dude.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/eberly_3.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/eberly_6.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/empty_square.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/filtered_bridge_jhl.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/hilbert.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/hole_touching_outer.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/hourglass.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/infinite_loop_jhl.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue107.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue111.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue119.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue131.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue135.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue142.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue149.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue16.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue17.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue29.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue34.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue35.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue45.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue52.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/issue83.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/outside_ring.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/rain.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/self_touching.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/shared_points.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/simplified_us_border.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/steiner.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/touching2.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/touching3.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/touching4.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/touching_holes.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/water.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/water2.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/water3.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/water3b.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/water4.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/water_huge.cpp.o"
+		},
+		{
+			"path" : "_deps/earcut_hpp-build/CMakeFiles/fixtures.dir/./test/fixtures/water_huge2.cpp.o"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"target_compile_options",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			".cache/CPM/earcut_hpp/8d68/CMakeLists.txt",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 162,
+				"parent" : 2
+			},
+			{
+				"file" : 2,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 95,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 317,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 370,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 12,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-ffp-contract=off"
+				},
+				{
+					"fragment" : "-std=c++14"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/earcut_hpp-build/fixtures_autogen/include"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/earcut_hpp/8d68/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "fixtures_autogen_timestamp_deps::@fd0af858652144726c2e"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "fixtures_autogen::@fd0af858652144726c2e"
+		}
+	],
+	"id" : "fixtures::@fd0af858652144726c2e",
+	"name" : "fixtures",
+	"paths" : 
+	{
+		"build" : "_deps/earcut_hpp-build",
+		"source" : ".cache/CPM/earcut_hpp/8d68"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				49
+			]
+		},
+		{
+			"name" : "fixtures",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				50
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/earcut_hpp-build/fixtures_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/bad_diagonals.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/bad_hole.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/boxy.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/building.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/collinear_diagonal.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/degenerate.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/dude.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/eberly_3.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/eberly_6.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/empty_square.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/filtered_bridge_jhl.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/geometries.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/hilbert.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/hole_touching_outer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/hourglass.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/infinite_loop_jhl.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue107.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue111.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue119.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue131.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue135.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue142.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue149.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue16.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue17.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue29.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue34.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue35.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue45.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue52.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/issue83.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/outside_ring.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/rain.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/self_touching.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/shared_points.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/simplified_us_border.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/steiner.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/touching2.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/touching3.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/touching4.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/touching_holes.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/water.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/water2.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/water3.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/water3b.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/water4.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/water_huge.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : ".cache/CPM/earcut_hpp/8d68/test/fixtures/water_huge2.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/earcut_hpp-build/fixtures_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/earcut_hpp-build/fixtures_autogen/timestamp.rule",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

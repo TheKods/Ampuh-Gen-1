@@ -1,0 +1,79 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			".cache/CPM/libevents/ff77/libs/cpp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/libevents",
+			"exportName" : "libevents",
+			"exportTargets" : 
+			[
+				{
+					"id" : "libevents_parser::@9b6e918be805ebb5d1f7",
+					"index" : 459
+				},
+				{
+					"id" : "libevents_health_and_arming_checks::@9b6e918be805ebb5d1f7",
+					"index" : 456
+				},
+				{
+					"id" : "libevents_receive::@f24d5a8fec42f5ed7690",
+					"index" : 462
+				},
+				{
+					"id" : "libevents::@efedca400ffd2cb7abd3",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"_deps/libevents-build/CMakeFiles/Export/lib/cmake/libevents/libevents.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/libevents",
+			"paths" : 
+			[
+				".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/libevents-build/libeventsConfig.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/libevents-build",
+		"source" : ".cache/CPM/libevents/ff77/libs/cpp"
+	}
+}

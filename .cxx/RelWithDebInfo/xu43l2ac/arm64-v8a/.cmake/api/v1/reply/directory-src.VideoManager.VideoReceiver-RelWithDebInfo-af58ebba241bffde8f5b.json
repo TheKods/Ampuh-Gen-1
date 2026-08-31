@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "src/VideoManager/VideoReceiver",
+		"source" : "src/VideoManager/VideoReceiver"
+	}
+}

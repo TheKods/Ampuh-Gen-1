@@ -1,0 +1,7 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/PX4/.qt/rcc/qmake_QGroundControl_FirmwarePlugin_PX4.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirmwarePlugin/PX4/.qt/rcc/PX4FirmwareModule_raw_qml_0.qrc
+/qml/QGroundControl/FirmwarePlugin/PX4/PX4BatteryIndicator.qml
+/qml/QGroundControl/FirmwarePlugin/PX4/PX4FlightModeIndicator.qml
+/qml/QGroundControl/FirmwarePlugin/PX4/PX4MainStatusIndicator.qml

@@ -1,0 +1,1071 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "_deps/liblzma-build/CMakeFiles/libgnu.dir/./libgnu_autogen/mocs_compilation.cpp.o"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"add_compile_definitions",
+			"tuklib_add_definitions",
+			"tuklib_add_definition_if",
+			"tuklib_integer",
+			"tuklib_use_system_extensions",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			".cache/CPM/liblzma/37ee/CMakeLists.txt",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake",
+			".cache/CPM/liblzma/37ee/cmake/tuklib_common.cmake",
+			".cache/CPM/liblzma/37ee/cmake/tuklib_integer.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1807,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 162,
+				"parent" : 2
+			},
+			{
+				"file" : 2,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 95,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 317,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 370,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 238,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 802,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 843,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 331,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 335,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 23,
+				"parent" : 59
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 15,
+				"parent" : 60
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1120,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1113,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 953,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 953,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 953,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 953,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 953,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 767,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 298,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 287,
+				"parent" : 80
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 23,
+				"parent" : 81
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 15,
+				"parent" : 82
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 103,
+				"parent" : 80
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 15,
+				"parent" : 84
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 272,
+				"parent" : 80
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 23,
+				"parent" : 86
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 15,
+				"parent" : 87
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 290,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 34,
+				"parent" : 89
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 1826,
+				"parent" : 0
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 1830,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 1816,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 12,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wvla"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-Wformat=2"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-Winit-self"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-Wmissing-include-dirs"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wstrict-overflow=3"
+				},
+				{
+					"backtrace" : 23,
+					"fragment" : "-Wfloat-equal"
+				},
+				{
+					"backtrace" : 24,
+					"fragment" : "-Wundef"
+				},
+				{
+					"backtrace" : 25,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 26,
+					"fragment" : "-Wpointer-arith"
+				},
+				{
+					"backtrace" : 27,
+					"fragment" : "-Wbad-function-cast"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wwrite-strings"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wdate-time"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wsign-conversion"
+				},
+				{
+					"backtrace" : 31,
+					"fragment" : "-Wfloat-conversion"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-Waggregate-return"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-Wstrict-prototypes"
+				},
+				{
+					"backtrace" : 34,
+					"fragment" : "-Wold-style-definition"
+				},
+				{
+					"backtrace" : 35,
+					"fragment" : "-Wmissing-prototypes"
+				},
+				{
+					"backtrace" : 36,
+					"fragment" : "-Wmissing-declarations"
+				},
+				{
+					"backtrace" : 37,
+					"fragment" : "-Wredundant-decls"
+				},
+				{
+					"backtrace" : 38,
+					"fragment" : "-Wimplicit-fallthrough"
+				},
+				{
+					"backtrace" : 39,
+					"fragment" : "-Wc99-compat"
+				},
+				{
+					"backtrace" : 40,
+					"fragment" : "-Wc11-extensions"
+				},
+				{
+					"backtrace" : 41,
+					"fragment" : "-Wc2x-compat"
+				},
+				{
+					"backtrace" : 42,
+					"fragment" : "-Wc2x-extensions"
+				},
+				{
+					"backtrace" : 43,
+					"fragment" : "-Warray-bounds-pointer-arithmetic"
+				},
+				{
+					"backtrace" : 44,
+					"fragment" : "-Wassign-enum"
+				},
+				{
+					"backtrace" : 45,
+					"fragment" : "-Wconditional-uninitialized"
+				},
+				{
+					"backtrace" : 46,
+					"fragment" : "-Wdocumentation"
+				},
+				{
+					"backtrace" : 47,
+					"fragment" : "-Wduplicate-enum"
+				},
+				{
+					"backtrace" : 48,
+					"fragment" : "-Wempty-translation-unit"
+				},
+				{
+					"backtrace" : 49,
+					"fragment" : "-Wextra-semi-stmt"
+				},
+				{
+					"backtrace" : 50,
+					"fragment" : "-Wflexible-array-extensions"
+				},
+				{
+					"backtrace" : 51,
+					"fragment" : "-Wmissing-variable-declarations"
+				},
+				{
+					"backtrace" : 52,
+					"fragment" : "-Wnewline-eof"
+				},
+				{
+					"backtrace" : 53,
+					"fragment" : "-Wshift-sign-overflow"
+				},
+				{
+					"backtrace" : 54,
+					"fragment" : "-Wstring-conversion"
+				},
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 55,
+					"define" : "HAVE_CHECK_CRC32"
+				},
+				{
+					"backtrace" : 56,
+					"define" : "HAVE_CHECK_CRC64"
+				},
+				{
+					"backtrace" : 57,
+					"define" : "HAVE_CHECK_SHA256"
+				},
+				{
+					"backtrace" : 58,
+					"define" : "HAVE_CLOCK_GETTIME"
+				},
+				{
+					"backtrace" : 61,
+					"define" : "HAVE_CLOCK_MONOTONIC"
+				},
+				{
+					"backtrace" : 62,
+					"define" : "HAVE_DECODERS"
+				},
+				{
+					"backtrace" : 63,
+					"define" : "HAVE_DECODER_ARM"
+				},
+				{
+					"backtrace" : 64,
+					"define" : "HAVE_DECODER_ARM64"
+				},
+				{
+					"backtrace" : 65,
+					"define" : "HAVE_DECODER_ARMTHUMB"
+				},
+				{
+					"backtrace" : 66,
+					"define" : "HAVE_DECODER_DELTA"
+				},
+				{
+					"backtrace" : 67,
+					"define" : "HAVE_DECODER_IA64"
+				},
+				{
+					"backtrace" : 68,
+					"define" : "HAVE_DECODER_LZMA1"
+				},
+				{
+					"backtrace" : 69,
+					"define" : "HAVE_DECODER_LZMA2"
+				},
+				{
+					"backtrace" : 70,
+					"define" : "HAVE_DECODER_POWERPC"
+				},
+				{
+					"backtrace" : 71,
+					"define" : "HAVE_DECODER_RISCV"
+				},
+				{
+					"backtrace" : 72,
+					"define" : "HAVE_DECODER_SPARC"
+				},
+				{
+					"backtrace" : 73,
+					"define" : "HAVE_DECODER_X86"
+				},
+				{
+					"backtrace" : 55,
+					"define" : "HAVE_INTTYPES_H"
+				},
+				{
+					"backtrace" : 74,
+					"define" : "HAVE_MF_BT2"
+				},
+				{
+					"backtrace" : 75,
+					"define" : "HAVE_MF_BT3"
+				},
+				{
+					"backtrace" : 76,
+					"define" : "HAVE_MF_BT4"
+				},
+				{
+					"backtrace" : 77,
+					"define" : "HAVE_MF_HC3"
+				},
+				{
+					"backtrace" : 78,
+					"define" : "HAVE_MF_HC4"
+				},
+				{
+					"backtrace" : 79,
+					"define" : "HAVE_SMALL"
+				},
+				{
+					"backtrace" : 55,
+					"define" : "HAVE_STDBOOL_H"
+				},
+				{
+					"backtrace" : 55,
+					"define" : "HAVE_STDINT_H"
+				},
+				{
+					"backtrace" : 55,
+					"define" : "HAVE__BOOL"
+				},
+				{
+					"backtrace" : 83,
+					"define" : "HAVE___BUILTIN_ASSUME_ALIGNED"
+				},
+				{
+					"backtrace" : 85,
+					"define" : "HAVE___BUILTIN_BSWAPXX"
+				},
+				{
+					"backtrace" : 55,
+					"define" : "PACKAGE_BUGREPORT=\"xz@tukaani.org\""
+				},
+				{
+					"backtrace" : 55,
+					"define" : "PACKAGE_NAME=\"XZ Utils\""
+				},
+				{
+					"backtrace" : 55,
+					"define" : "PACKAGE_URL=\"https://tukaani.org/xz/\""
+				},
+				{
+					"backtrace" : 88,
+					"define" : "TUKLIB_FAST_UNALIGNED_ACCESS"
+				},
+				{
+					"backtrace" : 90,
+					"define" : "_ALL_SOURCE"
+				},
+				{
+					"backtrace" : 90,
+					"define" : "_DARWIN_C_SOURCE"
+				},
+				{
+					"backtrace" : 90,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 90,
+					"define" : "_NETBSD_SOURCE"
+				},
+				{
+					"backtrace" : 90,
+					"define" : "_OPENBSD_SOURCE"
+				},
+				{
+					"backtrace" : 90,
+					"define" : "_POSIX_PTHREAD_SEMANTICS"
+				},
+				{
+					"backtrace" : 90,
+					"define" : "_TANDEM_SOURCE"
+				},
+				{
+					"backtrace" : 90,
+					"define" : "__EXTENSIONS__"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/liblzma-build/libgnu_autogen/include"
+				},
+				{
+					"backtrace" : 91,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/liblzma-build/lib"
+				},
+				{
+					"backtrace" : 92,
+					"path" : "C:/Project/qgroundcontrol-master/.cache/CPM/liblzma/37ee/lib"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "libgnu_autogen::@a3a5518a5f7332a5417e"
+		},
+		{
+			"id" : "libgnu_autogen_timestamp_deps::@a3a5518a5f7332a5417e"
+		}
+	],
+	"id" : "libgnu::@a3a5518a5f7332a5417e",
+	"name" : "libgnu",
+	"paths" : 
+	{
+		"build" : "_deps/liblzma-build",
+		"source" : ".cache/CPM/liblzma/37ee"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				2
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/liblzma-build/libgnu_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 93,
+			"path" : ".cache/CPM/liblzma/37ee/src/common/sysdefs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/liblzma-build/libgnu_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/liblzma-build/libgnu_autogen/timestamp.rule",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

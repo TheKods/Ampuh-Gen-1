@@ -1,0 +1,4 @@
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/QGCLogManager_autogen/include/../EWIEGA46WW/moc_LogEntry.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/QGCLogManager_autogen/include/../EWIEGA46WW/moc_LogEntryTableModel.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/QGCLogManager_autogen/include/../EWIEGA46WW/moc_LogManager.cpp.json
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/QGCLogManager_autogen/include/../EWIEGA46WW/moc_LogModel.cpp.json

@@ -1,0 +1,31 @@
+expat_autogen/timestamp: \
+	C:/Project/qgroundcontrol-master/.cache/CPM/expat/a11c/expat/CMakeLists.txt \
+	C:/Project/qgroundcontrol-master/.cache/CPM/expat/a11c/expat/Changes \
+	C:/Project/qgroundcontrol-master/.cache/CPM/expat/a11c/expat/ConfigureChecks.cmake \
+	C:/Project/qgroundcontrol-master/.cache/CPM/expat/a11c/expat/cmake/expat-config.cmake.in \
+	C:/Project/qgroundcontrol-master/.cache/CPM/expat/a11c/expat/expat_config.h.cmake \
+	C:/Project/qgroundcontrol-master/.cache/CPM/expat/a11c/expat/lib/xmlparse.c \
+	C:/Project/qgroundcontrol-master/.cache/CPM/expat/a11c/expat/lib/xmlrole.c \
+	C:/Project/qgroundcontrol-master/.cache/CPM/expat/a11c/expat/lib/xmlrole.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/expat/a11c/expat/lib/xmltok.c \
+	C:/Project/qgroundcontrol-master/.cache/CPM/expat/a11c/expat/lib/xmltok.h \
+	C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/CMakeFiles/CheckIncludeFiles/STDC_HEADERS.c \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/BasicConfigVersion-SameMajorVersion.cmake.in \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeConfigurableFile.in \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CPack.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CPackComponent.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckCCompilerFlag.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckFunctionExists.c \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFile.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFileCXX.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFiles.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckLibraryExists.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckSymbolExists.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckTypeSize.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/GNUInstallDirs.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/TestBigEndian.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Templates/CPackConfig.cmake.in \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/bin/cmake.exe

@@ -1,0 +1,2041 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "CheckerboardTextureData",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "sizePixels",
+                        "notify": "sizePixelsChanged",
+                        "read": "sizePixels",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setSizePixels"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "cells",
+                        "notify": "cellsChanged",
+                        "read": "cells",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setCells"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "color1",
+                        "notify": "color1Changed",
+                        "read": "color1",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "write": "setColor1"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "color2",
+                        "notify": "color2Changed",
+                        "read": "color2",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "write": "setColor2"
+                    }
+                ],
+                "qualifiedClassName": "CheckerboardTextureData",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "sizePixelsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "cellsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "color1Changed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "color2Changed",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuick3DTextureData"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "CheckerboardTextureData.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "FlightPathGeometry",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinates",
+                                "type": "QVariantList"
+                            }
+                        ],
+                        "name": "setPath",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinate",
+                                "type": "QGeoCoordinate"
+                            }
+                        ],
+                        "name": "appendPoint",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinate",
+                                "type": "QGeoCoordinate"
+                            }
+                        ],
+                        "name": "updateLastPoint",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "clearPath",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "scene",
+                        "notify": "sceneChanged",
+                        "read": "scene",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "GeoScene*",
+                        "user": false,
+                        "write": "setScene"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "anchorCoordinate",
+                        "notify": "anchorCoordinateChanged",
+                        "read": "anchorCoordinate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QGeoCoordinate",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "pointCount",
+                        "notify": "pointCountChanged",
+                        "read": "pointCount",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "FlightPathGeometry",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "sceneChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "anchorCoordinateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "pointCountChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuick3DGeometry"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "FlightPathGeometry.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "GeoMapCamera",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "Mode",
+                        "values": [
+                            "Mode2D",
+                            "Mode3D"
+                        ]
+                    }
+                ],
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "reset",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "center",
+                                "type": "QGeoCoordinate"
+                            },
+                            {
+                                "name": "heading",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "tilt",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "distance",
+                                "type": "qreal"
+                            }
+                        ],
+                        "name": "lookAt",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "goTo2D",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "goTo3D",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            },
+                            {
+                                "name": "anchorZ",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "beginPan",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "beginPan",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "panTo",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            },
+                            {
+                                "name": "anchorZ",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "beginOrbit",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "beginOrbit",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "orbitTo",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "beginLook",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "lookTo",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "degrees",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "rotateBy",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "degrees",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "tiltBy",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "amount",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "zoom",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "factor",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "zoomBy",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "sceneUnitsPerPixel",
+                        "returnType": "qreal"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "zoomLevel",
+                                "type": "qreal"
+                            }
+                        ],
+                        "name": "distanceForZoomLevel",
+                        "returnType": "qreal"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinate",
+                                "type": "QGeoCoordinate"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            },
+                            {
+                                "name": "worldZ",
+                                "type": "double"
+                            },
+                            {
+                                "name": "centerElevation",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "centerForCoordinateAtScreenPoint",
+                        "returnType": "QGeoCoordinate"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinate",
+                                "type": "QGeoCoordinate"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            },
+                            {
+                                "name": "worldZ",
+                                "type": "double"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "centerForCoordinateAtScreenPoint",
+                        "returnType": "QGeoCoordinate"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinate",
+                                "type": "QGeoCoordinate"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "centerForCoordinateAtScreenPoint",
+                        "returnType": "QGeoCoordinate"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            },
+                            {
+                                "name": "worldZ",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "coordinateAtScreenPoint",
+                        "returnType": "QGeoCoordinate"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "coordinateAtScreenPoint",
+                        "returnType": "QGeoCoordinate"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "center",
+                        "notify": "centerChanged",
+                        "read": "center",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QGeoCoordinate",
+                        "user": false,
+                        "write": "setCenter"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "heading",
+                        "notify": "headingChanged",
+                        "read": "heading",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setHeading"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "tilt",
+                        "notify": "tiltChanged",
+                        "read": "tilt",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setTilt"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "distance",
+                        "notify": "distanceChanged",
+                        "read": "distance",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setDistance"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "centerElevation",
+                        "notify": "centerElevationChanged",
+                        "read": "centerElevation",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setCenterElevation"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "viewportSize",
+                        "notify": "viewportSizeChanged",
+                        "read": "viewportSize",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QSizeF",
+                        "user": false,
+                        "write": "setViewportSize"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "fieldOfView",
+                        "notify": "fieldOfViewChanged",
+                        "read": "fieldOfView",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setFieldOfView"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "verticalFieldOfView",
+                        "notify": "verticalFieldOfViewChanged",
+                        "read": "verticalFieldOfView",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "unitsPerPixelAtUnitDistance",
+                        "notify": "unitsPerPixelAtUnitDistanceChanged",
+                        "read": "unitsPerPixelAtUnitDistance",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "name": "isTopDown",
+                        "notify": "tiltChanged",
+                        "read": "isTopDown",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 10,
+                        "name": "mode",
+                        "notify": "modeChanged",
+                        "read": "mode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "Mode",
+                        "user": false,
+                        "write": "setMode"
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 11,
+                        "name": "default3DTilt",
+                        "read": "default3DTilt",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 12,
+                        "name": "sceneOrigin",
+                        "notify": "scenePoseChanged",
+                        "read": "sceneOrigin",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QPointF",
+                        "user": false,
+                        "write": "setSceneOrigin"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 13,
+                        "name": "scenePosition",
+                        "notify": "scenePoseChanged",
+                        "read": "scenePosition",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVector3D",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 14,
+                        "name": "sceneRotation",
+                        "notify": "scenePoseChanged",
+                        "read": "sceneRotation",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuaternion",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "GeoMapCamera",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "centerChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "headingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "tiltChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "distanceChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "centerElevationChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "viewportSizeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "fieldOfViewChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "verticalFieldOfViewChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "unitsPerPixelAtUnitDistanceChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "modeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "scenePoseChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "GeoMapCamera.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "GeoMapItem",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "AltitudeMode",
+                        "values": [
+                            "ClampToGround",
+                            "Absolute"
+                        ]
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "coordinate",
+                        "notify": "coordinateChanged",
+                        "read": "coordinate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QGeoCoordinate",
+                        "user": false,
+                        "write": "setCoordinate"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "anchorPoint",
+                        "notify": "anchorPointChanged",
+                        "read": "anchorPoint",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QPointF",
+                        "user": false,
+                        "write": "setAnchorPoint"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "scene",
+                        "notify": "sceneChanged",
+                        "read": "scene",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "GeoScene*",
+                        "user": false,
+                        "write": "setScene"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "surfaceModel",
+                        "notify": "surfaceModelChanged",
+                        "read": "surfaceModel",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "SurfacePatchModel*",
+                        "user": false,
+                        "write": "setSurfaceModel"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "altitudeMode",
+                        "notify": "altitudeModeChanged",
+                        "read": "altitudeMode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "AltitudeMode",
+                        "user": false,
+                        "write": "setAltitudeMode"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "projected",
+                        "notify": "projectedChanged",
+                        "read": "projected",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "scenePosition",
+                        "notify": "scenePositionChanged",
+                        "read": "scenePosition",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVector3D",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "delegate3D",
+                        "notify": "delegate3DChanged",
+                        "read": "delegate3D",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQmlComponent*",
+                        "user": false,
+                        "write": "setDelegate3D"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "node3D",
+                        "notify": "node3DChanged",
+                        "read": "node3D",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QObject*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "name": "crossfade3D",
+                        "notify": "crossfade3DChanged",
+                        "read": "crossfade3D",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setCrossfade3D"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 10,
+                        "name": "contentOpacity2D",
+                        "notify": "contentOpacity2DChanged",
+                        "read": "contentOpacity2D",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "GeoMapItem",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "coordinateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "anchorPointChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "sceneChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "surfaceModelChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "altitudeModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "projectedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "scenePositionChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "delegate3DChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "node3DChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "crossfade3DChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "contentOpacity2DChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "name": "_updatePosition",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "_terrainHeightsChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "GeoMapItem.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "GeoMapProjectedPath",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "center",
+                                "type": "QGeoCoordinate"
+                            },
+                            {
+                                "name": "radiusMeters",
+                                "type": "double"
+                            },
+                            {
+                                "name": "segments",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "circleCoordinates",
+                        "returnType": "QVariantList"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "center",
+                                "type": "QGeoCoordinate"
+                            },
+                            {
+                                "name": "radiusMeters",
+                                "type": "double"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "circleCoordinates",
+                        "returnType": "QVariantList"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "coordinates",
+                        "notify": "coordinatesChanged",
+                        "read": "coordinates",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false,
+                        "write": "setCoordinates"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "scene",
+                        "notify": "sceneChanged",
+                        "read": "scene",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "GeoScene*",
+                        "user": false,
+                        "write": "setScene"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "surfaceModel",
+                        "notify": "surfaceModelChanged",
+                        "read": "surfaceModel",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "SurfacePatchModel*",
+                        "user": false,
+                        "write": "setSurfaceModel"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "altitudeMode",
+                        "notify": "altitudeModeChanged",
+                        "read": "altitudeMode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "GeoMapItem::AltitudeMode",
+                        "user": false,
+                        "write": "setAltitudeMode"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "screenPoints",
+                        "notify": "screenPointsChanged",
+                        "read": "screenPoints",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "projected",
+                        "notify": "projectedChanged",
+                        "read": "projected",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "GeoMapProjectedPath",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "coordinatesChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "sceneChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "surfaceModelChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "altitudeModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "screenPointsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "projectedChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "name": "_rebuild",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "_terrainHeightsChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "GeoMapProjectedPath.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "GeoScene",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinate",
+                                "type": "QGeoCoordinate"
+                            }
+                        ],
+                        "name": "scenePositionFor",
+                        "returnType": "QVector3D"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinate",
+                                "type": "QGeoCoordinate"
+                            }
+                        ],
+                        "name": "screenPositionFor",
+                        "returnType": "QVariant"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinate",
+                                "type": "QGeoCoordinate"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            },
+                            {
+                                "name": "centerElevation",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "centerForCoordinateAtScreenPoint",
+                        "returnType": "QGeoCoordinate"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinate",
+                                "type": "QGeoCoordinate"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "centerForCoordinateAtScreenPoint",
+                        "returnType": "QGeoCoordinate"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "camera",
+                        "notify": "cameraChanged",
+                        "read": "camera",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "GeoMapCamera*",
+                        "user": false,
+                        "write": "setCamera"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "sceneOrigin",
+                        "notify": "sceneOriginChanged",
+                        "read": "sceneOrigin",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QPointF",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "verticalScale",
+                        "notify": "sceneOriginChanged",
+                        "read": "verticalScale",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "terrainScale",
+                        "notify": "terrainScaleChanged",
+                        "read": "terrainScale",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setTerrainScale"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "content3D",
+                        "notify": "content3DChanged",
+                        "read": "content3D",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QObject*",
+                        "user": false,
+                        "write": "setContent3D"
+                    }
+                ],
+                "qualifiedClassName": "GeoScene",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "cameraChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "sceneOriginChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "terrainScaleChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "content3DChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "name": "_maybeReanchor",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "GeoScene.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "PaperPlaneGeometry",
+                "object": true,
+                "qualifiedClassName": "PaperPlaneGeometry",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuick3DGeometry"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "PaperPlaneGeometry.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "PatchGeometry",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "gridSize",
+                        "notify": "gridSizeChanged",
+                        "read": "gridSize",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setGridSize"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "span",
+                        "notify": "spanChanged",
+                        "read": "span",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setSpan"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "heights",
+                        "notify": "heightsChanged",
+                        "read": "heights",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<float>",
+                        "user": false,
+                        "write": "setHeights"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "edgeLodDeltas",
+                        "notify": "edgeLodDeltasChanged",
+                        "read": "edgeLodDeltas",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<int>",
+                        "user": false,
+                        "write": "setEdgeLodDeltas"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "heightField",
+                        "notify": "heightFieldChanged",
+                        "read": "heightField",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "HeightField*",
+                        "user": false,
+                        "write": "setHeightField"
+                    }
+                ],
+                "qualifiedClassName": "PatchGeometry",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "gridSizeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "spanChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "heightsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "edgeLodDeltasChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "heightFieldChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuick3DGeometry"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "PatchGeometry.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "PatchTextureData",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "image",
+                        "notify": "imageChanged",
+                        "read": "image",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QImage",
+                        "user": false,
+                        "write": "setImage"
+                    }
+                ],
+                "qualifiedClassName": "PatchTextureData",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "imageChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuick3DTextureData"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "PatchTextureData.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "SurfacePatchModel",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "coordinate",
+                                "type": "QGeoCoordinate"
+                            }
+                        ],
+                        "name": "terrainHeightAt",
+                        "returnType": "double"
+                    },
+                    {
+                        "access": "public",
+                        "name": "startCapture",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "stopCapture",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "name": "analyzeSurface",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "scene",
+                        "notify": "sceneChanged",
+                        "read": "scene",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "GeoScene*",
+                        "user": false,
+                        "write": "setScene"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "terrain",
+                        "notify": "terrainChanged",
+                        "read": "terrain",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setTerrain"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "debugHills",
+                        "notify": "debugHillsChanged",
+                        "read": "debugHills",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setDebugHills"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "mapType",
+                        "notify": "mapTypeChanged",
+                        "read": "mapType",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setMapType"
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "gridSize",
+                        "read": "gridSize",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "maxRangeMultiplier",
+                        "read": "maxRangeMultiplier",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "patchCount",
+                        "notify": "statsChanged",
+                        "read": "patchCount",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "pendingCount",
+                        "notify": "statsChanged",
+                        "read": "pendingCount",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "maxZoomLevel",
+                        "notify": "statsChanged",
+                        "read": "maxZoomLevel",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "name": "statsEnabled",
+                        "notify": "statsEnabledChanged",
+                        "read": "statsEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setStatsEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 10,
+                        "name": "statsText",
+                        "notify": "statsTextChanged",
+                        "read": "statsText",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 11,
+                        "name": "capturing",
+                        "notify": "capturingChanged",
+                        "read": "capturing",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "SurfacePatchModel",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "sceneChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "terrainChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "debugHillsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "mapTypeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "statsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "statsEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "statsTextChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "capturingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "terrainHeightsChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "key",
+                                "type": "TileMath::TileKey"
+                            }
+                        ],
+                        "name": "_patchAdded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "key",
+                                "type": "TileMath::TileKey"
+                            }
+                        ],
+                        "name": "_patchReady",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "key",
+                                "type": "TileMath::TileKey"
+                            }
+                        ],
+                        "name": "_patchEdgeDeltasChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "key",
+                                "type": "TileMath::TileKey"
+                            }
+                        ],
+                        "name": "_patchRemoved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "_sceneOriginChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "requestId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "image",
+                                "type": "QImage"
+                            }
+                        ],
+                        "name": "_tileImageReady",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "requestId",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "_tileImageFailed",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "_statsTick",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractListModel"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "SurfacePatchModel.h",
+        "outputRevision": 68
+    }
+]

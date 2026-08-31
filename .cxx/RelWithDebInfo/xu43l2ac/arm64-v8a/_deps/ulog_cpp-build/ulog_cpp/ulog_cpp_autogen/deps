@@ -1,0 +1,13 @@
+ulog_cpp_autogen/timestamp: \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/CMakeLists.txt \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/data_container.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/data_container.hpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/messages.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/messages.hpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/reader.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/reader.hpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/simple_writer.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/simple_writer.hpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/writer.cpp \
+	C:/Project/qgroundcontrol-master/.cache/CPM/ulog_cpp/ca6d/ulog_cpp/writer.hpp \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/bin/cmake.exe

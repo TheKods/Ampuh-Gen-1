@@ -1,0 +1,49 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			".cache/CPM/geographiclib/c307/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 125,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "GeographicLib_STATIC::@dce13dc75a99617acf06"
+		}
+	],
+	"id" : "libs::@dce13dc75a99617acf06",
+	"name" : "libs",
+	"paths" : 
+	{
+		"build" : "_deps/geographiclib-build/src",
+		"source" : ".cache/CPM/geographiclib/c307/src"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,322 @@
+/****************************************************************************
+** Generated QML type registration code
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include <QtQml/qqml.h>
+#include <QtQml/qqmlmoduleregistration.h>
+
+#include <ADSBVehicleManagerSettings.h>
+#include <APMAirframeComponentController.h>
+#include <APMDataFlashLogParser.h>
+#include <APMFlightModesComponentController.h>
+#include <APMFollowComponentController.h>
+#include <APMMavlinkStreamRateSettings.h>
+#include <APMSensorsComponentController.h>
+#include <APMSubMotorComponentController.h>
+#include <AirframeComponentController.h>
+#include <AppSettings.h>
+#include <AutoConnectSettings.h>
+#include <AutoPilotPlugin.h>
+#include <Autotune.h>
+#include <BatteryFactGroupListModel.h>
+#include <BatteryIndicatorSettings.h>
+#include <BluetoothConfiguration.h>
+#include <CameraCalc.h>
+#include <CityMapGeometry.h>
+#include <ESP8266ComponentController.h>
+#include <EscStatusFactGroupListModel.h>
+#include <FTPController.h>
+#include <Fact.h>
+#include <FactGroup.h>
+#include <FactGroupListModel.h>
+#include <FactMetaData.h>
+#include <FactPanelController.h>
+#include <FactValueGrid.h>
+#include <FactValueSliderListModel.h>
+#include <FirmwareUpgradeController.h>
+#include <FirmwareUpgradeSettings.h>
+#include <FlightMapSettings.h>
+#include <FlightModeSettings.h>
+#include <FlightPathSegment.h>
+#include <FlyViewSettings.h>
+#include <GeoFenceController.h>
+#include <GeoTagController.h>
+#include <GeoTagImageModel.h>
+#include <GeoViewSettings.h>
+#include <GimbalController.h>
+#include <GimbalControllerSettings.h>
+#include <HeightField.h>
+#include <HorizontalFactValueGrid.h>
+#include <InstrumentValueData.h>
+#include <Joystick.h>
+#include <JoystickConfigController.h>
+#include <JoystickManager.h>
+#include <JoystickManagerSettings.h>
+#include <JoystickSettings.h>
+#include <LinkConfiguration.h>
+#include <LinkInterface.h>
+#include <LinkManager.h>
+#include <LogFileParser.h>
+#include <LogManagerSettings.h>
+#include <LogReplayLink.h>
+#include <LogReplayLinkController.h>
+#include <LogViewerController.h>
+#include <LogViewerSettings.h>
+#include <MAVLinkChartController.h>
+#include <MAVLinkConsoleController.h>
+#include <MAVLinkEnumsQml.h>
+#include <MAVLinkInspectorController.h>
+#include <MAVLinkLogManager.h>
+#include <MAVLinkSigningKeys.h>
+#include <MapPositionTracker.h>
+#include <MapsSettings.h>
+#include <MavlinkAction.h>
+#include <MavlinkActionManager.h>
+#include <MavlinkActionsSettings.h>
+#include <MavlinkCameraControlInterface.h>
+#include <MavlinkSettings.h>
+#include <MissionCommandTree.h>
+#include <MissionController.h>
+#include <MissionItem.h>
+#include <MissionManager.h>
+#include <MultiVehicleManager.h>
+#include <NTRIPConnectionStats.h>
+#include <NTRIPManager.h>
+#include <NTRIPSourceTableController.h>
+#include <OfflineMapsSettings.h>
+#include <OnboardLogController.h>
+#include <OsmParser.h>
+#include <PX4SimpleFlightModesController.h>
+#include <ParameterEditorController.h>
+#include <ParameterManager.h>
+#include <PlanMasterController.h>
+#include <PlanViewSettings.h>
+#include <PositionManager.h>
+#include <PowerComponentController.h>
+#include <PowerModulePresetController.h>
+#include <QAndroidScreen.h>
+#include <QGCCameraManager.h>
+#include <QGCFileDialogController.h>
+#include <QGCGeoBoundingCube.h>
+#include <QGCMAVLink.h>
+#include <QGCMapCircle.h>
+#include <QGCMapPalette.h>
+#include <QGCMapPolygon.h>
+#include <QGCOptions.h>
+#include <QGCPalette.h>
+#include <QGCVideoStreamInfo.h>
+#include <QGroundControlQmlGlobal.h>
+#include <QmlObjectListModel.h>
+#include <QmlObjectTreeModel.h>
+#include <RCChannelMonitorController.h>
+#include <RCToParamDialogController.h>
+#include <RTKSettings.h>
+#include <RadioComponentController.h>
+#include <RallyPointController.h>
+#include <RemoteIDManager.h>
+#include <RemoteIDSettings.h>
+#include <ScreenToolsController.h>
+#include <SensorsComponentController.h>
+#include <ServoOutputMonitorController.h>
+#include <SettingsManager.h>
+#include <SigningFailure.h>
+#include <SigningStatus.h>
+#include <SyslinkComponentController.h>
+#include <TerrainProfile.h>
+#include <ToolStripAction.h>
+#include <ToolStripActionList.h>
+#include <TrajectoryPoints.h>
+#include <TransformPositionController.h>
+#include <UnitsSettings.h>
+#include <Vehicle.h>
+#include <VehicleComponent.h>
+#include <VehicleLinkManager.h>
+#include <VehicleObjectAvoidance.h>
+#include <VehicleSigningController.h>
+#include <VehicleSupports.h>
+#include <VideoManager.h>
+#include <VideoReceiver.h>
+#include <VideoSettings.h>
+#include <Viewer3DManager.h>
+#include <Viewer3DMapProvider.h>
+#include <Viewer3DSettings.h>
+#include <Viewer3DTerrainGeometry.h>
+#include <Viewer3DTerrainTexture.h>
+#include <VisualMissionItem.h>
+
+
+#if !defined(QT_STATIC)
+#define Q_QMLTYPE_EXPORT Q_DECL_EXPORT
+#else
+#define Q_QMLTYPE_EXPORT
+#endif
+Q_QMLTYPE_EXPORT void qml_register_types_QGC()
+{
+    qmlRegisterTypesAndRevisions<ADSBVehicleManagerSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<APMAirframeComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<APMDataFlashLogParser>("QGC", 1);
+    qmlRegisterTypesAndRevisions<APMFlightModesComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<APMFollowComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<APMMavlinkStreamRateSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<APMSensorsComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<APMSubMotorComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<Airframe>("QGC", 1);
+    qmlRegisterTypesAndRevisions<AirframeComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<AirframeType>("QGC", 1);
+    qmlRegisterTypesAndRevisions<AppSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<AutoConnectSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<AutoPilotPlugin>("QGC", 1);
+    qmlRegisterTypesAndRevisions<Autotune>("QGC", 1);
+    qmlRegisterTypesAndRevisions<BaseModeDefinition>("QGC", 1);
+    qmlRegisterTypesAndRevisions<BatteryFactGroupListModel>("QGC", 1);
+    qmlRegisterAnonymousType<QAbstractItemModel, 254>("QGC", 1);
+    qmlRegisterTypesAndRevisions<BatteryIndicatorSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<BluetoothConfiguration>("QGC", 1);
+    qmlRegisterTypesAndRevisions<CameraCalc>("QGC", 1);
+    QMetaType::fromType<CameraSpec *>().id();
+    qmlRegisterTypesAndRevisions<CityMapGeometry>("QGC", 1);
+    qmlRegisterAnonymousType<QQuick3DGeometry, 254>("QGC", 1);
+    qmlRegisterTypesAndRevisions<ESP8266ComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<EscStatusFactGroupListModel>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FTPController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<Fact>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FactGroup>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FactGroupListModel>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FactMetaData>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FactPanelController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FactValueGrid>("QGC", 1);
+    qmlRegisterAnonymousType<QQuickItem, 254>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FactValueSliderListModel>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FirmwareUpgradeController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FirmwareUpgradeSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FlightMapSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FlightModeSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FlightPathSegment>("QGC", 1);
+    qmlRegisterTypesAndRevisions<FlyViewSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<GeoFenceController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<GeoTagController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<GeoTagImageModel>("QGC", 1);
+    qmlRegisterTypesAndRevisions<GeoViewSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<GimbalController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<GimbalControllerSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<HeightField>("QGC", 1);
+    qmlRegisterTypesAndRevisions<HorizontalFactValueGrid>("QGC", 1);
+    qmlRegisterTypesAndRevisions<InstrumentValueData>("QGC", 1);
+    qmlRegisterTypesAndRevisions<Joystick>("QGC", 1);
+    qmlRegisterTypesAndRevisions<JoystickConfigController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<JoystickManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<JoystickManagerSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<JoystickSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<LinkConfiguration>("QGC", 1);
+    qmlRegisterTypesAndRevisions<LinkInterface>("QGC", 1);
+    qmlRegisterTypesAndRevisions<LinkManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<LogFileParser>("QGC", 1);
+    qmlRegisterTypesAndRevisions<LogManagerSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<LogReplayConfiguration>("QGC", 1);
+    qmlRegisterTypesAndRevisions<LogReplayLinkController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<LogViewerController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<LogViewerSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MAVLinkChartController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MAVLinkConsoleController>("QGC", 1);
+    {
+        Q_CONSTINIT static auto metaType = QQmlPrivate::metaTypeForNamespace(
+            [](const QtPrivate::QMetaTypeInterface *) {return &MAVLinkEnums::staticMetaObject;},
+            "MAVLinkEnums");
+        QMetaType(&metaType).id();
+    }
+    qmlRegisterNamespaceAndRevisions(&MAVLinkEnums::staticMetaObject, "QGC", 1, nullptr, &MAVLinkEnums::staticMetaObject, nullptr);
+    qmlRegisterTypesAndRevisions<MAVLinkInspectorController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MAVLinkLogManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MAVLinkSigningKey>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MAVLinkSigningKeys>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MapPositionTracker>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MapsSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MavlinkAction>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MavlinkActionManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MavlinkActionsSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MavlinkCameraControlInterface>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MavlinkSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MissionCommandTree>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MissionController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MissionItem>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MissionManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<MultiVehicleManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<NTRIPConnectionStats>("QGC", 1);
+    qmlRegisterTypesAndRevisions<NTRIPManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<NTRIPSourceTableController>("QGC", 1);
+    QMetaType::fromType<ObjectItemModelBase *>().id();
+    QMetaType::fromType<ObjectListModelBase *>().id();
+    qmlRegisterTypesAndRevisions<OfflineMapsSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<OnboardLogController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<OsmParser>("QGC", 1);
+    qmlRegisterTypesAndRevisions<PX4SimpleFlightModesController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<ParameterEditorController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<ParameterManager>("QGC", 1);
+    QMetaType::fromType<PlanElementController *>().id();
+    QMetaType::fromType<PlanManager *>().id();
+    qmlRegisterTypesAndRevisions<PlanMasterController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<PlanViewSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<PowerComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<PowerModulePresetController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QAndroidScreen>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCCameraManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCFileDialogController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCFlyViewOptions>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCGeoBoundingCube>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCMAVLink>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCMapCircle>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCMapPalette>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCMapPolygon>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCOptions>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCPalette>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCPositionManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGCVideoStreamInfo>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QGroundControlQmlGlobal>("QGC", 1);
+    QMetaType::fromType<QStringListModel *>().id();
+    QMetaType::fromType<QThread *>().id();
+    qmlRegisterTypesAndRevisions<QmlObjectListModel>("QGC", 1);
+    qmlRegisterTypesAndRevisions<QmlObjectTreeModel>("QGC", 1);
+    qmlRegisterTypesAndRevisions<RCChannelMonitorController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<RCToParamDialogController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<RTKSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<RadioComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<RallyPointController>("QGC", 1);
+    QMetaType::fromType<RemoteControlCalibrationController *>().id();
+    qmlRegisterTypesAndRevisions<RemoteIDManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<RemoteIDSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<ScreenToolsController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<SensorsComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<ServoOutputMonitorController>("QGC", 1);
+    QMetaType::fromType<SettingsGroup *>().id();
+    qmlRegisterTypesAndRevisions<SettingsManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<SigningFailure>("QGC", 1);
+    qmlRegisterTypesAndRevisions<SigningStatus>("QGC", 1);
+    qmlRegisterTypesAndRevisions<SyslinkComponentController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<TerrainProfile>("QGC", 1);
+    qmlRegisterTypesAndRevisions<ToolStripAction>("QGC", 1);
+    qmlRegisterTypesAndRevisions<ToolStripActionList>("QGC", 1);
+    qmlRegisterTypesAndRevisions<TrajectoryPoints>("QGC", 1);
+    qmlRegisterTypesAndRevisions<TransformPositionController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<UnitsSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<Vehicle>("QGC", 1);
+    qmlRegisterTypesAndRevisions<VehicleComponent>("QGC", 1);
+    QMetaType::fromType<VehicleFactGroup *>().id();
+    qmlRegisterTypesAndRevisions<VehicleLinkManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<VehicleObjectAvoidance>("QGC", 1);
+    qmlRegisterTypesAndRevisions<VehicleSigningController>("QGC", 1);
+    qmlRegisterTypesAndRevisions<VehicleSupports>("QGC", 1);
+    qmlRegisterTypesAndRevisions<VideoManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<VideoReceiver>("QGC", 1);
+    qmlRegisterTypesAndRevisions<VideoSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<Viewer3DManager>("QGC", 1);
+    qmlRegisterTypesAndRevisions<Viewer3DMapProvider>("QGC", 1);
+    qmlRegisterTypesAndRevisions<Viewer3DSettings>("QGC", 1);
+    qmlRegisterTypesAndRevisions<Viewer3DTerrainGeometry>("QGC", 1);
+    qmlRegisterTypesAndRevisions<Viewer3DTerrainTexture>("QGC", 1);
+    qmlRegisterTypesAndRevisions<VisualMissionItem>("QGC", 1);
+    qmlRegisterModule("QGC", 1, 0);
+}
+
+static const QQmlModuleRegistration qGCRegistration("QGC", qml_register_types_QGC);

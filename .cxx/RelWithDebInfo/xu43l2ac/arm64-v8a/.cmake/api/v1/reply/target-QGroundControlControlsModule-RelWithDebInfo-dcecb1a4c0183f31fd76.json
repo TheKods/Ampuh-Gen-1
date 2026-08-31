@@ -1,0 +1,6105 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "RelWithDebInfo/lib/libQGroundControlControlsModule_arm64-v8a.a"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"add_dependencies",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"target_compile_options",
+			"qgc_set_warning_flags",
+			"qgc_configure_target",
+			"_qgc_configure_directory_targets",
+			"qgc_configure_directory_targets",
+			"qgc_add_optional_no_warning",
+			"target_link_libraries",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"_qt_internal_target_enable_qmlcachegen",
+			"qt_add_resources",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"src/QmlControls/CMakeLists.txt",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake",
+			"cmake/CompilerWarnings.cmake",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:749:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 82,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2692,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2570,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2667,
+				"parent" : 3
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 88,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 780,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 647,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 2768,
+				"parent" : 7
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 10,
+				"file" : 5,
+				"line" : 162,
+				"parent" : 9
+			},
+			{
+				"file" : 4,
+				"parent" : 10
+			},
+			{
+				"command" : 9,
+				"file" : 4,
+				"line" : 95,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 317,
+				"parent" : 12
+			},
+			{
+				"command" : 11,
+				"file" : 5,
+				"line" : 370,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 14
+			},
+			{
+				"command" : 16,
+				"file" : 5,
+				"line" : 459,
+				"parent" : 9
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 232,
+				"parent" : 23
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 215,
+				"parent" : 24
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 206,
+				"parent" : 25
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 177,
+				"parent" : 26
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 36,
+				"parent" : 27
+			},
+			{
+				"command" : 17,
+				"file" : 7,
+				"line" : 61,
+				"parent" : 27
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 21,
+				"parent" : 29
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 184,
+				"parent" : 26
+			},
+			{
+				"command" : 18,
+				"file" : 2,
+				"line" : 392,
+				"parent" : 6
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 541,
+				"parent" : 6
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3099,
+				"parent" : 33
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3124,
+				"parent" : 33
+			},
+			{
+				"command" : 22,
+				"file" : 2,
+				"line" : 2924,
+				"parent" : 33
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 1421,
+				"parent" : 36
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 3090,
+				"parent" : 33
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 590,
+				"parent" : 6
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 39
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 40
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 41
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 26,
+				"file" : 2,
+				"line" : 2656,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 1248,
+				"parent" : 44
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 7
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 2788,
+				"parent" : 7
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 239
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 240
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 241
+			},
+			{
+				"command" : 27,
+				"file" : 1,
+				"line" : 205,
+				"parent" : 0
+			},
+			{
+				"command" : 25,
+				"file" : 0,
+				"line" : 389,
+				"parent" : 243
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 244
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 245
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 246
+			},
+			{
+				"command" : 27,
+				"file" : 1,
+				"line" : 222,
+				"parent" : 0
+			},
+			{
+				"command" : 25,
+				"file" : 0,
+				"line" : 389,
+				"parent" : 248
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 249
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 250
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 251
+			},
+			{
+				"command" : 27,
+				"file" : 1,
+				"line" : 236,
+				"parent" : 0
+			},
+			{
+				"command" : 25,
+				"file" : 0,
+				"line" : 389,
+				"parent" : 253
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 254
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 255
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 256
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 29,
+				"file" : 8,
+				"line" : 1,
+				"parent" : 258
+			},
+			{
+				"command" : 28,
+				"file" : 0,
+				"line" : 774,
+				"parent" : 259
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2123,
+				"parent" : 260
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wno-switch"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "-Wno-deprecated-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 31,
+					"fragment" : "-Wno-error=shadow"
+				},
+				{
+					"backtrace" : 31,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 32,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "QT_QML_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/QGroundControlControlsModule_autogen/include"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Project/qgroundcontrol-master/src/QmlControls"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3/QtQml"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3/QtCore"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/mkspecs/android-clang"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 35,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					32,
+					32
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				70,
+				72,
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				86,
+				88,
+				90,
+				92,
+				94,
+				96,
+				98,
+				100,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				130,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				148,
+				150,
+				152,
+				154,
+				156,
+				158,
+				160,
+				162,
+				164,
+				166,
+				168,
+				170,
+				172,
+				174,
+				176,
+				178,
+				180,
+				182,
+				184,
+				186,
+				188,
+				190,
+				192,
+				194,
+				196,
+				198,
+				199,
+				200,
+				201,
+				202
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 8,
+			"id" : "QGroundControlControlsModule_tooling::@d5dd82b0e56b2219c454"
+		},
+		{
+			"id" : "QGroundControlControlsModule_autogen_timestamp_deps::@d5dd82b0e56b2219c454"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QGroundControlControlsModule_autogen::@d5dd82b0e56b2219c454"
+		}
+	],
+	"id" : "QGroundControlControlsModule::@d5dd82b0e56b2219c454",
+	"name" : "QGroundControlControlsModule",
+	"nameOnDisk" : "libQGroundControlControlsModule_arm64-v8a.a",
+	"paths" : 
+	{
+		"build" : "src/QmlControls",
+		"source" : "src/QmlControls"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				519
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				4,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				57,
+				59,
+				61,
+				63,
+				65,
+				67,
+				69,
+				71,
+				73,
+				75,
+				77,
+				79,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				93,
+				95,
+				97,
+				99,
+				101,
+				103,
+				105,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				119,
+				121,
+				123,
+				125,
+				127,
+				129,
+				131,
+				133,
+				135,
+				137,
+				139,
+				141,
+				143,
+				145,
+				147,
+				149,
+				151,
+				153,
+				155,
+				157,
+				159,
+				161,
+				163,
+				165,
+				167,
+				169,
+				171,
+				173,
+				175,
+				177,
+				179,
+				181,
+				183,
+				185,
+				187,
+				189,
+				191,
+				193,
+				195,
+				197,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				214,
+				216,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				410,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				418,
+				419,
+				420,
+				421,
+				422,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				431,
+				432,
+				433,
+				434,
+				435,
+				436,
+				437,
+				438,
+				439,
+				440,
+				441,
+				442,
+				443,
+				444,
+				445,
+				446,
+				447,
+				448,
+				449,
+				450,
+				451,
+				452,
+				453,
+				454,
+				455,
+				456,
+				457,
+				458,
+				459,
+				460,
+				461,
+				462,
+				463,
+				464,
+				465,
+				466,
+				467,
+				468,
+				469,
+				470,
+				471,
+				472,
+				473,
+				474,
+				475,
+				476,
+				477,
+				478,
+				479,
+				480,
+				481,
+				482,
+				483,
+				484,
+				485,
+				486,
+				487,
+				488,
+				489,
+				490,
+				491,
+				492,
+				493,
+				494,
+				495,
+				496,
+				497,
+				498,
+				499,
+				500,
+				501,
+				502,
+				503,
+				504,
+				505,
+				506,
+				507,
+				508,
+				509,
+				510,
+				511,
+				512,
+				513,
+				514,
+				515,
+				516,
+				517,
+				518,
+				627,
+				628,
+				629,
+				630
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				70,
+				72,
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				86,
+				88,
+				90,
+				92,
+				94,
+				96,
+				98,
+				100,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				130,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				148,
+				150,
+				152,
+				154,
+				156,
+				158,
+				160,
+				162,
+				164,
+				166,
+				168,
+				170,
+				172,
+				174,
+				176,
+				178,
+				180,
+				182,
+				184,
+				186,
+				188,
+				190,
+				192,
+				194,
+				196,
+				198,
+				199,
+				200,
+				201,
+				202
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				213,
+				215,
+				217
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				520,
+				521,
+				522,
+				523,
+				524,
+				525,
+				526,
+				527,
+				528,
+				529,
+				530,
+				531,
+				532,
+				533,
+				534,
+				535,
+				536,
+				537,
+				538,
+				539,
+				540,
+				541,
+				542,
+				543,
+				544,
+				545,
+				546,
+				547,
+				548,
+				549,
+				550,
+				551,
+				552,
+				553,
+				554,
+				555,
+				556,
+				557,
+				558,
+				559,
+				560,
+				561,
+				562,
+				563,
+				564,
+				565,
+				566,
+				567,
+				568,
+				569,
+				570,
+				571,
+				572,
+				573,
+				574,
+				575,
+				576,
+				577,
+				578,
+				579,
+				580,
+				581,
+				582,
+				583,
+				584,
+				585,
+				586,
+				587,
+				588,
+				589,
+				590,
+				591,
+				592,
+				593,
+				594,
+				595,
+				596,
+				597,
+				598,
+				599,
+				600,
+				601,
+				602,
+				603,
+				604,
+				605,
+				606,
+				607,
+				608,
+				609,
+				610,
+				611,
+				612,
+				613,
+				614,
+				615,
+				616,
+				617,
+				618,
+				619,
+				620,
+				621,
+				622,
+				623,
+				624,
+				625,
+				626
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/QGroundControlControlsModule_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 37,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/meta_types/qt6qgroundcontrolcontrolsmodule_relwithdebinfo_metatypes.json.gen",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 38,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/qgroundcontrolcontrolsmodule_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qrc_qmake_QGroundControl_Controls.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 43,
+			"path" : "src/QmlControls/AltFrameCombo.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 45,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_AltFrameCombo_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 47,
+			"path" : "src/QmlControls/AltFrameDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 48,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_AltFrameDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 49,
+			"path" : "src/QmlControls/AppSettings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 50,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_AppSettings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 51,
+			"path" : "src/QmlControls/APMSubMotorDisplay.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 52,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_APMSubMotorDisplay_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 53,
+			"path" : "src/QmlControls/AutotuneUI.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 54,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_AutotuneUI_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 55,
+			"path" : "src/QmlControls/AxisMonitor.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 56,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_AxisMonitor_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 57,
+			"path" : "src/QmlControls/ClickableColor.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 58,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ClickableColor_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 59,
+			"path" : "src/QmlControls/ConfigButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 60,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ConfigButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 61,
+			"path" : "src/QmlControls/ConfigSection.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 62,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ConfigSection_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 63,
+			"path" : "src/QmlControls/ConnectionStatusRow.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 64,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ConnectionStatusRow_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 65,
+			"path" : "src/QmlControls/DeadMouseArea.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 66,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_DeadMouseArea_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 67,
+			"path" : "src/QmlControls/DropButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 68,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_DropButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 69,
+			"path" : "src/QmlControls/DropPanel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 70,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_DropPanel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 71,
+			"path" : "src/QmlControls/EditPositionDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 72,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_EditPositionDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 73,
+			"path" : "src/QmlControls/ExclusiveGroupItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 74,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ExclusiveGroupItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 75,
+			"path" : "src/QmlControls/FactSlider.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 76,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_FactSlider_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 77,
+			"path" : "src/QmlControls/FileButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 78,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_FileButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 79,
+			"path" : "src/QmlControls/FixStatusDot.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 80,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_FixStatusDot_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 81,
+			"path" : "src/QmlControls/FlightModeMenu.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 82,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_FlightModeMenu_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 83,
+			"path" : "src/QmlControls/HeightIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 84,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_HeightIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 85,
+			"path" : "src/QmlControls/HorizontalFactValueGrid.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 86,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_HorizontalFactValueGrid_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 87,
+			"path" : "src/QmlControls/IndicatorButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_IndicatorButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 89,
+			"path" : "src/QmlControls/InstrumentValueEditDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 90,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_InstrumentValueEditDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 91,
+			"path" : "src/QmlControls/InstrumentValueLabel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 92,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_InstrumentValueLabel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 93,
+			"path" : "src/QmlControls/InstrumentValueValue.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 94,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_InstrumentValueValue_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 95,
+			"path" : "src/QmlControls/JoystickThumbPad.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 96,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_JoystickThumbPad_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 97,
+			"path" : "src/QmlControls/KMLOrSHPFileDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 98,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_KMLOrSHPFileDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 99,
+			"path" : "src/QmlControls/LabelledButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 100,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_LabelledButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 101,
+			"path" : "src/QmlControls/LabelledComboBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 102,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_LabelledComboBox_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 103,
+			"path" : "src/QmlControls/LabelledLabel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 104,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_LabelledLabel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 105,
+			"path" : "src/QmlControls/LogReplayStatusBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 106,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_LogReplayStatusBar_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 107,
+			"path" : "src/QmlControls/MissionCommandDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 108,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_MissionCommandDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 109,
+			"path" : "src/QmlControls/MvPanelPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 110,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_MvPanelPage_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 111,
+			"path" : "src/QmlControls/OfflineMapButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 112,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_OfflineMapButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 113,
+			"path" : "src/QmlControls/ParameterDiffDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 114,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ParameterDiffDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 115,
+			"path" : "src/QmlControls/ParameterEditor.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 116,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ParameterEditor_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 117,
+			"path" : "src/QmlControls/ParameterEditorDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 118,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ParameterEditorDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 119,
+			"path" : "src/QmlControls/PIDTuning.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 120,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PIDTuning_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 121,
+			"path" : "src/QmlControls/PipState.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 122,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PipState_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 123,
+			"path" : "src/QmlControls/PipView.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 124,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PipView_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 125,
+			"path" : "src/QmlControls/PreFlightCheckButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 126,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PreFlightCheckButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 127,
+			"path" : "src/QmlControls/PreFlightCheckGroup.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 128,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PreFlightCheckGroup_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 129,
+			"path" : "src/QmlControls/PreFlightCheckModel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 130,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PreFlightCheckModel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 131,
+			"path" : "src/QmlControls/QGCButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 132,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 133,
+			"path" : "src/QmlControls/QGCCheckBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 134,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCCheckBox_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 135,
+			"path" : "src/QmlControls/QGCCheckBoxSlider.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 136,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCCheckBoxSlider_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 137,
+			"path" : "src/QmlControls/QGCColoredImage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 138,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCColoredImage_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 139,
+			"path" : "src/QmlControls/QGCColumnButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 140,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCColumnButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 141,
+			"path" : "src/QmlControls/QGCComboBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 142,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCComboBox_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 143,
+			"path" : "src/QmlControls/QGCDelayButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 144,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCDelayButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 145,
+			"path" : "src/QmlControls/QGCDynamicObjectManager.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCDynamicObjectManager_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 147,
+			"path" : "src/QmlControls/QGCFileDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 148,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCFileDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 149,
+			"path" : "src/QmlControls/QGCFlickable.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 150,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCFlickable_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 151,
+			"path" : "src/QmlControls/QGCFlickableScrollIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 152,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCFlickableScrollIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 153,
+			"path" : "src/QmlControls/QGCGroupBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 154,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCGroupBox_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 155,
+			"path" : "src/QmlControls/QGCLabel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 156,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCLabel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 157,
+			"path" : "src/QmlControls/QGCListView.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 158,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCListView_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 159,
+			"path" : "src/QmlControls/QGCMapLabel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 160,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMapLabel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 161,
+			"path" : "src/QmlControls/QGCMarqueeLabel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 162,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMarqueeLabel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 163,
+			"path" : "src/QmlControls/QGCMenu.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 164,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMenu_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 165,
+			"path" : "src/QmlControls/QGCMenuItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 166,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMenuItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 167,
+			"path" : "src/QmlControls/QGCMenuSeparator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 168,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMenuSeparator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 169,
+			"path" : "src/QmlControls/QGCMouseArea.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 170,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMouseArea_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 171,
+			"path" : "src/QmlControls/QGCMovableItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 172,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMovableItem_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 173,
+			"path" : "src/QmlControls/QGCOptionsComboBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 174,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCOptionsComboBox_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 175,
+			"path" : "src/QmlControls/QGCPageIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 176,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCPageIndicator_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 177,
+			"path" : "src/QmlControls/QGCPopupDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 178,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCPopupDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 179,
+			"path" : "src/QmlControls/QGCPopupDialogFactory.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 180,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCPopupDialogFactory_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 181,
+			"path" : "src/QmlControls/QGCRadioButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCRadioButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 183,
+			"path" : "src/QmlControls/QGCRoundButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 184,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCRoundButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 185,
+			"path" : "src/QmlControls/QGCSimpleMessageDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCSimpleMessageDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 187,
+			"path" : "src/QmlControls/QGCSlider.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 188,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCSlider_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 189,
+			"path" : "src/QmlControls/QGCSwipeView.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 190,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCSwipeView_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 191,
+			"path" : "src/QmlControls/QGCTabBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 192,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCTabBar_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 193,
+			"path" : "src/QmlControls/QGCTabButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 194,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCTabButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 195,
+			"path" : "src/QmlControls/QGCTextField.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 196,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCTextField_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 197,
+			"path" : "src/QmlControls/QGCToolBarButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 198,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCToolBarButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 199,
+			"path" : "src/QmlControls/QGCToolInsets.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 200,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCToolInsets_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 201,
+			"path" : "src/QmlControls/QGCVectorImage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 202,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCVectorImage_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 203,
+			"path" : "src/QmlControls/RCChannelMonitor.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 204,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_RCChannelMonitor_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 205,
+			"path" : "src/QmlControls/RCToParamDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 206,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_RCToParamDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 207,
+			"path" : "src/QmlControls/SectionHeader.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 208,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SectionHeader_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 209,
+			"path" : "src/QmlControls/SelectableControl.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 210,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SelectableControl_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 211,
+			"path" : "src/QmlControls/SettingsButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 212,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SettingsButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 213,
+			"path" : "src/QmlControls/SettingsGroupLayout.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 214,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SettingsGroupLayout_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 215,
+			"path" : "src/QmlControls/SetupPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 216,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SetupPage_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 217,
+			"path" : "src/QmlControls/SliderSwitch.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 218,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SliderSwitch_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 219,
+			"path" : "src/QmlControls/SubMenuButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 220,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SubMenuButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 221,
+			"path" : "src/QmlControls/TimedProgressTracker.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 222,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_TimedProgressTracker_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 223,
+			"path" : "src/QmlControls/ToolIndicatorPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 224,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ToolIndicatorPage_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 225,
+			"path" : "src/QmlControls/ToolStrip.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 226,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ToolStrip_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 227,
+			"path" : "src/QmlControls/ToolStripDropPanel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 228,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ToolStripDropPanel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 229,
+			"path" : "src/QmlControls/ToolStripHoverButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 230,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ToolStripHoverButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 231,
+			"path" : "src/QmlControls/ValueSlider.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 232,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ValueSlider_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 233,
+			"path" : "src/QmlControls/VehicleRotationCal.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 234,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_VehicleRotationCal_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 235,
+			"path" : "src/QmlControls/VehicleSummaryRow.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 236,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_VehicleSummaryRow_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 237,
+			"path" : "src/QmlControls/ScreenTools.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 238,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ScreenTools_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 242,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qrc_QGroundControlControlsModule_raw_qml_0.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 247,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qrc_qmlcontrols_resources.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 252,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qrc_qmlcontrols_qmlimages.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 257,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qrc_instrument_value_icons.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 261,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qmake_QGroundControl_Controls.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/Controls/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/QGroundControlControlsModule_raw_qml_0.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qmlcontrols_resources.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/ArrowRight.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/buttonRight.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/chevron-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/chevron-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/clockwise-arrow.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/counter-clockwise-arrow.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/JoystickBezelLight.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 261,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qmlcontrols_qmlimages.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "src/QmlControls/arrow-down.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 261,
+			"path" : "src/QmlControls/checkbox-check.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/CogWheels.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 261,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/instrument_value_icons.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/add-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/add-solid.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/adjust.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/airplane.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/album.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/align-center.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/align-justified.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/align-left.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/align-right.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/anchor.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/announcement.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/apparel.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-base-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-base-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-outline-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-outline-left.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-outline-right.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-outline-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-simple-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-simple-left.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-simple-right.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-simple-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-thick-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-thick-left.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-thick-right.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-thick-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-thin-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-thin-left.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-thin-right.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/arrow-thin-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/artist.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/at-symbol.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/attachment.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/backspace.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/backward-step.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/backward.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/badge.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/battery-full.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/battery-half.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/battery-low.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/beverage.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/block.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/bluetooth.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/bolt.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/book-reference.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/bookmark copy 2.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/bookmark copy 3.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/bookmark-outline-add.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/bookmark-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/bookmark.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/border-all.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/border-bottom.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/border-horizontal.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/border-inner.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/border-left.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/border-none.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/border-outer.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/border-right.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/border-top.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/border-vertical.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/box.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/brightness-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/brightness-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/browser-window-new.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/browser-window-open.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/browser-window.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/bug.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/buoy.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/calculator.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/calendar.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/camera.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/chart-bar.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/chart-pie.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/chart.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/chat-bubble-dots.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/checkmark-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/checkmark.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cheveron-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cheveron-left.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cheveron-outline-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cheveron-outline-left.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cheveron-outline-right.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cheveron-outline-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cheveron-right.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cheveron-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/clipboard.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/close-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/close-solid.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/close.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cloud-upload.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cloud.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/code.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/coffee.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/cog.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/color-palette.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/compose.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/computer-desktop.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/computer-laptop.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/conversation.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/copy.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/credit-card.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/currency-dollar.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/dashboard.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/date-add.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/dial-pad.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/directions.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/document-add.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/document.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/dots-horizontal-double.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/dots-horizontal-triple.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/drone.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/duplicate.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/edit-copy.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/edit-crop.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/edit-cut.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/edit-pencil.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/education.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/envelope.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/exclamation-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/exclamation-solid.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/explore.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/factory.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/fast-forward.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/fast-rewind.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/film.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/filter.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/flag.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/flashlight.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/folder-outline-add.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/folder-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/folder.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/format-bold.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/format-font-size.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/format-italic.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/format-text-size.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/format-underline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/forward-step.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/forward.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/gift.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/gimbal-1.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/gimbal-2.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/globe.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/hand-stop.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/hard-drive.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/headphones.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/heart.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/home.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/hot.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/hour-glass.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/inbox-check.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/inbox-download.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/inbox-full.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/inbox.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/indent-decrease.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/indent-increase.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/information-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/information-solid.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/key.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/keyboard.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/layers.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/library.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/light-bulb.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/link.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/list-add.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/list-bullet.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/list.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/load-balancer.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/location-current.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/location-food.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/location-gas-station.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/location-hotel.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/location-marina.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/location-park.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/location-restroom.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/location-shopping.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/location.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/lock-closed.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/lock-open.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/map.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/menu.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/mic.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/minus-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/minus-solid.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/mobile-devices.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/mood-happy-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/mood-happy-solid.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/mood-neutral-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/mood-neutral-solid.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/mood-sad-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/mood-sad-solid.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/mouse.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/music-album.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/music-artist.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/music-notes.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/music-playlist.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/navigation-more.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/network.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/news-paper.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/notification.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/notifications-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/notifications.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/paste.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/pause-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/pause-solid.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/pause.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/pen-tool.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/phone.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/photo.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/php-elephant.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/pin.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/play-outline.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/play.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/playlist.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/plugin.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/portfolio.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/printer.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/pylon.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/question.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/queue.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/radar copy 2.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/radar.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/radio.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/refresh.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/reload.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/reply-all.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/reply.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/repost.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/save-disk.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/screen-full.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/search.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/send.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/servers.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/share-01.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/share-alt.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/share.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/shield.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/shopping-cart.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/show-sidebar.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/shuffle.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/stand-by.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/star-full.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/station.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/step-backward.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/step-forward.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/stethoscope.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/store-front.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/stroke-width.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/subdirectory-left.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/subdirectory-right.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/swap.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/tablet.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/tag.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/target.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/text-box.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/text-decoration.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/thermometer.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/thumbs-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/thumbs-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/ticket.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/time.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/timer.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/tools copy.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/translate.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/trash.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/travel-bus.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/travel-car.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/travel-case.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/travel-taxi-cab.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/travel-train.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/travel-walk.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/travel.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/trophy.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/tuning.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/usb.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/user-add.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/user-group.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/user-solid-circle.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/user-solid-square.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/user.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/vector.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/video-camera.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/view-carousel.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/view-column.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/view-hide.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/view-list.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/view-show.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/view-tile.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/volume-down.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/volume-mute.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/volume-off.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/volume-up.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/wallet.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/watch.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/window-new.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/window-open.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/window.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/wrench.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/yin-yang.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/zoom-in.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"path" : "resources/InstrumentValueIcons/zoom-out.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/QGroundControlControlsModule_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/meta_types/qt6qgroundcontrolcontrolsmodule_relwithdebinfo_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/qgroundcontrolcontrolsmodule_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qrc_qmake_QGroundControl_Controls.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_AltFrameCombo_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_AltFrameDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_AppSettings_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_APMSubMotorDisplay_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_AutotuneUI_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_AxisMonitor_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ClickableColor_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ConfigButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ConfigSection_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ConnectionStatusRow_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_DeadMouseArea_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_DropButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_DropPanel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_EditPositionDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ExclusiveGroupItem_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_FactSlider_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_FileButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_FixStatusDot_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_FlightModeMenu_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_HeightIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_HorizontalFactValueGrid_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_IndicatorButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_InstrumentValueEditDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_InstrumentValueLabel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_InstrumentValueValue_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_JoystickThumbPad_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_KMLOrSHPFileDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_LabelledButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_LabelledComboBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_LabelledLabel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_LogReplayStatusBar_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_MissionCommandDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_MvPanelPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_OfflineMapButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ParameterDiffDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ParameterEditor_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ParameterEditorDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PIDTuning_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PipState_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PipView_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PreFlightCheckButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PreFlightCheckGroup_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_PreFlightCheckModel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCCheckBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCCheckBoxSlider_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCColoredImage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCColumnButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCComboBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCDelayButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCDynamicObjectManager_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCFileDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCFlickable_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCFlickableScrollIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCGroupBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCLabel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCListView_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMapLabel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMarqueeLabel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMenu_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMenuItem_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMenuSeparator_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMouseArea_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCMovableItem_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCOptionsComboBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCPageIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCPopupDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCPopupDialogFactory_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCRadioButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCRoundButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCSimpleMessageDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCSlider_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCSwipeView_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCTabBar_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCTabButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCTextField_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCToolBarButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCToolInsets_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_QGCVectorImage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_RCChannelMonitor_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_RCToParamDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SectionHeader_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SelectableControl_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SettingsButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SettingsGroupLayout_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SetupPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SliderSwitch_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_SubMenuButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_TimedProgressTracker_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ToolIndicatorPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ToolStrip_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ToolStripDropPanel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ToolStripHoverButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ValueSlider_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_VehicleRotationCal_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_VehicleSummaryRow_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.rcc/qmlcache/QGroundControlControlsModule_ScreenTools_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qrc_QGroundControlControlsModule_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qrc_qmlcontrols_resources.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qrc_qmlcontrols_qmlimages.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/.qt/rcc/qrc_instrument_value_icons.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/QGroundControlControlsModule_autogen/timestamp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/QmlControls/meta_types/QGroundControlControlsModule_json_file_list.txt.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 32,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 32,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 32,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qmlbuiltins_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 32,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

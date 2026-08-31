@@ -1,0 +1,5 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/.qt/rcc/qmake_QGroundControl_LogManager.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/.qt/rcc/QGCLogManager_raw_qml_0.qrc
+/qml/QGroundControl/LogManager/LoggingCategoriesDialog.qml

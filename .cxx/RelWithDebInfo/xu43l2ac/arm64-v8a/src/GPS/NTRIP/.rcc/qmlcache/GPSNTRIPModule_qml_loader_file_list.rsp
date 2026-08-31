@@ -1,0 +1,7 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GPS/NTRIP/.qt/rcc/qmake_QGroundControl_GPS_NTRIP.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/GPS/NTRIP/.qt/rcc/GPSNTRIPModule_raw_qml_0.qrc
+/qml/QGroundControl/GPS/NTRIP/NTRIPConnectionStatus.qml
+/qml/QGroundControl/GPS/NTRIP/NTRIPConnectionStatusRow.qml
+/qml/QGroundControl/GPS/NTRIP/NTRIPMountpointList.qml

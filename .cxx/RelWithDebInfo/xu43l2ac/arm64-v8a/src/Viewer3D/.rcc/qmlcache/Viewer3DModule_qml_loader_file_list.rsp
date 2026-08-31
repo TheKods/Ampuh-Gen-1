@@ -1,0 +1,13 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.qt/rcc/qmake_QGroundControl_Viewer3D.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Viewer3D/.qt/rcc/Viewer3DModule_raw_qml_0.qrc
+/qml/QGroundControl/Viewer3D/Viewer3DQml/Models3D/CameraLightModel.qml
+/qml/QGroundControl/Viewer3D/Viewer3DQml/Models3D/Viewer3DCameraControls.qml
+/qml/QGroundControl/Viewer3D/Models3D/Viewer3DModel.qml
+/qml/QGroundControl/Viewer3D/Viewer3DQml/Models3D/Viewer3DScaleBar.qml
+/qml/QGroundControl/Viewer3D/Viewer3DQml/Drones/DronePart.qml
+/qml/QGroundControl/Viewer3D/Viewer3DQml/Drones/AnimatedPropeller.qml
+/qml/QGroundControl/Viewer3D/Viewer3DQml/Drones/DroneModelDjiF450.qml
+/qml/QGroundControl/Viewer3D/Viewer3DQml/Models3D/Viewer3DVehicleItems.qml
+/qml/QGroundControl/Viewer3D/Viewer3DQml/Viewer3DShowAction.qml

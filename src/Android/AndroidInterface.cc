@@ -1,5 +1,6 @@
 #include "AndroidInterface.h"
 
+#include <jni.h>
 #include <QAndroidScreen.h>
 #include <QtAndroidHelpers/QAndroidPartialWakeLocker.h>
 #include <QtAndroidHelpers/QAndroidWiFiLocker.h>
@@ -20,6 +21,30 @@
 
 QGC_LOGGING_CATEGORY(AndroidInterfaceLog, "Android.AndroidInterface")
 
+extern "C" {
+void Java_org_mavlink_qgroundcontrol_QGCActivity_qgcLogDebug(JNIEnv*, jobject, jstring message)
+{
+    qCDebug(AndroidInterfaceLog) << QJniObject(message).toString();
+}
+
+void Java_org_mavlink_qgroundcontrol_QGCActivity_qgcLogWarning(JNIEnv*, jobject, jstring message)
+{
+    qCWarning(AndroidInterfaceLog) << QJniObject(message).toString();
+}
+
+void Java_org_mavlink_qgroundcontrol_QGCActivity_nativeStoragePermissionsResult(JNIEnv*, jobject, jboolean granted)
+{
+    AndroidInterface::jniStoragePermissionsResult(granted);
+}
+
+void Java_org_mavlink_qgroundcontrol_QGCActivity_onImportResult(JNIEnv* env, jobject, jstring filePathA)
+{
+    AndroidInterface::jniOnImportResult(env, filePathA);
+}
+}
+
+namespace AndroidInterface {
+
 namespace AndroidInterface {
 
 struct JniMethodCache
@@ -36,17 +61,7 @@ static jclass s_activityClass = nullptr;
 
 static std::function<void(const QString&)> s_importCallback;
 
-static void jniLogDebug(JNIEnv*, jobject, jstring message)
-{
-    qCDebug(AndroidInterfaceLog) << QJniObject(message).toString();
-}
-
-static void jniLogWarning(JNIEnv*, jobject, jstring message)
-{
-    qCWarning(AndroidInterfaceLog) << QJniObject(message).toString();
-}
-
-static void jniStoragePermissionsResult(JNIEnv*, jobject, jboolean granted)
+void jniStoragePermissionsResult(jboolean granted)
 {
     if (!qgcApp()) {
         return;
@@ -117,7 +132,7 @@ static void jniStoragePermissionsResult(JNIEnv*, jobject, jboolean granted)
         Qt::QueuedConnection);
 }
 
-static void jniOnImportResult(JNIEnv* env, jobject, jstring filePathA)
+void jniOnImportResult(JNIEnv* env, jstring filePathA)
 {
     const char* const filePathCStr = env->GetStringUTFChars(filePathA, nullptr);
     const QString filePath = QString::fromUtf8(filePathCStr);
@@ -179,21 +194,7 @@ static jclass getActivityClass()
 
 void setNativeMethods()
 {
-    qCDebug(AndroidInterfaceLog) << "Registering Native Functions";
-
-    const JNINativeMethod javaMethods[]{
-        {"qgcLogDebug", "(Ljava/lang/String;)V", reinterpret_cast<void*>(jniLogDebug)},
-        {"qgcLogWarning", "(Ljava/lang/String;)V", reinterpret_cast<void*>(jniLogWarning)},
-        {"nativeStoragePermissionsResult", "(Z)V", reinterpret_cast<void*>(jniStoragePermissionsResult)},
-        {"onImportResult", "(Ljava/lang/String;)V", reinterpret_cast<void*>(jniOnImportResult)}};
-
-    QJniEnvironment env;
-    if (!env.registerNativeMethods(kJniQGCActivityClassName, javaMethods, std::size(javaMethods))) {
-        qCWarning(AndroidInterfaceLog) << "Failed to register native methods for" << kJniQGCActivityClassName;
-    } else {
-        qCDebug(AndroidInterfaceLog) << "Native Functions Registered";
-    }
-
+    qCDebug(AndroidInterfaceLog) << "Ensuring JNI method cache";
     (void)getActivityClass();
 }
 

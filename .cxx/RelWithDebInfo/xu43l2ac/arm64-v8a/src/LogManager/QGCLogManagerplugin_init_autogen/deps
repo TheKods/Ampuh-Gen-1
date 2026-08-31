@@ -1,0 +1,9 @@
+QGCLogManagerplugin_init_autogen/timestamp: \
+	C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/LogManager/QGCLogManagerplugin_init.cpp \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreResourceInit.in.cpp \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlPluginTemplate.cpp.in \
+	C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in \
+	C:/Project/qgroundcontrol-master/src/LogManager/CMakeLists.txt \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/bin/cmake.exe

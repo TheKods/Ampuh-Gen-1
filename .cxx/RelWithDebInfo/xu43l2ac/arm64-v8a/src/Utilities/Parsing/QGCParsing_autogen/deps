@@ -1,0 +1,18 @@
+QGCParsing_autogen/timestamp: \
+	C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Parsing/CMakeFiles/QGCParsing.dir/cmake_pch.hxx \
+	C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/Utilities/Parsing/CMakeFiles/QGCParsing.dir/cmake_pch.hxx.cxx \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/APMDataFlash/APMDataFlashUtility.cc \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/APMDataFlash/APMDataFlashUtility.h \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/CMakeLists.txt \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Exif/ExifUtility.cc \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Exif/ExifUtility.h \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Json/JsonParsing.cc \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Json/JsonParsing.h \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Json/JsonSchemaValidator.cc \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/Json/JsonSchemaValidator.h \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/PX4ULog/PX4ULogUtility.cc \
+	C:/Project/qgroundcontrol-master/src/Utilities/Parsing/PX4ULog/PX4ULogUtility.h \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindGit.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/FindPackageMessage.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/bin/cmake.exe

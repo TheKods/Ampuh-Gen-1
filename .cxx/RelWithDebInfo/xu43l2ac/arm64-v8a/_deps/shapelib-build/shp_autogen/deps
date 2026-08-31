@@ -1,0 +1,16 @@
+shp_autogen/timestamp: \
+	C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32/CMakeLists.txt \
+	C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32/cmake/contrib.cmake \
+	C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32/cmake/shapelib.pc.cmake.in \
+	C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32/dbfopen.c \
+	C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32/safileio.c \
+	C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32/sbnsearch.c \
+	C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32/shapefil.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32/shapefil_private.h \
+	C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32/shpopen.c \
+	C:/Project/qgroundcontrol-master/.cache/CPM/shapelib/ef32/shptree.c \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFile.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckIncludeFileCXX.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckTypeSize.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/TestBigEndian.cmake \
+	C:/Users/ASUS/AppData/Local/Android/Sdk/cmake/3.22.1/bin/cmake.exe

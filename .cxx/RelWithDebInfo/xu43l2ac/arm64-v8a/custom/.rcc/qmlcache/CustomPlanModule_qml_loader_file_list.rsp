@@ -1,0 +1,6 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/custom/.qt/rcc/qmake_Custom_Plan.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/custom/.qt/rcc/CustomPlanModule_raw_qml_0.qrc
+/qml/Custom/Plan/PerimeterScanMapVisual.qml
+/qml/Custom/Plan/PerimeterScanEditor.qml

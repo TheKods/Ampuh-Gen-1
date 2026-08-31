@@ -1,0 +1,6 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/.qt/rcc/qmake_QGroundControl.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/.qt/rcc/QGroundControlModule_raw_qml_0.qrc
+/qml/QGroundControl/MainWindow.qml
+/qml/QGroundControl/MainWindow/MainWindowSavedState.qml

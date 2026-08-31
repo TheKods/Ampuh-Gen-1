@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/ulog_cpp-build/ulog_cpp",
+		"source" : ".cache/CPM/ulog_cpp/ca6d/ulog_cpp"
+	}
+}

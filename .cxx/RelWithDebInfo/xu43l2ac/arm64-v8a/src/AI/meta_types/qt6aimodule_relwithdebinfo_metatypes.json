@@ -1,0 +1,1599 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "QGCAIController"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "AIController",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "HUDMode",
+                        "values": [
+                            "AI_MODE",
+                            "UAV_MODE",
+                            "HYBRID_MODE"
+                        ]
+                    },
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "VideoPalette",
+                        "values": [
+                            "NORMAL",
+                            "WHITE_HOT",
+                            "BLACK_HOT",
+                            "IRONBOW",
+                            "NIGHT_VISION"
+                        ]
+                    }
+                ],
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "mode",
+                                "type": "HUDMode"
+                            }
+                        ],
+                        "name": "setHudMode",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "toggleHudMode",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "palette",
+                                "type": "VideoPalette"
+                            }
+                        ],
+                        "name": "setVideoPalette",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "cycleVideoPalette",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filter",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setClassFilter",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setEngineEnabled",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "modelName",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "switchModel",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "threshold",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setConfidenceThreshold",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "targetId",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "lockTargetById",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "unlockTarget",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "cycleNextTarget",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setAutoGimbalTracking",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setAutoZoomEnabled",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setShowMotionTrails",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "radius",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "setIntrusionRadiusMeters",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "dismissIntrusionAlert",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setAutoSnapshotOnDetect",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setAutoGeoTagOnDetect",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setSoundAlarmOnDetect",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setSunlightHighContrast",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "toggleSunlightHighContrast",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setKeepScreenOn",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setSimulationMode",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "durationMs",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "triggerHapticFeedback",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "isCloned": true,
+                        "name": "triggerHapticFeedback",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "targetId",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "flyToTarget",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "targetId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "radiusMeters",
+                                "type": "double"
+                            }
+                        ],
+                        "name": "orbitTarget",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "targetId",
+                                "type": "int"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "orbitTarget",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "targetId",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "setTargetAsROI",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "targetId",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "captureTargetEvidence",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "exportMissionReport",
+                        "returnType": "QString"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "hudMode",
+                        "notify": "hudModeChanged",
+                        "read": "hudMode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "HUDMode",
+                        "user": false,
+                        "write": "setHudMode"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "videoPalette",
+                        "notify": "videoPaletteChanged",
+                        "read": "videoPalette",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "VideoPalette",
+                        "user": false,
+                        "write": "setVideoPalette"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "engineEnabled",
+                        "notify": "engineEnabledChanged",
+                        "read": "isEngineEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setEngineEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "activeModel",
+                        "notify": "activeModelChanged",
+                        "read": "activeModel",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "switchModel"
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "availableModels",
+                        "read": "availableModels",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "activeClassFilter",
+                        "notify": "activeClassFilterChanged",
+                        "read": "activeClassFilter",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setClassFilter"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "confidenceThreshold",
+                        "notify": "confidenceThresholdChanged",
+                        "read": "confidenceThreshold",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setConfidenceThreshold"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "lockedTargetId",
+                        "notify": "lockedTargetIdChanged",
+                        "read": "lockedTargetId",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "lockTargetById"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "autoGimbalTracking",
+                        "notify": "autoGimbalTrackingChanged",
+                        "read": "autoGimbalTracking",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAutoGimbalTracking"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "name": "autoZoomEnabled",
+                        "notify": "autoZoomEnabledChanged",
+                        "read": "autoZoomEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAutoZoomEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 10,
+                        "name": "showMotionTrails",
+                        "notify": "showMotionTrailsChanged",
+                        "read": "showMotionTrails",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setShowMotionTrails"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 11,
+                        "name": "intrusionRadiusMeters",
+                        "notify": "intrusionRadiusMetersChanged",
+                        "read": "intrusionRadiusMeters",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false,
+                        "write": "setIntrusionRadiusMeters"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 12,
+                        "name": "intrusionAlertActive",
+                        "notify": "intrusionAlertActiveChanged",
+                        "read": "intrusionAlertActive",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 13,
+                        "name": "intrusionAlertMessage",
+                        "notify": "intrusionAlertActiveChanged",
+                        "read": "intrusionAlertMessage",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 14,
+                        "name": "autoSnapshotOnDetect",
+                        "notify": "autoSnapshotOnDetectChanged",
+                        "read": "autoSnapshotOnDetect",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAutoSnapshotOnDetect"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 15,
+                        "name": "autoGeoTagOnDetect",
+                        "notify": "autoGeoTagOnDetectChanged",
+                        "read": "autoGeoTagOnDetect",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAutoGeoTagOnDetect"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 16,
+                        "name": "soundAlarmOnDetect",
+                        "notify": "soundAlarmOnDetectChanged",
+                        "read": "soundAlarmOnDetect",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setSoundAlarmOnDetect"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 17,
+                        "name": "sunlightHighContrast",
+                        "notify": "sunlightHighContrastChanged",
+                        "read": "sunlightHighContrast",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setSunlightHighContrast"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 18,
+                        "name": "keepScreenOn",
+                        "notify": "keepScreenOnChanged",
+                        "read": "keepScreenOn",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setKeepScreenOn"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 19,
+                        "name": "simulationMode",
+                        "notify": "simulationModeChanged",
+                        "read": "isSimulationMode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setSimulationMode"
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 20,
+                        "name": "detectionBoxes",
+                        "read": "detectionBoxes",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QmlObjectListModel*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 21,
+                        "name": "inferenceFps",
+                        "notify": "performanceMetricsChanged",
+                        "read": "inferenceFps",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 22,
+                        "name": "streamFps",
+                        "notify": "performanceMetricsChanged",
+                        "read": "streamFps",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 23,
+                        "name": "preProcessLatencyMs",
+                        "notify": "performanceMetricsChanged",
+                        "read": "preProcessLatencyMs",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 24,
+                        "name": "inferenceLatencyMs",
+                        "notify": "performanceMetricsChanged",
+                        "read": "inferenceLatencyMs",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 25,
+                        "name": "postProcessLatencyMs",
+                        "notify": "performanceMetricsChanged",
+                        "read": "postProcessLatencyMs",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 26,
+                        "name": "totalLatencyMs",
+                        "notify": "performanceMetricsChanged",
+                        "read": "totalLatencyMs",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 27,
+                        "name": "cpuUsagePercent",
+                        "notify": "performanceMetricsChanged",
+                        "read": "cpuUsagePercent",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 28,
+                        "name": "gpuUsagePercent",
+                        "notify": "performanceMetricsChanged",
+                        "read": "gpuUsagePercent",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 29,
+                        "name": "ramUsageMB",
+                        "notify": "performanceMetricsChanged",
+                        "read": "ramUsageMB",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 30,
+                        "name": "deviceTemperatureC",
+                        "notify": "performanceMetricsChanged",
+                        "read": "deviceTemperatureC",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 31,
+                        "name": "thermalState",
+                        "notify": "performanceMetricsChanged",
+                        "read": "thermalState",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 32,
+                        "name": "hardwareBackend",
+                        "notify": "performanceMetricsChanged",
+                        "read": "hardwareBackend",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 33,
+                        "name": "detectedCount",
+                        "notify": "performanceMetricsChanged",
+                        "read": "detectedCount",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "AIController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "hudModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "videoPaletteChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "engineEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "activeModelChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "activeClassFilterChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "confidenceThresholdChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "lockedTargetIdChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "autoGimbalTrackingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "autoZoomEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "showMotionTrailsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "intrusionRadiusMetersChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "intrusionAlertActiveChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "autoSnapshotOnDetectChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "autoGeoTagOnDetectChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "soundAlarmOnDetectChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "sunlightHighContrastChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "keepScreenOnChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "simulationModeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "performanceMetricsChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "detections",
+                                "type": "QList<AIDetectionRawData>"
+                            }
+                        ],
+                        "name": "_handleDetections",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "metrics",
+                                "type": "AIPerformanceMetrics"
+                            }
+                        ],
+                        "name": "_handlePerformanceMetrics",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "cpu",
+                                "type": "double"
+                            },
+                            {
+                                "name": "ram",
+                                "type": "double"
+                            },
+                            {
+                                "name": "temp",
+                                "type": "double"
+                            },
+                            {
+                                "name": "thermalState",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "_handleSystemMetrics",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "_updateGimbalTracking",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AIController.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "AIDetectionBox",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "targetId",
+                        "read": "targetId",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "className",
+                        "notify": "classNameChanged",
+                        "read": "className",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "confidence",
+                        "notify": "confidenceChanged",
+                        "read": "confidence",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "x",
+                        "notify": "geometryChanged",
+                        "read": "x",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "y",
+                        "notify": "geometryChanged",
+                        "read": "y",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "width",
+                        "notify": "geometryChanged",
+                        "read": "width",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "height",
+                        "notify": "geometryChanged",
+                        "read": "height",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "name": "centerX",
+                        "notify": "geometryChanged",
+                        "read": "centerX",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "name": "centerY",
+                        "notify": "geometryChanged",
+                        "read": "centerY",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "name": "isLocked",
+                        "notify": "isLockedChanged",
+                        "read": "isLocked",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setIsLocked"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 10,
+                        "name": "isGhost",
+                        "notify": "isGhostChanged",
+                        "read": "isGhost",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 11,
+                        "name": "threatScore",
+                        "notify": "threatScoreChanged",
+                        "read": "threatScore",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 12,
+                        "name": "threatLevel",
+                        "notify": "threatScoreChanged",
+                        "read": "threatLevel",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 13,
+                        "name": "trackingStatus",
+                        "notify": "trackingStatusChanged",
+                        "read": "trackingStatus",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 14,
+                        "name": "coordinate",
+                        "notify": "coordinateChanged",
+                        "read": "coordinate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QGeoCoordinate",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 15,
+                        "name": "rangeMeters",
+                        "notify": "rangeMetersChanged",
+                        "read": "rangeMeters",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 16,
+                        "name": "estimatedSpeedKmh",
+                        "notify": "estimatedSpeedKmhChanged",
+                        "read": "estimatedSpeedKmh",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 17,
+                        "name": "headingDeg",
+                        "notify": "headingDegChanged",
+                        "read": "headingDeg",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 18,
+                        "name": "boxColorHex",
+                        "notify": "boxColorChanged",
+                        "read": "boxColorHex",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "AIDetectionBox",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "classNameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "confidenceChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "geometryChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isLockedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "isGhostChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "threatScoreChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "trackingStatusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "coordinateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "rangeMetersChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "estimatedSpeedKmhChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "headingDegChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "boxColorChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AIDetectionBox.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "QGCAIDetectionManager"
+                    },
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    }
+                ],
+                "className": "AIDetectionManager",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "targetId",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "lockTarget",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "unlockTarget",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "clearDetections",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "detectionBoxes",
+                        "read": "detectionBoxes",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QmlObjectListModel*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "activeTargetCount",
+                        "notify": "activeTargetCountChanged",
+                        "read": "activeTargetCount",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "averageConfidence",
+                        "notify": "statisticsUpdated",
+                        "read": "averageConfidence",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "double",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "hasLockedTarget",
+                        "notify": "lockedTargetChanged",
+                        "read": "hasLockedTarget",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "lockedTargetId",
+                        "notify": "lockedTargetChanged",
+                        "read": "lockedTargetId",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "AIDetectionManager",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "activeTargetCountChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "statisticsUpdated",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "lockedTargetChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AIDetectionManager.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "AIReceiverSocket",
+                "object": true,
+                "qualifiedClassName": "AIReceiverSocket",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "detections",
+                                "type": "QList<AIDetectionRawData>"
+                            }
+                        ],
+                        "name": "detectionsReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "metrics",
+                                "type": "AIPerformanceMetrics"
+                            }
+                        ],
+                        "name": "performanceMetricsReceived",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "name": "startListening",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "stopListening",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "_processPendingDatagrams",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "_generateSimulatedData",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AIReceiverSocket.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "AndroidSystemMonitor",
+                "object": true,
+                "qualifiedClassName": "AndroidSystemMonitor",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "cpuUsagePercent",
+                                "type": "double"
+                            },
+                            {
+                                "name": "ramUsageMB",
+                                "type": "double"
+                            },
+                            {
+                                "name": "temperatureC",
+                                "type": "double"
+                            },
+                            {
+                                "name": "thermalState",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "metricsUpdated",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "name": "_sampleSystemMetrics",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "AndroidSystemMonitor.h",
+        "outputRevision": 68
+    }
+]

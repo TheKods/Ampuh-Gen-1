@@ -1,0 +1,70 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			".cache/CPM/valijson/b70c/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 45,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : ".cache/CPM/valijson/b70c/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/valijson",
+			"exportName" : "valijsonConfig",
+			"exportTargets" : 
+			[
+				{
+					"id" : "valijson::@e775823c314509181c9f",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"_deps/valijson-build/CMakeFiles/Export/lib/cmake/valijson/valijsonConfig.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/valijson-build",
+		"source" : ".cache/CPM/valijson/b70c"
+	}
+}

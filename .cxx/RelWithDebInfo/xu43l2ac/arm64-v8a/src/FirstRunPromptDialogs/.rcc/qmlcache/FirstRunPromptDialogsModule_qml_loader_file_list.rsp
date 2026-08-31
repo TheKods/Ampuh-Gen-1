@@ -1,0 +1,6 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirstRunPromptDialogs/.qt/rcc/qmake_QGroundControl_FirstRunPromptDialogs.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FirstRunPromptDialogs/.qt/rcc/FirstRunPromptDialogsModule_raw_qml_0.qrc
+/qml/QGroundControl/FirstRunPromptDialogs/FirstRunPrompt.qml
+/qml/QGroundControl/FirstRunPromptDialogs/InitialSetupPrompt.qml

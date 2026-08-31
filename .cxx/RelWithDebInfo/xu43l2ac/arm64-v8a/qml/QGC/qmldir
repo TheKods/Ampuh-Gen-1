@@ -1,0 +1,8 @@
+module QGC
+typeinfo AmpuhGen1.qmltypes
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Dialogs
+import QtQuick.Layouts
+prefer :/qml/QGC/
+

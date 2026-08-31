@@ -1,0 +1,3511 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "RelWithDebInfo/lib/libFlyViewModule_arm64-v8a.a"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"target_link_libraries",
+			"add_dependencies",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"add_compile_options",
+			"qgc_enable_split_dwarf",
+			"include",
+			"qgc_apply_global_hardening",
+			"target_compile_options",
+			"qgc_set_warning_flags",
+			"qgc_configure_target",
+			"_qgc_configure_directory_targets",
+			"qgc_configure_directory_targets",
+			"qgc_add_optional_no_warning",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"_qt_internal_target_enable_qmlcachegen",
+			"qt_add_resources",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"src/FlyView/CMakeLists.txt",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"cmake/Helpers.cmake",
+			"cmake/Toolchain.cmake",
+			"CMakeLists.txt",
+			"cmake/modules/Hardening.cmake",
+			"cmake/CompilerWarnings.cmake",
+			".qt/6.7.3/android_arm64_v8a/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:749:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2692,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2570,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2667,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 107,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 780,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 647,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 2768,
+				"parent" : 8
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 11,
+				"file" : 5,
+				"line" : 162,
+				"parent" : 10
+			},
+			{
+				"file" : 4,
+				"parent" : 11
+			},
+			{
+				"command" : 10,
+				"file" : 4,
+				"line" : 95,
+				"parent" : 12
+			},
+			{
+				"command" : 9,
+				"file" : 3,
+				"line" : 317,
+				"parent" : 13
+			},
+			{
+				"command" : 12,
+				"file" : 5,
+				"line" : 370,
+				"parent" : 10
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 122,
+				"parent" : 15
+			},
+			{
+				"command" : 17,
+				"file" : 5,
+				"line" : 459,
+				"parent" : 10
+			},
+			{
+				"command" : 16,
+				"file" : 7,
+				"line" : 232,
+				"parent" : 24
+			},
+			{
+				"command" : 16,
+				"file" : 7,
+				"line" : 215,
+				"parent" : 25
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 206,
+				"parent" : 26
+			},
+			{
+				"command" : 14,
+				"file" : 7,
+				"line" : 177,
+				"parent" : 27
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 36,
+				"parent" : 28
+			},
+			{
+				"command" : 18,
+				"file" : 7,
+				"line" : 61,
+				"parent" : 28
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 21,
+				"parent" : 30
+			},
+			{
+				"command" : 13,
+				"file" : 7,
+				"line" : 184,
+				"parent" : 27
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 392,
+				"parent" : 7
+			},
+			{
+				"command" : 20,
+				"file" : 2,
+				"line" : 541,
+				"parent" : 7
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3099,
+				"parent" : 34
+			},
+			{
+				"command" : 19,
+				"file" : 2,
+				"line" : 3124,
+				"parent" : 34
+			},
+			{
+				"command" : 22,
+				"file" : 2,
+				"line" : 2924,
+				"parent" : 34
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 1421,
+				"parent" : 37
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 3090,
+				"parent" : 34
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 590,
+				"parent" : 7
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 40
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 41
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 42
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 26,
+				"file" : 2,
+				"line" : 2656,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 1248,
+				"parent" : 45
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 8
+			},
+			{
+				"command" : 21,
+				"file" : 2,
+				"line" : 2704,
+				"parent" : 8
+			},
+			{
+				"command" : 25,
+				"file" : 2,
+				"line" : 2788,
+				"parent" : 8
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 188
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 189
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 190
+			},
+			{
+				"command" : 27,
+				"file" : 1,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"command" : 25,
+				"file" : 0,
+				"line" : 389,
+				"parent" : 192
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 193
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 194
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 195
+			},
+			{
+				"command" : 27,
+				"file" : 1,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"command" : 25,
+				"file" : 0,
+				"line" : 389,
+				"parent" : 197
+			},
+			{
+				"command" : 24,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 198
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 2396,
+				"parent" : 199
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2010,
+				"parent" : 200
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 29,
+				"file" : 8,
+				"line" : 1,
+				"parent" : 202
+			},
+			{
+				"command" : 28,
+				"file" : 0,
+				"line" : 774,
+				"parent" : 203
+			},
+			{
+				"command" : 21,
+				"file" : 0,
+				"line" : 2123,
+				"parent" : 204
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-gsplit-dwarf"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-U_FORTIFY_SOURCE"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-D_FORTIFY_SOURCE=3"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-fstack-protector-strong"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-fstack-clash-protection"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-mbranch-protection=standard"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master=."
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a=./build"
+				},
+				{
+					"backtrace" : 23,
+					"fragment" : "-ffile-prefix-map=C:/Project/qgroundcontrol-master/.cache/CPM=./.cpm"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wno-switch"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Wno-unknown-warning-option"
+				},
+				{
+					"backtrace" : 31,
+					"fragment" : "-Wno-deprecated-enum-enum-conversion"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-Wno-error=shadow"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 33,
+					"fragment" : "-pthread"
+				},
+				{
+					"fragment" : "-std=c++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 33,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/FlyViewModule_autogen/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "C:/Project/qgroundcontrol-master/src/FlyView"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/AI"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/QmlControls"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities/Audio"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Vehicle"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Vehicle/FactGroups"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Gimbal"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/FactSystem"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/MAVLink"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/MAVLink/Signing"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Comms"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/MissionManager"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/GeoFence"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/PositionManager"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Camera"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Utilities"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src/Audio"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/mavlink-build/include/mavlink"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/_deps/mavlink-build/include/mavlink/all"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml/6.7.3/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore/6.7.3/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtCore"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/mkspecs/android-clang"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins/6.7.3/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQml"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 36,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtNetwork"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "C:/Project/qgroundcontrol-master/.qt/6.7.3/android_arm64_v8a/include/QtOpenGL"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					33,
+					33
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				70,
+				72,
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				86,
+				88,
+				90,
+				92,
+				94,
+				96,
+				98,
+				100,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				130,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				147,
+				148,
+				149
+			],
+			"sysroot" : 
+			{
+				"path" : "C:/Users/ASUS/AppData/Local/Android/Sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "AIModule::@06dbe7a5aab03224eb8b"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "AIModule_resources_1::@06dbe7a5aab03224eb8b"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "FlyViewModule_tooling::@d8b5eb3edadced0caadb"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCLogging_resources_1::@39d1e26217382c022c7f"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCLogging::@39d1e26217382c022c7f"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "QGCAudio::@7c12503c1422c4008153"
+		},
+		{
+			"id" : "FlyViewModule_autogen_timestamp_deps::@d8b5eb3edadced0caadb"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "FlyViewModule_autogen::@d8b5eb3edadced0caadb"
+		}
+	],
+	"id" : "FlyViewModule::@d8b5eb3edadced0caadb",
+	"name" : "FlyViewModule",
+	"nameOnDisk" : "libFlyViewModule_arm64-v8a.a",
+	"paths" : 
+	{
+		"build" : "src/FlyView",
+		"source" : "src/FlyView"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				160
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				4,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				57,
+				59,
+				61,
+				63,
+				65,
+				67,
+				69,
+				71,
+				73,
+				75,
+				77,
+				79,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				93,
+				95,
+				97,
+				99,
+				101,
+				103,
+				105,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				119,
+				121,
+				123,
+				125,
+				127,
+				129,
+				131,
+				133,
+				135,
+				137,
+				139,
+				141,
+				143,
+				145,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				157,
+				158,
+				159,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				70,
+				72,
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				86,
+				88,
+				90,
+				92,
+				94,
+				96,
+				98,
+				100,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				130,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				147,
+				148,
+				149
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				156
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/FlyViewModule_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 38,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/meta_types/qt6flyviewmodule_relwithdebinfo_metatypes.json.gen",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 39,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/flyviewmodule_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 43,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/qrc_qmake_QGroundControl_FlyView.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 44,
+			"path" : "src/FlyView/AI_HUD/AIViews/AIBoundingBoxOverlay.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 46,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 47,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/AIViews/AIBoundingBoxOverlay_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 48,
+			"path" : "src/FlyView/AI_HUD/AIViews/AIMapTargetVisuals.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 49,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/AIViews/AIMapTargetVisuals_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 50,
+			"path" : "src/FlyView/AI_HUD/AIViews/AIPerformanceHUD.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 51,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/AIViews/AIPerformanceHUD_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 52,
+			"path" : "src/FlyView/AI_HUD/HUDMasterContainer.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 53,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/HUDMasterContainer_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 54,
+			"path" : "src/FlyView/AI_HUD/HUDModeToggleButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 55,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/HUDModeToggleButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 56,
+			"path" : "src/FlyView/AI_HUD/Panels/AIFeatureToolButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 57,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/Panels/AIFeatureToolButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 58,
+			"path" : "src/FlyView/AI_HUD/Panels/AIFeaturesControlDrawer.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 59,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/Panels/AIFeaturesControlDrawer_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 60,
+			"path" : "src/FlyView/AI_HUD/UAVViews/UAVBatteryLinkPanel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 61,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/UAVViews/UAVBatteryLinkPanel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 62,
+			"path" : "src/FlyView/AI_HUD/UAVViews/UAVFlightHorizonHUD.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 63,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/UAVViews/UAVFlightHorizonHUD_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 64,
+			"path" : "src/FlyView/AI_HUD/UAVViews/UAVSpeedAltitudeTapes.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 65,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/UAVViews/UAVSpeedAltitudeTapes_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 66,
+			"path" : "src/FlyView/CustomGuidedActionsController.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 67,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_CustomGuidedActionsController_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 68,
+			"path" : "src/FlyView/DefaultChecklist.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 69,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_DefaultChecklist_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 70,
+			"path" : "src/FlyView/FixedWingChecklist.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 71,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FixedWingChecklist_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 72,
+			"path" : "src/FlyView/FlightDisplayViewDummy.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 73,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlightDisplayViewDummy_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 74,
+			"path" : "src/FlyView/FlightDisplayViewVideoOutput.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 75,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlightDisplayViewVideoOutput_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 76,
+			"path" : "src/FlyView/FlightDisplayViewQtMultimedia.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 77,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlightDisplayViewQtMultimedia_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 78,
+			"path" : "src/FlyView/FlightDisplayViewUVC.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 79,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlightDisplayViewUVC_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 80,
+			"path" : "src/FlyView/FlightDisplayViewVideo.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 81,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlightDisplayViewVideo_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 82,
+			"path" : "src/FlyView/FlyView.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 83,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyView_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 84,
+			"path" : "src/FlyView/FlyViewAdditionalActionsButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 85,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewAdditionalActionsButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 86,
+			"path" : "src/FlyView/FlyViewAdditionalActionsList.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 87,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewAdditionalActionsList_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"path" : "src/FlyView/FlyViewAdditionalActionsPanel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 89,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewAdditionalActionsPanel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 90,
+			"path" : "src/FlyView/FlyViewAdditionalCustomActionsList.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 91,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewAdditionalCustomActionsList_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 92,
+			"path" : "src/FlyView/FlyViewBottomRightRowLayout.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 93,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewBottomRightRowLayout_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 94,
+			"path" : "src/FlyView/FlyViewCustomLayer.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 95,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewCustomLayer_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 96,
+			"path" : "src/FlyView/FlyViewGeo.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 97,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewGeo_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 98,
+			"path" : "src/FlyView/FlyViewGeoMap.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 99,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewGeoMap_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 100,
+			"path" : "src/FlyView/FlyViewInsetViewer.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 101,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewInsetViewer_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 102,
+			"path" : "src/FlyView/FlyViewInstrumentPanel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 103,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewInstrumentPanel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 104,
+			"path" : "src/FlyView/FlyViewGripperButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 105,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewGripperButton_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 106,
+			"path" : "src/FlyView/FlyViewGripperDropPanel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 107,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewGripperDropPanel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 108,
+			"path" : "src/FlyView/FlyViewMap.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 109,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewMap_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 110,
+			"path" : "src/FlyView/FlyViewMissionCompleteDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 111,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewMissionCompleteDialog_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 112,
+			"path" : "src/FlyView/FlyViewPreFlightChecklistPopup.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 113,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewPreFlightChecklistPopup_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 114,
+			"path" : "src/FlyView/FlyViewToolStrip.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 115,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewToolStrip_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 116,
+			"path" : "src/FlyView/FlyViewToolStripActionList.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 117,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewToolStripActionList_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 118,
+			"path" : "src/FlyView/FlyViewTopRightColumnLayout.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 119,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewTopRightColumnLayout_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 120,
+			"path" : "src/FlyView/FlyViewTopRightPanel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 121,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewTopRightPanel_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 122,
+			"path" : "src/FlyView/FlyViewVideo.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 123,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewVideo_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 124,
+			"path" : "src/FlyView/FlyViewWidgetLayer.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 125,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewWidgetLayer_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 126,
+			"path" : "src/FlyView/GuidedActionConfirm.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 127,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionConfirm_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 128,
+			"path" : "src/FlyView/GuidedActionLand.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 129,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionLand_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 130,
+			"path" : "src/FlyView/GuidedActionPause.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 131,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionPause_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 132,
+			"path" : "src/FlyView/GuidedActionRTL.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 133,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionRTL_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 134,
+			"path" : "src/FlyView/GuidedActionsController.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionsController_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 136,
+			"path" : "src/FlyView/GuidedActionTakeoff.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 137,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionTakeoff_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 138,
+			"path" : "src/FlyView/GuidedToolStripAction.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 139,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedToolStripAction_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 140,
+			"path" : "src/FlyView/GuidedValueSlider.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 141,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedValueSlider_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 142,
+			"path" : "src/FlyView/MultiRotorChecklist.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 143,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_MultiRotorChecklist_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 144,
+			"path" : "src/FlyView/MultiVehicleList.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_MultiVehicleList_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"path" : "src/FlyView/ObstacleDistanceOverlay.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 147,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_ObstacleDistanceOverlay_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 148,
+			"path" : "src/FlyView/ObstacleDistanceOverlayMap.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 149,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_ObstacleDistanceOverlayMap_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 150,
+			"path" : "src/FlyView/ObstacleDistanceOverlayVideo.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_ObstacleDistanceOverlayVideo_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 152,
+			"path" : "src/FlyView/OnScreenCameraTrackingController.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_OnScreenCameraTrackingController_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 154,
+			"path" : "src/FlyView/OnScreenGimbalController.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 155,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_OnScreenGimbalController_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 156,
+			"path" : "src/FlyView/PreFlightBatteryCheck.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 157,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightBatteryCheck_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 158,
+			"path" : "src/FlyView/PreFlightCheckList.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 159,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightCheckList_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 160,
+			"path" : "src/FlyView/PreFlightCheckListShowAction.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 161,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightCheckListShowAction_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 162,
+			"path" : "src/FlyView/PreFlightGPSCheck.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 163,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightGPSCheck_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 164,
+			"path" : "src/FlyView/PreFlightRCCheck.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 165,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightRCCheck_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 166,
+			"path" : "src/FlyView/PreFlightSensorsHealthCheck.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 167,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightSensorsHealthCheck_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 168,
+			"path" : "src/FlyView/PreFlightSoundCheck.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 169,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightSoundCheck_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 170,
+			"path" : "src/FlyView/ProximityRadarValues.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 171,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_ProximityRadarValues_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 172,
+			"path" : "src/FlyView/ProximityRadarVideoView.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 173,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_ProximityRadarVideoView_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 174,
+			"path" : "src/FlyView/RoverChecklist.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 175,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_RoverChecklist_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 176,
+			"path" : "src/FlyView/SubChecklist.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 177,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_SubChecklist_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 178,
+			"path" : "src/FlyView/TelemetryValuesBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 179,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_TelemetryValuesBar_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 180,
+			"path" : "src/FlyView/TerrainProgress.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 181,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_TerrainProgress_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"path" : "src/FlyView/VehicleWarnings.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_VehicleWarnings_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 184,
+			"path" : "src/FlyView/VirtualJoystick.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_VirtualJoystick_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"path" : "src/FlyView/VTOLChecklist.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 187,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_VTOLChecklist_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 191,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/qrc_FlyViewModule_raw_qml_0.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 196,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/qrc_flyview_resources.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 201,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/qrc_flyview_qmlimages.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 205,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/qmake_QGroundControl_FlyView.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 205,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/qml/QGroundControl/FlyView/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 205,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/FlyViewModule_raw_qml_0.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 205,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/flyview_resources.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 205,
+			"path" : "resources/Gripper.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 205,
+			"path" : "resources/land.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 205,
+			"path" : "resources/NoVideoBackground.jpg",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 205,
+			"path" : "resources/pause-mission.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 205,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/flyview_qmlimages.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 205,
+			"path" : "resources/check.svg",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/FlyViewModule_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/meta_types/qt6flyviewmodule_relwithdebinfo_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/flyviewmodule_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/qrc_qmake_QGroundControl_FlyView.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/AIViews/AIBoundingBoxOverlay_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/AIViews/AIMapTargetVisuals_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/AIViews/AIPerformanceHUD_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/HUDMasterContainer_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/HUDModeToggleButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/Panels/AIFeatureToolButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/Panels/AIFeaturesControlDrawer_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/UAVViews/UAVBatteryLinkPanel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/UAVViews/UAVFlightHorizonHUD_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_AI_HUD/UAVViews/UAVSpeedAltitudeTapes_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_CustomGuidedActionsController_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_DefaultChecklist_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FixedWingChecklist_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlightDisplayViewDummy_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlightDisplayViewVideoOutput_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlightDisplayViewQtMultimedia_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlightDisplayViewUVC_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlightDisplayViewVideo_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyView_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewAdditionalActionsButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewAdditionalActionsList_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewAdditionalActionsPanel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewAdditionalCustomActionsList_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewBottomRightRowLayout_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewCustomLayer_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewGeo_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewGeoMap_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewInsetViewer_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewInstrumentPanel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewGripperButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewGripperDropPanel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewMap_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewMissionCompleteDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewPreFlightChecklistPopup_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewToolStrip_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewToolStripActionList_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewTopRightColumnLayout_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewTopRightPanel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewVideo_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_FlyViewWidgetLayer_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionConfirm_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionLand_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionPause_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionRTL_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionsController_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedActionTakeoff_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedToolStripAction_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_GuidedValueSlider_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_MultiRotorChecklist_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_MultiVehicleList_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_ObstacleDistanceOverlay_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_ObstacleDistanceOverlayMap_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_ObstacleDistanceOverlayVideo_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_OnScreenCameraTrackingController_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_OnScreenGimbalController_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightBatteryCheck_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightCheckList_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightCheckListShowAction_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightGPSCheck_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightRCCheck_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightSensorsHealthCheck_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_PreFlightSoundCheck_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_ProximityRadarValues_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_ProximityRadarVideoView_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_RoverChecklist_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_SubChecklist_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_TelemetryValuesBar_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_TerrainProgress_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_VehicleWarnings_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_VirtualJoystick_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.rcc/qmlcache/FlyViewModule_VTOLChecklist_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/qrc_FlyViewModule_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/qrc_flyview_resources.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/.qt/rcc/qrc_flyview_qmlimages.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/FlyViewModule_autogen/timestamp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/FlyView/meta_types/FlyViewModule_json_file_list.txt.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qmlbuiltins_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 33,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : ".cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/src/AI/meta_types/qt6aimodule_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6quick_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6gui_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6qmlmodels_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : ".qt/6.7.3/android_arm64_v8a/metatypes/qt6opengl_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

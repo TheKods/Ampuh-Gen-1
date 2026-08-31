@@ -1,0 +1,493 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "Viewer3DCameraController",
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "reset",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "center",
+                                "type": "QVector3D"
+                            },
+                            {
+                                "name": "heading",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "tilt",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "distance",
+                                "type": "qreal"
+                            }
+                        ],
+                        "name": "lookAt",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "beginPan",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "panTo",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "beginOrbit",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "orbitTo",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "degrees",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "rotateBy",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "degrees",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "tiltBy",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "amount",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "zoom",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "factor",
+                                "type": "qreal"
+                            },
+                            {
+                                "name": "screenPos",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "zoomBy",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "sceneUnitsPerPixel",
+                        "returnType": "qreal"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "orbitCenter",
+                        "notify": "orbitCenterChanged",
+                        "read": "orbitCenter",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVector3D",
+                        "user": false,
+                        "write": "setOrbitCenter"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "heading",
+                        "notify": "headingChanged",
+                        "read": "heading",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setHeading"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "tilt",
+                        "notify": "tiltChanged",
+                        "read": "tilt",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setTilt"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "distance",
+                        "notify": "distanceChanged",
+                        "read": "distance",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setDistance"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "viewportSize",
+                        "notify": "viewportSizeChanged",
+                        "read": "viewportSize",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QSizeF",
+                        "user": false,
+                        "write": "setViewportSize"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "fieldOfView",
+                        "notify": "fieldOfViewChanged",
+                        "read": "fieldOfView",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setFieldOfView"
+                    }
+                ],
+                "qualifiedClassName": "Viewer3DCameraController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "orbitCenterChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "headingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "tiltChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "distanceChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "viewportSizeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "fieldOfViewChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Viewer3DCameraController.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "Viewer3DGeoCoordinateType",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "gpsRef",
+                        "notify": "gpsRefChanged",
+                        "read": "gpsRef",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QGeoCoordinate",
+                        "user": false,
+                        "write": "setGpsRef"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "coordinate",
+                        "notify": "coordinateChanged",
+                        "read": "coordinate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QGeoCoordinate",
+                        "user": false,
+                        "write": "setCoordinate"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "localCoordinate",
+                        "notify": "localCoordinateChanged",
+                        "read": "localCoordinate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVector3D",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "Viewer3DGeoCoordinateType",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "gpsRefChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "coordinateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "localCoordinateChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Viewer3DGeoCoordinateType.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "Viewer3DInstancing",
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "clear",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "position",
+                                "type": "QVector3D"
+                            },
+                            {
+                                "name": "scale",
+                                "type": "QVector3D"
+                            },
+                            {
+                                "name": "rotation",
+                                "type": "QQuaternion"
+                            },
+                            {
+                                "name": "color",
+                                "type": "QColor"
+                            }
+                        ],
+                        "name": "addEntry",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "p1",
+                                "type": "QVector3D"
+                            },
+                            {
+                                "name": "p2",
+                                "type": "QVector3D"
+                            },
+                            {
+                                "name": "lineWidth",
+                                "type": "float"
+                            },
+                            {
+                                "name": "color",
+                                "type": "QColor"
+                            }
+                        ],
+                        "name": "addLineSegment",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "count",
+                        "notify": "countChanged",
+                        "read": "count",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "selectedIndex",
+                        "notify": "selectedIndexChanged",
+                        "read": "selectedIndex",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setSelectedIndex"
+                    }
+                ],
+                "qualifiedClassName": "Viewer3DInstancing",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "countChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "selectedIndexChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuick3DInstancing"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Viewer3DInstancing.h",
+        "outputRevision": 68
+    }
+]

@@ -1,0 +1,12 @@
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/custom/.qt/rcc/qmake_Custom_Widgets.qrc
+--resource
+C:/Project/qgroundcontrol-master/.cxx/RelWithDebInfo/xu43l2ac/arm64-v8a/custom/.qt/rcc/CustomModule_raw_qml_0.qrc
+/qml/Custom/Widgets/CustomArtificialHorizon.qml
+/qml/Custom/Widgets/CustomAttitudeWidget.qml
+/qml/Custom/Widgets/CustomIconButton.qml
+/qml/Custom/Widgets/CustomOnOffSwitch.qml
+/qml/Custom/Widgets/CustomQuickButton.qml
+/qml/Custom/Widgets/CustomSignalStrength.qml
+/qml/Custom/Widgets/CustomToolBarButton.qml
+/qml/Custom/Widgets/CustomVehicleButton.qml
