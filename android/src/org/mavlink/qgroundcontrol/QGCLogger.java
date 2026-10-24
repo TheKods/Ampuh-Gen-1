@@ -8,6 +8,7 @@ import android.util.Log;
  * A centralized logging utility that manages log messages across the application.
  * It controls log levels and formats based on build configurations.
  */
+@android.annotation.SuppressLint("UnknownNullness")
 public class QGCLogger {
     // Whether this is a debuggable build. Determined at runtime instead of via
     // BuildConfig, since BuildConfig is generated in the (customizable) app

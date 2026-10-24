@@ -101,7 +101,7 @@ FactMetaData *CompInfoParam::_resolveMetaData(const QString &name, FactMetaData:
 
     // Generic fallback
     auto *factMetaData = new FactMetaData(valueType, this);
-    const int sep = name.indexOf('_');
+    const int sep = name.indexOf(u'_');
     if (sep > 0) {
         factMetaData->setGroup(name.left(sep));
     }

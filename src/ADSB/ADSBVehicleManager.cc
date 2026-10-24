@@ -228,7 +228,7 @@ void ADSBVehicleManager::_linkError(const QString &errorMsg, bool stopped)
     QString msg = QStringLiteral("ADSB Server Error: %1").arg(errorMsg);
 
     if (stopped) {
-        (void) msg.append("\nADSB has been disabled");
+        (void) msg.append(QStringLiteral("\nADSB has been disabled"));
         _adsbSettings->adsbServerConnectEnabled()->setRawValue(false);
     }
 

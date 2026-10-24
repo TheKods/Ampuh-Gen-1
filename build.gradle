@@ -1,6 +1,5 @@
 plugins {
-    id 'com.android.application' version '8.7.1'
-    id 'org.jetbrains.kotlin.android' version '1.9.24'
+    id 'com.android.application' version '8.13.2'
 }
 
 allprojects {
@@ -16,8 +15,8 @@ if (project.rootProject.file('local.properties').exists()) {
     properties.load(project.rootProject.file('local.properties').newDataInputStream())
 }
 
-def qtAndroidDir = properties.getProperty('qt.target.root.dir') ?: System.getenv("QT_TARGET_ROOT_DIR") ?: "${project.rootDir}/.qt/6.7.3/android_arm64_v8a"
-def qtHostDir = properties.getProperty('qt.host.path') ?: System.getenv("QT_HOST_PATH") ?: "${project.rootDir}/.qt/6.7.3/mingw_64"
+def qtAndroidDir = properties.getProperty('qt.target.root.dir') ?: System.getenv("QT_TARGET_ROOT_DIR") ?: "${project.rootDir}/.qt/6.8/android_arm64_v8a"
+def qtHostDir = properties.getProperty('qt.host.path') ?: System.getenv("QT_HOST_PATH") ?: "${project.rootDir}/.qt/6.8/mingw_64"
 def sdkDir = properties.getProperty('sdk.dir') ?: System.getenv("ANDROID_SDK_ROOT")
 def ndkDir = "${sdkDir}/ndk/27.2.12479018"
 
@@ -33,8 +32,9 @@ if (!file(qtAndroidDir).exists() || !file(qtHostDir).exists()) {
 
 android {
     namespace 'org.mavlink.qgroundcontrol'
-    compileSdkVersion 35
-    buildToolsVersion "35.0.0"
+    //noinspection OldTargetApi
+    compileSdkVersion 36
+    buildToolsVersion "36.0.0"
     ndkVersion '27.2.12479018'
 
     sourceSets {
@@ -70,14 +70,11 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = '17'
-    }
-
     defaultConfig {
         applicationId 'org.mavlink.qgroundcontrol'
         minSdkVersion 26
-        targetSdkVersion 35
+        //noinspection OldTargetApi
+        targetSdkVersion 36
         versionCode 1
         versionName "1.0.0"
         ndk.abiFilters = ["arm64-v8a"]
@@ -95,6 +92,7 @@ android {
             cmake {
                 arguments "-DQT_HOST_PATH=${qtHostDir}",
                           "-DQT_TARGET_ROOT_DIR=${qtAndroidDir}",
+                          "-DCMAKE_PREFIX_PATH=${qtAndroidDir}",
                           "-DANDROID_SDK_ROOT=${sdkDir}",
                           "-DANDROID_NDK_ROOT=${ndkDir}",
                           "-DQT_CHAINLOAD_TOOLCHAIN_FILE=${ndkDir}/build/cmake/android.toolchain.cmake",
@@ -102,8 +100,7 @@ android {
                           "-DQGC_VERBOSE_CONFIGURE=ON",
                           "-DQGC_USE_CACHE=ON",
                           "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON",
-                          "-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-z,max-page-size=16384",
-                          "-DCMAKE_CXX_FLAGS=-Wl,-z,max-page-size=16384"
+                          "-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-z,max-page-size=16384"
             }
         }
     }
@@ -124,7 +121,7 @@ android {
             manifestPlaceholders.QT_ANDROID_DEPLOYMENT_TYPE = "release"
             manifestPlaceholders.INSERT_APP_LIB_NAME = "AmpuhGen1_release"
             minifyEnabled true
-            shrinkResources false
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'android/proguard-rules.pro'
         }
     }
@@ -139,7 +136,9 @@ android {
 dependencies {
     implementation fileTree(dir: 'android/libs', include: ['*.jar', '*.aar'])
     implementation fileTree(dir: "${qtAndroidDir}/jar", include: ['*.jar'])
+    //noinspection GradleDependency
     implementation 'androidx.core:core:1.13.1'
+    //noinspection GradleDependency
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'com.github.mik3y:usb-serial-for-android:3.10.0'
     testImplementation 'junit:junit:4.13.2'

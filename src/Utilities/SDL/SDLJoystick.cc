@@ -384,7 +384,7 @@ bool addMappingPersistent(const QString &mapping)
     }
 
     // Extract GUID from mapping (format: "GUID,name,mapping...")
-    const int commaPos = mapping.indexOf(',');
+    const int commaPos = mapping.indexOf(u',');
     if (commaPos <= 0) {
         qCWarning(SDLJoystickLog) << "Invalid mapping format, cannot extract GUID";
         return false;

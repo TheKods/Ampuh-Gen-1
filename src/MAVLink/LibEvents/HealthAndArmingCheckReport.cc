@@ -46,19 +46,19 @@ void HealthAndArmingCheckReport::update(uint8_t compid, const EventHandler &even
     _problemsForCurrentMode->clearAndDeleteContents();
     _hasWarningsOrErrors = false;
     for (const auto& check : results.checks(flightModeGroup)) {
-        QString severity = "";
+        QString severity = QString();
         if (events::externalLogLevel(check.log_levels) <= events::Log::Error) {
-            severity = "error";
+            severity = QStringLiteral("error");
             _hasWarningsOrErrors = true;
         } else if (events::externalLogLevel(check.log_levels) <= events::Log::Warning) {
-            severity = "warning";
+            severity = QStringLiteral("warning");
             _hasWarningsOrErrors = true;
         }
 
         QString description = QString::fromStdString(check.description);
         _problemsForCurrentMode->append(new HealthAndArmingCheckProblem(
             QString::fromStdString(check.message),
-            description.replace("\n", "<br/>"),
+            description.replace(u'\n', QStringLiteral("<br/>")),
             severity,
             this));
     }
@@ -79,11 +79,11 @@ void HealthAndArmingCheckReport::update(uint8_t compid, const EventHandler &even
     if (gpsStateIter != healthComponents.end()) {
         const events::HealthAndArmingChecks::HealthComponent& gpsState = gpsStateIter->second;
         if (gpsState.health.error || gpsState.arming_check.error) {
-            _gpsState = "red";
+            _gpsState = QStringLiteral("red");
         } else if (gpsState.health.warning || gpsState.arming_check.warning) {
-            _gpsState = "yellow";
+            _gpsState = QStringLiteral("yellow");
         } else {
-            _gpsState = "green";
+            _gpsState = QStringLiteral("green");
         }
     }
 

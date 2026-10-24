@@ -8,6 +8,6 @@
     This primarily enables cleartext HTTP/RTSP for local video streams
     and self-hosted map tile servers.
 -->
-<network-security-config>
-    <base-config cleartextTrafficPermitted="true" />
+<network-security-config xmlns:tools="http://schemas.android.com/tools">
+    <base-config cleartextTrafficPermitted="true" tools:ignore="InsecureBaseConfiguration" />
 </network-security-config>

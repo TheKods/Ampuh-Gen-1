@@ -130,14 +130,14 @@ void QGCCorePlugin::adjustSettingMetaData(const QString &settingsGroup, FactMeta
     // 3D view rendering is too flaky on Android GPUs/drivers; force the
     // feature off. Hiding the setting also forces it to its default value
     // (false) regardless of any previously saved user setting.
-    if ((settingsGroup == Viewer3DSettings::settingsGroup) && (metaData.name() == Viewer3DSettings::enabledName)) {
+    if ((settingsGroup == QString::fromLatin1(Viewer3DSettings::settingsGroup)) && (metaData.name() == QString::fromLatin1(Viewer3DSettings::enabledName))) {
         userVisible = false;
         return;
     }
 #endif
 
-    if (settingsGroup == AppSettings::settingsGroup) {
-        if (metaData.name() == AppSettings::indoorPaletteName) {
+    if (settingsGroup == QString::fromLatin1(AppSettings::settingsGroup)) {
+        if (metaData.name() == QString::fromLatin1(AppSettings::indoorPaletteName)) {
             QVariant outdoorPalette;
 #if defined(Q_OS_ANDROID) || defined(Q_OS_IOS)
             outdoorPalette = 0;
@@ -153,7 +153,7 @@ void QGCCorePlugin::adjustSettingMetaData(const QString &settingsGroup, FactMeta
             return;
         }
 #endif
-        else if (metaData.name() == AppSettings::androidUsePosixSerialName) {
+        else if (metaData.name() == QString::fromLatin1(AppSettings::androidUsePosixSerialName)) {
 #if defined(Q_OS_ANDROID) && !defined(QGC_NO_SERIAL_LINK)
             // Only show when the device actually exposes accessible serial device nodes
             userVisible = AndroidSerial::hasPosixSerialPorts();
@@ -204,8 +204,8 @@ void QGCCorePlugin::factValueGridCreateDefaultSettings(FactValueGrid* factValueG
         // first cell
         QmlObjectListModel* column = factValueGrid->columns()->value<QmlObjectListModel*>(colIndex++);
         InstrumentValueData* value = column->value<InstrumentValueData*>(rowIndex);
-        value->setFact("Vehicle", "AltitudeRelative");
-        value->setIcon("arrow-thick-up.svg");
+        value->setFact(QStringLiteral("Vehicle"), QStringLiteral("AltitudeRelative"));
+        value->setIcon(QStringLiteral("arrow-thick-up.svg"));
         value->setText(value->fact()->shortDescription());
         value->setShowUnits(true);
 
@@ -213,12 +213,12 @@ void QGCCorePlugin::factValueGridCreateDefaultSettings(FactValueGrid* factValueG
         column = factValueGrid->columns()->value<QmlObjectListModel*>(colIndex++);
         value = column->value<InstrumentValueData*>(rowIndex);
         if (includeFWValues) {
-            value->setFact("Vehicle", "AirSpeed");
-            value->setText("AirSpd");
+            value->setFact(QStringLiteral("Vehicle"), QStringLiteral("AirSpeed"));
+            value->setText(QStringLiteral("AirSpd"));
             value->setShowUnits(true);
         } else {
-            value->setFact("Vehicle", "GroundSpeed");
-            value->setIcon("arrow-simple-right.svg");
+            value->setFact(QStringLiteral("Vehicle"), QStringLiteral("GroundSpeed"));
+            value->setIcon(QStringLiteral("arrow-simple-right.svg"));
             value->setText(value->fact()->shortDescription());
             value->setShowUnits(true);
         }
@@ -400,7 +400,7 @@ QVariantList QGCCorePlugin::complexMissionItemNames(Vehicle *vehicle)
 {
     auto makeEntry = [](const char* canonical, const QString& translated) {
         QVariantMap entry;
-        entry[QStringLiteral("canonicalName")]  = QString(canonical);
+        entry[QStringLiteral("canonicalName")]  = QString::fromLatin1(canonical);
         entry[QStringLiteral("translatedName")] = translated;
         return entry;
     };
@@ -431,15 +431,15 @@ ComplexMissionItem *QGCCorePlugin::createComplexMissionItem(
     bool flyView,
     const QString &kmlOrShpFile)
 {
-    if (complexItemType == SurveyComplexItem::canonicalName || complexItemType == SurveyComplexItem::jsonComplexItemTypeValue) {
+    if (complexItemType == QLatin1String(SurveyComplexItem::canonicalName) || complexItemType == QLatin1String(SurveyComplexItem::jsonComplexItemTypeValue)) {
         return new SurveyComplexItem(masterController, flyView, kmlOrShpFile);
-    } else if (complexItemType == CorridorScanComplexItem::canonicalName || complexItemType == CorridorScanComplexItem::jsonComplexItemTypeValue) {
+    } else if (complexItemType == QLatin1String(CorridorScanComplexItem::canonicalName) || complexItemType == QLatin1String(CorridorScanComplexItem::jsonComplexItemTypeValue)) {
         return new CorridorScanComplexItem(masterController, flyView, kmlOrShpFile);
-    } else if (complexItemType == StructureScanComplexItem::canonicalName || complexItemType == StructureScanComplexItem::jsonComplexItemTypeValue) {
+    } else if (complexItemType == QLatin1String(StructureScanComplexItem::canonicalName) || complexItemType == QLatin1String(StructureScanComplexItem::jsonComplexItemTypeValue)) {
         return new StructureScanComplexItem(masterController, flyView, kmlOrShpFile);
-    } else if (complexItemType == FixedWingLandingComplexItem::canonicalName || complexItemType == FixedWingLandingComplexItem::jsonComplexItemTypeValue) {
+    } else if (complexItemType == QLatin1String(FixedWingLandingComplexItem::canonicalName) || complexItemType == QLatin1String(FixedWingLandingComplexItem::jsonComplexItemTypeValue)) {
         return new FixedWingLandingComplexItem(masterController, flyView);
-    } else if (complexItemType == VTOLLandingComplexItem::canonicalName || complexItemType == VTOLLandingComplexItem::jsonComplexItemTypeValue) {
+    } else if (complexItemType == QLatin1String(VTOLLandingComplexItem::canonicalName) || complexItemType == QLatin1String(VTOLLandingComplexItem::jsonComplexItemTypeValue)) {
         return new VTOLLandingComplexItem(masterController, flyView);
     }
 

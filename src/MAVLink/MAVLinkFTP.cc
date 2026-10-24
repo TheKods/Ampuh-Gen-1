@@ -4,74 +4,74 @@ QString MavlinkFTP::opCodeToString(OpCode_t opCode)
 {
     switch (opCode) {
     case kCmdNone:
-        return "None";
+        return QStringLiteral("None");
     case kCmdTerminateSession:
-        return "Terminate Session";
+        return QStringLiteral("Terminate Session");
     case kCmdResetSessions:
-        return "Reset Sessions";
+        return QStringLiteral("Reset Sessions");
     case kCmdListDirectory:
-        return "List Directory";
+        return QStringLiteral("List Directory");
     case kCmdOpenFileRO:
-        return "Open File RO";
+        return QStringLiteral("Open File RO");
     case kCmdReadFile:
-        return "Read File";
+        return QStringLiteral("Read File");
     case kCmdCreateFile:
-        return "Create File";
+        return QStringLiteral("Create File");
     case kCmdWriteFile:
-        return "Write File";
+        return QStringLiteral("Write File");
     case kCmdRemoveFile:
-        return "Remove File";
+        return QStringLiteral("Remove File");
     case kCmdCreateDirectory:
-        return "Create Directory";
+        return QStringLiteral("Create Directory");
     case kCmdRemoveDirectory:
-        return "Remove Directory";
+        return QStringLiteral("Remove Directory");
     case kCmdOpenFileWO:
-        return "Open File WO";
+        return QStringLiteral("Open File WO");
     case kCmdTruncateFile:
-        return "Truncate File";
+        return QStringLiteral("Truncate File");
     case kCmdRename:
-        return "Rename";
+        return QStringLiteral("Rename");
     case kCmdCalcFileCRC32:
-        return "Calc File CRC32";
+        return QStringLiteral("Calc File CRC32");
     case kCmdBurstReadFile:
-        return "Burst Read File";
+        return QStringLiteral("Burst Read File");
     case kCmdListDirectoryWithTime:
-        return "List Directory With Time";
+        return QStringLiteral("List Directory With Time");
     case kRspAck:
-        return "Ack";
+        return QStringLiteral("Ack");
     case kRspNak:
-        return "Nak";
+        return QStringLiteral("Nak");
     }
 
-    return "Unknown OpCode";
+    return QStringLiteral("Unknown OpCode");
 }
 
 QString MavlinkFTP::errorCodeToString(ErrorCode_t errorCode)
 {
     switch (errorCode) {
     case kErrNone:
-        return "None";
+        return QStringLiteral("None");
     case kErrFail:
-        return "Fail";
+        return QStringLiteral("Fail");
     case kErrFailErrno:
-        return "Fail Errorno";
+        return QStringLiteral("Fail Errorno");
     case kErrInvalidDataSize:
-        return "Invalid Data Size";
+        return QStringLiteral("Invalid Data Size");
     case kErrInvalidSession:
-        return "Invalid Session";
+        return QStringLiteral("Invalid Session");
     case kErrNoSessionsAvailable:
-        return "No Sessions Available";
+        return QStringLiteral("No Sessions Available");
     case kErrEOF:
-        return "EOF";
+        return QStringLiteral("EOF");
     case kErrUnknownCommand:
-        return "Unknown Command";
+        return QStringLiteral("Unknown Command");
     case kErrFailFileExists:
-        return "File Already Exists";
+        return QStringLiteral("File Already Exists");
     case kErrFailFileProtected:
-        return "File Protected";
+        return QStringLiteral("File Protected");
     case kErrFailFileNotFound:
-        return "File Not Found";
+        return QStringLiteral("File Not Found");
     }
 
-    return "Unknown Error";
+    return QStringLiteral("Unknown Error");
 }

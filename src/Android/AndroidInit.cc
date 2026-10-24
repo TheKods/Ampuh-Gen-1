@@ -11,11 +11,11 @@
 
 #include "QGCLoggingCategory.h"
 
-QGC_LOGGING_CATEGORY(AndroidInitLog, "Android.AndroidInit");
+QGC_LOGGING_CATEGORY(AndroidInitLog, "Android.AndroidInit"); // NOLINT
 
-static std::atomic<jobject> _context{nullptr};
-static std::atomic<jobject> _class_loader{nullptr};
-static std::atomic<JavaVM*> _java_vm{nullptr};
+static std::atomic<jobject> s_context{nullptr};       // NOLINT
+static std::atomic<jobject> s_class_loader{nullptr};  // NOLINT
+static std::atomic<JavaVM*> s_java_vm{nullptr};       // NOLINT
 
 #ifdef QGC_GST_STREAMING
 
@@ -28,82 +28,83 @@ extern "C"
 
     QGC_JNI_EXPORT jobject gst_android_get_application_context(void)
     {
-        return _context.load(std::memory_order_acquire);
+        return s_context.load(std::memory_order_acquire);
     }
 
     QGC_JNI_EXPORT jobject gst_android_get_application_class_loader(void)
     {
-        return _class_loader.load(std::memory_order_acquire);
+        return s_class_loader.load(std::memory_order_acquire);
     }
 
     QGC_JNI_EXPORT JavaVM *gst_android_get_java_vm(void)
     {
-        return _java_vm.load(std::memory_order_acquire);
+        return s_java_vm.load(std::memory_order_acquire);
     }
 }
 
 #endif
 
-extern "C" jboolean Java_org_mavlink_qgroundcontrol_QGCActivity_nativeInit(JNIEnv *env, jobject thiz)
+extern "C" jboolean Java_org_mavlink_qgroundcontrol_QGCActivity_nativeInit(JNIEnv* env, [[maybe_unused]] jobject thiz) // NOLINT
 {
+    (void)env;
     qCDebug(AndroidInitLog) << Q_FUNC_INFO;
 
-    const jclass context_cls = env->GetObjectClass(thiz);
-    if (!context_cls) {
+    const jclass contextCls = env->GetObjectClass(thiz);
+    if (!contextCls) {
         return JNI_FALSE;
     }
 
-    const jmethodID get_app_context_id = env->GetMethodID(context_cls, "getApplicationContext", "()Landroid/content/Context;");
-    env->DeleteLocalRef(context_cls);
+    const jmethodID getAppContextId = env->GetMethodID(contextCls, "getApplicationContext", "()Landroid/content/Context;");
+    env->DeleteLocalRef(contextCls);
     if (QJniEnvironment::checkAndClearExceptions(env)) {
         return JNI_FALSE;
     }
 
-    const jobject app_context = env->CallObjectMethod(thiz, get_app_context_id);
-    if (QJniEnvironment::checkAndClearExceptions(env) || !app_context) {
+    const jobject appContext = env->CallObjectMethod(thiz, getAppContextId);
+    if (QJniEnvironment::checkAndClearExceptions(env) || !appContext) {
         return JNI_FALSE;
     }
 
-    const jclass app_context_cls = env->GetObjectClass(app_context);
-    if (!app_context_cls) {
-        env->DeleteLocalRef(app_context);
+    const jclass appContextCls = env->GetObjectClass(appContext);
+    if (!appContextCls) {
+        env->DeleteLocalRef(appContext);
         return JNI_FALSE;
     }
 
-    const jmethodID get_class_loader_id = env->GetMethodID(app_context_cls, "getClassLoader", "()Ljava/lang/ClassLoader;");
-    env->DeleteLocalRef(app_context_cls);
+    const jmethodID getClassLoaderId = env->GetMethodID(appContextCls, "getClassLoader", "()Ljava/lang/ClassLoader;");
+    env->DeleteLocalRef(appContextCls);
     if (QJniEnvironment::checkAndClearExceptions(env)) {
-        env->DeleteLocalRef(app_context);
+        env->DeleteLocalRef(appContext);
         return JNI_FALSE;
     }
 
-    const jobject class_loader = env->CallObjectMethod(app_context, get_class_loader_id);
+    const jobject classLoader = env->CallObjectMethod(appContext, getClassLoaderId);
     if (QJniEnvironment::checkAndClearExceptions(env)) {
-        env->DeleteLocalRef(app_context);
+        env->DeleteLocalRef(appContext);
         return JNI_FALSE;
     }
 
-    const jobject app_context_global = env->NewGlobalRef(app_context);
-    const jobject class_loader_global = env->NewGlobalRef(class_loader);
+    const jobject appContextGlobal = env->NewGlobalRef(appContext);
+    const jobject classLoaderGlobal = env->NewGlobalRef(classLoader);
 
-    env->DeleteLocalRef(app_context);
-    env->DeleteLocalRef(class_loader);
+    env->DeleteLocalRef(appContext);
+    env->DeleteLocalRef(classLoader);
 
-    if (!app_context_global || !class_loader_global || QJniEnvironment::checkAndClearExceptions(env)) {
-        if (app_context_global) {
-            env->DeleteGlobalRef(app_context_global);
+    if (!appContextGlobal || !classLoaderGlobal || QJniEnvironment::checkAndClearExceptions(env)) {
+        if (appContextGlobal) {
+            env->DeleteGlobalRef(appContextGlobal);
         }
-        if (class_loader_global) {
-            env->DeleteGlobalRef(class_loader_global);
+        if (classLoaderGlobal) {
+            env->DeleteGlobalRef(classLoaderGlobal);
         }
         return JNI_FALSE;
     }
 
-    if (jobject old_context = _context.exchange(app_context_global, std::memory_order_acq_rel)) {
-        env->DeleteGlobalRef(old_context);
+    if (jobject oldContext = s_context.exchange(appContextGlobal, std::memory_order_acq_rel)) {
+        env->DeleteGlobalRef(oldContext);
     }
-    if (jobject old_class_loader = _class_loader.exchange(class_loader_global, std::memory_order_acq_rel)) {
-        env->DeleteGlobalRef(old_class_loader);
+    if (jobject oldClassLoader = s_class_loader.exchange(classLoaderGlobal, std::memory_order_acq_rel)) {
+        env->DeleteGlobalRef(oldClassLoader);
     }
 
     return JNI_TRUE;
@@ -116,11 +117,12 @@ static jint jniSetNativeMethods()
     return JNI_OK;
 }
 
-jint JNI_OnLoad(JavaVM* vm, void*)
+jint JNI_OnLoad(JavaVM* vm, void* reserved)
 {
+    (void)reserved;
     qCDebug(AndroidInitLog) << Q_FUNC_INFO;
 
-    _java_vm.store(vm, std::memory_order_release);
+    s_java_vm.store(vm, std::memory_order_release);
 
     JNIEnv *env;
     if (vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) != JNI_OK) {
@@ -142,21 +144,22 @@ jint JNI_OnLoad(JavaVM* vm, void*)
     return JNI_VERSION_1_6;
 }
 
-void JNI_OnUnload(JavaVM* vm, void*)
+void JNI_OnUnload(JavaVM* vm, void* reserved)
 {
+    (void)reserved;
     qCDebug(AndroidInitLog) << Q_FUNC_INFO;
 
     JNIEnv* env = nullptr;
     if (vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_OK) {
-        if (jobject ctx = _context.exchange(nullptr, std::memory_order_acq_rel)) {
+        if (jobject ctx = s_context.exchange(nullptr, std::memory_order_acq_rel)) {
             env->DeleteGlobalRef(ctx);
         }
-        if (jobject cl = _class_loader.exchange(nullptr, std::memory_order_acq_rel)) {
+        if (jobject cl = s_class_loader.exchange(nullptr, std::memory_order_acq_rel)) {
             env->DeleteGlobalRef(cl);
         }
     }
 
-    _java_vm.store(nullptr, std::memory_order_release);
+    s_java_vm.store(nullptr, std::memory_order_release);
 
 #ifndef QGC_NO_SERIAL_LINK
     AndroidSerial::cleanupJniCache();

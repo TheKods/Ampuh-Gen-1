@@ -30,7 +30,7 @@ public:
     ///                       a dynamic file creation on the vehicle.
     /// @return true: download has started, false: error, no download
     /// Signals downloadComplete, commandProgress
-    bool download(uint8_t fromCompId, const QString& fromURI, const QString& toDir, const QString& fileName="", bool checksize = true);
+    bool download(uint8_t fromCompId, const QString& fromURI, const QString& toDir, const QString& fileName = QString(), bool checksize = true);
 
     /// Uploads a local file to the specified URI on the vehicle.
     ///     @param toCompId Component id of the component to upload to. If toCompId is MAV_COMP_ID_ALL, then MAV_COMP_ID_AUTOPILOT1 is used.

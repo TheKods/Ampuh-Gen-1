@@ -96,7 +96,7 @@ void ADSBTCPLink::_parseLine(const QString &line)
 
     qCDebug(ADSBTCPLinkLog) << "ADSB SBS-1" << line;
 
-    const QStringList values = line.split(QChar(','));
+    const QStringList values = line.split(u',');
     if (values.size() <= 4) {
         return;
     }
@@ -156,7 +156,7 @@ void ADSBTCPLink::_parseAndEmitLocation(ADSB::VehicleInfo_t &adsbInfo, const QSt
     // There's a slight difference between Barometric alt and HAE, but it would require
     // knowledge about Geoid shape in particular Lat, Lon. It's not worth complicating the code
     QString altitudeStr = values.at(11);
-    if (altitudeStr.endsWith('H')) {
+    if (altitudeStr.endsWith(u'H')) {
         (void) altitudeStr.chop(1);
     }
 

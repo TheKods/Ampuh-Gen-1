@@ -144,7 +144,7 @@ void LogViewerController::_rebuildFieldRows()
     QStringList groups;
 
     for (const QString &field : _plottableFields) {
-        const int splitIndex = field.indexOf('.');
+        const int splitIndex = field.indexOf(u'.');
         const QString groupName = (splitIndex > 0) ? field.left(splitIndex) : tr("Other");
         const QString shortName = (splitIndex > 0) ? field.mid(splitIndex + 1) : field;
         if (!groupedMap.contains(groupName)) {

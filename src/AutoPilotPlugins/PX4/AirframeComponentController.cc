@@ -25,7 +25,7 @@ AirframeComponentController::AirframeComponentController(void) :
     }
 
     QStringList usedParams;
-    usedParams << "SYS_AUTOSTART" << "SYS_AUTOCONFIG";
+    usedParams << QStringLiteral("SYS_AUTOSTART") << QStringLiteral("SYS_AUTOCONFIG");
     if (!_allParametersExists(ParameterManager::defaultComponentId, usedParams)) {
         return;
     }
@@ -33,7 +33,7 @@ AirframeComponentController::AirframeComponentController(void) :
     // Load up member variables
 
     bool autostartFound = false;
-    _autostartId = getParameterFact(ParameterManager::defaultComponentId, "SYS_AUTOSTART")->rawValue().toInt();
+    _autostartId = getParameterFact(ParameterManager::defaultComponentId, QStringLiteral("SYS_AUTOSTART"))->rawValue().toInt();
     _currentVehicleName = QString::number(_autostartId); // Temp val. Replaced with actual vehicle name if found
 
     for (const AirframeComponentAirframes::AirframeType_t* pType : AirframeComponentAirframes::sortedTypes()) {
@@ -79,8 +79,8 @@ void AirframeComponentController::changeAutostart(void)
 
     QGuiApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
 
-    Fact* sysAutoStartFact  = getParameterFact(-1, "SYS_AUTOSTART");
-    Fact* sysAutoConfigFact = getParameterFact(-1, "SYS_AUTOCONFIG");
+    Fact* sysAutoStartFact  = getParameterFact(-1, QStringLiteral("SYS_AUTOSTART"));
+    Fact* sysAutoConfigFact = getParameterFact(-1, QStringLiteral("SYS_AUTOCONFIG"));
 
     // We need to wait for the vehicleUpdated signals to come back before we reboot
     _waitParamWriteSignalCount = 0;

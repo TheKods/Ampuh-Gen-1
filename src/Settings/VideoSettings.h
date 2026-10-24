@@ -44,12 +44,12 @@ public:
     Q_PROPERTY(QString  disabledVideoSource     READ disabledVideoSource    CONSTANT)
 
     bool     streamConfigured       ();
-    QString  rtspVideoSource        () { return videoSourceRTSP; }
-    QString  udp264VideoSource      () { return videoSourceUDPH264; }
-    QString  udp265VideoSource      () { return videoSourceUDPH265; }
-    QString  tcpVideoSource         () { return videoSourceTCP; }
-    QString  mpegtsVideoSource      () { return videoSourceMPEGTS; }
-    QString  disabledVideoSource    () { return videoDisabled; }
+    QString  rtspVideoSource        () { return QString::fromLatin1(videoSourceRTSP); }
+    QString  udp264VideoSource      () { return QString::fromLatin1(videoSourceUDPH264); }
+    QString  udp265VideoSource      () { return QString::fromLatin1(videoSourceUDPH265); }
+    QString  tcpVideoSource         () { return QString::fromLatin1(videoSourceTCP); }
+    QString  mpegtsVideoSource      () { return QString::fromLatin1(videoSourceMPEGTS); }
+    QString  disabledVideoSource    () { return QString::fromLatin1(videoDisabled); }
 
     /// Remove hardware forced-decoder options absent from the running GStreamer registry, and
     /// reset the active choice to Default if it was pruned. Call after the video backend has

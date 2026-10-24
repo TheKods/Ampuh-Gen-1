@@ -70,15 +70,25 @@ public:
     Q_PROPERTY(QString mavlinkActionsSavePath   READ mavlinkActionsSavePath     NOTIFY savePathsChanged)
     Q_PROPERTY(QString settingsSavePath         READ settingsSavePath           NOTIFY savePathsChanged)
 
-    Q_PROPERTY(QString planFileExtension        MEMBER planFileExtension        CONSTANT)
-    Q_PROPERTY(QString waypointsFileExtension   MEMBER waypointsFileExtension   CONSTANT)
-    Q_PROPERTY(QString parameterFileExtension   MEMBER parameterFileExtension   CONSTANT)
-    Q_PROPERTY(QString telemetryFileExtension   MEMBER telemetryFileExtension   CONSTANT)
-    Q_PROPERTY(QString kmlFileExtension         MEMBER kmlFileExtension         CONSTANT)
-    Q_PROPERTY(QString shpFileExtension         MEMBER shpFileExtension         CONSTANT)
-    Q_PROPERTY(QString logFileExtension         MEMBER logFileExtension         CONSTANT)
-    Q_PROPERTY(QString tilesetFileExtension     MEMBER tilesetFileExtension     CONSTANT)
-    Q_PROPERTY(QString settingsFileExtension    MEMBER settingsFileExtension    CONSTANT)
+    Q_PROPERTY(QString planFileExtension        READ planFileExtensionProperty        CONSTANT)
+    Q_PROPERTY(QString waypointsFileExtension   READ waypointsFileExtensionProperty   CONSTANT)
+    Q_PROPERTY(QString parameterFileExtension   READ parameterFileExtensionProperty   CONSTANT)
+    Q_PROPERTY(QString telemetryFileExtension   READ telemetryFileExtensionProperty   CONSTANT)
+    Q_PROPERTY(QString kmlFileExtension         READ kmlFileExtensionProperty         CONSTANT)
+    Q_PROPERTY(QString shpFileExtension         READ shpFileExtensionProperty         CONSTANT)
+    Q_PROPERTY(QString logFileExtension         READ logFileExtensionProperty         CONSTANT)
+    Q_PROPERTY(QString tilesetFileExtension     READ tilesetFileExtensionProperty     CONSTANT)
+    Q_PROPERTY(QString settingsFileExtension    READ settingsFileExtensionProperty    CONSTANT)
+
+    QString planFileExtensionProperty       () const { return QString::fromLatin1(planFileExtension); }
+    QString waypointsFileExtensionProperty  () const { return QString::fromLatin1(waypointsFileExtension); }
+    QString parameterFileExtensionProperty  () const { return QString::fromLatin1(parameterFileExtension); }
+    QString telemetryFileExtensionProperty  () const { return QString::fromLatin1(telemetryFileExtension); }
+    QString kmlFileExtensionProperty        () const { return QString::fromLatin1(kmlFileExtension); }
+    QString shpFileExtensionProperty        () const { return QString::fromLatin1(shpFileExtension); }
+    QString logFileExtensionProperty        () const { return QString::fromLatin1(logFileExtension); }
+    QString tilesetFileExtensionProperty    () const { return QString::fromLatin1(tilesetFileExtension); }
+    QString settingsFileExtensionProperty   () const { return QString::fromLatin1(settingsFileExtension); }
 
 
     QString missionSavePath       ();

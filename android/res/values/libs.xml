@@ -2,20 +2,20 @@
 <resources>
     <!-- DO NOT EDIT THIS: This file is populated automatically by the deployment tool. -->
 
-    <array name="bundled_libs">
+    <array name="bundled_libs" translatable="false">
         <!-- %%INSERT_EXTRA_LIBS%% -->
     </array>
 
-    <array name="qt_libs">
+    <array name="qt_libs" translatable="false">
         <!-- %%INSERT_QT_LIBS%% -->
     </array>
 
-    <array name="load_local_libs">
+    <array name="load_local_libs" translatable="false">
         <!-- %%INSERT_LOCAL_LIBS%% -->
     </array>
 
-    <string name="static_init_classes"></string>
-    <string name="use_local_qt_libs">1</string>
-    <string name="bundle_local_qt_libs">1</string>
-    <string name="system_libs_prefix">/system/lib/</string>
+    <string name="static_init_classes" translatable="false"></string>
+    <string name="use_local_qt_libs" translatable="false">1</string>
+    <string name="bundle_local_qt_libs" translatable="false">1</string>
+    <string name="system_libs_prefix" translatable="false">/system/lib/</string>
 </resources>

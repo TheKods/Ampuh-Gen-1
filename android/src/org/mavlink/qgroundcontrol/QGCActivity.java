@@ -15,13 +15,16 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 
+import java.lang.ref.WeakReference;
 
 import org.qtproject.qt.android.bindings.QtActivity;
 
+@SuppressWarnings("JniMissingFunction")
+@android.annotation.SuppressLint("UnknownNullness")
 public class QGCActivity extends QtActivity {
     private static final String TAG = QGCActivity.class.getSimpleName();
     private static final String MULTICAST_LOCK_TAG = "QGroundControl";
-    private static volatile QGCActivity m_instance = null;
+    private static volatile WeakReference<QGCActivity> m_instance = null;
 
     private static final int IMPORT_FILE_REQUEST_CODE = 42;
     private static String s_importDestPath = "";
@@ -45,7 +48,7 @@ public class QGCActivity extends QtActivity {
         }
 
         super.onCreate(savedInstanceState);
-        m_instance = this;
+        m_instance = new WeakReference<>(this);
 
         Log.d(TAG, "onCreate: super.onCreate finished, initializing logger and native code");
         QGCLogger.initialize(getApplicationContext());
@@ -90,7 +93,7 @@ public class QGCActivity extends QtActivity {
             QGCLogger.e(TAG, "Exception onDestroy()", e);
         }
 
-        if (m_instance == this) {
+        if (m_instance != null && m_instance.get() == this) {
             m_instance = null;
         }
         super.onDestroy();
@@ -266,7 +269,7 @@ public class QGCActivity extends QtActivity {
     }
 
     public static String getSDCardPath() {
-        final QGCActivity activity = m_instance;
+        final QGCActivity activity = (m_instance != null) ? m_instance.get() : null;
         if (activity == null) {
             QGCLogger.e(TAG, "Activity instance is null");
             return "";
@@ -285,7 +288,7 @@ public class QGCActivity extends QtActivity {
      * @return true if permissions are granted, false otherwise
      */
     public static boolean checkStoragePermissions() {
-        final QGCActivity activity = m_instance;
+        final QGCActivity activity = (m_instance != null) ? m_instance.get() : null;
         if (activity == null) {
             QGCLogger.e(TAG, "Activity instance is null");
             return false;
@@ -303,16 +306,17 @@ public class QGCActivity extends QtActivity {
      * @param destPath Fully-qualified path of the destination Missions directory.
      */
     public static void openFileImportDialog(final String destPath) {
-        if (m_instance == null) {
+        final QGCActivity activity = (m_instance != null) ? m_instance.get() : null;
+        if (activity == null) {
             QGCLogger.e(TAG, "Activity instance is null");
             return;
         }
         s_importDestPath = (destPath != null) ? destPath : "";
-        m_instance.runOnUiThread(() -> {
+        activity.runOnUiThread(() -> {
             final Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
             intent.addCategory(Intent.CATEGORY_OPENABLE);
             intent.setType("*/*");
-            m_instance.startActivityForResult(intent, IMPORT_FILE_REQUEST_CODE);
+            activity.startActivityForResult(intent, IMPORT_FILE_REQUEST_CODE);
         });
     }
 

@@ -13,6 +13,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@android.annotation.SuppressLint("UnknownNullness")
 public class QGCUsbSerialManager {
     private static final String TAG = QGCUsbSerialManager.class.getSimpleName();
     private static final String ACTION_USB_PERMISSION = "org.mavlink.qgroundcontrol.action.USB_PERMISSION";
@@ -59,12 +60,14 @@ public class QGCUsbSerialManager {
         }
     }
 
-    private static volatile NativeCallbacks nativeCallbacks = new JniNativeCallbacks();
+    static volatile NativeCallbacks nativeCallbacks = new JniNativeCallbacks();
 
-    // Native methods
-    private static native void nativeDeviceHasDisconnected(final long classPtr);
-    private static native void nativeDeviceException(final long classPtr, final String message);
-    private static native void nativeDeviceNewData(final long classPtr, final byte[] data);
+    @SuppressWarnings("JniMissingFunction")
+    static native void nativeDeviceHasDisconnected(final long classPtr);
+    @SuppressWarnings("JniMissingFunction")
+    static native void nativeDeviceException(final long classPtr, final String message);
+    @SuppressWarnings("JniMissingFunction")
+    static native void nativeDeviceNewData(final long classPtr, final byte[] data);
 
     static void setNativeCallbacksForTesting(final NativeCallbacks callbacks) {
         nativeCallbacks = (callbacks != null) ? callbacks : new JniNativeCallbacks();
@@ -76,7 +79,7 @@ public class QGCUsbSerialManager {
         }
     }
 
-    private static void emitDeviceException(final long classPtr, final String message) {
+    static void emitDeviceException(final long classPtr, final String message) {
         if (classPtr != 0) {
             nativeCallbacks.onDeviceException(classPtr, message);
         }
@@ -335,10 +338,7 @@ public class QGCUsbSerialManager {
      */
     private static void setupUsbPermissionIntent(Context context) {
         Intent permissionIntent = new Intent(ACTION_USB_PERMISSION).setPackage(context.getPackageName());
-        int flags = PendingIntent.FLAG_UPDATE_CURRENT;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            flags |= PendingIntent.FLAG_IMMUTABLE;
-        }
+        int flags = PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE;
         usbPermissionIntent = PendingIntent.getBroadcast(context, 0, permissionIntent, flags);
     }
 
@@ -347,6 +347,7 @@ public class QGCUsbSerialManager {
      *
      * @param context The application context.
      */
+    @android.annotation.SuppressLint("UnspecifiedRegisterReceiverFlag")
     private static void registerUsbReceiver(Context context) {
         IntentFilter filter = new IntentFilter();
         filter.addAction(UsbManager.ACTION_USB_DEVICE_ATTACHED);
@@ -402,7 +403,7 @@ public class QGCUsbSerialManager {
      *
      * @param intent The intent containing permission data.
      */
-    private static void handleUsbPermission(final Intent intent) {
+    static void handleUsbPermission(final Intent intent) {
         UsbDevice device = getUsbDevice(intent);
         if (device != null) {
             final int physicalDeviceId = device.getDeviceId();
@@ -426,7 +427,7 @@ public class QGCUsbSerialManager {
      *
      * @param intent The intent containing device data.
      */
-    private static void handleUsbDeviceDetached(final Intent intent) {
+    static void handleUsbDeviceDetached(final Intent intent) {
         UsbDevice device = getUsbDevice(intent);
         if (device != null) {
             final int physicalDeviceId = device.getDeviceId();
@@ -449,7 +450,7 @@ public class QGCUsbSerialManager {
      *
      * @param intent The intent containing device data.
      */
-    private static void handleUsbDeviceAttached(final Intent intent) {
+    static void handleUsbDeviceAttached(final Intent intent) {
         UsbDevice device = getUsbDevice(intent);
         if (device != null) {
             addOrUpdateDevice(device);
@@ -539,7 +540,7 @@ public class QGCUsbSerialManager {
     /**
      * Updates the current list of USB serial drivers by scanning connected devices.
      */
-    private static void updateCurrentDrivers() {
+    static void updateCurrentDrivers() {
         if (usbManager == null || usbSerialProber == null) {
             QGCLogger.w(TAG, "USB serial manager not ready, skipping driver refresh");
             return;

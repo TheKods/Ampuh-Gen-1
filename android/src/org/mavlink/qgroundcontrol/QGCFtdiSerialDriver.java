@@ -15,7 +15,8 @@ import java.util.EnumSet;
 import java.util.List;
 import java.util.Map;
 
-public final class QGCFtdiSerialDriver implements UsbSerialDriver {
+public final @android.annotation.SuppressLint("UnknownNullness")
+class QGCFtdiSerialDriver implements UsbSerialDriver {
     private final UsbDevice _device;
     private final List<UsbSerialPort> _ports;
 

@@ -107,8 +107,8 @@ public:
     /// Returns the string for speed units which has configued by user
     static QString appSettingsSpeedUnitsString();
 
-    static const QString defaultCategory() { return QString(kDefaultCategory); }
-    static const QString defaultGroup() { return QString(kDefaultGroup); }
+    static const QString defaultCategory() { return QString::fromLatin1(kDefaultCategory); }
+    static const QString defaultGroup() { return QString::fromLatin1(kDefaultGroup); }
 
     // Splits a comma separated list of strings into a QStringList. Taking into account the possibility that
     // the commas may have been translated to other characters such as chinese commas.
@@ -347,8 +347,8 @@ private:
     QVariantList _bitmaskValues;
     QStringList _enumStrings;
     QVariantList _enumValues;
-    QString _category = kDefaultCategory;
-    QString _group = kDefaultGroup;
+    QString _category = QString::fromLatin1(kDefaultCategory);
+    QString _group = QString::fromLatin1(kDefaultGroup);
     QString _longDescription;
     QVariant _rawMax = _maxForType();
     QVariant _rawMin = _minForType();

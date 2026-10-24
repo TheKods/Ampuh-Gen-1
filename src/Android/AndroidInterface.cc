@@ -19,31 +19,7 @@
 #include "SettingsFact.h"
 #include "SettingsManager.h"
 
-QGC_LOGGING_CATEGORY(AndroidInterfaceLog, "Android.AndroidInterface")
-
-extern "C" {
-void Java_org_mavlink_qgroundcontrol_QGCActivity_qgcLogDebug(JNIEnv*, jobject, jstring message)
-{
-    qCDebug(AndroidInterfaceLog) << QJniObject(message).toString();
-}
-
-void Java_org_mavlink_qgroundcontrol_QGCActivity_qgcLogWarning(JNIEnv*, jobject, jstring message)
-{
-    qCWarning(AndroidInterfaceLog) << QJniObject(message).toString();
-}
-
-void Java_org_mavlink_qgroundcontrol_QGCActivity_nativeStoragePermissionsResult(JNIEnv*, jobject, jboolean granted)
-{
-    AndroidInterface::jniStoragePermissionsResult(granted);
-}
-
-void Java_org_mavlink_qgroundcontrol_QGCActivity_onImportResult(JNIEnv* env, jobject, jstring filePathA)
-{
-    AndroidInterface::jniOnImportResult(env, filePathA);
-}
-}
-
-namespace AndroidInterface {
+QGC_LOGGING_CATEGORY(AndroidInterfaceLog, "Android.AndroidInterface") // NOLINT
 
 namespace AndroidInterface {
 
@@ -54,12 +30,12 @@ struct JniMethodCache
     jmethodID openFileImportDialog = nullptr;
 };
 
-static JniMethodCache s_methods;
-static bool s_methodsCached = false;
-static QMutex s_cacheLock;
-static jclass s_activityClass = nullptr;
+static JniMethodCache s_methods;                        // NOLINT
+static bool           s_methodsCached = false;          // NOLINT
+static QMutex         s_cacheLock;                      // NOLINT
+static jclass         s_activityClass = nullptr;        // NOLINT
 
-static std::function<void(const QString&)> s_importCallback;
+static std::function<void(const QString&)> s_importCallback; // NOLINT
 
 void jniStoragePermissionsResult(jboolean granted)
 {
@@ -132,11 +108,11 @@ void jniStoragePermissionsResult(jboolean granted)
         Qt::QueuedConnection);
 }
 
-void jniOnImportResult(JNIEnv* env, jstring filePathA)
+void jniOnImportResult(JNIEnv* env, jstring filePathJ)
 {
-    const char* const filePathCStr = env->GetStringUTFChars(filePathA, nullptr);
+    const char* const filePathCStr = env->GetStringUTFChars(filePathJ, nullptr);
     const QString filePath = QString::fromUtf8(filePathCStr);
-    env->ReleaseStringUTFChars(filePathA, filePathCStr);
+    env->ReleaseStringUTFChars(filePathJ, filePathCStr);
     (void)QJniEnvironment::checkAndClearExceptions(env);
     auto callback = std::move(s_importCallback);
     if (!callback) {
@@ -274,8 +250,8 @@ void openFileImportDialog(const QString& destPath, std::function<void(const QStr
     }
 }
 
-static QSharedPointer<QLocks::QLockBase> s_partialWakeLock;
-static QSharedPointer<QLocks::QLockBase> s_wifiLock;
+static QSharedPointer<QLocks::QLockBase> s_partialWakeLock; // NOLINT
+static QSharedPointer<QLocks::QLockBase> s_wifiLock;        // NOLINT
 
 void setKeepScreenOn(bool on)
 {
@@ -294,3 +270,27 @@ void setKeepScreenOn(bool on)
 }
 
 }  // namespace AndroidInterface
+
+extern "C" {
+
+void Java_org_mavlink_qgroundcontrol_QGCActivity_qgcLogDebug([[maybe_unused]] JNIEnv* env, [[maybe_unused]] jobject thiz, jstring message) // NOLINT
+{
+    qCDebug(AndroidInterfaceLog) << QJniObject(message).toString();
+}
+
+void Java_org_mavlink_qgroundcontrol_QGCActivity_qgcLogWarning([[maybe_unused]] JNIEnv* env, [[maybe_unused]] jobject thiz, jstring message) // NOLINT
+{
+    qCWarning(AndroidInterfaceLog) << QJniObject(message).toString();
+}
+
+void Java_org_mavlink_qgroundcontrol_QGCActivity_nativeStoragePermissionsResult([[maybe_unused]] JNIEnv* env, [[maybe_unused]] jobject thiz, jboolean granted) // NOLINT
+{
+    AndroidInterface::jniStoragePermissionsResult(granted);
+}
+
+void Java_org_mavlink_qgroundcontrol_QGCActivity_onImportResult([[maybe_unused]] JNIEnv* env, [[maybe_unused]] jobject thiz, jstring filePathJ) // NOLINT
+{
+    AndroidInterface::jniOnImportResult(env, filePathJ);
+}
+
+} // extern "C"

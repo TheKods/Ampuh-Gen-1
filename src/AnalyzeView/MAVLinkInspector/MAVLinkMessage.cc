@@ -23,7 +23,7 @@ QGCMAVLinkMessage::QGCMAVLinkMessage(const mavlink_message_t &message, const QSt
         return;
     }
 
-    _name = QString(msgInfo->name);
+    _name = QString::fromLatin1(msgInfo->name);
     if (!_instanceValue.isEmpty()) {
         _name += QStringLiteral(" [%1]").arg(_instanceValue);
     }
@@ -32,24 +32,24 @@ QGCMAVLinkMessage::QGCMAVLinkMessage(const mavlink_message_t &message, const QSt
     for (unsigned int i = 0; i < msgInfo->num_fields; ++i) {
         QString type = QStringLiteral("?");
         switch (msgInfo->fields[i].type) {
-            case MAVLINK_TYPE_CHAR:     type = QString("char");     break;
-            case MAVLINK_TYPE_UINT8_T:  type = QString("uint8_t");  break;
-            case MAVLINK_TYPE_INT8_T:   type = QString("int8_t");   break;
-            case MAVLINK_TYPE_UINT16_T: type = QString("uint16_t"); break;
-            case MAVLINK_TYPE_INT16_T:  type = QString("int16_t");  break;
-            case MAVLINK_TYPE_UINT32_T: type = QString("uint32_t"); break;
-            case MAVLINK_TYPE_INT32_T:  type = QString("int32_t");  break;
-            case MAVLINK_TYPE_FLOAT:    type = QString("float");    break;
-            case MAVLINK_TYPE_DOUBLE:   type = QString("double");   break;
-            case MAVLINK_TYPE_UINT64_T: type = QString("uint64_t"); break;
-            case MAVLINK_TYPE_INT64_T:  type = QString("int64_t");  break;
+            case MAVLINK_TYPE_CHAR:     type = QStringLiteral("char");     break;
+            case MAVLINK_TYPE_UINT8_T:  type = QStringLiteral("uint8_t");  break;
+            case MAVLINK_TYPE_INT8_T:   type = QStringLiteral("int8_t");   break;
+            case MAVLINK_TYPE_UINT16_T: type = QStringLiteral("uint16_t"); break;
+            case MAVLINK_TYPE_INT16_T:  type = QStringLiteral("int16_t");  break;
+            case MAVLINK_TYPE_UINT32_T: type = QStringLiteral("uint32_t"); break;
+            case MAVLINK_TYPE_INT32_T:  type = QStringLiteral("int32_t");  break;
+            case MAVLINK_TYPE_FLOAT:    type = QStringLiteral("float");    break;
+            case MAVLINK_TYPE_DOUBLE:   type = QStringLiteral("double");   break;
+            case MAVLINK_TYPE_UINT64_T: type = QStringLiteral("uint64_t"); break;
+            case MAVLINK_TYPE_INT64_T:  type = QStringLiteral("int64_t");  break;
             default:
                 qCWarning(MAVLinkMessageLog) << "Unknown MAVLink field type:" << msgInfo->fields[i].type;
                 break;
         }
 
         const unsigned int array_length = msgInfo->fields[i].array_length;
-        const QString fieldName = QString(msgInfo->fields[i].name);
+        const QString fieldName = QString::fromLatin1(msgInfo->fields[i].name);
 
         if (array_length > 0 && msgInfo->fields[i].type != MAVLINK_TYPE_CHAR) {
             // Expand numeric arrays into individual element fields
@@ -268,11 +268,11 @@ void QGCMAVLinkMessage::_updateFields()
             if (msgInfo->fields[i].array_length > 0) {
                 char *const str = reinterpret_cast<char*>(msg + offset);
                 str[msgInfo->fields[i].array_length - 1] = '\0';
-                const QString v(str);
+                const QString v = QString::fromLatin1(str);
                 field->updateValue(v, 0);
             } else {
                 char b = *(reinterpret_cast<char*>(msg + offset));
-                const QString v(b);
+                const QString v = QString(QChar::fromLatin1(b));
                 field->updateValue(v, 0);
             }
             break;
@@ -326,7 +326,7 @@ void QGCMAVLinkMessage::_updateFields()
             }
             if (_message.msgid == MAVLINK_MSG_ID_SYSTEM_TIME && element < 0) {
                 const QDateTime d = QDateTime::fromMSecsSinceEpoch(static_cast<qint64>(n), QTimeZone::utc());
-                field->updateValue(d.toString("HH:mm:ss"), static_cast<qreal>(n));
+                field->updateValue(d.toString(QStringLiteral("HH:mm:ss")), static_cast<qreal>(n));
             } else {
                 field->updateValue(QString::number(n), static_cast<qreal>(n));
             }
@@ -375,7 +375,7 @@ void QGCMAVLinkMessage::_updateFields()
             }
             if (_message.msgid == MAVLINK_MSG_ID_SYSTEM_TIME && element < 0) {
                 const QDateTime d = QDateTime::fromMSecsSinceEpoch(n / 1000, QTimeZone::utc());
-                field->updateValue(d.toString("yyyy MM dd HH:mm:ss"), static_cast<qreal>(n));
+                field->updateValue(d.toString(QStringLiteral("yyyy MM dd HH:mm:ss")), static_cast<qreal>(n));
             } else {
                 field->updateValue(QString::number(n), static_cast<qreal>(n));
             }

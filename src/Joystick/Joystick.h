@@ -309,8 +309,8 @@ public:
     Q_INVOKABLE virtual bool setMapping(const QString &mapping) { Q_UNUSED(mapping); return false; }
 
     QStringList buttonActions() const;
-    QString buttonActionNone() const { return _buttonActionNone; }
-    QString disabledActionName() const { return _buttonActionNone; }
+    QString buttonActionNone() const { return QString::fromLatin1(_buttonActionNone); }
+    QString disabledActionName() const { return QString::fromLatin1(_buttonActionNone); }
     const QmlObjectListModel *assignableActions() const { return _availableButtonActions; }
     QStringList assignableActionTitles() const { return _availableActionTitles; }
 

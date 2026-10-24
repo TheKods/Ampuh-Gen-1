@@ -441,29 +441,29 @@ bool OnboardLogController::_prepareLogDownload()
     const QString ftime = (entry->time().date().year() >= 2010) ? entry->time().toString(QStringLiteral("yyyy-M-d-hh-mm-ss")) : QStringLiteral("UnknownDate");
 
     _downloadData = std::make_unique<OnboardLogDownloadData>(entry);
-    _downloadData->filename = QStringLiteral("log_") + QString::number(entry->id()) + "_" + ftime;
+    _downloadData->filename = QStringLiteral("log_") + QString::number(entry->id()) + QStringLiteral("_") + ftime;
 
     if (_vehicle->firmwareType() == MAV_AUTOPILOT_PX4) {
         const QString loggerParam = QStringLiteral("SYS_LOGGER");
         ParameterManager *const parameterManager = _vehicle->parameterManager();
         Fact *const loggerFact = parameterManager->parameterExists(ParameterManager::defaultComponentId, loggerParam) ? parameterManager->getParameter(ParameterManager::defaultComponentId, loggerParam) : nullptr;
         if (loggerFact && (loggerFact->rawValue().toInt() == 0)) {
-            _downloadData->filename += ".px4log";
+            _downloadData->filename += QStringLiteral(".px4log");
         } else {
-            _downloadData->filename += ".ulg";
+            _downloadData->filename += QStringLiteral(".ulg");
         }
     } else {
-        _downloadData->filename += ".bin";
+        _downloadData->filename += QStringLiteral(".bin");
     }
 
     _downloadData->file.setFileName(_downloadPath + _downloadData->filename);
 
     if (_downloadData->file.exists()) {
         uint32_t numDups = 0;
-        const QStringList filename_spl = _downloadData->filename.split('.');
+        const QStringList filename_spl = _downloadData->filename.split(u'.');
         do {
             numDups += 1;
-            const QString filename = filename_spl[0] + '_' + QString::number(numDups) + '.' + filename_spl[1];
+            const QString filename = filename_spl[0] + u'_' + QString::number(numDups) + u'.' + filename_spl[1];
             _downloadData->file.setFileName(_downloadPath + filename);
         } while ( _downloadData->file.exists());
     }

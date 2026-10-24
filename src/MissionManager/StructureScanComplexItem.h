@@ -64,7 +64,7 @@ public:
     bool                specifiesAltitudeOnly       (void) const final { return false; }
     QString             commandDescription          (void) const final { return tr("Structure Scan"); }
     QString             commandName                 (void) const final { return tr("Structure Scan"); }
-    QString             abbreviation                (void) const final { return "S"; }
+    QString             abbreviation                (void) const final { return QStringLiteral("S"); }
     QGeoCoordinate      coordinate                  (void) const final;
     QGeoCoordinate      entryCoordinate             (void) const final { return coordinate(); }
     QGeoCoordinate      exitCoordinate              (void) const final { return coordinate(); }

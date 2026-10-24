@@ -131,6 +131,12 @@ project(${QGC_APP_NAME}
     LANGUAGES C CXX
 )
 
+# Konfigurasi Alignment Memori 16 KB untuk Android 15+ (Google Play Requirement)
+if(ANDROID)
+    add_link_options("-Wl,-z,max-page-size=16384")
+    add_link_options("-Wl,-z,common-page-size=16384")
+endif()
+
 # ============================================================================
 # CMake & Build System Configuration
 # ============================================================================

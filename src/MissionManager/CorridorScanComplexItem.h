@@ -40,7 +40,7 @@ public:
     // Overrides from ComplexMissionItem
     bool    load                (const QJsonObject& complexObject, int sequenceNumber, QString& errorString) final;
     QString mapVisualQML        (void) const final { return QStringLiteral("CorridorScanMapVisual.qml"); }
-    QString presetsSettingsGroup(void) { return settingsGroup; }
+    QString presetsSettingsGroup(void) { return QString::fromLatin1(settingsGroup); }
     void    savePreset          (const QString& name);
     void    loadPreset          (const QString& name);
 

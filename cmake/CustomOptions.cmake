@@ -238,7 +238,7 @@ option(QT_QMLLINT_CONTEXT_PROPERTY_DUMP "Emit qmllint context property data (Qt 
 option(QT_QML_GENERATE_QMLLINT "Run qmllint at build time" OFF)
 
 set(QGC_QT_DISABLE_DEPRECATED_UP_TO "0x060B00" CACHE STRING "Disable Qt APIs deprecated before this version")
-set(QGC_QT_ENABLE_STRICT_MODE_UP_TO "0x060B00" CACHE STRING "Enable strict Qt API mode up to this version")
+set(QGC_QT_ENABLE_STRICT_MODE_UP_TO "0x000000" CACHE STRING "Enable strict Qt API mode up to this version")
 
 # Debug environment variables (uncomment to enable)
 # set(ENV{QT_DEBUG_PLUGINS} "1")

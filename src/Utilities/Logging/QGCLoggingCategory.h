@@ -11,12 +11,12 @@
 
 class QString;
 
-#define QGC_LOGGING_CATEGORY(name, categoryStr)               \
-    static QGCLoggingCategory qgcCategory##name(categoryStr); \
+#define QGC_LOGGING_CATEGORY(name, categoryStr)                              \
+    static QGCLoggingCategory qgcCategory##name(QStringLiteral(categoryStr)); \
     Q_LOGGING_CATEGORY(name, categoryStr, QtWarningMsg)
 
-#define QGC_LOGGING_CATEGORY_ON(name, categoryStr)            \
-    static QGCLoggingCategory qgcCategory##name(categoryStr); \
+#define QGC_LOGGING_CATEGORY_ON(name, categoryStr)                           \
+    static QGCLoggingCategory qgcCategory##name(QStringLiteral(categoryStr)); \
     Q_LOGGING_CATEGORY(name, categoryStr, QtInfoMsg)
 
 /// \brief Helper that defers category registration until the QGCLoggingCategoryManager

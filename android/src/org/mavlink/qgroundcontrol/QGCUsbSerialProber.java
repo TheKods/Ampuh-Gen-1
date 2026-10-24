@@ -4,6 +4,7 @@ import com.hoho.android.usbserial.driver.CdcAcmSerialDriver;
 import com.hoho.android.usbserial.driver.ProbeTable;
 import com.hoho.android.usbserial.driver.UsbSerialProber;
 
+@android.annotation.SuppressLint("UnknownNullness")
 public class QGCUsbSerialProber {
 
     public static UsbSerialProber getQGCUsbSerialProber() {

@@ -37,14 +37,14 @@ void MAVLinkConsoleController::sendCommand(const QString &command)
     QString output = command;
 
     // there might be multiple commands, add them separately to the history
-    const QStringList lines = output.split('\n');
+    const QStringList lines = output.split(u'\n');
     for (const QString &line : lines) {
         if (!line.isEmpty()) {
             _history.append(line);
         }
     }
 
-    (void) output.append("\n");
+    (void) output.append(u'\n');
     _sendSerialData(qPrintable(output));
     _cursorHomePos = -1;
 }
@@ -53,7 +53,7 @@ QString MAVLinkConsoleController::handleClipboard(const QString &command_pre)
 {
     QString clipboardData = command_pre + QGuiApplication::clipboard()->text();
 
-    const int lastLinePos = clipboardData.lastIndexOf('\n');
+    const int lastLinePos = clipboardData.lastIndexOf(u'\n');
     if (lastLinePos != -1) {
         const QString commands = clipboardData.mid(0, lastLinePos);
         sendCommand(commands);
@@ -216,7 +216,7 @@ bool MAVLinkConsoleController::_processANSItext(QByteArray &line)
                 // Erase everything and rewind to home
                 const bool blocked = blockSignals(true);
                 for (int j = _cursorHomePos; j < rowCount(); j++) {
-                    (void) setData(index(j), "");
+                    (void) setData(index(j), QString());
                 }
                 (void) blockSignals(blocked);
 
@@ -241,12 +241,12 @@ bool MAVLinkConsoleController::_processANSItext(QByteArray &line)
 
 QString MAVLinkConsoleController::_transformLineForRichText(const QString &line) const
 {
-    QString ret = line.toHtmlEscaped().replace(" ","&nbsp;").replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;");
+    QString ret = line.toHtmlEscaped().replace(QStringLiteral(" "), QStringLiteral("&nbsp;")).replace(QStringLiteral("\t"), QStringLiteral("&nbsp;&nbsp;&nbsp;&nbsp;"));
 
-    if (ret.startsWith("WARN", Qt::CaseSensitive)) {
-        (void) ret.replace(0, 4, "<font color=\"" + _palette->colorOrange().name() + "\">WARN</font>");
-    } else if (ret.startsWith("ERROR", Qt::CaseSensitive)) {
-        (void) ret.replace(0, 5, "<font color=\"" + _palette->colorRed().name() + "\">ERROR</font>");
+    if (ret.startsWith(QStringLiteral("WARN"), Qt::CaseSensitive)) {
+        (void) ret.replace(0, 4, QStringLiteral("<font color=\"") + _palette->colorOrange().name() + QStringLiteral("\">WARN</font>"));
+    } else if (ret.startsWith(QStringLiteral("ERROR"), Qt::CaseSensitive)) {
+        (void) ret.replace(0, 5, QStringLiteral("<font color=\"") + _palette->colorRed().name() + QStringLiteral("\">ERROR</font>"));
     }
 
     return ret;
@@ -260,7 +260,7 @@ QString MAVLinkConsoleController::_getText() const
     }
 
     for (int i = 1; i < rowCount(); ++i) {
-        ret += ("<br>" + _transformLineForRichText(data(index(i), Qt::DisplayRole).toString()));
+        ret += (QStringLiteral("<br>") + _transformLineForRichText(data(index(i), Qt::DisplayRole).toString()));
     }
 
     return ret;
@@ -286,7 +286,7 @@ void MAVLinkConsoleController::_writeLine(int line, const QByteArray &text)
 
     const QModelIndex idx = index(line);
     QString updated = data(idx, Qt::DisplayRole).toString();
-    (void) updated.replace(_cursorX, text.size(), text);
+    (void) updated.replace(_cursorX, text.size(), QString::fromUtf8(text));
     (void) setData(idx, updated);
     _cursorX += text.size();
 }

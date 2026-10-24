@@ -60,7 +60,7 @@ public:
     bool                specifiesAltitudeOnly     () const final { return false; }
     QString             commandDescription        () const final { return tr("Perimeter Scan"); }
     QString             commandName               () const final { return tr("Perimeter Scan"); }
-    QString             abbreviation              () const final { return "P"; }
+    QString             abbreviation              () const final { return QStringLiteral("P"); }
     QGeoCoordinate      coordinate                () const final;
     QGeoCoordinate      entryCoordinate           () const final { return coordinate(); }
     QGeoCoordinate      exitCoordinate            () const final;

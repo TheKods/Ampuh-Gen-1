@@ -257,7 +257,7 @@ void MAVLinkSigningKeys::_save()
         const auto* key = _keys->value<MAVLinkSigningKey*>(i);
         const auto& bytes = key->keyBytes();
         QByteArray serialized(reinterpret_cast<const char*>(bytes.data()), static_cast<qsizetype>(bytes.size()));
-        settings.setValue(QString("%1/%2").arg(kKeySubgroup, key->name()), serialized);
+        settings.setValue(QStringLiteral("%1/%2").arg(kKeySubgroup, key->name()), serialized);
         QGC::secureZero(serialized);
         manifestNames.append(key->name());
     }
@@ -265,8 +265,8 @@ void MAVLinkSigningKeys::_save()
     const QSet<QString> liveNameSet(manifestNames.constBegin(), manifestNames.constEnd());
     for (const QString& oldName : previousNames) {
         if (!liveNameSet.contains(oldName)) {
-            settings.remove(QString("%1/%2").arg(kKeySubgroup, oldName));
-            settings.remove(QString("%1/%2").arg(kTimestampSubgroup, oldName));
+            settings.remove(QStringLiteral("%1/%2").arg(kKeySubgroup, oldName));
+            settings.remove(QStringLiteral("%1/%2").arg(kTimestampSubgroup, oldName));
         }
     }
 
@@ -300,7 +300,7 @@ void MAVLinkSigningKeys::recordTimestamps(const QHash<QString, uint64_t>& batch)
             continue;
         }
         keyIt.value()->setLastTimestamp(it.value());
-        settings.setValue(QString("%1/%2").arg(kTimestampSubgroup, it.key()), QVariant::fromValue<quint64>(it.value()));
+        settings.setValue(QStringLiteral("%1/%2").arg(kTimestampSubgroup, it.key()), QVariant::fromValue<quint64>(it.value()));
         wroteAnything = true;
     }
     settings.endGroup();
@@ -405,10 +405,10 @@ void MAVLinkSigningKeys::_load()
     settings.beginGroup(kSettingsGroup);
     const QStringList manifest = settings.value(kManifestKey).toStringList();
     for (const QString& name : manifest) {
-        QByteArray keyBytes = settings.value(QString("%1/%2").arg(kKeySubgroup, name)).toByteArray();
+        QByteArray keyBytes = settings.value(QStringLiteral("%1/%2").arg(kKeySubgroup, name)).toByteArray();
         if (const auto key = MAVLinkSigning::makeSigningKey(keyBytes); !name.isEmpty() && key) {
             auto* inserted = _insertKey(name, *key);
-            const uint64_t ts = settings.value(QString("%1/%2").arg(kTimestampSubgroup, name)).toULongLong();
+            const uint64_t ts = settings.value(QStringLiteral("%1/%2").arg(kTimestampSubgroup, name)).toULongLong();
             if (ts > 0) {
                 inserted->setLastTimestamp(ts);
             }

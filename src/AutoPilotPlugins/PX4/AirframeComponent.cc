@@ -21,7 +21,7 @@ QString AirframeComponent::description(void) const
 
 QString AirframeComponent::iconResource(void) const
 {
-    return "/qmlimages/AirframeComponentIcon.png";
+    return QStringLiteral("/qmlimages/AirframeComponentIcon.png");
 }
 
 bool AirframeComponent::requiresSetup(void) const
@@ -41,10 +41,10 @@ QStringList AirframeComponent::setupCompleteChangedTriggerList(void) const
 
 QUrl AirframeComponent::setupSource(void) const
 {
-    return QUrl::fromUserInput("qrc:/qml/QGroundControl/AutoPilotPlugins/PX4/AirframeComponent.qml");
+    return QUrl::fromUserInput(QStringLiteral("qrc:/qml/QGroundControl/AutoPilotPlugins/PX4/AirframeComponent.qml"));
 }
 
 QUrl AirframeComponent::summaryQmlSource(void) const
 {
-    return QUrl::fromUserInput("qrc:/qml/QGroundControl/AutoPilotPlugins/PX4/AirframeComponentSummary.qml");
+    return QUrl::fromUserInput(QStringLiteral("qrc:/qml/QGroundControl/AutoPilotPlugins/PX4/AirframeComponentSummary.qml"));
 }

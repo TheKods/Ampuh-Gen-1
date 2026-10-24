@@ -83,7 +83,7 @@ void QGCMAVLinkMessageField::resetBucketing(int bucketCount, qreal bucketWidthMs
 
 QString QGCMAVLinkMessageField::label() const
 {
-    return (_msg->name() + ": " + _name);
+    return (_msg->name() + QStringLiteral(": ") + _name);
 }
 
 void QGCMAVLinkMessageField::setSelectable(bool sel)

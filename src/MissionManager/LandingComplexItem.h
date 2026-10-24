@@ -82,9 +82,9 @@ public:
     bool                isStandaloneCoordinate      (void) const final { return false; }
     bool                specifiesCoordinate         (void) const final { return true; }
     bool                specifiesAltitudeOnly       (void) const final { return false; }
-    QString             commandDescription          (void) const final { return "Landing Pattern"; }
-    QString             commandName                 (void) const final { return "Landing Pattern"; }
-    QString             abbreviation                (void) const final { return "L"; }
+    QString             commandDescription          (void) const final { return QStringLiteral("Landing Pattern"); }
+    QString             commandName                 (void) const final { return QStringLiteral("Landing Pattern"); }
+    QString             abbreviation                (void) const final { return QStringLiteral("L"); }
     QGeoCoordinate      coordinate                  (void) const final { return exitCoordinate(); }
     QGeoCoordinate      entryCoordinate             (void) const final { return _finalApproachCoordinate; }
     QGeoCoordinate      exitCoordinate              (void) const final { return _landingCoordinate; }

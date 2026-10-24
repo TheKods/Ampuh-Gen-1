@@ -143,8 +143,8 @@ if(NOT TARGET ZLIB::ZLIB)
 endif()
 
 # Support 16 KB page size (required for Android 15)
-add_link_options("-Wl,-z,max-page-size=16384")
-add_link_options("-Wl,-z,common-page-size=16384")
+add_link_options("LINKER:-z,max-page-size=16384")
+add_link_options("LINKER:-z,common-page-size=16384")
 
 
 # ----------------------------------------------------------------------------
@@ -153,7 +153,5 @@ add_link_options("-Wl,-z,common-page-size=16384")
 
 # Manual management in AndroidManifest.xml for Qt 6.7 compatibility.
 # Permissions are already added to android/AndroidManifest.xml.
-
-message(STATUS "QGC: Android platform configuration applied")
 
 message(STATUS "QGC: Android platform configuration applied")

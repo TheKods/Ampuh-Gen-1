@@ -7,23 +7,23 @@ class PowerComponent : public VehicleComponent
     Q_OBJECT
 
 public:
-    PowerComponent(Vehicle* vehicle, AutoPilotPlugin* autopilot, QObject* parent = nullptr);
+    PowerComponent(Vehicle *vehicle, AutoPilotPlugin *autopilot, QObject *parent = nullptr);
 
     // Overrides from VehicleComponent
-    QStringList setupCompleteChangedTriggerList(void) const override;
+    QStringList setupCompleteChangedTriggerList() const override;
 
     // Overrides from VehicleComponent
-    QString name                    (void) const override;
-    QString description             (void) const override;
-    QString iconResource            (void) const override;
-    bool    requiresSetup           (void) const override;
-    bool    setupComplete           (void) const override;
-    QUrl    setupSource             (void) const override;
-    QUrl    summaryQmlSource        (void) const override;
-    QString vehicleConfigJson       (void) const override;
-    bool    allowSetupWhileArmed    (void) const override { return true; }
+    QString name() const override;
+    QString description() const override;
+    QString iconResource() const override;
+    bool requiresSetup() const override;
+    bool setupComplete() const override;
+    QUrl setupSource() const override;
+    QUrl summaryQmlSource() const override;
+    QString vehicleConfigJson() const override;
+    bool allowSetupWhileArmed() const override { return true; }
 
 private:
-    const QString   _name;
-    QVariantList    _summaryItems;
+    const QString _name;
+    QVariantList _summaryItems;
 };

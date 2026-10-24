@@ -9,6 +9,7 @@ import org.libsdl.app.SDL;
 import org.libsdl.app.SDLControllerManager;
 import org.libsdl.app.HIDDeviceManager;
 
+@android.annotation.SuppressLint("UnknownNullness")
 public class QGCSDLManager {
     private static final String TAG = QGCSDLManager.class.getSimpleName();
 
@@ -22,7 +23,7 @@ public class QGCSDLManager {
             SDL.initialize();
             SDL.setContext(activity);
 
-            m_hidDeviceManager = HIDDeviceManager.acquire(activity);
+            m_hidDeviceManager = HIDDeviceManager.acquire(activity.getApplicationContext());
 
             QGCLogger.i(TAG, "SDL initialized for joystick support");
         } catch (UnsatisfiedLinkError e) {

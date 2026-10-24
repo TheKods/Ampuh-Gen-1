@@ -1,6 +1,6 @@
 {
   "qt": {
-    "version": "6.7.3",
+    "version": "6.8.0",
     "minimum_version": "6.7.0",
     "maximum_version": "6.11.99",
     "modules": "qtlocation qtpositioning qtserialport qtscxml qtquick3d qtgraphs"

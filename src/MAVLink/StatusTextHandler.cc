@@ -59,7 +59,7 @@ QString StatusTextHandler::getMessageText(const mavlink_message_t &message)
     memcpy(buffer, statusText.text, MAVLINK_MSG_STATUSTEXT_FIELD_TEXT_LEN);
     buffer[MAVLINK_MSG_STATUSTEXT_FIELD_TEXT_LEN] = '\0';
 
-    return QString(buffer);
+    return QString::fromLatin1(buffer);
 }
 
 QString StatusTextHandler::formattedMessages() const
@@ -133,12 +133,12 @@ void StatusTextHandler::handleHTMLEscapedTextMessage(MAV_COMPONENT compId, MAV_S
 {
     QString htmlText(text);
 
-    (void) htmlText.replace("\n", "<br/>");
+    (void) htmlText.replace(u'\n', QStringLiteral("<br/>"));
 
     // TODO: handle text + description separately in the UI
     if (!description.isEmpty()) {
         QString htmlDescription(description);
-        (void) htmlDescription.replace("\n", "<br/>");
+        (void) htmlDescription.replace(u'\n', QStringLiteral("<br/>"));
         (void) htmlText.append(QStringLiteral("<br/><small><small>"));
         (void) htmlText.append(htmlDescription);
         (void) htmlText.append(QStringLiteral("</small></small>"));
@@ -221,12 +221,12 @@ void StatusTextHandler::handleHTMLEscapedTextMessage(MAV_COMPONENT compId, MAV_S
 
     QString compString;
     if (m_multiComp) {
-        compString = QString("COMP:%1").arg(compId);
+        compString = QStringLiteral("COMP:%1").arg(compId);
     }
 
-    const QString dateString = QDateTime::currentDateTime().toString("hh:mm:ss.zzz");
+    const QString dateString = QDateTime::currentDateTime().toString(QStringLiteral("hh:mm:ss.zzz"));
 
-    const QString formatText = QString("<font style=\"%1\">[%2 %3] %4: %5</font><br/>").arg(style, dateString, compString, severityText, htmlText);
+    const QString formatText = QStringLiteral("<font style=\"%1\">[%2 %3] %4: %5</font><br/>").arg(style, dateString, compString, severityText, htmlText);
 
     StatusText* const message = new StatusText(compId, severity, text);
     message->setFormatedText(formatText);
@@ -329,7 +329,7 @@ void StatusTextHandler::_chunkedStatusTextCompleted(MAV_COMPONENT compId)
 
     (void) m_chunkedStatusTextInfoMap.remove(compId);
 
-    emit textMessageReceived(compId, severity, messageText, "");
+    emit textMessageReceived(compId, severity, messageText, QString());
 }
 
 void StatusTextHandler::_handleTextMessage(uint32_t newCount, MessageType messageType)

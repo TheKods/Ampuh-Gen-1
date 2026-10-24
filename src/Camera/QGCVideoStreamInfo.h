@@ -36,8 +36,8 @@ public:
 
     Q_DECLARE_FLAGS(QVIDEO_STREAM_STATUS_FLAGS, VIDEO_STREAM_STATUS_FLAGS)
 
-    QString uri() const { return QString(_streamInfo.uri);  }
-    QString name() const { return QString(_streamInfo.name); }
+    QString uri() const { return QString::fromLatin1(_streamInfo.uri);  }
+    QString name() const { return QString::fromLatin1(_streamInfo.name); }
     qreal aspectRatio() const;
     quint16 hfov() const { return _streamInfo.hfov; }
     quint8 type() const { return _streamInfo.type; }
